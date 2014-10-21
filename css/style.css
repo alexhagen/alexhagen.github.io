@@ -134,10 +134,11 @@ body,
   font-size: 1.5em;
   padding: 10px 30px;
   margin-bottom: 0;
-  background: #333333;
+  background: #fafafa;
+  border-bottom: thin solid #222222;
 }
 .row.top .col-left .name a {
-  color: #f7f7f7;
+  color: #222222;
   text-decoration: none;
 }
 .row.top .col-right nav {
@@ -554,4 +555,11 @@ body,
     position: relative;
     z-index: 4;
   }
+}
+.vertical-center {
+  min-height: 75%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 75vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
 }
