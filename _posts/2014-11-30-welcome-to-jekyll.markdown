@@ -17,8 +17,7 @@ x = Object.oriented(programming);
 {% endhighlight %}
 
 ## Math
-$$
-\frac{\phi^{2}}{2}
-$$
+
+\\[ \frac{\phi^{2}}{2} \\]
 
 
