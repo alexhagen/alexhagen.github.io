@@ -17,7 +17,8 @@ x = Object.oriented(programming);
 {% endhighlight %}
 
 ## Math
-\\[ \frac{\phi^{2}}{\int_{2}^{E_{0}} \alpha \cdot x^{2} \exp \left( - \lambda t \right)} \\]
-
+$$
+\frac{\phi^{2}}{2}
+$$
 
 
