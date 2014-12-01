@@ -8,7 +8,7 @@ layout: default
   <!-- Publications Box -->
   <h1 class="page-heading">Publications</h1>
   <ul class="post-list">
-    {% for post in site.category.publications %}
+    {% for post in site.categories.publications %}
       <li>
 	<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
@@ -23,7 +23,7 @@ layout: default
   <h1 class="page-heading">Designs</h1>
 
   <ul class="post-list">
-    {% for post in site.category.designs %}
+    {% for post in site.categories.designs %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
