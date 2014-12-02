@@ -178,6 +178,14 @@
     }
 }
 
+.post-link:visited {
+    color:$brand-color;
+}
+
+.post-link:hover {
+    color:$brand-color;
+}
+
 .post-meta {
     font-size: $small-font-size;
     color: $grey-color;
