@@ -1,7 +1,17 @@
 # Alex Hagen's Portfolio
 
 ## To Do:
-- [ ] Put up Publications 
+- [ ] Put up Publications
+	- [ ] Authored
+		- [ ] NERS (Submitted)
+		- [ ] ICONE 14
+		- [ ] ASME IMECE
+	- [ ] CoAuthored
+		- [ ] NIMR (Submitted)
+		- [ ] HST
+		- [ ] AChe
+		- [ ] ASME
+		- [ ] HPS
 - [ ] Put up Codes
 	- [ ] ah_value
 	- [ ] ah_tcp_client
