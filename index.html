@@ -13,9 +13,14 @@ layout: default
       <li>
 	<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-        <h2>
+        <p>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
+        </p>
+        {{ post.bibtex }}
+
+        {% if post.fulltext %}
+          <p class="post-meta">Full Text Available</p>
+        {% endif %}
       </li>
     {% endfor %}
   </ul>
@@ -31,10 +36,6 @@ layout: default
         <p>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </p>
-
-        {% if post.fulltext %}
-          <p class="post-meta">Full Text Available</p>
-        {% endif %}
       </li>
     {% endfor %}
   </ul>
