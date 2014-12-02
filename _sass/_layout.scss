@@ -197,6 +197,10 @@
  .publication-author:first-child:before {
     content: "";
  }
+ .publication-author {
+    font-size: $small-font-size;
+    color: $brand-color;
+ }
 
 
 /**
