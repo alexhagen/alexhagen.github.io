@@ -191,23 +191,28 @@
 /**
  * Publications
  */
+
  .publication-author-list span:before {
     content: " - ";
  }
+
  .publication-author:first-child:before {
     content: "";
  }
+
  .publication-author {
     font-size: $small-font-size;
     color: $brand-color;
  }
+
  .publication-abstract {
-    font-size: $base-font-size;
+    font-size: $small-font-size;
     color: $text-color;
  }
+
  .publication-citation {
     font-size: $small-font-size;
-    color: $grey-color-light;
+    color: $grey-color;
  }
 
 
