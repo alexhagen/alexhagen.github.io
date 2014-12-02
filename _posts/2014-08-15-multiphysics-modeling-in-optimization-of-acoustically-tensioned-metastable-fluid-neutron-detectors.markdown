@@ -26,4 +26,5 @@ Utilizing this simulation framework, this thesis then describes efforts to make 
 My Master's Thesis was published in August of 2014 after defending the thesis to a committee of *Purdue Nuclear Engineering* and *Purdue Health Physics* faculty members in May of 2014.  The thesis includes business confidential material and will not be published until 2016.  I will post the full text at that time.
 
 ## Math
- hi $ x^{2} $
+ hi 
+ $ x^{2} $
