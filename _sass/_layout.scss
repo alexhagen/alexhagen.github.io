@@ -191,10 +191,10 @@
 /**
  * Publications
  */
- .publication-author:before {
+ .publication-author-list span:before {
     content: " - ";
  }
- .publication-author first-child:before {
+ .publication-author-list first-child:before {
     content: "";
  }
 
