@@ -27,4 +27,4 @@ My Master's Thesis was published in August of 2014 after defending the thesis to
 
 ## Math
 hi 
-$ x^{2} $
+\\( x^{2} \\)
