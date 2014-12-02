@@ -192,7 +192,10 @@
  * Publications
  */
  .publication-author:before {
-    content: "- ";
+    content: " - ";
+ }
+ .publication-author first-child:before {
+    content: "";
  }
 
 
