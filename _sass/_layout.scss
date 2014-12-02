@@ -194,8 +194,8 @@
  .publication-author-list span:before {
     content: " - ";
  }
- .publication-author-list first-child:before {
-    content: "";
+ .publication-author:first-child {
+    background-color:black;
  }
 
 
