@@ -16,11 +16,11 @@ layout: default
         <p>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </p>
-        {{ post.bibtex }}
 
         {% if post.fulltext %}
           <p class="post-meta">Full Text Available</p>
         {% endif %}
+        
       </li>
     {% endfor %}
   </ul>
