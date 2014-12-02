@@ -2,8 +2,10 @@
 
 ## To Do:
 - [ ] Put up Publications
+	- [x] Publications Template
 	- [ ] Authored
 		- [ ] NERS (Submitted)
+		- [x] MSNE
 		- [ ] ICONE 14
 		- [ ] ASME IMECE
 	- [ ] CoAuthored
