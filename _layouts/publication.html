@@ -11,11 +11,16 @@ layout: default
     	{% endfor %}
     </p>
     <p class="post-meta">{{ page.date | date: "%Y" }}</p>
-    <p class="post-meta">{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+    {% if page.fulltext %}<p class="post-meta">{{ page.fulltext }}</p>{% endif %}
   </header>
 
   <article class="post-content">
     {{ content }}
   </article>
+
+  <h3>Citation</h3>
+  <p class="publication-citation">{{ page.citation }}</p>
+  <h3>Abstract</h3>
+  <p class="publication-abstract">{{ page.abstract }}</p>
 
 </div>
