@@ -6,7 +6,7 @@
 	- [ ] Authored
 		- [ ] NERS (Submitted)
 		- [x] MSNE
-		- [ ] ICONE 14
+		- [x] ICONE 14
 		- [ ] ASME IMECE
 	- [ ] CoAuthored
 		- [ ] NIMR (Submitted)
