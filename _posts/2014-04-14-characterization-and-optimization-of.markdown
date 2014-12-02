@@ -9,6 +9,7 @@ authors:
   - B. C. Archambault
   - T. Harris
   - R. P. Taleyarkhan, Ph.D.
+fulltext: http://proceedings.asmedigitalcollection.asme.org/proceeding.aspx?articleID=1937292
 bibtex: '@inproceedings{Hagen2014,
 address = {Prague, Czech Republic},
 author = {Hagen, A. and Grimes, T. F. and Archambault, B. C. and Harris, T. N. and Taleyarkhan, R. P.},

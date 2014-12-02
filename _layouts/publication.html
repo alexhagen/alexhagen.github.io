@@ -11,7 +11,7 @@ layout: default
     	{% endfor %}
     </p>
     <p class="post-meta">{{ page.date | date: "%Y" }}</p>
-    {% if page.fulltext %}<p class="post-meta">{{ page.fulltext }}</p>{% endif %}
+    {% if page.fulltext %}<p class="post-meta">Fulltext available <a href={{ page.fulltext }}>here</a></p>{% endif %}
   </header>
 
   <article class="post-content">
