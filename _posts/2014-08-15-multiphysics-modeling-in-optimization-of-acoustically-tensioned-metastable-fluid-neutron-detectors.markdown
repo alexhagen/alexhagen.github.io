@@ -11,7 +11,6 @@ bibtex: >
 	type = {Master of Science},
 	year = {2014}
 	}
-pdfurl: http://www.google.com/
 
 ---
 
