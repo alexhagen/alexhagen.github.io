@@ -5,7 +5,7 @@ date:   2014-08-15 12:00:00
 categories: publications authored
 authors:
   - Alex Hagen
-bibtex: hi
+bibtex: '@pdfthesis{alexhagen}'
 
 ---
 
