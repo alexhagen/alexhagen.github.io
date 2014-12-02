@@ -188,6 +188,12 @@
     font-size: 24px;
 }
 
+/**
+ * Publications
+ */
+ .publication-author:before {
+    content: "-";
+ }
 
 
 /**
