@@ -18,6 +18,8 @@ layout: default
     {{ content }}
   </article>
 
+  {% if page.tags contains 'poster' %}<p>This publication was a poster presentation</p>{% endif %}
+
   <h3>Citation</h3>
   <p class="publication-citation">{{ page.citation }}</p>
   {% if page.abstract %}
