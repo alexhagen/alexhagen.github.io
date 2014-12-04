@@ -4,7 +4,7 @@ title:  "Multiphysics Modeling in Optimization of Acoustically Tensioned Metasta
 date:   2014-08-15 12:00:00
 categories: publications
 tags:
-	- authored
+- authored
 authors:
   - A. Hagen
   - R. P. Taleyarkhan, Ph.D.
