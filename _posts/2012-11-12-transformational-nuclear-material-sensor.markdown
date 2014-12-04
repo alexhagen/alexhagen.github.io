@@ -2,7 +2,7 @@
 layout: publication
 title:  "Transformational Nuclear Material Sensor System Design Optimization Using Multiphysics Simulation"
 date:   2012-11-12 12:00:00
-categories: publications authored
+categories: publications
 tags:
 - authored
 - poster
