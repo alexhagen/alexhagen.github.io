@@ -11,8 +11,11 @@ layout: default
     <ul class="post-list">
       {% for post in site.categories.publications %}
         <li>
-          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.fulltext %} - Full Text Available{% endif %}</span>
-
+          <span class="post-meta">
+            {% if post.tags contains 'poster' %}poster only - {% endif %}
+            {{ post.date | date: "%b %-d, %Y" }}
+            {% if post.fulltext %} - full text available{% endif %}
+          </span>
           <h2>
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           </h2>
@@ -27,7 +30,8 @@ layout: default
     <ul class="post-list">
       {% for post in site.categories.designs %}
         <li>
-          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          {% if post.tags contains 'poster' %}<span class="post-meta">poster only - </span>{% endif %}
+          <span class="post-meta">{{ post.date | date: "%b, %Y" }}</span>
 
           <h2>
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
