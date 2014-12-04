@@ -2,13 +2,16 @@
 layout: publication
 title:  "Transformational Nuclear Material Sensor System Design Optimization Using Multiphysics Simulation"
 date:   2012-11-12 12:00:00
-categories: publications posters authored
+categories: publications authored
+tags:
+	- authored
+	- poster
 authors:
   - A. Hagen
   - K. F. Fischer
   - B. C. Archambault
   - R. P. Taleyarkhan, Ph.D.
-fulltext: _assets/publications/atmfd_system_optimization_using_multiphysics_simulation_(imece_poster_final).pdf
+fulltext: /_assets/publications/atmfd_system_optimization_using_multiphysics_simulation_(imece_poster_final).pdf
 bibtex: '@inproceedings{Hagen2012b,
 address = {Houston, TX},
 author = {Hagen, A. and Fischer, K. and Archambault, B. and Taleyarkhan, R. P.},

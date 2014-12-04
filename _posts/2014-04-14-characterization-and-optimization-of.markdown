@@ -2,7 +2,9 @@
 layout: publication
 title:  "Characterization and Optimization of a Tensioned Metastable Fluid Nuclear Particle Sensor Using Laser Based Profilimetry"
 date:   2014-04-14 12:00:00
-categories: publications authored
+categories: publications
+tags:
+	- authored
 authors:
   - A. Hagen
   - T. F. Grimes
