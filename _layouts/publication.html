@@ -20,7 +20,9 @@ layout: default
 
   <h3>Citation</h3>
   <p class="publication-citation">{{ page.citation }}</p>
-  <h3>Abstract</h3>
-  <p class="publication-abstract">{{ page.abstract | replace:'\n','<br>' }}</p>
+  {% if page.abstract %}
+    <h3>Abstract</h3>
+    <p class="publication-abstract">{{ page.abstract | replace:'\n','<br>' }}</p>
+  {% endif %}
 
 </div>
