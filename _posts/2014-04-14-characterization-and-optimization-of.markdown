@@ -4,7 +4,7 @@ title:  "Characterization and Optimization of a Tensioned Metastable Fluid Nucle
 date:   2014-04-14 12:00:00
 categories: publications
 tags:
-	- authored
+- authored
 authors:
   - A. Hagen
   - T. F. Grimes
