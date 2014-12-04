@@ -11,7 +11,7 @@ authors:
   - K. F. Fischer
   - B. C. Archambault
   - R. P. Taleyarkhan, Ph.D.
-fulltext: assets/utilization_of_acoustically_tensioned_metastable_fluid_detectors_in_health_physics_(hps_poster_final).pdf
+fulltext: /assets/utilization_of_acoustically_tensioned_metastable_fluid_detectors_in_health_physics_(hps_poster_final).pdf
 bibtex: '@inproceedings{Hagen2013,
 address = {Madison, WI},
 author = {Hagen, A. and Fischer, K. F. and Archambault, B. C. and Taleyarkhan, R. P.},
