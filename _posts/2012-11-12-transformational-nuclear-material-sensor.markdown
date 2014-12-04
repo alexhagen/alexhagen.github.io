@@ -8,7 +8,7 @@ authors:
   - K. F. Fischer
   - B. C. Archambault
   - R. P. Taleyarkhan, Ph.D.
-fulltext: 
+fulltext: _assets/publications/atmfd_system_optimization_using_multiphysics_simulation_(imece_poster_final).pdf
 bibtex: '@inproceedings{Hagen2012b,
 address = {Houston, TX},
 author = {Hagen, A. and Fischer, K. and Archambault, B. and Taleyarkhan, R. P.},
