@@ -12,7 +12,7 @@ layout: default
       {% for post in site.categories.publications %}
         <li>
           <span class="post-meta">
-            {{ post.date | date: "%b %-d, %Y" }}
+            {{ post.date | date: "%b, %Y" }}
             {% if post.tags contains 'coauthor' %} - contributing author{% endif %}
             {% if post.tags contains 'poster' %} - poster only{% endif %}
             {% if post.fulltext %} - full text available{% endif %}
