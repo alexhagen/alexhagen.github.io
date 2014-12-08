@@ -23,4 +23,4 @@ citation: 'Hagen, A., Fischer, K. F., Archambault, B. C., & Taleyarkhan, R. P. (
 
 ---
 
-My colleague, Kevin Fischer, and I were invited by our Lab's consultants to present our technology at the Health Physics Society Conference.  This is somewhat out of field for us, and was used as a scoping mechanism to the interest in our technology in that field, with good results.
+My colleague, Kevin Fischer, and I were invited by our lab's consultants to present our technology at the Health Physics Society Conference.  This is somewhat out of field for us, and was used as a scoping mechanism to the interest in our technology in that field, with good results.
