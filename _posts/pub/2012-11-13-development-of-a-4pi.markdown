@@ -1,6 +1,6 @@
 ---
 layout: publication
-title:  "Development of a 4 \( \pi \) directional fast neutron detector using tensioned metastable fluids"
+title:  "Development of a 4 pi directional fast neutron detector using tensioned metastable fluids"
 date:   2012-11-13 12:00:00
 categories: publications
 tags:
