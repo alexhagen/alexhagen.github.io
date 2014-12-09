@@ -4,8 +4,8 @@ title:  "Transformational Nuclear Material Sensor System Design Optimization Usi
 date:   2012-11-12 12:00:00
 categories: publications
 tags:
-- authored
-- poster
+  - authored
+  - poster
 authors:
   - A. Hagen
   - K. F. Fischer
