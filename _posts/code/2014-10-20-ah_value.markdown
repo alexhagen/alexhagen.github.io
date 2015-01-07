@@ -1,5 +1,5 @@
 ---
-title: An object oriented class for tracking variable values and updating on variable change
+title: AH_Value: An Object Oriented Class for Tracking Variable Values and Updating on Variable Change
 repo_title: ah_value
 categories: codes
 layout: external
