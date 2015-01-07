@@ -1,0 +1,9 @@
+---
+layout: code
+title:  "ah_value Class"
+date:   2014-10-20 12:00:00
+categories: codes
+
+---
+
+{% include https://raw.githubusercontent.com/alexhagen/ah_value/master/README.md %}
