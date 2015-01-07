@@ -1,10 +1,5 @@
 ---
-layout: code
-title:  "ah_value Class"
-date:   2014-10-20 12:00:00
-url:    "http://www.google.com/"
-categories: codes
-
+title: External Posts in Jekyll
+layout: external
+external_url: http://robots.thoughtbot.com/post/12345/external-posts-in-jekyll
 ---
-
-{% include matlab.md %}
