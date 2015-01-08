@@ -1,0 +1,6 @@
+---
+title: "Data Visualization: Diffusion Tensor Imaging Assignment for Purdue University's Computer Science 53000 Class"
+repo_title: pu_cs_530
+categories: codes
+layout: external
+---
