@@ -96,9 +96,9 @@ input[type=time]::-ms-clear {
 input[type=password]::-ms-reveal {
   display: none;
 }
-/* * {
+* {
   border-collapse: collapse;
-} */
+}
 a {
   text-decoration: none;
 }
