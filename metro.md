@@ -16,6 +16,8 @@ permalink: /metro/
    {% capture designs_count %} {{ designs_count | plus: 1 }} {% endcapture %}
 {% endfor %}
 
+<div class="tile-group six">
+
 <div class="tile half">
     <div class="brand">
         <div class="badge">email</div>
@@ -65,4 +67,6 @@ permalink: /metro/
         	<span class="name">designs</span>
     	</div>
     </div>
+</div>
+
 </div>
