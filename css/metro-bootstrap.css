@@ -1123,6 +1123,8 @@ a {
 }
 .metro .container {
   margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .metro .page {
   width: 100%;
