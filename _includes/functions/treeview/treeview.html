@@ -1,0 +1,37 @@
+{% assign newtree = %}
+{% for item in include.opentree %}
+{% if forloop.first %}{% else %}{% capture newtree %}{{newtree}}{{item}},{% endcapture %}{% endif %}
+{% endfor %}
+{% assign newtree = newtree | strip_newlines | split: "," %}
+{% assign folder = include.opentree | first %} 
+
+<!-- DEBUG: ENTER NODE: opentree: {{include.opentree }} | folder (current folder): {{folder}} | opentree.first (current folder): {{include.opentree | first}} | thetoc: {{include.theTOC}} -->
+
+{% if include.outer %}<ul id='tree1' class="treeview"  data-role="treeview">{% endif %}
+
+{% for navitem in include.theTOC %}
+
+	{% if navitem.folder %}
+	{% assign folder = include.opentree | first %} 
+
+	<!-- DEBUG isFolder | folder:: {{folder}} | navitem.folder:: {{navitem.folder}} -->
+
+	<li class="node{% unless folder == navitem.folder %} collapsed{% endunless %}">
+    <a href="#"><span class="node-toggle"></span>{{navitem.folder}}</a>
+    <ul>
+			{% if navitem.contents %}
+				{% include /functions/treeview/treeview.html theTOC=navitem.contents opentree =newtree %}
+			{% endif %}
+
+	</ul>
+	</li>
+
+	{% elsif navitem.url %}
+	  <li{% if navitem.url == page.url %} class="active"{% endif %}><a href="{{ site.baseurl }}{{ navitem.url }}">{% if navitem.name %}{{navitem.name}}{% else %}{% include /functions/f_titlefromurl.html url=navitem.url %}{% endif %}</a></li>
+	{% else %}
+	  Unknown navitem: {{ navitem }}
+	{% endif %}
+	  
+{% endfor %}
+
+{% if include.outer %}</ul>{% endif %}

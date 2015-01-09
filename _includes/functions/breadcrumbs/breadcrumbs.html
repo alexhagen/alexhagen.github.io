@@ -1,0 +1,49 @@
+{% assign newtree = %}
+{% for item in include.opentree %}
+{% if forloop.first %}{% else %}{% capture newtree %}{{newtree}}{{item}},{% endcapture %}{% endif %}
+{% endfor %}
+{% assign newtree = newtree | strip_newlines | split: "," %}
+{% assign folder = include.opentree | first %} 
+
+<!--
+DEBUG: NewNode f_breadcrumb
+newtree: X{{newtree}}X
+folder: Z{{folder}}Z
+include.theTOC: {{include.theTOC}}
+-->
+
+{% for navitem in include.theTOC %}
+	{% if navitem.folder %}
+
+<!--
+DEBUG: The FOLDER 
+forloop.index : {{forloop.index}}
+navitem.folder: X{{navitem.folder}}X
+folder: Z{{folder}}Z
+include.theTOC: {{include.theTOC}}
+
+<li><a href="#">Home</a></li>
+<li><a href="#">Library</a></li>
+<li class="active"><a href="#">Data</a></li>
+-->
+		
+	    {% if folder == navitem.folder %}
+	       	{% if navitem.contents %}
+	       	    {% if navitem.contents.first.url and navitem.contents.first.url != page.url %}
+	       	       <li><a href="{{ site.baseurl }}{{navitem.contents.first.url}}">{{navitem.folder}}</a></li>
+				{% else %}
+					<li><a href="#">{{navitem.folder}}</a></li>
+	       	    {% endif %}
+	       	    {% assign folder = %} 
+<!--
+DEBUG: newtree.size : {{newtree.size}}
+-->
+	       	    {% unless newtree.size == 0 %}
+				  {% include /functions/breadcrumbs/breadcrumbs.html theTOC=navitem.contents opentree =newtree %}
+				{% endunless %}
+			{% endif %}
+		{% endif %}
+	{% endif %}
+{% endfor %}
+
+

@@ -1,0 +1,16 @@
+<!-- Menu assignment -->
+{% if page.navbar %}
+  <!-- navmenu defined for  page (in page or in defaults) -->
+
+{% for dataitem in site.data.metro-navbar %}
+{% if dataitem[0] == page.navbar %}{% assign menu = dataitem[1] %}{% endif %}
+{% endfor %}
+
+<nav class="navigation-bar {{page.theme}}">
+  <nav class="navigation-bar-content">
+<!-- PRINT Array to pass in {{menu}} -->
+  {% include /functions/navbar/navbar.html theTOC=menu %} 
+  </nav>
+</nav>
+
+{% endif%}

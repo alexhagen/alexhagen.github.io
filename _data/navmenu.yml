@@ -1,0 +1,14 @@
+- url: /about.html
+  align: place-right
+
+- folder: Tests
+  contents:
+   - url: /test_collection/collection_test1_1.html
+     name: Collection
+   - url: /test_section/section_test1_1.html
+     name: Folders
+   - divider: true
+   - url: /docs/folder2/test2_2.html
+   - url: /tests/components/sidebar/index.html
+   - url: /tests/components/treeview/index.html
+   - url: /tests/functions/array_functions.html

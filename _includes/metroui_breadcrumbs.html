@@ -1,0 +1,28 @@
+{% unless page.breadcrumbs == false %}
+<!-- Menu assignment -->
+{% if page.metro-treeview-sidebar %}
+
+{% for dataitem in site.data.metro-treeview %}
+{% if dataitem[0] == page.metro-treeview-sidebar %}{% assign toc = dataitem[1] %}{% endif %}
+{% endfor %}
+
+{% capture openfolder_array %}{% include /functions/treeview/openpath.html theTOC=toc %}{% endcapture %}
+{% assign openfolder_array = openfolder_array | strip_newlines | split: "," %} 
+
+<!-- END Menu assignment -->
+<!-- <nav class="breadcrumbs small">...</nav>
+<nav class="breadcrumbs mini">...</nav> <nav class="breadcrumbs"> -->
+<nav class="breadcrumbs">
+<ul>
+<li><a href="{{ site.baseurl }}/index.html">Home</a></li>
+{% include /functions/breadcrumbs/breadcrumbs.html theTOC=toc opentree =openfolder_array %} 
+<li class="active"><a href="{{ site.baseurl }}{{page.url}}">{{page.title}}</a></li>
+</ul>
+</nav>
+
+
+{% endif%}
+{% endunless %}
+
+
+

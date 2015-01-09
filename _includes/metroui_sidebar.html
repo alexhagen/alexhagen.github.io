@@ -1,0 +1,13 @@
+{% if page.metrosidebar %}
+
+{% for dataitem in site.data.metro-sidebar %}
+{% if dataitem[0] == page.metrosidebar %}{% assign sidebar = dataitem[1] %}{% endif %}
+{% endfor %}
+
+{% capture openfolder_array %}{% include /functions/sidebar/openpath.html theTOC=sidebar %}{% endcapture %}
+{% assign openfolder_array = openfolder_array | strip_newlines | split: "," %} 
+
+<!-- PRINT Array to pass in {{openfolder_array}} -->
+{% include /functions/sidebar/sidebar.html theTOC=sidebar outer='true' opentree =openfolder_array %}
+
+{% endif%}

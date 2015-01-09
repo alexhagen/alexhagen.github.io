@@ -1,0 +1,10 @@
+{% for navitem in include.theTOC %}
+{% if navitem.dropdown %}
+{% capture iterfolders %}{% if include.folders %}{{include.folders}},{% endif %}{{navitem.dropdown}}{% endcapture %}
+{% if navitem.contents %}
+{% include /functions/sidebar/openpath.html theTOC=navitem.contents folders=iterfolders %}
+{% endif %}
+{% elsif navitem.url %}
+{% if page.url == navitem.url %}{{include.folders}}{% endif %}
+{% endif %}
+{% endfor %}

@@ -1,0 +1,61 @@
+{% assign newtree = %}
+{% for item in include.opentree %}
+{% if forloop.first %}{% else %}{% capture newtree %}{{newtree}}{{item}},{% endcapture %}{% endif %}
+{% endfor %}
+{% assign newtree = newtree | strip_newlines | split: "," %}
+{% assign folder = include.opentree | first %} 
+
+<!--
+DEBUG: ENTER NODE
+opentree: {{include.opentree }}
+folder (current folder): {{folder}}
+opentree.first (current folder): {{include.opentree | first}}
+thetoc: {{include.theTOC}}
+-->
+
+{% if include.outer %}
+<nav class="sidebar {{page.theme}}">
+    <ul>{% endif %}
+
+{% for navitem in include.theTOC %}
+	{% if navitem.dropdown %}
+
+	{% assign folder = include.opentree | first %} 
+
+    <li>
+    <a class="dropdown-toggle" href="#">{{ navitem.dropdown }}</a>
+    <ul class="dropdown-menu" data-role="dropdown">
+
+
+			{% if navitem.contents %}
+				{% include /functions/sidebar/sidebar.html theTOC=navitem.contents opentree =newtree %}
+			{% endif %}
+
+    </ul>
+    </li>
+
+	<!-- DEBUG: IS dropdown -->	
+		<!-- HOw to incdicate folder must be open - perhaps with active?
+		 <li class="parent {% if folder == navitem.dropdown %}collapsibleListOpen{% else %}collapsibleListClosed{% endif %}">  -->
+
+
+	{% elsif navitem.url %}
+	  <li class="{% if navitem.disabled %}disabled{% endif %} {% if page.url == navitem.url %}active{% endif %} {% if navitem.stick %}stick {{navitem.stick}}{% endif %}"><a href="{% if navitem.disabled %}#{% else %}{{ site.baseurl }}{{ navitem.url }}{% endif %}">{% if navitem.icon %}<i class="{{navitem.icon}}"></i>{% endif %}{% if navitem.name %}{{navitem.name}}{% else %}{% include /functions/f_titlefromurl.html url=navitem.url %}{% endif %}</a></li>
+
+
+	{% elsif navitem.heading %}
+	  <li class="title">{{navitem.heading}}</li>
+
+	{% elsif navitem.divider %}
+	  <li class="divider"></li>
+
+	{% else %}
+	  Unknown navitem: {{ navitem }}
+	{% endif %}
+	  
+{% endfor %}
+
+
+{% if include.outer %}
+    </ul>
+</nav>{% endif %}

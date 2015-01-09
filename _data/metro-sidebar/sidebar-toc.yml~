@@ -1,0 +1,43 @@
+- heading: Tests Group
+
+- url: /tests/components/sidebar/index.html
+  stick: bg-green
+  icon: icon-home
+
+- dropdown: Test Dropdown
+  contents:
+   - url: /tests/components/sidebar/sidebar1.html
+     stick: bg-green
+     icon: icon-home
+
+   - divider: true
+
+   - url: /tests/components/sidebar/sidebar2.html
+     name: This name set in YAML
+
+
+- dropdown: Another drop down
+  contents:
+   - url: /tests/components/sidebar/sidebar3.html
+
+   - url: /tests/components/sidebar/sidebar4.html
+
+
+- url: /tests/components/sidebar/sidebar5.html
+
+- url: /tests/components/sidebar/sidebar6.html
+  stick: bg-blue
+
+- divider: true
+
+- url: /tests/components/sidebar/sidebar7.html
+  stick: bg-red
+  disabled: true
+  icon: icon-cog
+
+- heading: Another heading
+
+- url: /tests/components/sidebar/sidebar8.html
+
+
+

@@ -1,0 +1,29 @@
+{% if page.metro-treeview-sidebar %}
+
+{% for dataitem in site.data.metro-treeview %}
+{% if dataitem[0] == page.metro-treeview-sidebar %}{% assign sidebar = dataitem[1] %}{% endif %}
+{% endfor %}
+
+{% capture openfolder_array %}{% include /functions/treeview/openpath.html theTOC=sidebar %}{% endcapture %}
+{% assign openfolder_array = openfolder_array | strip_newlines | split: "," %} 
+<!-- PRINT Array to pass in {{openfolder_array}} -->
+{% include /functions/treeview/treeview.html theTOC=sidebar outer='true' opentree =openfolder_array %}
+
+<script type="text/javascript">
+$("#tree1").treeview({
+    onNodeClick: function (node) {
+window.open(node.a.href,"_self");
+    console.log(node);
+    try {
+        window.open(node.a.href,"_self");
+    }
+    catch (err) {
+         /* do nothing yet */
+         /* console.log(err); */
+     }
+   
+   	
+}
+});
+</script>
+{% endif%}

@@ -1,0 +1,44 @@
+<!--
+DEBUG: NAVMBAR - ENTER NODE
+theTOC: {{include.theTOC}}
+-->
+{% for navitem in include.theTOC %}
+  {% if navitem.folder %}
+{% unless include.nested %}<div class="element {{navitem.align}}">{% endunless %} 
+        {% if include.nested %}<li>{% endif %} 
+        <a class="dropdown-toggle" href="#">{{navitem.folder}}</a>
+        <ul class="dropdown-menu" data-role="dropdown">
+        {% include /functions/navbar/navbar.html theTOC=navitem.contents nested='true' %} 
+        </ul>
+        {% if include.nested %}</li>{% endif %} 
+{% unless include.nested %}</div>{% endunless %} 
+        
+
+
+  {% elsif navitem.url %}
+    {% if include.nested %}
+     <li class={% if page.url == navitem.url %}"active"{% endif %}><a href="{{ site.baseurl }}{{ navitem.url }}">{% if navitem.name %}{{navitem.name}}{% else %}{% include /functions/f_titlefromurl.html url=navitem.url %}{% endif %}</a></li>
+    {% else %}
+        {% if navitem.icon %}
+           <a class="element brand" href="{{navitem.url}}"><span class="{{navitem.icon}}"></span></a>
+
+        {% else %}
+          <a class="element {{navitem.align}} {% if page.url == navitem.url %}disabled{% endif %}" href="{{ site.baseurl }}{{ navitem.url }}">{% if navitem.name %}{{navitem.name}}{% else %}{% include /functions/f_titlefromurl.html url=navitem.url %}{% endif %}</a>
+        {% endif %} <!-- if icon -->
+     {% endif %} <!-- if nested -->
+
+
+  {% elsif navitem.divider %} 
+      {% if include.nested %} 
+      <li class="divider"></li>
+      {% else %} 
+      <span class="element-divider"></span>
+      {% endif %} 
+
+
+  {% else %}
+    Unknown navitem: {{ navitem }}
+  {% endif %}  
+{% endfor %}
+
+<!-- http://metroui.org.ua/navbar.html -->
