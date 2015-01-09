@@ -16,7 +16,33 @@ permalink: /metro/
    {% capture designs_count %} {{ designs_count | plus: 1 }} {% endcapture %}
 {% endfor %}
 
-<div class="tile-group six">
+<div class="tile-group one">
+
+<div class="tile half">
+    <div class="brand">
+        <div class="badge">email</div>
+    </div>
+</div>
+
+<div class="tile half">
+    <div class="brand">
+        <div class="badge">email</div>
+    </div>
+</div>
+
+<div class="tile half">
+    <div class="brand">
+        <div class="badge">email</div>
+    </div>
+</div>
+
+<div class="tile half">
+    <div class="brand">
+        <div class="badge">email</div>
+    </div>
+</div>
+
+</div>
 
 <div class="tile">
     <div class="brand">
@@ -43,30 +69,4 @@ permalink: /metro/
         	<span class="name">designs</span>
     	</div>
     </div>
-</div>
-
-<div class="tile half">
-    <div class="brand">
-        <div class="badge">email</div>
-    </div>
-</div>
-
-<div class="tile half">
-    <div class="brand">
-        <div class="badge">email</div>
-    </div>
-</div>
-
-<div class="tile half">
-    <div class="brand">
-        <div class="badge">email</div>
-    </div>
-</div>
-
-<div class="tile half">
-    <div class="brand">
-        <div class="badge">email</div>
-    </div>
-</div>
-
 </div>
