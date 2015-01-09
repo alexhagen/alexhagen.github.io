@@ -1,3 +1,4 @@
+/*
 html {
   font-size: 62.5%;
 }
@@ -31,6 +32,7 @@ nav,
 section {
   display: block;
 }
+*/
 audio,
 canvas,
 video {
@@ -7917,25 +7919,6 @@ a {
   -ms-transform: rotate(-90deg);
   -o-transform: rotate(-90deg);
   transform: rotate(-90deg);
-}
-.metro code,
-.metro .code {
-  /* /* font-family: 'Segoe UI_', 'Open Sans', Verdana, Arial, Helvetica, sans-serif; */ */
-  font-weight: normal;
-  font-style: normal;
-  color: #000000;
-  font-size: 11pt;
-  line-height: 15pt;
-  letter-spacing: 0.02em;
-  /* font-family: 'Courier New', monospace; */
-  display: inline-block;
-  padding: 3px 5px;
-  margin: 0;
-  background-color: #eeeeee;
-  color: #e51400;
-  border: 1px #d4d4d4 solid;
-  font-size: 90%;
-  line-height: 90%;
 }
 .metro .label {
   display: inline-block;
