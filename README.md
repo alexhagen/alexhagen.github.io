@@ -26,7 +26,8 @@
 	- [ ] vwr electrophoresis
 	- [ ] pressure chamber
 	- [ ] gator scoreboard?
-- [ ] New styling - [Balzac Theme](http://jekyll.gtat.me/about/)
+- [x] New styling - [Balzac Theme](http://jekyll.gtat.me/about/)
+- [ ] New front page
 - [ ] New Publications page: [mockup](http://www.google.com)
 - [ ] new designs page: [mockup](http://www.google.com)
 	- [ ] Idea from [Thinny 2](http://camporez.com/blog/thinny-2/)
