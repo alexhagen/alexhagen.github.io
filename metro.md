@@ -22,7 +22,7 @@ permalink: /metro/
 
 ## Tiles and stuff!
 
-<div class="example">
+<div>
 
 <div class="tile bg-black">
     <div class="brand">
@@ -163,6 +163,7 @@ permalink: /metro/
 
 </div>
 
+<div class="span2">
 
 <div class="listview">
     <a href="#" class="list">
@@ -200,4 +201,6 @@ permalink: /metro/
             </div>
         </div>
     </a>
+</div>
+
 </div>
