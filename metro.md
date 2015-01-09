@@ -16,8 +16,6 @@ permalink: /metro/
    {% capture designs_count %} {{ designs_count | plus: 1 }} {% endcapture %}
 {% endfor %}
 
-## Is this the title?
-
 <div class="row">
 
 <div class="tile bg-black">
