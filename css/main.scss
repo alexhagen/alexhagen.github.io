@@ -22,11 +22,22 @@ $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
-$content-width:    1040px;
+$content-width:    1200px;
 
-$on-palm:          600px;
-$on-laptop:        800px;
+$on-palm:          640px;
+$on-laptop:        768px;
 
+
+/*
+ * Devices
+ * min 1200
+ * min 1024
+ * max 1024
+ * max 768
+ * max 640
+ * max 480
+ * max 320
+ */
 
 
 // Using media queries with like this:
