@@ -152,7 +152,7 @@ input {
 }
 
 .wrap {
-    max-width: 960px;
+    max-width: 1200px;
     @include column(10);
     float: none;
     margin: 0 auto;
@@ -162,7 +162,7 @@ input {
 
 .post {
     @include column(8);
-    max-width: 680px;
+    max-width: 960px;
     display: block;
     margin: 0 auto;
     float: none;
