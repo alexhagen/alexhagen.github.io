@@ -1122,9 +1122,9 @@ a {
   line-height: 10pt;
 }
 .metro .container {
-  margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px;
+  margin: auto auto;
+  padding: 30px;
+  padding: 30px;
 }
 .metro .page {
   width: 100%;
@@ -6669,7 +6669,7 @@ a {
 }
 .metro .listview .list {
   border: 4px transparent solid;
-  width: 300px;
+  width: 260px;
   height: auto;
   position: relative;
   display: block;
