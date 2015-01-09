@@ -22,7 +22,7 @@ permalink: /metro/
 
 ## Tiles and stuff!
 
-<div>
+<div class="example">
 
 <div class="tile bg-black">
     <div class="brand">
