@@ -882,28 +882,7 @@ a {
   padding-left: 5px;
   padding-right: 5px;
 }
-.metro ul,
-.metro ol {
-  margin-left: 5px;
-  padding-left: 15px;
-  /* font-family: 'Segoe UI_', 'Open Sans', Verdana, Arial, Helvetica, sans-serif; */
-  font-weight: normal;
-  font-style: normal;
-  color: #000000;
-  font-size: 11pt;
-  line-height: 15pt;
-  letter-spacing: 0.02em;
-}
-.metro ul li,
-.metro ol li {
-  line-height: 20px;
-}
-.metro ul li ul,
-.metro ol li ul,
-.metro ul li ol,
-.metro ol li ol {
-  padding-left: 25px;
-}
+
 .metro ol.styled {
   counter-reset: li;
   margin-left: 0;
@@ -938,28 +917,6 @@ a {
 }
 .metro ol.styled.rounded > li:before {
   border-radius: 100%;
-}
-.metro dl dt,
-.metro dl dd {
-  line-height: 20px;
-}
-.metro dl dt {
-  /* font-family: 'Segoe UI Semibold_', 'Open Sans Bold', Verdana, Arial, Helvetica, sans-serif; */
-}
-.metro dl dd {
-  margin-left: 15px;
-}
-.metro dl.horizontal dt {
-  float: left;
-  width: 160px;
-  overflow: hidden;
-  clear: left;
-  text-align: right;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.metro dl.horizontal dd {
-  margin-left: 180px;
 }
 .metro .prettyprint * {
   /* font-family: 'Segoe UI_', 'Open Sans', Verdana, Arial, Helvetica, sans-serif; */
