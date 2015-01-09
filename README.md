@@ -26,6 +26,10 @@
 	- [ ] vwr electrophoresis
 	- [ ] pressure chamber
 	- [ ] gator scoreboard?
+- [ ] New styling - Balzac Theme? http://jekyll.gtat.me/about/
+- [ ] New Publications page: [mockup](http://www.google.com)
+- [ ] new designs page: [mockup](http://www.google.com)
+- [ ] new codes page: [mockup](http://www.google.com)
 - [ ] Convert front page to tiles
 - [ ] add accounts buttons to top right
 	- [ ] github
