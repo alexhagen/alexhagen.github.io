@@ -18,30 +18,6 @@ permalink: /metro/
 
 <div class="tile-group six">
 
-<div class="tile half">
-    <div class="brand">
-        <div class="badge">email</div>
-    </div>
-</div>
-
-<div class="tile half">
-    <div class="brand">
-        <div class="badge">email</div>
-    </div>
-</div>
-
-<div class="tile half">
-    <div class="brand">
-        <div class="badge">email</div>
-    </div>
-</div>
-
-<div class="tile half">
-    <div class="brand">
-        <div class="badge">email</div>
-    </div>
-</div>
-
 <div class="tile">
     <div class="brand">
         <div class="badge">{{ codes_count }}</div>
@@ -66,6 +42,30 @@ permalink: /metro/
 		<div class="tile-status">
         	<span class="name">designs</span>
     	</div>
+    </div>
+</div>
+
+<div class="tile half">
+    <div class="brand">
+        <div class="badge">email</div>
+    </div>
+</div>
+
+<div class="tile half">
+    <div class="brand">
+        <div class="badge">email</div>
+    </div>
+</div>
+
+<div class="tile half">
+    <div class="brand">
+        <div class="badge">email</div>
+    </div>
+</div>
+
+<div class="tile half">
+    <div class="brand">
+        <div class="badge">email</div>
     </div>
 </div>
 
