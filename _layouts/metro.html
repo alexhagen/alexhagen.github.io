@@ -8,41 +8,12 @@
 
 
     <div class="grid fluid show-grid">
-    {% if page.metrosidebar or page.metro-treeview-sidebar %}
-    <div class="row">
-    <div class="span4">
-    <!-- start sidebar area-->
-
-<!-- CREATE a metro sidebar - but only if defined for page (or in page defaults in _config.yml ) -->
-{% capture thesidebar %}{% include metroui_sidebar.html %}{% endcapture %}
-<!-- { % assign thesidebar = thesidebar | strip_newlines %} -->
-{{ thesidebar }}
-
-{% capture thesidebar %}{% include metroui_treeview_sidebar.html %}{% endcapture %}
-<!-- { % assign thesidebar = thesidebar | strip_newlines %} -->
-{{ thesidebar }}
-<!-- end sidebar -->
-    </div>
-    <div class="span8">
-
-    {% endif %} <!-- no sidebar -->
 
 {% include metroui_breadcrumbs.html %}    
 
 <h1>{{page.title}}</h1>
 {{ content }}
-
-{% if page.metrosidebar or page.metro-treeview-sidebar %}
     </div>
-    </div>
-{% endif %} <!-- no sidebar -->
-    </div>
-
-
-
-
-
-{% include footermetro.html %} 
 </div>
 </body>
 </html>
