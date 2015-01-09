@@ -201,7 +201,7 @@ permalink: /metro/
 
 </div>
 
-<div class="row">
+<div class="example">
 
                     <div class="streamer" data-role="streamer" data-scroll-bar="true" data-slide-to-group="3" data-slide-speed="500">
                         <div class="streams">
