@@ -15,6 +15,13 @@ permalink: /metro/
 {% for post in site.categories.designs %}
    {% capture designs_count %} {{ designs_count | plus: 1 }} {% endcapture %}
 {% endfor %}
+
+- list 1
+- list 2
+- list 3
+
+## Tiles and stuff!
+
 <div class="example">
 
 <div class="tile bg-black">
