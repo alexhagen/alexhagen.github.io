@@ -22,7 +22,16 @@
 	- [x]  ah_timer
 	- [x]  pu_cs_530
 - [ ] Put up Designs
+	- [ ] carolina electrophoresis
+	- [ ] vwr electrophoresis
+	- [ ] pressure chamber
+	- [ ] gator scoreboard?
 - [ ] Convert front page to tiles
+- [ ] add accounts buttons to top right
+	- [ ] github
+	- [ ] researchgate
+	- [ ] linkedin
+	- [ ] grabcad
 - [ ] Add jquery list view on mouseover of tiles
 - [ ] Add 3d plugin for Designs
 - [ ] CSS stylesheet using GR LaTeX Class

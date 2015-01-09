@@ -44,7 +44,6 @@ layout: default
     <ul class="post-list">
       {% for post in site.categories.designs %}
         <li>
-          {% if post.tags contains 'poster' %}<span class="post-meta">poster only - </span>{% endif %}
           <span class="post-meta">{{ post.date | date: "%b, %Y" }}</span>
 
           <h2>
