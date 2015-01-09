@@ -16,14 +16,7 @@ permalink: /metro/
    {% capture designs_count %} {{ designs_count | plus: 1 }} {% endcapture %}
 {% endfor %}
 
-## Tiles and stuff!
-
-- list 1
-	- list 2
-	
-updated
-
-<div class="row">
+<div class="row ribbed-grayed">
 
 <div class="tile bg-black">
     <div class="brand">
