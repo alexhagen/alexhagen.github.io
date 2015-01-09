@@ -4,4 +4,9 @@ title: Metro
 permalink: /metro/
 ---
 
-metro content
+<div class="tile bg-cyan">
+    <div class="brand">
+    	hi!
+        <div class="badge">{% site.categories.codes | size %}</div>
+    </div>
+</div>
