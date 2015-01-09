@@ -18,7 +18,7 @@ permalink: /metro/
 
 <div class="row bg-darkCobalt">
 
-<div class="tile bg-black double double-vertical">
+<div class="tile bg-cobalt double double-vertical">
     <div class="brand">
         <div class="badge bg-red">{{ codes_count }}</div>
 		<div class="tile-status">
@@ -27,7 +27,7 @@ permalink: /metro/
     </div>
 </div>
 
-<div class="tile bg-black quadro quadro-vertical">
+<div class="tile bg-cobalt quadro quadro-vertical">
     <div class="brand">
         <div class="badge bg-red">{{ publications_count }}</div>
 		<div class="tile-status">
@@ -36,7 +36,7 @@ permalink: /metro/
     </div>
 </div>
 
-<div class="tile bg-black">
+<div class="tile bg-cobalt">
     <div class="brand">
         <div class="badge bg-red">{{ designs_count }}</div>
 		<div class="tile-status">
