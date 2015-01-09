@@ -16,7 +16,7 @@ permalink: /metro/
    {% capture designs_count %} {{ designs_count | plus: 1 }} {% endcapture %}
 {% endfor %}
 
-<div class="row ribbed-grayed">
+<div class="row">
 
 <div class="tile bg-black">
     <div class="brand">
