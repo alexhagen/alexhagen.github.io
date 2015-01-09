@@ -18,7 +18,6 @@ permalink: /metro/
 
 ## Tiles and stuff!
 
-<div class="grid">
 <div class="row">
 
 <div class="tile bg-black">
@@ -200,5 +199,4 @@ permalink: /metro/
     </a>
 </div>
 
-</div>
 </div>
