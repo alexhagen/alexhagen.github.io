@@ -706,10 +706,10 @@ a {
   /* font-family: 'Segoe UI_', 'Open Sans', Verdana, Arial, Helvetica, sans-serif; */
 }
 .metro #font .segoe-bold {
-  font-family: 'Segoe UI Semibold_', 'Open Sans Bold', Verdana, Arial, Helvetica, sans-serif;
+  /* font-family: 'Segoe UI Semibold_', 'Open Sans Bold', Verdana, Arial, Helvetica, sans-serif; */
 }
 .metro #font .segoe-light {
-  font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif;
+  /* font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif; */
 }
 .metro #font .cambria {
   font-family: 'Cambria_', 'PT Serif Caption', Verdana, Arial, Helvetica, sans-serif;
@@ -725,7 +725,7 @@ a {
 }
 .metro .header,
 .metro .subheader {
-  font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif;
+  /* font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif; */
   font-weight: 300;
   color: #000000;
   letter-spacing: 0.00em;
@@ -740,7 +740,7 @@ a {
   letter-spacing: 0.01em;
 }
 .metro .subheader-secondary {
-  font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif;
+  /* font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif; */
   font-weight: 300;
   letter-spacing: 0.00em;
   font-size: 2.5rem;
@@ -751,7 +751,7 @@ a {
   line-height: 2.2rem;
 }
 .metro .item-title {
-  font-family: 'Segoe UI Semibold_', 'Open Sans Bold', Verdana, Arial, Helvetica, sans-serif;
+  /* font-family: 'Segoe UI Semibold_', 'Open Sans Bold', Verdana, Arial, Helvetica, sans-serif; */
   font-weight: bold;
   color: #000000;
   font-size: 1.6rem;
@@ -759,7 +759,7 @@ a {
   letter-spacing: 0.02em;
 }
 .metro .item-title-secondary {
-  font-family: 'Segoe UI Semibold_', 'Open Sans Bold', Verdana, Arial, Helvetica, sans-serif;
+  /* font-family: 'Segoe UI Semibold_', 'Open Sans Bold', Verdana, Arial, Helvetica, sans-serif; */
   font-weight: bold;
   font-size: 1.6rem;
   line-height: 1.6rem;
@@ -818,7 +818,7 @@ a {
   line-height: 2rem;
 }
 .metro .menu-title {
-  font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif;
+  /* font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif; */
   font-weight: 300;
   color: #000000;
   letter-spacing: 0.00em;
@@ -828,7 +828,7 @@ a {
   font-size: 4rem;
 }
 .metro .menu-item {
-  font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif;
+  /* font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif; */
   font-weight: 300;
   letter-spacing: 0.00em;
   font-size: 2.5rem;
@@ -839,7 +839,7 @@ a {
   font-size: 2.2rem;
 }
 .metro .menu-item-secondary {
-  font-family: 'Segoe UI Semibold_', 'Open Sans Bold', Verdana, Arial, Helvetica, sans-serif;
+  /* font-family: 'Segoe UI Semibold_', 'Open Sans Bold', Verdana, Arial, Helvetica, sans-serif; */
   font-weight: bold;
   color: #000000;
   font-size: 1.6rem;
@@ -859,7 +859,7 @@ a {
   margin: 10px 0;
 }
 .metro h1 {
-  font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif;
+  /* font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif; */
   font-weight: 300;
   color: #000000;
   letter-spacing: 0.00em;
@@ -867,7 +867,7 @@ a {
   line-height: 4.8rem;
 }
 .metro h2 {
-  font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif;
+  /* font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif; */
   font-weight: 300;
   color: #000000;
   letter-spacing: 0.00em;
@@ -876,7 +876,7 @@ a {
   letter-spacing: 0.01em;
 }
 .metro h3 {
-  font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif;
+  /* font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif; */
   font-weight: 300;
   letter-spacing: 0.00em;
   font-size: 2.5rem;
@@ -888,7 +888,7 @@ a {
   font-weight: bold;
 }
 .metro h4 {
-  font-family: 'Segoe UI Semibold_', 'Open Sans Bold', Verdana, Arial, Helvetica, sans-serif;
+  /* font-family: 'Segoe UI Semibold_', 'Open Sans Bold', Verdana, Arial, Helvetica, sans-serif; */
   font-weight: bold;
   color: #000000;
   font-size: 1.6rem;
@@ -896,7 +896,7 @@ a {
   letter-spacing: 0.02em;
 }
 .metro h5 {
-  font-family: 'Segoe UI Semibold_', 'Open Sans Bold', Verdana, Arial, Helvetica, sans-serif;
+  /* font-family: 'Segoe UI Semibold_', 'Open Sans Bold', Verdana, Arial, Helvetica, sans-serif; */
   font-weight: bold;
   font-size: 1.6rem;
   line-height: 1.6rem;
@@ -960,7 +960,7 @@ a {
   letter-spacing: 0.02em;
 }
 .metro strong {
-  font-family: 'Segoe UI Semibold_', 'Open Sans Bold', Verdana, Arial, Helvetica, sans-serif;
+  /* font-family: 'Segoe UI Semibold_', 'Open Sans Bold', Verdana, Arial, Helvetica, sans-serif; */
   font-weight: bold;
 }
 .metro .text-muted {
@@ -1092,7 +1092,7 @@ a {
   line-height: 20px;
 }
 .metro dl dt {
-  font-family: 'Segoe UI Semibold_', 'Open Sans Bold', Verdana, Arial, Helvetica, sans-serif;
+  /* font-family: 'Segoe UI Semibold_', 'Open Sans Bold', Verdana, Arial, Helvetica, sans-serif; */
 }
 .metro dl dd {
   margin-left: 15px;
@@ -1156,7 +1156,7 @@ a {
   margin-right: 20px;
 }
 .metro .page .page-header .page-header-content .branding .brand-title {
-  font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif;
+  /* font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif; */
   font-weight: 300;
   color: #000000;
   letter-spacing: 0.00em;
@@ -1166,7 +1166,7 @@ a {
   display: block;
 }
 .metro .page .page-header .page-header-content .branding .brand-slogan {
-  font-family: 'Segoe UI Semibold_', 'Open Sans Bold', Verdana, Arial, Helvetica, sans-serif;
+  /* font-family: 'Segoe UI Semibold_', 'Open Sans Bold', Verdana, Arial, Helvetica, sans-serif; */
   font-weight: bold;
   font-size: 1.6rem;
   line-height: 1.6rem;
@@ -1176,7 +1176,7 @@ a {
   line-height: 1.4rem;
   font-weight: normal;
   font-style: normal;
-  font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif;
+  /* font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif; */
   display: block;
 }
 .metro .page .page-header .page-header-content .branding .brand-title,
@@ -1645,7 +1645,7 @@ a {
   cursor: pointer;
   display: inline-block;
   outline: none;
-  font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif;
+  /* font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif; */
   font-size: 14px;
   line-height: 16px;
   margin: auto;
@@ -1730,7 +1730,7 @@ a {
   cursor: pointer;
   display: inline-block;
   outline: none;
-  font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif;
+  /* font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif; */
   font-size: 14px;
   line-height: 16px;
   margin: auto;
@@ -1823,7 +1823,7 @@ a {
   cursor: pointer;
   display: inline-block;
   outline: none;
-  font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif;
+  /* font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif; */
   font-size: 14px;
   line-height: 16px;
   margin: auto;
@@ -2043,7 +2043,7 @@ a {
   cursor: pointer;
   display: inline-block;
   outline: none;
-  font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif;
+  /* font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif; */
   font-size: 14px;
   line-height: 16px;
   margin: auto;
@@ -2173,7 +2173,7 @@ a {
   border-radius: 0;
   cursor: pointer;
   outline: none;
-  font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif;
+  /* font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif; */
   font-size: 14px;
   line-height: 16px;
   margin: auto;
@@ -2278,7 +2278,7 @@ a {
   min-width: 10px;
   text-align: center;
   vertical-align: middle;
-  font-family: 'Segoe UI Semibold_', 'Open Sans Bold', Verdana, Arial, Helvetica, sans-serif;
+  /* font-family: 'Segoe UI Semibold_', 'Open Sans Bold', Verdana, Arial, Helvetica, sans-serif; */
 }
 .metro .shortcut:hover {
   border-color: #e51400;
@@ -3227,7 +3227,7 @@ a {
   cursor: pointer;
   display: inline-block;
   outline: none;
-  font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif;
+  /* font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif; */
   font-size: 14px;
   line-height: 16px;
   margin: auto;
@@ -3481,7 +3481,7 @@ a {
 .metro .vertical-menu li a {
   display: block;
   text-decoration: none;
-  font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif;
+  /* font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif; */
   font-weight: 300;
   letter-spacing: 0.00em;
   font-size: 2.5rem;
@@ -3493,7 +3493,7 @@ a {
   color: inherit;
 }
 .metro .vertical-menu li.title {
-  font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif;
+  /* font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif; */
   font-weight: 300;
   color: #000000;
   letter-spacing: 0.00em;
@@ -3511,7 +3511,7 @@ a {
 }
 .metro .vertical-menu.compact li.title {
   margin-bottom: 10px;
-  font-family: 'Segoe UI Semibold_', 'Open Sans Bold', Verdana, Arial, Helvetica, sans-serif;
+  /* font-family: 'Segoe UI Semibold_', 'Open Sans Bold', Verdana, Arial, Helvetica, sans-serif; */
   font-weight: bold;
   color: #000000;
   font-size: 1.6rem;
@@ -3525,7 +3525,7 @@ a {
   margin-left: 15px;
 }
 .metro .vertical-menu ul.secondary li a {
-  font-family: 'Segoe UI Semibold_', 'Open Sans Bold', Verdana, Arial, Helvetica, sans-serif;
+  /* font-family: 'Segoe UI Semibold_', 'Open Sans Bold', Verdana, Arial, Helvetica, sans-serif; */
   font-weight: bold;
   color: #000000;
   font-size: 1.6rem;
@@ -3553,7 +3553,7 @@ a {
 .metro .horizontal-menu li a {
   display: inline-block;
   text-decoration: none;
-  font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif;
+  /* font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif; */
   font-weight: 300;
   letter-spacing: 0.00em;
   font-size: 2.5rem;
@@ -3606,7 +3606,7 @@ a {
 .metro .side-menu li a {
   display: block;
   text-decoration: none;
-  font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif;
+  /* font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif; */
   font-weight: 300;
   letter-spacing: 0.00em;
   font-size: 2.5rem;
@@ -3618,7 +3618,7 @@ a {
   color: inherit;
 }
 .metro .side-menu li.title {
-  font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif;
+  /* font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif; */
   font-weight: 300;
   color: #000000;
   letter-spacing: 0.00em;
@@ -3636,7 +3636,7 @@ a {
 }
 .metro .side-menu.compact li.title {
   margin-bottom: 10px;
-  font-family: 'Segoe UI Semibold_', 'Open Sans Bold', Verdana, Arial, Helvetica, sans-serif;
+  /* font-family: 'Segoe UI Semibold_', 'Open Sans Bold', Verdana, Arial, Helvetica, sans-serif; */
   font-weight: bold;
   color: #000000;
   font-size: 1.6rem;
@@ -3650,7 +3650,7 @@ a {
   margin-left: 15px;
 }
 .metro .side-menu ul.secondary li a {
-  font-family: 'Segoe UI Semibold_', 'Open Sans Bold', Verdana, Arial, Helvetica, sans-serif;
+  /* font-family: 'Segoe UI Semibold_', 'Open Sans Bold', Verdana, Arial, Helvetica, sans-serif; */
   font-weight: bold;
   color: #000000;
   font-size: 1.6rem;
@@ -3736,7 +3736,7 @@ a {
 .metro .dropdown-menu li a {
   display: block;
   text-decoration: none;
-  font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif;
+  /* font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif; */
   font-weight: 300;
   letter-spacing: 0.00em;
   font-size: 2.5rem;
@@ -3748,7 +3748,7 @@ a {
   color: inherit;
 }
 .metro .dropdown-menu li.title {
-  font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif;
+  /* font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif; */
   font-weight: 300;
   color: #000000;
   letter-spacing: 0.00em;
@@ -3766,7 +3766,7 @@ a {
 }
 .metro .dropdown-menu.compact li.title {
   margin-bottom: 10px;
-  font-family: 'Segoe UI Semibold_', 'Open Sans Bold', Verdana, Arial, Helvetica, sans-serif;
+  /* font-family: 'Segoe UI Semibold_', 'Open Sans Bold', Verdana, Arial, Helvetica, sans-serif; */
   font-weight: bold;
   color: #000000;
   font-size: 1.6rem;
@@ -3780,7 +3780,7 @@ a {
   margin-left: 15px;
 }
 .metro .dropdown-menu ul.secondary li a {
-  font-family: 'Segoe UI Semibold_', 'Open Sans Bold', Verdana, Arial, Helvetica, sans-serif;
+  /* font-family: 'Segoe UI Semibold_', 'Open Sans Bold', Verdana, Arial, Helvetica, sans-serif; */
   font-weight: bold;
   color: #000000;
   font-size: 1.6rem;
@@ -4058,7 +4058,7 @@ a {
   padding: 15px;
   line-height: 15px;
   color: inherit;
-  font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif;
+  /* font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif; */
   font-size: 14px;
   position: relative;
 }
@@ -4226,7 +4226,7 @@ a {
   padding: 15px;
   line-height: 15px;
   color: inherit;
-  font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif;
+  /* font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif; */
   font-size: 14px;
 }
 .metro .navigation-bar .element-menu > li > a.dropdown-toggle,
@@ -4426,7 +4426,7 @@ a {
 .metro .tile-area .user-id .user-id-name .last-name {
   display: block;
   color: inherit;
-  font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif;
+  /* font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif; */
   line-height: 12pt;
 }
 .metro .tile-area .user-id .user-id-name .first-name {
@@ -4815,7 +4815,7 @@ a {
   color: #ffffff;
 }
 .metro .tile-group .tile-group-title {
-  font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif;
+  /* font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif; */
   font-size: 18px;
   line-height: 20px;
   position: absolute;
@@ -5523,7 +5523,7 @@ a {
   cursor: pointer;
   display: inline-block;
   outline: none;
-  font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif;
+  /* font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif; */
   font-size: 14px;
   line-height: 16px;
   margin: auto;
@@ -5816,7 +5816,7 @@ a {
 }
 .metro .sidebar > ul li.title {
   padding: 20px 20px 10px 20px;
-  font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif;
+  /* font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif; */
   font-weight: 300;
   letter-spacing: 0.00em;
   font-size: 2.5rem;
@@ -5896,7 +5896,7 @@ a {
 .metro .sidebar > ul ul li a {
   display: block;
   text-decoration: none;
-  font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif;
+  /* font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif; */
   font-weight: 300;
   letter-spacing: 0.00em;
   font-size: 2.5rem;
@@ -5908,7 +5908,7 @@ a {
   color: inherit;
 }
 .metro .sidebar > ul ul li.title {
-  font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif;
+  /* font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif; */
   font-weight: 300;
   color: #000000;
   letter-spacing: 0.00em;
@@ -5926,7 +5926,7 @@ a {
 }
 .metro .sidebar > ul ul.compact li.title {
   margin-bottom: 10px;
-  font-family: 'Segoe UI Semibold_', 'Open Sans Bold', Verdana, Arial, Helvetica, sans-serif;
+  /* font-family: 'Segoe UI Semibold_', 'Open Sans Bold', Verdana, Arial, Helvetica, sans-serif; */
   font-weight: bold;
   color: #000000;
   font-size: 1.6rem;
@@ -5940,7 +5940,7 @@ a {
   margin-left: 15px;
 }
 .metro .sidebar > ul ul ul.secondary li a {
-  font-family: 'Segoe UI Semibold_', 'Open Sans Bold', Verdana, Arial, Helvetica, sans-serif;
+  /* font-family: 'Segoe UI Semibold_', 'Open Sans Bold', Verdana, Arial, Helvetica, sans-serif; */
   font-weight: bold;
   color: #000000;
   font-size: 1.6rem;
@@ -6392,7 +6392,7 @@ a {
   top: -40px;
   min-width: 30px;
   text-align: center;
-  font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif;
+  /* font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif; */
   font-size: 14px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3), 0 3px 8px rgba(0, 0, 0, 0.2);
   display: none;
@@ -7792,7 +7792,7 @@ a {
   cursor: pointer;
 }
 .metro .streamer .streams .stream .stream-title {
-  /* font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif; */
+  /* /* font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif; */ */
   font-size: 12px;
   line-height: 12px;
 }
@@ -7800,7 +7800,7 @@ a {
   position: absolute;
   left: 5px;
   bottom: 5px;
-  /* font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif; */
+  /* /* font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif; */ */
   font-size: 11px;
   line-height: 11px;
 }
@@ -7924,7 +7924,7 @@ a {
 }
 .metro .streamer .events .event-stream .event .event-content-data .title {
   position: relative;
-  /* font-family: 'Segoe UI Semibold_', 'Open Sans Bold', Verdana, Arial, Helvetica, sans-serif; */
+  /* /* font-family: 'Segoe UI Semibold_', 'Open Sans Bold', Verdana, Arial, Helvetica, sans-serif; */ */
   font-size: 14px;
   line-height: 14px;
   margin: 3px 0 0;
@@ -8269,7 +8269,7 @@ a {
   cursor: pointer;
   display: inline-block;
   outline: none;
-  /* font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif; */
+  /* /* font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif; */ */
   font-size: 14px;
   line-height: 16px;
   margin: auto;
@@ -8420,7 +8420,7 @@ a {
   cursor: pointer;
   display: inline-block;
   outline: none;
-  /* font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif; */
+  /* /* font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif; */ */
   font-size: 14px;
   line-height: 16px;
   margin: auto;
@@ -8520,7 +8520,7 @@ a {
   padding: 10px;
   background-color: #eeeeee;
   width: 100%;
-  /* font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif; */
+  /* /* font-family: 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, Helvetica, sans-serif; */ */
   font-weight: 300;
   letter-spacing: 0.00em;
   font-size: 2.5rem;
@@ -8588,7 +8588,7 @@ a {
   top: 30px;
   color: #999999 !important;
   margin: 5px 10px;
-  /* font-family: 'Segoe UI Semibold_', 'Open Sans Bold', Verdana, Arial, Helvetica, sans-serif; */
+  /* /* font-family: 'Segoe UI Semibold_', 'Open Sans Bold', Verdana, Arial, Helvetica, sans-serif; */ */
   font-weight: bold;
   font-size: 1.6rem;
   line-height: 1.6rem;
