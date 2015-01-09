@@ -18,7 +18,7 @@ permalink: /metro/
 
 <div class="row">
 
-<div class="tile bg-black">
+<div class="tile bg-black double double-vertical">
     <div class="brand">
         <div class="badge bg-red">{{ codes_count }}</div>
 		<div class="tile-status">
@@ -27,117 +27,7 @@ permalink: /metro/
     </div>
 </div>
 
-<div class="tile bg-black">
-    <div class="brand">
-        <div class="badge bg-red">{{ publications_count }}</div>
-		<div class="tile-status">
-        	<span class="name">publications</span>
-    	</div>
-    </div>
-</div>
-
-<div class="tile bg-black">
-    <div class="brand">
-        <div class="badge bg-red">{{ designs_count }}</div>
-		<div class="tile-status">
-        	<span class="name">designs</span>
-    	</div>
-    </div>
-</div>
-
-<!-- STOP HERE -->
-
-<div class="tile bg-black">
-    <div class="brand">
-        <div class="badge bg-red">{{ codes_count }}</div>
-		<div class="tile-status">
-        	<span class="name">codes</span>
-    	</div>
-    </div>
-</div>
-
-<div class="tile bg-black">
-    <div class="brand">
-        <div class="badge bg-red">{{ publications_count }}</div>
-		<div class="tile-status">
-        	<span class="name">publications</span>
-    	</div>
-    </div>
-</div>
-
-<div class="tile bg-black">
-    <div class="brand">
-        <div class="badge bg-red">{{ designs_count }}</div>
-		<div class="tile-status">
-        	<span class="name">designs</span>
-    	</div>
-    </div>
-</div>
-
-<div class="tile bg-black">
-    <div class="brand">
-        <div class="badge bg-red">{{ codes_count }}</div>
-		<div class="tile-status">
-        	<span class="name">codes</span>
-    	</div>
-    </div>
-</div>
-
-<div class="tile bg-black">
-    <div class="brand">
-        <div class="badge bg-red">{{ publications_count }}</div>
-		<div class="tile-status">
-        	<span class="name">publications</span>
-    	</div>
-    </div>
-</div>
-
-<div class="tile bg-black">
-    <div class="brand">
-        <div class="badge bg-red">{{ designs_count }}</div>
-		<div class="tile-status">
-        	<span class="name">designs</span>
-    	</div>
-    </div>
-</div>
-
-<div class="tile bg-black">
-    <div class="brand">
-        <div class="badge bg-red">{{ codes_count }}</div>
-		<div class="tile-status">
-        	<span class="name">codes</span>
-    	</div>
-    </div>
-</div>
-
-<div class="tile bg-black">
-    <div class="brand">
-        <div class="badge bg-red">{{ publications_count }}</div>
-		<div class="tile-status">
-        	<span class="name">publications</span>
-    	</div>
-    </div>
-</div>
-
-<div class="tile bg-black">
-    <div class="brand">
-        <div class="badge bg-red">{{ designs_count }}</div>
-		<div class="tile-status">
-        	<span class="name">designs</span>
-    	</div>
-    </div>
-</div>
-
-<div class="tile bg-black">
-    <div class="brand">
-        <div class="badge bg-red">{{ codes_count }}</div>
-		<div class="tile-status">
-        	<span class="name">codes</span>
-    	</div>
-    </div>
-</div>
-
-<div class="tile bg-black">
+<div class="tile bg-black quadro quadro-vertical">
     <div class="brand">
         <div class="badge bg-red">{{ publications_count }}</div>
 		<div class="tile-status">
