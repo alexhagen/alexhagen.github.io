@@ -1,7 +1,10 @@
 {% include head-dark.html %}
 
+<section class="article archive">
+<article class="archive-wrap">
   <!-- Codes Box -->
   <h1 class="page-heading">Codes</h1>
+
     <ul class="post-list">
         {% for post in site.categories.codes %}
           <li>
@@ -51,6 +54,9 @@
       </ul>
 
 <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</section>
+</article>
 
 <!--
     <div id='bump'>
