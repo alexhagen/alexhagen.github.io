@@ -8,11 +8,11 @@
     <ul class="post-list">
         {% for post in site.categories.codes %}
           <li>
-            <span class="post-meta">
+            <span class="deets">
               {{ post.date | date: "%b %Y" }}
             </span>
             <h2>
-              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+              <a class="bb" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
             </h2>
 
           </li>
@@ -23,14 +23,14 @@
     <ul class="post-list">
       {% for post in site.categories.publications %}
         <li>
-          <span class="post-meta">
+          <span class="deets">
             {{ post.date | date: "%b %Y" }}
             {% if post.tags contains 'coauthor' %} - contributing author{% endif %}
             {% if post.tags contains 'poster' %} - poster only{% endif %}
             {% if post.fulltext %} - full text available{% endif %}
           </span>
           <h2>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            <a class="bb" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           </h2>
 
         </li>
@@ -42,11 +42,11 @@
     <ul class="post-list">
         {% for post in site.categories.designs %}
           <li>
-            <span class="post-meta">
+            <span class="deets">
               {{ post.date | date: "%b %Y" }}
             </span>
             <h2>
-              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+              <a class="bb" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
             </h2>
 
           </li>
