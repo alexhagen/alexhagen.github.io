@@ -585,28 +585,34 @@ footer {
             color: transparentize($white, .7);
         }
     }
-    
-    .list-title {
-        margin-bottom: $lh/2;
-        border-bottom: 2px solid $link;
-        font-style: italic;
-        font-size: $fs4;
-    }
-    .prev-posts {
-        @include column(6,10);
-        max-width: 600px;
-        min-height: 250px;
-        padding-left: 5vw;
+
+    .footer-col-4 {
+        @include column(4,10);
+        padding-left:2vw;
+        padding-top:$lhsmall*2;
+        max-height:250px;
         p {
-            padding-top: $lh*2;
+            font-size: $fs5;
+            line-height: $lhsmall;
         }
+
+        h1 {
+            margin-bottom: $lh/2;
+            border-bottom: 2px solid $link;
+            font-style: italic;
+            font-size: $fs4;
+        }
+
+
         li {
             @include row(12);
             margin-top: $lh/2;
             .recent-title {
                 @include column(8,12);
+                font-size: $fs5;
                 font-style: italic;
                 a {
+                    padding-top: $lh*2;
                     &:hover {
                         color: $white;
                     }
@@ -624,13 +630,13 @@ footer {
             }
         }
     }
+
     
     .social {
-        position: absolute;
-        top: 109px;
-        @include column(2,12);
-        right: 5vw;
+        @include column(2,10);
         font-style: italic;
+        padding-top: $lh*2;
+        padding-left:2vw;
         a {
             &:hover {
                 color: $white;
