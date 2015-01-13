@@ -555,27 +555,25 @@ header.site-header nav {
     height: $footerHeight/4 !important;
 }
 
-@media (max-width: 1000px){
+@media (min-width: 1000px){
     footer {
-        min-height: 750px;
+        height: $footerHeight;
     }
     .footer-col-4 {
-        clear: both;
-        padding-top:$lhsmall;
+        @include column(4,10);
         }
     .social {
-        clear: both;
-        padding-top:$lhsmall;
+        @include column(2,10);
     }
 }
 
 footer {
     width: 100%;
     background: $black;
-    height: $footerHeight;
     font-size: $fsp;
     color: $white;
-    position: relative;
+    position: absolute;
+    bottom:0px;
         
     // Contain that ish
     section {
@@ -604,10 +602,8 @@ footer {
 
     .footer-col-4 {
 
-        @include column(4,10);
         padding-left:2vw;
         padding-top:$lhsmall*2;
-        max-height:250px;
         p {
             font-size: $fs5;
             line-height: $lhsmall;
@@ -650,9 +646,8 @@ footer {
 
     
     .social {
-        @include column(2,10);
         font-style: italic;
-        padding-top: $lh*2;
+        padding-top:$lh*2;
         padding-left:2vw;
         a {
             &:hover {
@@ -682,10 +677,6 @@ footer {
     }
 }
 
-.disqus {
-    margin-top: $lh*3;
-}
-
 
 /* Tablet
    ========================================================================== */
@@ -704,55 +695,16 @@ blockquote, blockquote p {
 
 footer {
     font-size: $fs5;
-    
-    .prev-posts {
-        li  {
-          
-          .recent-title {
-              
-          }
-          
-          span.date {
-              font-size: $fs6;
-          }  
-        }
     }
     
-    .social {
-        right: 10vw;
-    }
 }
     
-    
-}
 
 /* Mobile
    ========================================================================== */
 
 @media only screen and (max-width: 500px) {
-    footer {
-    
-    .social {
-        display: none;
-    }
-    
-    aside {
-        width: 90%;
-        margin: 0 auto;
-    }
-    
-    .prev-posts {
-        @include column(9);
-        padding-left: 0;
-        float: none;
-        margin: 0 auto;
-        display: block;
-        li {
-            margin-top: $lh/2;
-        }
-    }
-    
-    }
+
 }
 
 @media only screen and (max-width : 680px) {
