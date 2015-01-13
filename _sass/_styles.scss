@@ -625,9 +625,6 @@ footer {
                 font-style: italic;
                 a {
                     padding-top: $lh*2;
-                    &:hover {
-                        color: $white;
-                    }
                 }
             }
             span.date {
@@ -649,15 +646,18 @@ footer {
         font-style: italic;
         padding-top:$lh*2;
         padding-left:2vw;
-        a {
-            &:hover {
-                color: $white;
-            }
-        }
 
         .icon svg{
             max-height:$lhsmall;
             max-width:$lhsmall;
+        }
+
+        a {
+            &:hover {
+                .icon svg path{
+                    fill:$accent;
+                }
+            }
         }
 
         .icon {
