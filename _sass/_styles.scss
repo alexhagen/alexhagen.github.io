@@ -341,7 +341,7 @@ header.site-header nav {
     display: block;
     margin: 0 auto;
     float: none;
-    min-height: 500px;
+    min-height: 650px;
 }
 
 .archive-wrap {
@@ -439,7 +439,7 @@ header.site-header nav {
 
 .post {
     
-    min-height: 500px;
+    min-height: 650px;
     
     .deets {
         position: relative;
@@ -572,8 +572,7 @@ footer {
     background: $black;
     font-size: $fsp;
     color: $white;
-    position: absolute;
-    bottom:0px;
+    position: relative;
         
     // Contain that ish
     section {
