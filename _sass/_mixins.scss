@@ -112,6 +112,8 @@
     -webkit-column-count: $count;
     -moz-column-count:    $count;
     column-count:         $count;
+    -moz-column-fill:     auto;
+    column-fill:          auto;
 
     -webkit-column-gap:   $gap;
     -moz-column-gap:      $gap;

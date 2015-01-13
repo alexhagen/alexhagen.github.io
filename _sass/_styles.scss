@@ -555,6 +555,20 @@ header.site-header nav {
     height: $footerHeight/4 !important;
 }
 
+@media (max-width: 1000px){
+    footer {
+        min-height: 750px;
+    }
+    .footer-col-4 {
+        clear: both;
+        padding-top:$lhsmall;
+        }
+    .social {
+        clear: both;
+        padding-top:$lhsmall;
+    }
+}
+
 footer {
     width: 100%;
     background: $black;
@@ -586,7 +600,10 @@ footer {
         }
     }
 
+
+
     .footer-col-4 {
+
         @include column(4,10);
         padding-left:2vw;
         padding-top:$lhsmall*2;
@@ -642,6 +659,18 @@ footer {
                 color: $white;
             }
         }
+
+        .icon svg{
+            max-height:$lhsmall;
+            max-width:$lhsmall;
+        }
+
+        .icon {
+            margin-right:5px;
+            position:relative;
+            top:$lhsmall/4;
+        }
+
         ul {
             li {
                 margin-bottom: $lh/2;
