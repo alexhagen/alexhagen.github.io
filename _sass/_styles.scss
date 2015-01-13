@@ -632,6 +632,7 @@ footer {
                 }
             }
             span.date {
+                padding-right:1em;
                 float: none;
                 color: transparentize($grey-light, .4);
                 @include column(4,12);
