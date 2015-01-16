@@ -2,16 +2,33 @@
 <title>{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}</title>
 <meta name="description" content="{{ page.description }}">
 <meta name="keywords" content="{{ page.tags | join: ', ' }}">
-
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
   tex2jax: {
-    inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+    inlineMath: [ ['$','$'], ['\\(','\\)'] ],
   },
   "HTML-CSS": {
-    scale: "250"
-  }
+    scale: "200"
+  },
+  TeX: {
+    equationNumbers: {
+      autoNumber: "all"
+    },
+    showMathMenu: false
 });
+
+</script>
+
+<script type="text/x-mathjax-config">
+  //
+  //  The document is hidden until MathJax is finished, then
+  //   this function runs, making it visible again.
+  //
+  MathJax.Callback.Queue(function () {
+    //$(".mtext").switchClass("mtext","math");
+    MathJax.Hub.Typeset();
+  });
 </script>
 
 <script type="text/javascript"
