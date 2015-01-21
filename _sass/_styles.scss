@@ -220,16 +220,32 @@ header.site-header a.menu {
 header.site-header hgroup h1, header.site-header nav ul {
   font-family: $sans;
 }
+
+.logo svg {
+    display: inline-block;
+    height: 50px;
+    vertical-align: middle;
+    position:relative;
+    top:-13px;
+}
+
+.logo svg g path {
+    fill: $black;
+}
+
 header.site-header hgroup {
   float: left;
   padding-left: 5vw;
   h1 {
       font-weight: 700;
+      display: inline-block;
       font-size: 18px;
       line-height: 100%;
-      color: $accent;
+      color: $black;
       letter-spacing: 2px;
       text-transform: uppercase;
+      position:relative;
+      top:-12px;
   }
   a {
       color: #fff;
@@ -238,6 +254,14 @@ header.site-header hgroup {
       &:hover {
         @include tshd(0, 0, 3px, rgba(255,255,255,.6));
         @include transit(all, .2s, ease);
+        .logo svg g path {
+            @include transit(all, .2s, ease-in-out);
+            fill:$link;
+        }
+        .title {
+            @include transit(all, .2s, ease-in-out);
+            color:$link;
+        }
       }
   }
 }

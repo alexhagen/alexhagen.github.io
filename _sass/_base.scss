@@ -202,3 +202,20 @@ pre {
         }
     }
 }
+
+.logo {
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+    
+    > svg {
+        display: inline;
+        width: 20px;
+        height: 20px;
+        vertical-align: middle;
+
+        path {
+            fill: $brand-color;
+        }
+    }
+}

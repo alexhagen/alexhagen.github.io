@@ -73,7 +73,14 @@ MathJax.Hub.Config({
     <header class="site-header darken">
       <div class="wrap">
         <hgroup>
-          <h1><a href="/">{{ site.title }}</a></h1>
+          <a href="/">
+                <span class="logo">
+                  <svg viewBox="0 0 60 60">
+                    {% include logo.svg %}
+                  </svg>
+                </span>
+            <h1 class="title">{{ site.title }}</h1>
+          </a>
         </hgroup>
         <a href="#nav" class="menu"><span class='icons'>☰</span></a>
         <nav role="navigation">
