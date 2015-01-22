@@ -12,28 +12,7 @@
 <meta property="og:url" content="{{ site.url }}{{ page.url }}">
 <meta property="og:site_name" content="{{ site.title }}">
 
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  tex2jax: {
-    inlineMath: [ ['$','$'], ['\\(','\\)'] ],
-  },
-  "HTML-CSS": {
-    scale: "200"
-  },
-  TeX: {
-    equationNumbers: {
-      autoNumber: "all"
-    },
-  },
-    showMathMenu: false
-});
-
-</script>
-
-<script type="text/javascript"
-     src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-
+{% include mathjaxconfig.js %}
 
 <link href="{{ site.url }}/feed.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
 
