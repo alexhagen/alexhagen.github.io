@@ -1,210 +1,50 @@
 {% include head-dark.html %}
 
-<style>
-
-/* CSS */
-.gridWrapper {
-      overflow: hidden;
-      margin: 10px;
-}
-.tile {
-      float: left;
-      position: relative;
-      width: 20%;
-      padding-bottom: 20%;
-    }
-.tile-double {
-  float:left;
-  position:relative;
-  width:40%;
-  padding-bottom:20%;
-}
-.tileInner {
-      position: absolute;
-      left: 10px;
-      right: 10px;
-      top: 10px;
-      bottom: 10px;
-      overflow: hidden;
-    }
-.tileInner img {
-      width: 100%;
-    }
-/*Media Query to Adapt Screen to iPhone*/
-@media only screen and (max-width : 320px) {
-    .tile {
-        width: 100%;
-        padding-bottom: 100%;
-      }
-}
-/*Media Query to Adapt Screen to iPhone Retina*/
-@media only screen and (max-width : 640px) {
-    .box {
-        width: 50%;
-        padding-bottom: 50%;
-      }
-}
-
-</style>
-
 <section class="article archive">
   <article class="archive-wrap">
     
-<p>
     <!-- Define Responsive Image Tiles: For Best Effect Use Square Images and a lot more Images -->
      <div class="gridWrapper">
-      <div class="tile">
-        <div class="tileInner">
-          <img src="/image.png" alt="peer-reviewed-papers"/>
+      <div class="tile-double double">
+        <div class="tileInner papers">
+          <p>peer-reviewed-papers</p>
         </div>
       </div>
       <div class="tile">
-        <div class="tileInner">
-          <img src="/image.png" alt="coauthored-papers"/>
+        <div class="tileInner code">
+          <p>open-source-code</p>
+        </div>
+      </div>
+      <div class="tile-double">
+        <div class="tileInner design">
+          <p>design</p>
         </div>
       </div>
       <div class="tile">
-        <div class="tileInner">
-          <img src="/image.png" alt="posters"/>
+        <div class="tileInner papers">
+          <p>posters</p>
         </div>
       </div>
       <div class="tile">
-        <div class="tileInner">
-          <img src="/image.png" alt="designs"/>
+        <div class="tileInner papers">
+          <p>presentations</p>
+        </div>
+      </div>
+      <div class="tile-double">
+        <div class="tileInner papers">
+          <p>co-authored-papers</p>
         </div>
       </div>
       <div class="tile">
-        <div class="tileInner">
-          <img src="/image.png" alt="codes"/>
-        </div>
-      </div>
-
-      <div class="tile">
-        <div class="tileInner">
-          <img src="/image.png" alt="peer-reviewed-papers"/>
+        <div class="tileInner class">
+          <p>teaching-materials</p>
         </div>
       </div>
       <div class="tile">
-        <div class="tileInner">
-          <img src="/image.png" alt="coauthored-papers"/>
+        <div class="tileInner code">
+          <p>simulations</p>
         </div>
       </div>
-      <div class="tile">
-        <div class="tileInner">
-          <img src="/image.png" alt="posters"/>
-        </div>
-      </div>
-      <div class="tile">
-        <div class="tileInner">
-          <img src="/image.png" alt="designs"/>
-        </div>
-      </div>
-      <div class="tile">
-        <div class="tileInner">
-          <img src="/image.png" alt="codes"/>
-        </div>
-      </div>
-      <div class="tile">
-        <div class="tileInner">
-          <img src="/image.png" alt="peer-reviewed-papers"/>
-        </div>
-      </div>
-      <div class="tile">
-        <div class="tileInner">
-          <img src="/image.png" alt="coauthored-papers"/>
-        </div>
-      </div>
-      <div class="tile">
-        <div class="tileInner">
-          <img src="/image.png" alt="posters"/>
-        </div>
-      </div>
-      <div class="tile">
-        <div class="tileInner">
-          <img src="/image.png" alt="designs"/>
-        </div>
-      </div>
-      <div class="tile">
-        <div class="tileInner">
-          <img src="/image.png" alt="codes"/>
-        </div>
-      </div>
-      <div class="tile">
-        <div class="tileInner">
-          <img src="/image.png" alt="peer-reviewed-papers"/>
-        </div>
-      </div>
-      <div class="tile">
-        <div class="tileInner">
-          <img src="/image.png" alt="coauthored-papers"/>
-        </div>
-      </div>
-      <div class="tile">
-        <div class="tileInner">
-          <img src="/image.png" alt="posters"/>
-        </div>
-      </div>
-      <div class="tile">
-        <div class="tileInner">
-          <img src="/image.png" alt="designs"/>
-        </div>
-      </div>
-      <div class="tile">
-        <div class="tileInner">
-          <img src="/image.png" alt="codes"/>
-        </div>
-      </div>
-      <div class="tile">
-        <div class="tileInner">
-          <img src="/image.png" alt="peer-reviewed-papers"/>
-        </div>
-      </div>
-      <div class="tile">
-        <div class="tileInner">
-          <img src="/image.png" alt="coauthored-papers"/>
-        </div>
-      </div>
-      <div class="tile">
-        <div class="tileInner">
-          <img src="/image.png" alt="posters"/>
-        </div>
-      </div>
-      <div class="tile">
-        <div class="tileInner">
-          <img src="/image.png" alt="designs"/>
-        </div>
-      </div>
-      <div class="tile">
-        <div class="tileInner">
-          <img src="/image.png" alt="codes"/>
-        </div>
-      </div>
-      <div class="tile">
-        <div class="tileInner">
-          <img src="/image.png" alt="peer-reviewed-papers"/>
-        </div>
-      </div>
-      <div class="tile">
-        <div class="tileInner">
-          <img src="/image.png" alt="coauthored-papers"/>
-        </div>
-      </div>
-      <div class="tile">
-        <div class="tileInner">
-          <img src="/image.png" alt="posters"/>
-        </div>
-      </div>
-      <div class="tile">
-        <div class="tileInner">
-          <img src="/image.png" alt="designs"/>
-        </div>
-      </div>
-      <div class="tile">
-        <div class="tileInner">
-          <img src="/image.png" alt="codes"/>
-        </div>
-      </div>
-
 
     </div>
   </article>

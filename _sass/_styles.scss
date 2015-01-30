@@ -574,6 +574,55 @@ header.site-header nav {
     }
 }
 
+/* Grid Stuff */
+
+.gridWrapper {
+      overflow: hidden;
+      margin: 10px;
+}
+.tile {
+      float: left;
+      position: relative;
+      width: 20%;
+      padding-bottom: 20%;
+    }
+.tile-double {
+  float:left;
+  position:relative;
+  width:40%;
+  padding-bottom:20%;
+}
+.tileInner {
+      position: absolute;
+      left: 10px;
+      right: 10px;
+      top: 10px;
+      bottom: 10px;
+      padding: 10px;
+      overflow: hidden;
+      background-color: $grey-light;
+      &:hover {
+        background-color: $accent;
+      }
+    }
+.papers {
+
+}
+.code {
+
+}
+.design {
+
+}
+.class {
+
+}
+
+.double {
+    padding-bottom:40%;
+}
+
+
 /* Footer Stuff */
 .push {
     height: $footerHeight/4 !important;
@@ -732,6 +781,16 @@ footer {
 }
 
 @media only screen and (max-width : 680px) {
+
+.tile {
+    width: 50%;
+    height: 144px;
+}
+
+.tile-double {
+    width: 100%;
+    height: 144px;
+}
  
  /* All Posts */
       
@@ -843,6 +902,10 @@ footer {
 
 
 @media only screen and (max-width: $breakpoint-1-max-width) {
+
+.tile {
+    width: 100%;
+}
 
 .post {
     @include column(9);
