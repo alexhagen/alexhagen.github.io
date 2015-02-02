@@ -1,5 +1,15 @@
 # Alex Hagen's Portfolio
 
+- What is a good metric for journal publications?
+	- Impact Factor
+	- Star/icon for an award
+- What is a good metric for codes?
+- What is a good metric for designs?
+- What is a good metric for simulations?
+- What is a good metric for teaching material?
+- What is a good metric for posters?
+- What is a good metric for presentations?
+
 ## To Do:
 - [x] Put up Publications
 	- [x] Publications Template
@@ -27,12 +37,12 @@
 	- [ ] pressure chamber
 	- [ ] gator scoreboard?
 - [x] New styling - [Balzac Theme](http://jekyll.gtat.me/about/)
-- [ ] New front page
+- [x] New front page
 - [ ] New Publications page: [mockup](http://www.google.com)
 - [ ] new designs page: [mockup](http://www.google.com)
 	- [ ] Idea from [Thinny 2](http://camporez.com/blog/thinny-2/)
 - [ ] new codes page: [mockup](http://www.google.com)
-- [ ] Convert front page to tiles
+- [x] Convert front page to tiles
 - [ ] add accounts buttons to top right
 	- [ ] github
 	- [ ] researchgate
