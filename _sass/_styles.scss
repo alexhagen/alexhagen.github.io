@@ -600,7 +600,37 @@ header.site-header nav {
       bottom: 10px;
       padding: 10px;
       overflow: hidden;
-      background-color: $grey-medium;
+      background-color: $grey-light;
+      a {
+        position: absolute;
+        left: 10px;
+        right: 10px;
+        top: 10px;
+        bottom: 10px;
+        padding:10px;
+        overflow:hidden;
+        p {
+                margin-left:auto;
+                margin-right:auto;
+                @include ghostVerticalAlign();
+                text-align:center;
+                &:after {
+                    content: attr(data-content);
+                    color:$white;
+                    &:hover {
+                        color:$black;
+                    }
+                }
+        }
+        &:hover {
+            p:after {
+                color: $black;
+                opacity: 1;
+                @include transit(all,1s, ease-in-out);
+            }
+            background: rgba($white,0.4);
+        }
+      }
       &:hover {
         background-color: $grey-light;
       }
