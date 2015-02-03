@@ -348,15 +348,6 @@ header.site-header nav {
         position: relative;
         top: 0;
         z-index: -1;
-        padding-left: 50px;
-        padding-right: 50px;
-        padding-bottom: 20px;
-        padding-top: 50px;
-        margin-bottom:$lh;
-        li {
-            span {
-            }
-        }
     }
     
     // Header Stuff
@@ -662,9 +653,9 @@ header.site-header nav {
 
 /* plot stuff */
 .featured-chart {
-    text-align:center;
     h1{
-        align:center;
+        width:100%;
+        text-align:center;
         position:absolute;
         color: rgba($black,0.5);
     }
@@ -672,7 +663,7 @@ header.site-header nav {
 .chart{
   display:table;
   table-layout: fixed;   
-  width:80%;
+  width:100%;
   max-width:1280px;
   height:100%;
   margin:0 auto;
