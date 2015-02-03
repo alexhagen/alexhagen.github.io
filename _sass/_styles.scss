@@ -661,13 +661,22 @@ header.site-header nav {
     }
 
 /* plot stuff */
+.featured-chart {
+    text-align:center;
+    h1{
+        align:center;
+        position:absolute;
+        color: rgba($black,0.5);
+    }
+}
 .chart{
   display:table;
   table-layout: fixed;   
-  width:100%;
+  width:80%;
+  max-width:1280px;
   height:100%;
   margin:0 auto;
-  
+
   li{
     position:relative;
     display:table-cell;

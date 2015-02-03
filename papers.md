@@ -1,6 +1,6 @@
 ---
 layout: post-feature-chart
-title: papers
+title: Papers
 permalink: /papers/
 ---
 
