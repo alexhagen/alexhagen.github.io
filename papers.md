@@ -1,5 +1,5 @@
 ---
-layout: post-feature-chart
+layout: post-light-feature
 title: Papers
 permalink: /papers/
 ---
