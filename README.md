@@ -3,6 +3,7 @@
 - Star/icon for an award
 
 ## To Do:
+- [ ] New Footer
 - [ ] Write css/jekyll bar graph
 - [ ] write css/jekyll line graph
 - [ ] write css/jekyll frosted picture
