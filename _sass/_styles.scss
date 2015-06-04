@@ -8,8 +8,8 @@ body {
   text-size-adjust: 100%;
   background: $white;
   min-height: 100%;
-  height: 100%;
   overflow-x: hidden;
+  margin-bottom:0px;
 }
 
 h1,h2,h3,h4,h5 {
@@ -149,7 +149,6 @@ input {
 /************ Layout *************/
 
 #bump {
-    min-height: 100%;
     height: auto;
     margin: 0 auto -$footerHeight;
 }
@@ -729,6 +728,9 @@ header.site-header nav {
     .footer-col-4 {
         @include column(4,10);
         }
+    .footer-col-2 {
+        @include column(2,10);
+        }
     .social {
         @include column(2,10);
     }
@@ -739,7 +741,24 @@ footer {
     background: $black;
     font-size: $fsp;
     color: $white;
-    position: relative;
+    position:fixed;
+    padding:0px;
+    bottom:0px;
+    margin:0px;
+    height:$footerHeight;
+
+    .logo svg {
+        display: inline-block;
+        height: 50px;
+        vertical-align: middle;
+        position:relative;
+        top:$lhsmall/4;
+    }
+
+    .logo svg g path {
+        fill: $white;
+    }
+
         
     // Contain that ish
     section {
@@ -765,11 +784,13 @@ footer {
     }
 
 
-
+    .footer-col-2 {
+        text-align:center;
+    }
     .footer-col-4 {
-
+        text-align:center;
         padding-left:2vw;
-        padding-top:$lhsmall*2;
+        padding-top:$lhsmall/2;
         p {
             font-size: $fs5;
             line-height: $lhsmall;
@@ -808,40 +829,7 @@ footer {
         }
     }
 
-    
-    .social {
-        font-style: italic;
-        padding-top:$lh*2;
-        padding-left:2vw;
 
-        .icon svg{
-            max-height:$lhsmall;
-            max-width:$lhsmall;
-        }
-
-        a {
-            &:hover {
-                .icon svg path{
-                    fill:$accent;
-                }
-            }
-        }
-
-        .icon {
-            margin-right:5px;
-            position:relative;
-            top:$lhsmall/4;
-        }
-
-        ul {
-            li {
-                margin-bottom: $lh/2;
-                &:last-child {
-                    margin-bottom: 0;
-                }
-            }
-        }
-    }
 }
 
 
