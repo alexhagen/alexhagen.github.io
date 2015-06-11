@@ -813,6 +813,7 @@ footer {
         height: $footerHeight !important;
     }
     footer {
+
         .right {
             text-align:left;
         }
@@ -877,6 +878,23 @@ blockquote, blockquote p {
 }
 
 @media only screen and (max-width : 680px) {
+
+footer {
+    background: $grey-light;
+    color: $black;
+
+    a:link, a:visited {
+        color: $black;
+    }
+
+    a:hover, a:active {
+        color: $accent;
+    }
+
+    .logo svg g path {
+        fill: $black;
+    }
+}
 
 .tile {
     width: 100%;
