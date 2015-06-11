@@ -29,9 +29,6 @@ tools:
 links:
   - title: About
     url: /about
-  - title: Github
-    url: https://github.com/alexhagen/
-    external: true
 
 timezone:    America/New_York
 future:      true
