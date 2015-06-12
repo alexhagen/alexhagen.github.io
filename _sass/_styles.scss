@@ -731,7 +731,7 @@ footer {
     bottom:0px;
     margin:0px;
 
-    p {
+    p,h5 {
         margin-bottom: $lhsmall/10;
         margin-top: $lhsmall/10;
     }
@@ -779,6 +779,12 @@ footer {
         }
 
         .aside {
+            font-size: $fs6;
+            line-height: 3*$lhsmall/4;
+            color: $grey-medium;
+        }
+
+        .commit-message {
             font-size: $fs6;
             line-height: 3*$lhsmall/4;
             color: $grey-medium;
@@ -836,6 +842,11 @@ footer {
         display:none;
     }
 
+    .updates {
+        height:0px;
+        overflow:hidden;
+        display:none;
+    }
     
     .footer-col-2 {
         @include column(2,10);
@@ -846,7 +857,6 @@ footer {
     }
     .footer-col-4 {
         @include column(8,10);
-        padding-top:0px;
         margin-top:0px;
     }
 }
