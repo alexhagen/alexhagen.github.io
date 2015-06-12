@@ -5,16 +5,6 @@ permalink: /cv/
 
 ---
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script src="./dist/javascripts/bundle.min.js"></script>
-<div id="latest-commits-widget">
-    <div id="latest-commits-header">
-      <i class="fontawesome-github gh-icon"></i>
-      <h4>Latest Commits</h4>
-    </div>
-    <ul id="commit-history"></ul>
-</div>
-
 ## Education
 
 - Doctor of Philosophy in Nuclear Engineering from Purdue University - Expected 2016
