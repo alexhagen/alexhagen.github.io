@@ -21,10 +21,10 @@ $.extend
 $ ->
   params = $.getUrlVars()
   # config parameters
-  username = params.username
-  repo = params.repo
-  limit = params.limit
-  branch = params.branch
+  username = alexhagen
+  repo = alexhagen.github.io
+  limit = 1
+  branch = gh-pages
   container = $('#latest-commits-widget')
 
   callback = (response) ->
