@@ -151,7 +151,9 @@ input {
 #bump {
     height: auto;
     margin: 0 auto -$footerHeight;
+    margin-bottom:$footerHeight;
 }
+
 
 .wrap {
     max-width: 1200px;
