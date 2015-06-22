@@ -891,7 +891,17 @@ blockquote, blockquote p {
 
 @media only screen and (max-width : 680px) {
 
+header.site-header {
+    position:fixed;
+    background-color:$white;
+}
+
+#bump {
+    margin-bottom:-$footerHeight;
+}
+
 footer {
+    position:relative;
     background: $grey-light;
     color: $black;
 
@@ -967,8 +977,7 @@ footer {
   
   header.site-header {
     min-height: 59px;
-    margin-top: 20px;
-    padding-top: 0;
+    padding-top: 20px;
   }
   
   header.site-header hgroup h1 {
