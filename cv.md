@@ -2,8 +2,16 @@
 layout: post-no-feature
 title: Cirriculum Vitae
 permalink: /cv/
+bibs:
+  authored:
+    file: authored.html
+    title: Article and Conference Publications
+  submitted:
+    file: submitted.html
+    title: Article and Conference Submissions
 
 ---
+
 
 ## Education
 
@@ -39,11 +47,7 @@ permalink: /cv/
 - Undergraduate Laboratory Intern at Argonne National Laboratory in the Nuclear Engineering Division - Summer 2011
   - Validated NEAMES project multiphysics fission reactor simulation against pre-existing neutronics codes (VARIANT, DIFF3D) and experimental data
 
-## Article and Thesis Submissions
-
-## Published Journal Articles
-
-## Published Conference Proceedings
+{% include bib.liquid bibs=page.bibs %}
 
 ## Honors and Awards
 
