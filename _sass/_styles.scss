@@ -891,6 +891,35 @@ blockquote, blockquote p {
 
 @media only screen and (max-width : 680px) {
 
+h1,h2,h3,h4,h5,h6 {
+    text-align:left;
+}
+
+.post {
+    ul {
+        display: block;
+        margin-bottom: $lh;
+        list-style: none;
+        list-style-type: none;
+        lh h1, lh h2, lh h3, lh h4, lh h5 {
+            @include underline(2px, solid, $grey-light);
+        }
+        li {
+            list-style: none;
+            list-style-type: none;
+            margin-left: $lh/2;
+            padding-left: $lh/6;
+        &:last-child {
+            margin-bottom: 0;
+            }
+        }
+        li:before {
+            content:'-';
+            padding-right:$lh/2;
+        }
+    }
+}
+
 header.site-header {
     position:fixed;
     background-color:$white;
