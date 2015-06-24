@@ -1,12 +1,12 @@
 {% if include.bibs.authored %}
 
-<h2 id='{{ include.bibs.authored.title | downcase | replace: ' ','-' }}'>{{ include.bibs.authored.title }}</h2>
+<h2 id='{{ include.bibs.authored.abbr | downcase | replace: ' ','-' }}'>{{ include.bibs.authored.title }}</h2>
 <p>{% include {{include.bibs.authored.file}} %}</p>
 
 {% endif %}
 {% if include.bibs.submitted %}
 
-<h2 id='{{ include.bibs.authored.title | downcase | replace: ' ','-' }}''>{{ include.bibs.submitted.title }}</h2>
+<h2 id='{{ include.bibs.submitted.abbr | downcase | replace: ' ','-' }}'>{{ include.bibs.submitted.title }}</h2>
 <p>{% include {{include.bibs.submitted.file}} %}</p>
 
 {% endif %}

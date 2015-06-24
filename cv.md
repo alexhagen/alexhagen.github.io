@@ -1,25 +1,28 @@
 ---
 layout: post-no-feature
 title: Cirriculum Vitae
+abbr: cv
 permalink: /cv/
 bibs:
   authored:
     file: authored.html
     title: Article and Conference Publications
+    abbr: pub
   submitted:
     file: submitted.html
     title: Article and Conference Submissions
+    abbr: subm
 
 ---
 
 
-## Education
+## Education {#edu}
 
 - Doctor of Philosophy in Nuclear Engineering from Purdue University - Expected 2016
 - Master of Science in Nuclear Engineering from Purdue University - May 2014
 - Bachelor of Science in Nuclear Engineering from Purdue University - May 2012
 
-## Academic Positions
+## Academic Positions {#acad-pos}
 
 - Graduate Researcher at Metastable Fluid Laboratory - Summer 2012 - Current
   -  Developed methodology for validating multiphysics simulation of Acoustically Tensioned Metastable Fluid Detector system, optimized system with design of a sealing lid, and supported Centrifugally Tensioned Metastable Fluid Detector research group with design and machine drawings
@@ -49,7 +52,7 @@ bibs:
 
 {% include bib.liquid bibs=page.bibs %}
 
-## Honors and Awards
+## Honors and Awards {#awards}
 
 - Received most votes for Magoon Teaching Assistance Award - Fall 2014
 - Best Paper Award at International Conference on Nuclear Engineering - Summer 2014
@@ -58,7 +61,7 @@ bibs:
 - National Merit Scholar - Spring 2007
 - Chosen as Indiana Delegate to International Science and Engineering Fair - Spring 2006 and Spring 2007
 
-## Service and Extracirricular Positions
+## Service and Extracirricular Positions {#service}
 
 - President of Nuclear Engineering Graduate Organization at Purdue University - Spring 2015 - Current
 - Chair of Purdue Graduate Student Government's Advancement (volunteerism) Committee - Spring 2014 - Current
@@ -67,7 +70,7 @@ bibs:
 - Color Commentatator for high school soccer games for Walton Webcasting - Fall 2013
 - President of Purdue University Men's Club Soccer - Spring 2011 - Spring 2012
 
-## Affiliations
+## Affiliations {#affil}
 
 - American Nuclear Society
 - Nuclear Engineering Graduate Organization

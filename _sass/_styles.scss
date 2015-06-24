@@ -251,6 +251,7 @@ header.site-header hgroup {
       position:relative;
       top:-8px;
   }
+
   a {
       color: #fff;
       @include transit(all, .2s, ease);
@@ -863,6 +864,10 @@ footer {
     }
 }
 
+header.site-header hgroup a .breadcrumb {
+    display:none;
+}
+
 
 /* Tablet
    ========================================================================== */
@@ -880,7 +885,6 @@ blockquote, blockquote p {
 }
     
 }
-    
 
 /* Mobile
    ========================================================================== */
@@ -890,6 +894,18 @@ blockquote, blockquote p {
 }
 
 @media only screen and (max-width : 680px) {
+
+header.site-header hgroup a {
+    .title {
+        display:none;
+    }
+
+    .breadcrumb {
+        display:inline;
+        font-size:$fs6;
+    }
+    
+}
 
 h1,h2,h3,h4,h5,h6 {
     text-align:left;
