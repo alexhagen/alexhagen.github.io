@@ -18,7 +18,7 @@
       <article class="wrap post">
         <header class="post-header">
           <hgroup>
-            <h1 id={{ page.abbr | downcase | replace: ' ','-' }}>{{page.title}}</h1>
+            <h1 id={{ page.title | downcase | replace: ' ','-' }} abbr={{ page.abbr | downcase | replace: ' ','-' }}>{{page.title}}</h1>
             <p class="date">{{page.date | date: "%b %d, %Y" }}</p>
             <p class="intro">{% if page.description %}{{ page.description }}{% else %}{{ page.tagline }}{% endif %}</p>
           </hgroup>

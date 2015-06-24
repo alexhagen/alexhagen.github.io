@@ -40,14 +40,14 @@
   var waypoints1 = $('h1').waypoint({
     handler: function(direction) {
       $('.bc-title').text('AH');
-      $('.bc-h1').text(" > " + this.id);
+      $('.bc-h1').text(" > " + $(this).attr("abbr"));
     },
     offset: 59
   })
   var waypoints2 = $('h2').waypoint({
     handler: function(direction) {
       $('.bc-title').text('AH');
-      $('.bc-h2').text(" > " + this.id);
+      $('.bc-h2').text(" > " + $(this).attr("abbr"));
     },
     offset: 59
   })
