@@ -1,0 +1,26 @@
+---
+layout: post-light-feature
+title: Design
+abbr: des
+permalink: /design/
+feature:
+  type: chart
+chart-title: "Design Tasks"
+chart:
+  solidworks:
+    parts: 954
+    assemblies: 595
+    drawings: 1203
+  inkscape:
+    svg: 203
+    pdf: 369
+    dxf: 12
+  eagle:
+    brd: 35
+    sch: 65
+  gimp: 
+    raster: 25
+
+---
+
+# Designs

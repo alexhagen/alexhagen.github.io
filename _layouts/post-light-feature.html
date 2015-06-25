@@ -1,4 +1,4 @@
-{% if page.image.feature %}
+{% if page.feature.type == "chart" %}
 
 {% include head-dark.html %}
 
@@ -6,23 +6,17 @@
 
   <div class="overlay overlay-lighter"></div>
   <div class="featured-image">
-  	<ul class="chart">
-	    <li>
-	      <span style="height:5%"></span>
-	    </li>
-	    <li>
-	      <span style="height:70%"></span>
-	    </li>
-	    <li>
-	      <span style="height:50%"></span>
-	    </li>
-	    <li>
-	      <span style="height:15%"></span>
-	    </li>
-	    <li>
-	      <span style="height:25%"></span>
-	    </li>
-	  </ul>
+  	{% assign chart=page.chart %}
+  	<div class="chart" data-size={% include total.liquid chart=chart%}>
+	    {% for task in chart %}{% assign t=task[1] %}
+		    <div class="task {{ task[0] }}" data-size={% include subtotal.liquid t=t %} data-percentage={{ subtotal | times:100 | divided_by: total}}>
+		    	{{ task[0] }}
+		    	{% for subtask in t %}
+		    		<div class = "subtask {{ task[0] }} {{ subtask[0] }}" data-size={{ subtask[1] }} data-percentage={{ subtask[1] | times: 100 | divided_by: subtotal }} total-percentage={{ subtask[1] | times: 100 | divided_by: total }}>{{ subtask[0] }}</div>
+		    	{% endfor %}
+		    </div>
+	    {% endfor %}
+	</div>
   </div>
 {% else %}
 
