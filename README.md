@@ -1,21 +1,38 @@
 # Alex Hagen's Portfolio
 
-- Star/icon for an award
+## Metrics
+
+- Designs
+	- Install selfspy everywhere
+	- Check for amount of time spent in:
+		- Solidworks
+		- Inkscape
+		- COMSOL
+		- EAGLE
+	- Print a 3d block chart for percentages of use compared to each other
+- Code
+	- Alternate Metrics between
+		- 3d block chart: code files written to (by time)
+			- .cpp,.h,.c,.hpp
+			- .py
+			- .m
+			- .css,.sass,.md,.html
+		- line transient chart: amount of commits on github + githost
+		- line transient chart: amount of views/forks/downloads on github
+- Papers
+	- ResearchGate score
+	- Number of citations
+	- impact factor
+- Teaching
+	- Page Views
 
 ## To Do:
-- [ ] New Footer
-- [ ] Write css/jekyll bar graph
-- [ ] write css/jekyll line graph
-- [ ] write css/jekyll frosted picture
+- [x] New Footer
 - [ ] Put up Designs
 	- [ ] carolina electrophoresis
 	- [ ] vwr electrophoresis
 	- [ ] pressure chamber
 	- [ ] gator scoreboard?
-- [ ] New Publications page: [mockup](http://www.google.com)
-- [ ] new designs page: [mockup](http://www.google.com)
-	- [ ] Idea from [Thinny 2](http://camporez.com/blog/thinny-2/)
-- [ ] new codes page: [mockup](http://www.google.com)
 - [ ] add accounts buttons to top right
 	- [ ] github
 	- [ ] researchgate
