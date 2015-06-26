@@ -1,0 +1,1 @@
+{% capture output %}{% assign subtotal=0 %}{% for subtask in t %}{% assign subtotal={{subtotal | plus: subtask[1]}} %}{% endfor %}{{ subtotal }}{% endcapture %}{{ output | strip_html | strip_newlines }}

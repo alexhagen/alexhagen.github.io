@@ -1,0 +1,1 @@
+{% capture output %}{% assign total=0 %}{% for task in chart %}{% assign total={{total | plus: total[1] }} %}{% assign t=task[1] %}{% for subtask in t %}{% assign total={{total | plus: subtask[1]}} %}{% endfor %}{% endfor %}{{ total }}{% endcapture %}{{ output | strip_html | strip_newlines }}
