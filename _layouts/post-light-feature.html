@@ -6,7 +6,15 @@
 
   <div class="overlay overlay-lighter"></div>
   <div class="featured-image">
-  	{% assign chart=page.chart %}
+  	{% case page.feature.path %}
+	{% when 'design' %}
+		{% assign chart=site.data.design.chart %}
+	{% when 'code' %}
+	     {% assign chart=site.data.code.chart %}
+	{% else %}
+	     {% break %}
+	{% endcase %}
+  	
   	<div class="chart" data-size={% include total.liquid chart=chart%}>
 	    {% for task in chart %}{% assign t=task[1] %}
 		    <div class="task {{ task[0] }}" data-size={% include subtotal.liquid t=t %} data-percentage={{ subtotal | times:100 | divided_by: total}}>
