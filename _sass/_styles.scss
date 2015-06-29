@@ -66,26 +66,35 @@ blockquote, blockquote p {
 /*   Code Formatting    */
 
 code {
-    color: $accent;
+    color: $grey-dark;
     font-family: "Monaco", "Courier New", "Courier";
     font-size: .75em;
     font-weight: bold;
+    .c {
+      color: #2EAFA4;
+    }
+    .s {
+      color: #B95915;
+    }
+    .nn {
+      color: #B63F97;
+    }
 }
 
 .highlight {
-    background: $black;
+    background: $grey-light;
     padding: 12px;
     border-radius: 4px;
     margin-bottom: $lh;
     overflow-x: scroll;
 
     code {
-        color: $white;
+        color: $grey-dark;
         font-family: "Monaco", "Courier New", "Courier";
         font-size: .9em;
         .lineno {
             margin-right: $lh/2;
-            color: $grey-light;
+            color: $grey-medium;
             line-height: 2em;
         }
         .nt {
@@ -94,9 +103,7 @@ code {
         .na {
             color: #f0e687;
         }
-        .s {
-            color: #87ceeb;
-        }
+
     }
 }
 
@@ -135,7 +142,7 @@ input {
 .icons {
   font-family: "Icons";
   font-size: 14px;
-  line-height: 20px; 
+  line-height: 20px;
 }
 
 .bb {
@@ -180,7 +187,7 @@ header.site-header {
   position: absolute;
   width: 100%;
   z-index: 5000;
-  
+
   .wrap {
       max-width: 90vw;
   }
@@ -188,7 +195,7 @@ header.site-header {
 }
 
 #bump .darken {
-      
+
       a {
       color: $black;
       @include transit(all, .2s, ease-in-out);
@@ -198,15 +205,15 @@ header.site-header {
         @include transit(all, .2s, ease-in-out);
         }
       }
-      
+
       .menu .icons {
           color: $black;
       }
-      
+
       nav ul li a {
             color: $black;
             &:active {
-              color: $link;  
+              color: $link;
             }
             &:hover {
                 text-shadow: none;
@@ -276,7 +283,7 @@ header.site-header nav {
   display: block;
   padding-right: 5vw;
   @include clearfix;
-  
+
   ul li {
     font-size: 16px;
     text-transform: uppercase;
@@ -284,7 +291,7 @@ header.site-header nav {
     font-weight: bold;
     top: 2px;
     position: relative;
-    margin-left: 20px; 
+    margin-left: 20px;
     a {
         color: white;
         @include transit(all, .2s, ease);
@@ -292,18 +299,18 @@ header.site-header nav {
             @include tshd(0, 0, 3px, rgba(255,255,255,.6));
             @include transit(all, .2s, ease);
         }
-    } 
+    }
   }
 }
 
 
 /* Article Stuff */
 
-   
+
 .article {
     position: relative;
     margin-bottom: $lh;
-    
+
     .overlay {
         vertical-align: middle;
         min-height: 360px;
@@ -317,7 +324,7 @@ header.site-header nav {
     .overlay-lighter {
         background: rgba(0,0,0,.1);
     }
-    
+
     .featured-image {
         vertical-align: middle;
         min-height: 360px;
@@ -344,14 +351,14 @@ header.site-header nav {
         width: 100%;
         max-height: 800px;
         @include background-gradient($white,$grey-light);
-        -moz-box-shadow:    inset 0px -10px 10px -6px $grey-medium; 
-        -webkit-box-shadow: inset 0px -10px 10px -6px $grey-medium; 
+        -moz-box-shadow:    inset 0px -10px 10px -6px $grey-medium;
+        -webkit-box-shadow: inset 0px -10px 10px -6px $grey-medium;
         box-shadow:         inset 0px -10px 10px -6px $grey-medium;
         position: relative;
         top: 0;
         z-index: -1;
     }
-    
+
     // Header Stuff
     header {
         margin: (2*$lh) 0 $lh 0;
@@ -370,7 +377,7 @@ header.site-header nav {
                 margin-top: $lh * 2/3;
             }
         }
-        
+
         .intro {
             text-align: left;
         }
@@ -394,7 +401,7 @@ header.site-header nav {
     margin: 0 auto;
     float: none;
     padding-top: 140px;
-    
+
     // Post Listing
     .post-list {
         list-style-type: none;
@@ -403,25 +410,25 @@ header.site-header nav {
         @include push(2);
         display: block;
         float: none;
-        
+
         lh h2 {
             margin-bottom: $lh*1.5;
         }
-        
+
         li {
             display: block;
             float: none;
             font-size: $fs3;
             margin-bottom: $lh*2;
             position: relative;
-            
+
             a {
                 position: relative;
                 &:hover {
                     @include transit;
                 }
             }
-            
+
             a:hover:before {
                 content:'...';
                 color: $grey-light;
@@ -434,7 +441,7 @@ header.site-header nav {
                 text-align: center;
                 @include transit;
             }
-            
+
             a:before {
                 content:'“';
                 color: $grey-light;
@@ -448,21 +455,21 @@ header.site-header nav {
                 @include transit;
 
             }
-            
+
             h1 {
                 font-size: $fs3;
             }
         }
-        
+
         .summary {
             font-size: 18px;
             line-height: 1.45em;
         }
-        
+
         .date {
             margin-bottom: 3px;
         }
-        
+
         .date time {
             position: relative;
             top: -3px;
@@ -476,13 +483,13 @@ header.site-header nav {
         }
     }
 }
- 
+
 // Post Formatting
 
 .post {
-    
+
     min-height: 650px;
-    
+
     .deets {
         position: relative;
         top: 45px;
@@ -496,23 +503,23 @@ header.site-header nav {
             margin-bottom: $lh/2;
         }
     }
-    
+
     h1 {
     }
-    
+
     h1, h2, h3, h4, h5 {
         padding-top: ($lh * 1/2);
         margin-bottom: ($lh * 1/2);
 
     }
-    
+
     figure {
         margin: $lh 0;
-        
+
         img {
             margin-bottom: $lh/2;
         }
-        
+
         figcaption {
             font-size: $fs5;
             font-family: $sans;
@@ -522,7 +529,7 @@ header.site-header nav {
             text-align: center;
         }
     }
-    
+
     img {
         width: 100%;
         height: auto;
@@ -530,7 +537,7 @@ header.site-header nav {
         margin: $lh auto;
         @include br(4px);
     }
-    
+
     ul {
         display: block;
         margin-bottom: $lh;
@@ -565,9 +572,9 @@ header.site-header nav {
         &:last-child {
             margin-bottom: 0;
             }
-        } 
-    }  
-    
+        }
+    }
+
     .share {
         text-align: center;
         display: block;
@@ -664,7 +671,7 @@ header.site-header nav {
 }
 .chart{
   display:table;
-  table-layout: fixed;   
+  table-layout: fixed;
   width:100%;
   max-width:1280px;
   height:100%;
@@ -676,12 +683,12 @@ header.site-header nav {
     vertical-align:bottom;
     height:100%;
   }
-  
+
   span{
     margin:0 1px;
     display: block;
     background: rgba($grey-medium, .2);
-    
+
     &:before{
         position:absolute;
         left:0;
@@ -690,13 +697,22 @@ header.site-header nav {
         padding:5px 0 0;
         display:block;
     }
-    
+
   }
-  
+
 }
 
 @keyframes draw{
-  0%{height:0;} 
+  0%{height:0;}
+}
+
+.portrait {
+  width: 300px;
+	height: 300px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	background: url(http://link-to-your/image.jpg) no-repeat;
 }
 
 /* End Chart Stuff */
@@ -759,7 +775,7 @@ footer {
         fill: $white;
     }
 
-        
+
     // Contain that ish
     section {
         @include column(10);
@@ -850,7 +866,7 @@ footer {
         overflow:hidden;
         display:none;
     }
-    
+
     .footer-col-2 {
         @include column(2,10);
         height:100%;
@@ -873,7 +889,7 @@ header.site-header hgroup a .breadcrumb {
    ========================================================================== */
 
 @media only screen and (max-width: $breakpoint-2-max-width) {
-    
+
 // Type Fixes
 
 h1 {
@@ -883,7 +899,7 @@ h1 {
 blockquote, blockquote p {
     font-size: $fs3;
 }
-    
+
 }
 
 /* Mobile
@@ -904,7 +920,7 @@ header.site-header hgroup a {
         display:inline;
         font-size:$fs6;
     }
-    
+
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -1010,33 +1026,33 @@ footer {
         background: rgba($white,0.4);
         }
       }
- 
+
  /* All Posts */
-      
+
   section.article img.loading {
     top: 10px !important;
     right: 6%;
     left: inherit;
   }
-  
-  
+
+
   header.site-header {
     min-height: 59px;
     padding-top: 20px;
   }
-  
+
   header.site-header hgroup h1 {
     margin-bottom: 0;
     font-size: $fsp;
   }
-  
+
   header.site-header hgroup {
     position: absolute;
     left: 7%;
     float: none;
     padding-left: 0;
   }
-  
+
   header.site-header a.menu {
     position: absolute;
     right: 7%;
@@ -1049,37 +1065,37 @@ footer {
         font-size: 32px;
     }
   }
-  
+
   header.site-header a.menu img {
     width: 24px;
     height: auto;
   }
-  
+
   header.site-header nav {
     display: none;
     float: none;
     width: 100%;
     padding-right: 0;
   }
-  
+
   header.site-header nav:before {
     display: table;
     clear: both;
     content: '';
   }
-  
+
   header.site-header nav ul {
     padding: 20px 0 10px 0;
     margin-top: 15px;
   }
-  
+
   header.site-header nav ul li {
     display: block;
     margin-left: 0;
     top: 0px;
     font-size: $fs5;
   }
-  
+
   header.site-header nav ul li a {
     display: block;
     text-align: right;
@@ -1091,19 +1107,19 @@ footer {
     color: $white;
     &:active {
       background-color: $link;
-      color: white;  
+      color: white;
     }
     &:hover {
         text-shadow: none;
     }
   }
-  
+
   #bump .darken nav ul {
           padding: 0;
           margin-top: 40px;
           background: $black;
       }
-      
+
    #bump .darken nav ul li a {
         color: $white;
         &:active {
@@ -1134,7 +1150,3 @@ footer {
 }
 
 }
-
-
-
-
