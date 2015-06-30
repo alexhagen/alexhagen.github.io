@@ -33,7 +33,7 @@ links:
 timezone:    America/New_York
 future:      true
 highlighter: pygments
-markdown:    redcarpet
+markdown:    kramdown
 
 sass:
     style: :compressed
