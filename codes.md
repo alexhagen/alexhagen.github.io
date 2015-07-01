@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Open Source Codes
+title: Codes
 permalink: /codes/
 codes:
   - title: ah_tcp_serv
