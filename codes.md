@@ -1,7 +1,12 @@
 ---
-layout: page
+layout: list
 title: Codes
 permalink: /codes/
+description: >
+  I write a lot of codes as support for my project, whether at the
+  lab or for projects I'm working on at home.  Where I can, I've made these
+  open source (obviously intellectual property gets in the way of me open
+  sourcing simulations and novel work for the lab).
 codes:
   - title: ah_tcp_serv
     link: ah_tcp_serv/
@@ -9,15 +14,3 @@ codes:
     link: ah_fem/
 
 ---
-
-<div class="gridWrapper">
-
-{% for code in page.codes %}
-<div class="tile">
-  <div class="tileInner code">
-    <a href="../{{code.link}}"><p data-content="{{code.title}}"></p></a>
-  </div>
-</div>
-{% endfor %}
-
-</div>
