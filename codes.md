@@ -2,6 +2,7 @@
 layout: list
 title: Codes
 permalink: /codes/
+search: true
 description: >
   I write a lot of codes as support for my project, whether at the
   lab or for projects I'm working on at home.  Where I can, I've made these

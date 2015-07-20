@@ -259,6 +259,13 @@ header.site-header hgroup {
       top:-8px;
   }
 
+  .morphsearch {
+    position: fixed;
+    right: 0px;
+    padding-right: 5vw;
+    top: 55px;
+  }
+
   a {
       color: #fff;
       @include transit(all, .2s, ease);
