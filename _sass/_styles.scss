@@ -1440,6 +1440,10 @@ input[type="search"] { /* reset normalize */
 	background: $grey-light;
 }
 
+.keyword {
+  display: inline-block;
+}
+
 .dummy-media-object:hover,
 .dummy-media-object:focus {
 	background: $white;
@@ -1459,6 +1463,15 @@ input[type="search"] { /* reset normalize */
 	margin: 0 0 0 0;
 	width: calc(100% - 70px);
 	color: $grey-dark;
+}
+
+.dummy-media-object h4 {
+	vertical-align: middle;
+	font-size: $fs5;
+	display: inline-block;
+	margin: 0 0 0 0;
+	color: $grey-dark;
+  width:auto;
 }
 
 .dummy-media-object:hover h3 {
