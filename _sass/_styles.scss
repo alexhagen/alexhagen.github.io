@@ -1385,6 +1385,9 @@ input[type="search"] { /* reset normalize */
 	padding: 0 0 6em;
 	float: left;
 	opacity: 0;
+  height: 100%;
+  overflow-y:auto;
+  overflow-x:hidden;
 	-webkit-transform: translate3d(0,100px,0);
 	transform: translateY(100px);
 	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
