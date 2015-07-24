@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Alex Hagen</title>
+    <description>Welcome to my portfolio. I am currently a Ph.D. seeking student at Purdue University in Nuclear Engineering.  This portfolio shows some designs, publications, and open source codes that I&#39;ve created. Feel free to email me if you have any ideas, questions, or requests.
+</description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 24 Jul 2015 09:19:06 -0400</pubDate>
+    <lastBuildDate>Fri, 24 Jul 2015 09:19:06 -0400</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Hubtools: Tools to Help with Github</title>
+        <description>
+</description>
+        <pubDate>Thu, 08 Jan 2015 00:00:00 -0500</pubDate>
+        <link>/codes/hubtools</link>
+        <guid isPermaLink="true">/codes/hubtools</guid>
+        
+        
+        <category>codes</category>
+        
+      </item>
+    
+      <item>
+        <title>AH_Value: An Object Oriented Class for Tracking Variable Values and Updating on Variable Change</title>
+        <description>
+</description>
+        <pubDate>Mon, 20 Oct 2014 00:00:00 -0400</pubDate>
+        <link>/codes/ah_value</link>
+        <guid isPermaLink="true">/codes/ah_value</guid>
+        
+        
+        <category>codes</category>
+        
+      </item>
+    
+      <item>
+        <title>AH_tcp_serv: An Object Oriented, Signal-Slot Oriented TCP Server for C++</title>
+        <description>
+</description>
+        <pubDate>Fri, 03 Oct 2014 00:00:00 -0400</pubDate>
+        <link>/codes/ah_tcp_serv</link>
+        <guid isPermaLink="true">/codes/ah_tcp_serv</guid>
+        
+        
+        <category>codes</category>
+        
+      </item>
+    
+      <item>
+        <title>AH_tcp_client: An Object Oriented, Signal-Slot Oriented TCP Client for C++</title>
+        <description>
+</description>
+        <pubDate>Fri, 03 Oct 2014 00:00:00 -0400</pubDate>
+        <link>/codes/ah_tcp_client</link>
+        <guid isPermaLink="true">/codes/ah_tcp_client</guid>
+        
+        
+        <category>codes</category>
+        
+      </item>
+    
+      <item>
+        <title>AH_Timer: Hardware Timer for Triggering Signal and Slot Protocol Functions to Milisecond Resolution</title>
+        <description>
+</description>
+        <pubDate>Sun, 28 Sep 2014 00:00:00 -0400</pubDate>
+        <link>/codes/ah_timer</link>
+        <guid isPermaLink="true">/codes/ah_timer</guid>
+        
+        
+        <category>codes</category>
+        
+      </item>
+    
+      <item>
+        <title>Multiphysics Modeling in Optimization of Acoustically Tensioned Metastable Fluid Neutron Detectors</title>
+        <description>&lt;p&gt;My Master’s Thesis was published in August of 2014 after defending the thesis to a committee of &lt;em&gt;Purdue Nuclear Engineering&lt;/em&gt; and &lt;em&gt;Purdue Health Physics&lt;/em&gt; faculty members in May of 2014.  The thesis includes business confidential material and will not be published until 2016.  I will post the full text at that time.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 15 Aug 2014 08:00:00 -0400</pubDate>
+        <link>/publications/multiphysics-modeling-in-optimization</link>
+        <guid isPermaLink="true">/publications/multiphysics-modeling-in-optimization</guid>
+        
+        <category>authored</category>
+        
+        
+        <category>publications</category>
+        
+      </item>
+    
+      <item>
+        <title>Characterization and Optimization of a Tensioned Metastable Fluid Nuclear Particle Sensor Using Laser Based Profilimetry</title>
+        <description>&lt;p&gt;I was invited to give a talk and poster at the 22nd &lt;em&gt;International Conference on Nuclear Engineering&lt;/em&gt; (ICONE) in Prague. The poster that accompanied this talk and paper was selected as a Winner in the student competition.  I have submitted a revised version of this paper for publication in a new ASME journal, &lt;em&gt;Nuclear Engineering and Radiation Science&lt;/em&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 11 Jul 2014 08:00:00 -0400</pubDate>
+        <link>/publications/characterization-and-optimization-of</link>
+        <guid isPermaLink="true">/publications/characterization-and-optimization-of</guid>
+        
+        <category>authored</category>
+        
+        
+        <category>publications</category>
+        
+      </item>
+    
+      <item>
+        <title>High Efficiency Gamma-Beta Blind Alpha Spectrometry for Nuclear Energy Applications</title>
+        <description>&lt;p&gt;My colleague and I wrote this paper for the International Conference on Nuclear Engineering, winning the Student paper competition with it.  A revised copy has been submitted for review to be published in ASME’s &lt;em&gt;Nuclear Engineering and Radiation Science&lt;/em&gt; inaugural issue.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 11 Jul 2014 04:00:00 -0400</pubDate>
+        <link>/publications/high-efficiency-gamma-beta</link>
+        <guid isPermaLink="true">/publications/high-efficiency-gamma-beta</guid>
+        
+        <category>coauthor</category>
+        
+        
+        <category>publications</category>
+        
+      </item>
+    
+      <item>
+        <title>AH_PK: A Thermal-Hydraulics, Diffusion, and Point Kinetics Coupled Code for Simplified Geometry Reactor Transient Simulation</title>
+        <description>
+</description>
+        <pubDate>Sat, 05 Apr 2014 00:00:00 -0400</pubDate>
+        <link>/codes/ah_pk</link>
+        <guid isPermaLink="true">/codes/ah_pk</guid>
+        
+        
+        <category>codes</category>
+        
+      </item>
+    
+      <item>
+        <title>The MAC-TMFD: Novel multi-armed Centrifugally Tensioned Metastable Fluid Detector (Gamma-Blind) — Neutron-alpha recoil spectrometer</title>
+        <description>
+</description>
+        <pubDate>Tue, 12 Nov 2013 07:00:00 -0500</pubDate>
+        <link>/publications/the-mac-tmfd-novel-multi-armed</link>
+        <guid isPermaLink="true">/publications/the-mac-tmfd-novel-multi-armed</guid>
+        
+        <category>coauthor</category>
+        
+        
+        <category>publications</category>
+        
+      </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,584 @@
+<meta charset="utf-8">
+<title>Codes &#8211; Alex Hagen</title>
+<meta name="description" content="I write a lot of codes as support for my project, whether at the lab or for projects I'm working on at home.  Where I can, I've made these open source (obviously intellectual property gets in the way of me open sourcing simulations and novel work for the lab).
+">
+<meta name="keywords" content="">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+  },
+  "HTML-CSS": {
+    linebreaks: { 
+      automatic: true,
+      width: "80% container", 
+    }
+  },
+  SVG: { 
+    linebreaks: { 
+      automatic: true,
+      width: "80% container", 
+    } 
+  },
+  TeX: {
+    equationNumbers: {
+      autoNumber: "all"
+    },
+  },
+    showMathMenu: false
+});
+
+</script>
+
+<script type="text/javascript"
+     src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Codes &#8211; Alex Hagen">
+<meta property="og:description" content="I write a lot of codes as support for my project, whether at the lab or for projects I'm working on at home.  Where I...">
+<meta property="og:url" content="/codes/">
+<meta property="og:site_name" content="Alex Hagen">
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Alex Hagen Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Type -->
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Crimson+Text:400,400italic,700,700italic" rel='stylesheet' type='text/css' />
+<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/assets/css/entypo.css" media="all">
+
+<!-- In order to use Calendas Plus, you must first purchase it. Then, create a font-face package using FontSquirrel.
+<link rel='stylesheet' href='/assets/cal.css' media='all' />
+-->
+
+
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/i.css">
+
+<!-- Fresh Squeezed jQuery -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- Load Modernizr -->
+<script src="/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+
+<!-- Load the waypoints -->
+<script type="text/javascript" src="/js/waypoints.min.js"></script>
+
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="/favicon.ico">
+
+<div id="bump">
+  <body class="">
+    <header class="site-header darken">
+      <div class="wrap">
+        <hgroup>
+          <a href="/">
+                <span class="logo">
+                  <svg viewBox="0 0 60 60">
+                      <g
+     transform="translate(-72.29956,-765.95028)"
+     id="layer1">
+    <path
+       d="m 109.94318,810.45806 0,-0.88727 c 0.66546,-0.39928 1.28655,-1.15346 1.73019,-2.04074 0.35491,-0.84291 0.48801,-2.04074 0.48801,-3.54911 l 0,-8.87278 -19.429121,0 0,8.87278 c 0,1.50837 0.177455,2.7062 0.532366,3.54911 0.443639,0.88728 1.020371,1.64146 1.730192,2.04074 l 0,0.88727 -6.623153,0 0,-0.88727 c 0.665458,-0.39928 1.286553,-1.15346 1.730191,-2.04074 0.354911,-0.84291 0.532367,-2.04074 0.532367,-3.54911 l 0,-16.05972 c 0,-1.50837 -0.177456,-2.7062 -0.532367,-3.54911 -0.443638,-0.88728 -1.064733,-1.64147 -1.730191,-2.08511 l 0,-0.84291 6.623153,0 0,0.84291 c -0.709821,0.44364 -1.286553,1.19783 -1.730192,2.08511 -0.354911,0.84291 -0.532366,2.04074 -0.532366,3.54911 l 0,6.28929 19.429121,0 0,-6.28929 c 0,-1.50837 -0.1331,-2.7062 -0.48801,-3.54911 -0.44364,-0.88728 -1.06473,-1.64147 -1.73019,-2.08511 l 0,-0.84291 6.79279,0 0,0.84291 c -0.70982,0.44364 -1.28655,1.19783 -1.73019,2.08511 -0.35491,0.84291 -0.53237,2.04074 -0.53237,3.54911 l 0,16.05972 c 0,1.50837 0.17746,2.7062 0.53237,3.54911 0.44364,0.88728 1.02037,1.64146 1.73019,2.04074 l 0,0.88727 -6.79279,0 m -7.9977,-23.51831 -2.751269,6.92589 1.208649,0 1.65925,-4.65172 1.49756,4.65172 1.97731,0 -2.3855,-6.92589 -1.206,0 z m -3.398003,8.55863 -0.678541,1.70695 c -0.356021,0.83072 -0.651813,1.44371 -0.869381,1.79973 -0.217568,0.33624 -0.514384,0.61165 -0.811069,0.7501 l 0,0.39759 3.066688,0 0,-0.39759 c -0.593368,-0.0198 -0.693666,-0.6713 -0.278308,-1.85803 l 0.856128,-2.39875 -1.285517,0 z m 5.542303,0 0.87998,2.59489 c 0.35602,1.00872 0.21944,1.60256 -0.41348,1.66189 l 0,0.39759 3.81679,0 0,-0.39759 c -0.43514,-0.21757 -0.73378,-0.4946 -0.91179,-0.81107 -0.23735,-0.3758 -0.47402,-0.84955 -0.65203,-1.38358 l -0.71035,-2.06213 -2.00912,0 z m -1.79022,-24.5481 c -13.797393,0 -25,11.20261 -25,25 0,13.79739 11.202607,25.00265 25,25.00265 13.79739,0 25,-11.20526 25,-25.00265 0,-13.79739 -11.20261,-25 -25,-25 z m 0,1.69635 c 12.88062,0 23.30365,10.42303 23.30365,23.30365 0,12.88062 -10.42303,23.3063 -23.30365,23.3063 -12.880616,0 -23.303647,-10.42568 -23.303647,-23.3063 0,-12.88062 10.423031,-23.30365 23.303647,-23.30365 z"
+       id="path3863" />
+  </g>
+
+                  </svg>
+                </span>
+            <h1 class="title">Alex Hagen</h1>
+          </a>
+          <a href=""><h1 class="breadcrumb bc-title"></h1></a>
+          <a href=""><h1 class="breadcrumb bc-h1"></h1></a>
+          <a href=""><h1 class="breadcrumb bc-h2"></h1></a>
+          <a href=""><h1 class="breadcrumb bc-h3"></h1></a>
+        </hgroup>
+        <a href="#nav" class="menu"><span class='icons'>☰</span></a>
+        <nav role="navigation">
+          <ul>
+            
+                <li><a href="/about" >About</a></li>
+            
+
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+<!-- MORPHSEARCH -->
+
+
+  <div id="morphsearch" class="morphsearch">
+    <form class="morphsearch-form">
+      <input class="morphsearch-input" type="search" placeholder="Search..."/>
+      <button class="morphsearch-submit" type="submit">Search</button>
+    </form>
+    <div class="morphsearch-content">
+      <div class="dummy-column">
+        <h2>Languages</h2>
+        
+        
+        
+        
+        
+          
+          <a class="dummy-media-object" href="#">
+            <img class="round" src="/assets/img/c++.png" alt="c++"/>
+            <h3>c++</h3>
+          </a>
+          
+        
+          
+          <a class="dummy-media-object" href="#">
+            <img class="round" src="/assets/img/matlab.png" alt="matlab"/>
+            <h3>matlab</h3>
+          </a>
+          
+        
+          
+          <a class="dummy-media-object" href="#">
+            <img class="round" src="/assets/img/python.png" alt="python"/>
+            <h3>python</h3>
+          </a>
+          
+        
+      </div>
+      <div class="dummy-column">
+        <h2>Keywords</h2>
+        
+        
+        
+        
+        
+          
+          <a class="dummy-media-object keyword" href="#">
+            <h4>c</h4>
+          </a>
+          
+        
+          
+          <a class="dummy-media-object keyword" href="#">
+            <h4>client</h4>
+          </a>
+          
+        
+          
+          <a class="dummy-media-object keyword" href="#">
+            <h4>communication</h4>
+          </a>
+          
+        
+          
+          <a class="dummy-media-object keyword" href="#">
+            <h4>cpp</h4>
+          </a>
+          
+        
+          
+          <a class="dummy-media-object keyword" href="#">
+            <h4>feedback</h4>
+          </a>
+          
+        
+          
+          <a class="dummy-media-object keyword" href="#">
+            <h4>fem</h4>
+          </a>
+          
+        
+          
+          <a class="dummy-media-object keyword" href="#">
+            <h4>finite element</h4>
+          </a>
+          
+        
+          
+          <a class="dummy-media-object keyword" href="#">
+            <h4>gis</h4>
+          </a>
+          
+        
+          
+          <a class="dummy-media-object keyword" href="#">
+            <h4>hardware</h4>
+          </a>
+          
+        
+          
+          <a class="dummy-media-object keyword" href="#">
+            <h4>map</h4>
+          </a>
+          
+        
+          
+          <a class="dummy-media-object keyword" href="#">
+            <h4>matlab</h4>
+          </a>
+          
+        
+          
+          <a class="dummy-media-object keyword" href="#">
+            <h4>navigation</h4>
+          </a>
+          
+        
+          
+          <a class="dummy-media-object keyword" href="#">
+            <h4>networking</h4>
+          </a>
+          
+        
+          
+          <a class="dummy-media-object keyword" href="#">
+            <h4>neutronics</h4>
+          </a>
+          
+        
+          
+          <a class="dummy-media-object keyword" href="#">
+            <h4>nuclear</h4>
+          </a>
+          
+        
+          
+          <a class="dummy-media-object keyword" href="#">
+            <h4>nuclear reactor</h4>
+          </a>
+          
+        
+          
+          <a class="dummy-media-object keyword" href="#">
+            <h4>partial differential equation</h4>
+          </a>
+          
+        
+          
+          <a class="dummy-media-object keyword" href="#">
+            <h4>pde</h4>
+          </a>
+          
+        
+          
+          <a class="dummy-media-object keyword" href="#">
+            <h4>point kinetics</h4>
+          </a>
+          
+        
+          
+          <a class="dummy-media-object keyword" href="#">
+            <h4>py</h4>
+          </a>
+          
+        
+          
+          <a class="dummy-media-object keyword" href="#">
+            <h4>python</h4>
+          </a>
+          
+        
+          
+          <a class="dummy-media-object keyword" href="#">
+            <h4>server</h4>
+          </a>
+          
+        
+          
+          <a class="dummy-media-object keyword" href="#">
+            <h4>signal</h4>
+          </a>
+          
+        
+          
+          <a class="dummy-media-object keyword" href="#">
+            <h4>signal slot</h4>
+          </a>
+          
+        
+          
+          <a class="dummy-media-object keyword" href="#">
+            <h4>simulation</h4>
+          </a>
+          
+        
+          
+          <a class="dummy-media-object keyword" href="#">
+            <h4>svg</h4>
+          </a>
+          
+        
+          
+          <a class="dummy-media-object keyword" href="#">
+            <h4>tcp</h4>
+          </a>
+          
+        
+          
+          <a class="dummy-media-object keyword" href="#">
+            <h4>thermal hydraulics</h4>
+          </a>
+          
+        
+          
+          <a class="dummy-media-object keyword" href="#">
+            <h4>timing</h4>
+          </a>
+          
+        
+          
+          <a class="dummy-media-object keyword" href="#">
+            <h4>udp</h4>
+          </a>
+          
+        
+      </div>
+      <div id="recent-repos" class="dummy-column recent-repos">
+        <h2>Recent</h2>
+        <!--<a class="dummy-media-object" href="http://tympanus.net/codrops/2014/10/07/tooltip-styles-inspiration/">
+          <img src="img/thumbs/TooltipStylesInspiration.png" alt="TooltipStylesInspiration"/>
+          <h3>Tooltip Styles Inspiration</h3>
+        </a>-->
+      </div>
+    </div><!-- /morphsearch-content -->
+<span class="morphsearch-close"></span>
+</div><!-- /morphsearch -->
+
+
+
+<section class="article pad-top">
+
+      <article class="wrap post">
+        <header class="post-header">
+          <hgroup>
+            <h1>Codes</h1>
+            <p class="intro">I write a lot of codes as support for my project, whether at the lab or for projects I'm working on at home.  Where I can, I've made these open source (obviously intellectual property gets in the way of me open sourcing simulations and novel work for the lab).
+</p>
+          </hgroup>
+          <!-- put the search/filter bar here -->
+        </header>
+
+        <div class="gridWrapper">
+
+        
+        <div class="tile subindex">
+          <div class="tileInner code" keywords="c++,c,cpp,tcp,server,networking,communication,signal slot">
+            <a href="../ah_tcp_serv/"><p data-content="ah_tcp_serv"></p></a>
+          </div>
+        </div>
+        
+        <div class="tile subindex">
+          <div class="tileInner code" keywords="python,py,finite element,fem,simulation,pde,partial differential equation">
+            <a href="../ah_fem/"><p data-content="ah_fem"></p></a>
+          </div>
+        </div>
+        
+        <div class="tile subindex">
+          <div class="tileInner code" keywords="c++,c,cpp,tcp,client,networking,communication,signal slot">
+            <a href="../ah_tcp_client/"><p data-content="ah_tcp_client"></p></a>
+          </div>
+        </div>
+        
+        <div class="tile subindex">
+          <div class="tileInner code" keywords="python,python,matlab,gis,map,navigation,svg">
+            <a href="../maptiler/"><p data-content="maptiler"></p></a>
+          </div>
+        </div>
+        
+        <div class="tile subindex">
+          <div class="tileInner code" keywords="c++,c,cpp,udp,client,networking,communication,signal slot">
+            <a href="../ah_udp_serv"><p data-content="ah_udp_serv"></p></a>
+          </div>
+        </div>
+        
+        <div class="tile subindex">
+          <div class="tileInner code" keywords="c++,c,cpp,udp,client,networking,communication,signal slot">
+            <a href="../ah_udp_client/"><p data-content="ah_udp_client"></p></a>
+          </div>
+        </div>
+        
+        <div class="tile subindex">
+          <div class="tileInner code" keywords="c++,c,cpp,timing,hardware,signal,signal slot">
+            <a href="../ah_timer/"><p data-content="ah_timer"></p></a>
+          </div>
+        </div>
+        
+        <div class="tile subindex">
+          <div class="tileInner code" keywords="matlab,matlab,point kinetics,nuclear reactor,nuclear,neutronics,thermal hydraulics,feedback">
+            <a href="../ah_pk/"><p data-content="ah_pk"></p></a>
+          </div>
+        </div>
+        
+
+        </div>
+
+      <a class="share" href="https://twitter.com/intent/tweet?text=&quot;Codes&quot;%20http://alexhagen.github.io/codes/%20via%20&#64;" data-dnt="true">Share</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+      </article>
+    </section>
+</div>
+
+</div>
+<div class="push"></div>
+  <footer class="footer">
+    <aside class="wrap">
+      <div class="footer-col-4">
+        <h5>Alex Hagen</h5>
+        <p class="aside">Graduate Researcher - Purdue University Nuclear Engineering</p>
+      </div>
+      <div class="footer-col-2">
+        <span class="logo">
+          <svg viewBox="0 0 60 60">
+              <g
+     transform="translate(-72.29956,-765.95028)"
+     id="layer1">
+    <path
+       d="m 109.94318,810.45806 0,-0.88727 c 0.66546,-0.39928 1.28655,-1.15346 1.73019,-2.04074 0.35491,-0.84291 0.48801,-2.04074 0.48801,-3.54911 l 0,-8.87278 -19.429121,0 0,8.87278 c 0,1.50837 0.177455,2.7062 0.532366,3.54911 0.443639,0.88728 1.020371,1.64146 1.730192,2.04074 l 0,0.88727 -6.623153,0 0,-0.88727 c 0.665458,-0.39928 1.286553,-1.15346 1.730191,-2.04074 0.354911,-0.84291 0.532367,-2.04074 0.532367,-3.54911 l 0,-16.05972 c 0,-1.50837 -0.177456,-2.7062 -0.532367,-3.54911 -0.443638,-0.88728 -1.064733,-1.64147 -1.730191,-2.08511 l 0,-0.84291 6.623153,0 0,0.84291 c -0.709821,0.44364 -1.286553,1.19783 -1.730192,2.08511 -0.354911,0.84291 -0.532366,2.04074 -0.532366,3.54911 l 0,6.28929 19.429121,0 0,-6.28929 c 0,-1.50837 -0.1331,-2.7062 -0.48801,-3.54911 -0.44364,-0.88728 -1.06473,-1.64147 -1.73019,-2.08511 l 0,-0.84291 6.79279,0 0,0.84291 c -0.70982,0.44364 -1.28655,1.19783 -1.73019,2.08511 -0.35491,0.84291 -0.53237,2.04074 -0.53237,3.54911 l 0,16.05972 c 0,1.50837 0.17746,2.7062 0.53237,3.54911 0.44364,0.88728 1.02037,1.64146 1.73019,2.04074 l 0,0.88727 -6.79279,0 m -7.9977,-23.51831 -2.751269,6.92589 1.208649,0 1.65925,-4.65172 1.49756,4.65172 1.97731,0 -2.3855,-6.92589 -1.206,0 z m -3.398003,8.55863 -0.678541,1.70695 c -0.356021,0.83072 -0.651813,1.44371 -0.869381,1.79973 -0.217568,0.33624 -0.514384,0.61165 -0.811069,0.7501 l 0,0.39759 3.066688,0 0,-0.39759 c -0.593368,-0.0198 -0.693666,-0.6713 -0.278308,-1.85803 l 0.856128,-2.39875 -1.285517,0 z m 5.542303,0 0.87998,2.59489 c 0.35602,1.00872 0.21944,1.60256 -0.41348,1.66189 l 0,0.39759 3.81679,0 0,-0.39759 c -0.43514,-0.21757 -0.73378,-0.4946 -0.91179,-0.81107 -0.23735,-0.3758 -0.47402,-0.84955 -0.65203,-1.38358 l -0.71035,-2.06213 -2.00912,0 z m -1.79022,-24.5481 c -13.797393,0 -25,11.20261 -25,25 0,13.79739 11.202607,25.00265 25,25.00265 13.79739,0 25,-11.20526 25,-25.00265 0,-13.79739 -11.20261,-25 -25,-25 z m 0,1.69635 c 12.88062,0 23.30365,10.42303 23.30365,23.30365 0,12.88062 -10.42303,23.3063 -23.30365,23.3063 -12.880616,0 -23.303647,-10.42568 -23.303647,-23.3063 0,-12.88062 10.423031,-23.30365 23.303647,-23.30365 z"
+       id="path3863" />
+  </g>
+
+          </svg>
+        </span>
+      </div>
+
+      <div class="footer-col-4 right">
+        <div class="widget-container">
+          <h5 class="updates">Latest Updates</h5>
+          <ul class="commits-list"></ul>
+        </div>
+      </div>
+
+    </aside>
+  </footer>
+
+  <!-- If they're out, get some from the cellar -->
+  <script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+  <script src="/assets/js/retina.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="/assets/js/scripts.js"></script>
+  <script src="/js/jquery.timeago.js"></script>
+  <script src="/js/main.js"></script>
+  
+  <script src="/js/classie.js"></script>
+		<script>
+			(function() {
+				var morphSearch = document.getElementById( 'morphsearch' ),
+					input = morphSearch.querySelector( 'input.morphsearch-input' ),
+					ctrlClose = morphSearch.querySelector( 'span.morphsearch-close' ),
+					isOpen = isAnimating = false,
+					// show/hide search area
+					toggleSearch = function(evt) {
+						// return if open and the input gets focused
+						if( evt.type.toLowerCase() === 'focus' && isOpen ) return false;
+
+						var offsets = morphsearch.getBoundingClientRect();
+						if( isOpen ) {
+							classie.remove( morphSearch, 'open' );
+
+							// trick to hide input text once the search overlay closes
+							// todo: hardcoded times, should be done after transition ends
+							if( input.value !== '' ) {
+								setTimeout(function() {
+									classie.add( morphSearch, 'hideInput' );
+									setTimeout(function() {
+										classie.remove( morphSearch, 'hideInput' );
+										input.value = '';
+									}, 300 );
+								}, 500);
+							}
+
+							input.blur();
+						}
+						else {
+							classie.add( morphSearch, 'open' );
+						}
+						isOpen = !isOpen;
+					};
+
+				// events
+				input.addEventListener( 'focus', toggleSearch );
+				ctrlClose.addEventListener( 'click', toggleSearch );
+				// esc key closes search overlay
+				// keyboard navigation events
+				document.addEventListener( 'keydown', function( ev ) {
+					var keyCode = ev.keyCode || ev.which;
+					if( keyCode === 27 && isOpen ) {
+						toggleSearch(ev);
+					}
+				} );
+
+			})();
+		</script>
+
+    <script>
+    $(function(){
+      var $commitsList = $('#recent-repos');
+      var keyValuePairs = window.location.href.slice(window.location.href.indexOf("?") + 1).split("&");
+      var x, params = {};
+      $.each(keyValuePairs, function(i, keyValue){
+        x = keyValue.split('=');
+        params[x[0]] = x[1];
+      });
+
+    params.owner = "alexhagen";
+
+      $.ajax( "https://api.github.com/users/" + params.owner + "/events?callback=callback", {
+        dataType: 'jsonp',
+        type: 'get',
+        data: {
+          per_page: params.limit || 20
+        },
+        success: function(response, textStatus, jqXHR) {
+          var data = response.data;
+          var repos = [];
+          $.each(data, function(i, commit){
+            if ( $.inArray(commit.repo.name,repos) < 0 ) {
+              var message = '';
+              if (commit.payload.size > 0 ) {
+                message = "<p class='recent-repos-message'>"+commit.payload.commits[0].message+"</p>";
+              }
+              $('<a class="dummy-media-object" href="'+commit.repo.url+'"><h4 class="recent-repos-name">'+commit.repo.name+'</h4>'+message+'<p class="recent-repos-time">'+$.timeago(commit.created_at)+'</p></a>').appendTo( $commitsList );
+              // add that into the array so we know it's already been discussed
+              repos.push( commit.repo.name );
+            }
+          });
+        }
+      });
+    });
+    </script>
+
+
+
+  </body>
+
+  <script type="text/javascript">
+  var waypoints1 = $('h1').waypoint({
+    handler: function(direction) {
+      $('.bc-title').text('AH');
+      $('.bc-h1').text(" > " + $(this).attr("abbr"));
+    },
+    offset: 59
+  })
+  var waypoints2 = $('h2').waypoint({
+    handler: function(direction) {
+      $('.bc-title').text('AH');
+      $('.bc-h2').text(" > " + $(this).attr("abbr"));
+    },
+    offset: 59
+  })
+</script>
+</html>
+
