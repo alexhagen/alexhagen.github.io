@@ -1526,3 +1526,25 @@ input[type="search"] { /* reset normalize */
 		right: 10%;
 	}
 }
+
+.recent-repos-message {
+  font-size:$fs6;
+  color:$black;
+}
+
+.recent-repos-time {
+  font-size:$fs6;
+  color:$grey-dark;
+}
+
+.recent-repos-name {
+  font-size:$fs5;
+  font-family:$sans;
+  font-weight:700;
+  color:$accent;
+}
+
+.recent-repos p {
+  margin-bottom:0px;
+  line-height:normal;
+}
