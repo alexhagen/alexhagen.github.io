@@ -37,5 +37,9 @@ codes:
     link: ah_timer/
     type: c++
     keywords: c,cpp,timing,hardware,signal,signal slot
+  - title: ah_pk
+    link: ah_pk/
+    type: matlab
+    keywords: matlab,point kinetics,nuclear reactor,nuclear,neutronics,thermal hydraulics,feedback
 
 ---
