@@ -1513,3 +1513,23 @@ input[type="search"] { /* reset normalize */
 		right: 10%;
 	}
 }
+
+.keyword {
+  display:inline-block;
+  h4 {
+    font-size: $fs6;
+    color:$blue;
+  }
+}
+
+.recent-repos-name {
+  font-size:$fs5;
+  color:$blue;
+}
+
+.recent-repos-message,.recent-repos-time {
+  font-size: $fs6;
+  color:$black;
+  line-height: normal;
+  margin-bottom:0px;
+}
