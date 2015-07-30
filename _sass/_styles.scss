@@ -1272,7 +1272,7 @@ input[type="search"] { /* reset normalize */
 	outline: none;
 }
 
-.morphsearch-submit {
+.morphsearch-form button {
   font-family: 'Icons';
   speak: none;
   font-style: normal;
@@ -1280,52 +1280,57 @@ input[type="search"] { /* reset normalize */
   font-variant: normal;
   text-transform: none;
   font-size:$fs5;
+  color:$blue;
   position:absolute;
-  right:45px;
-  height:15px;
-  width:15px;
-  margin-top:5px;
+  height:40px;
+  width:40px;
+  padding-top:5px;
   -webkit-font-smoothing: antialiased;
   border-radius:0px;
   border:none;
+  background: transparent;
+  box-shadow:none;
 }
+
+.morphsearch-form button:hover {
+  background-color:$link;
+  color:$white;
+}
+
+.morphsearch-submit {
+  right:40px;
+}
+
 .morphsearch-submit:before {
   content: "\21";
 }
 
-.morphsearch.open .morphsearch-submit {
-	pointer-events: auto;
-  right:50px;
-  height:50px;
-  width:50px;
-  font-size:$fs3;
-}
-
 .morphsearch-filter {
-  font-family: 'Icons';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  -webkit-font-smoothing: antialiased;
-  font-size:$fs5;
-  position:absolute;
-  right:15px;
-  height:15px;
-  width:15px;
-  margin-top:5px;
-  border-radius:0px;
-  border:none;
+  right:0px;
 }
 
 .morphsearch-filter:before {
   content: "\22";
 }
 
-.morphsearch.open .morphsearch-filter {
-  pointer-events:auto;
+.morphsearch.open .morphsearch-form button {
+  width: 128px;
+	height: 128px;
+  top:5px;
+  padding:0px;
+  font-size:$fs3;
+}
+
+.morphsearch.open .morphsearch-form .morphsearch-filter {
   width:0px;
+}
+
+.morphsearch.open .morphsearch-form .morphsearch-filter:before {
+  content:'';
+}
+
+.morphsearch.open .morphsearch-form .morphsearch-submit {
+  right:0px;
 }
 
 .morphsearch-close {
