@@ -1,8 +1,7 @@
-
-
 <meta charset="utf-8">
-<title>Design &#8211; Alex Hagen</title>
-<meta name="description" content="">
+<title>Designs &#8211; Alex Hagen</title>
+<meta name="description" content="Along with my scientific work at the lab, I also have done a lot of machine design, whether for experiments, or for commercial products. Below are some of the non-novel designs I've created.
+">
 <meta name="keywords" content="">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
@@ -38,8 +37,8 @@ MathJax.Hub.Config({
 </script>
 
 <meta property="og:locale" content="en_US">
-<meta property="og:title" content="Design &#8211; Alex Hagen">
-<meta property="og:description" content="# Designs">
+<meta property="og:title" content="Designs &#8211; Alex Hagen">
+<meta property="og:description" content="Along with my scientific work at the lab, I also have done a lot of machine design, whether for experiments, or for c...">
 <meta property="og:url" content="/design/">
 <meta property="og:site_name" content="Alex Hagen">
 
@@ -117,66 +116,70 @@ MathJax.Hub.Config({
 <!-- MORPHSEARCH -->
 
 
+  <div id="morphsearch" class="morphsearch">
+    <form class="morphsearch-form">
+      <input class="morphsearch-input" type="search" placeholder="Search..."/>
+      <button class="morphsearch-filter"></button>
+      <button class="morphsearch-submit" type="submit"></button>
+    </form>
+    <div class="morphsearch-content">
+      <div class="dummy-column">
+        <h2>Languages</h2>
+        
+        
+        
+        
+        
+      </div>
+      <div class="dummy-column">
+        <h2>Keywords</h2>
+        
+        
+        
+        
+        
+      </div>
+      <div id="recent-repos" class="dummy-column recent-repos">
+        <h2>Recent</h2>
+        <!--<a class="dummy-media-object" href="http://tympanus.net/codrops/2014/10/07/tooltip-styles-inspiration/">
+          <img src="img/thumbs/TooltipStylesInspiration.png" alt="TooltipStylesInspiration"/>
+          <h3>Tooltip Styles Inspiration</h3>
+        </a>-->
+      </div>
+    </div><!-- /morphsearch-content -->
+<span class="morphsearch-close"></span>
+</div><!-- /morphsearch -->
 
 
-<section class="article">
 
-  <div class="overlay overlay-lighter"></div>
-  <div class="featured-image">
-  	
-		
-	
-  	
-  	<div class="chart" data-size=3461>
-	    
-		    <div class="task solidworks" data-size=2752 data-percentage=79>
-		    	solidworks
-		    	
-		    		<div class = "subtask solidworks parts" data-size=954 data-percentage=34 total-percentage=27>parts</div>
-		    	
-		    		<div class = "subtask solidworks assemblies" data-size=595 data-percentage=21 total-percentage=17>assemblies</div>
-		    	
-		    		<div class = "subtask solidworks drawings" data-size=1203 data-percentage=43 total-percentage=34>drawings</div>
-		    	
-		    </div>
-	    
-		    <div class="task inkscape" data-size=584 data-percentage=16>
-		    	inkscape
-		    	
-		    		<div class = "subtask inkscape svg" data-size=203 data-percentage=34 total-percentage=5>svg</div>
-		    	
-		    		<div class = "subtask inkscape pdf" data-size=369 data-percentage=63 total-percentage=10>pdf</div>
-		    	
-		    		<div class = "subtask inkscape dxf" data-size=12 data-percentage=2 total-percentage=0>dxf</div>
-		    	
-		    </div>
-	    
-		    <div class="task eagle" data-size=100 data-percentage=2>
-		    	eagle
-		    	
-		    		<div class = "subtask eagle brd" data-size=35 data-percentage=35 total-percentage=1>brd</div>
-		    	
-		    		<div class = "subtask eagle sch" data-size=65 data-percentage=65 total-percentage=1>sch</div>
-		    	
-		    </div>
-	    
-		    <div class="task gimp" data-size=25 data-percentage=0>
-		    	gimp
-		    	
-		    		<div class = "subtask gimp raster" data-size=25 data-percentage=100 total-percentage=0>raster</div>
-		    	
-		    </div>
-	    
-	</div>
-  </div>
-
-
+<section class="article pad-top">
 
       <article class="wrap post">
+        <header class="post-header">
+          <hgroup>
+            <h1>Designs</h1>
+            <p class="intro">Along with my scientific work at the lab, I also have done a lot of machine design, whether for experiments, or for commercial products. Below are some of the non-novel designs I've created.
+</p>
+          </hgroup>
+          <!-- put the search/filter bar here -->
+        </header>
 
-        <h1 id="designs">Designs</h1>
+        <div class="gridWrapper">
 
+        
+          
+          <div class="tile subindex">
+            <div class="tileInner code" title="VWR Electrophoresis Chamber" type="" keywords=",electrophoresis,plastic,molded,solidworks">
+              <a href="..//design/vwr_electrophoresis_chamber"><p data-content="VWR Electrophoresis Chamber"></p></a>
+            </div>
+          </div>
+          
+        
 
+        </div>
+
+      <a class="share" href="https://twitter.com/intent/tweet?text=&quot;Designs&quot;%20http://alexhagen.github.io/design/%20via%20&#64;" data-dnt="true">Share</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
       </article>
     </section>
@@ -224,6 +227,177 @@ MathJax.Hub.Config({
   <script src="/js/jquery.timeago.js"></script>
   <script src="/js/main.js"></script>
   
+  <script src="/js/classie.js"></script>
+		<script>
+			(function() {
+				var morphSearch = document.getElementById( 'morphsearch' ),
+					input = morphSearch.querySelector( 'input.morphsearch-input' ),
+					ctrlClose = morphSearch.querySelector( 'span.morphsearch-close' ),
+					isOpen = isAnimating = false,
+					// show/hide search area
+					toggleSearch = function(evt) {
+						// return if open and the input gets focused
+						if( evt.type.toLowerCase() === 'focus' && isOpen ) return false;
+
+						var offsets = morphsearch.getBoundingClientRect();
+						if( isOpen ) {
+							classie.remove( morphSearch, 'open' );
+
+							// trick to hide input text once the search overlay closes
+							// todo: hardcoded times, should be done after transition ends
+							if( input.value !== '' ) {
+								setTimeout(function() {
+									classie.add( morphSearch, 'hideInput' );
+									setTimeout(function() {
+										classie.remove( morphSearch, 'hideInput' );
+										input.value = '';
+									}, 300 );
+								}, 500);
+							}
+
+							input.blur();
+						}
+						else {
+							classie.add( morphSearch, 'open' );
+						}
+						isOpen = !isOpen;
+					};
+
+				// events
+				input.addEventListener( 'focus', toggleSearch );
+				ctrlClose.addEventListener( 'click', toggleSearch );
+				// esc key closes search overlay
+				// keyboard navigation events
+				document.addEventListener( 'keydown', function( ev ) {
+					var keyCode = ev.keyCode || ev.which;
+					if( keyCode === 27 && isOpen ) {
+						toggleSearch(ev);
+					}
+				} );
+
+			})();
+		</script>
+
+    <script>
+    $(function(){
+      var $commitsList = $('#recent-repos');
+      var keyValuePairs = window.location.href.slice(window.location.href.indexOf("?") + 1).split("&");
+      var x, params = {};
+      $.each(keyValuePairs, function(i, keyValue){
+        x = keyValue.split('=');
+        params[x[0]] = x[1];
+      });
+
+    params.owner = "alexhagen";
+
+      $.ajax( "https://api.github.com/users/" + params.owner + "/events?callback=callback", {
+        dataType: 'jsonp',
+        type: 'get',
+        data: {
+          per_page: params.limit || 20
+        },
+        success: function(response, textStatus, jqXHR) {
+          var data = response.data;
+          var repos = [];
+          $.each(data, function(i, commit){
+            if ( $.inArray(commit.repo.name,repos) < 0 ) {
+              var message = '';
+              if (commit.payload.size > 0 ) {
+                message = "<p class='recent-repos-message'>"+commit.payload.commits[0].message+"</p>";
+              }
+              $('<a class="dummy-media-object recent-repo" keyword="'+commit.repo.name+'"><h4 class="recent-repos-name">'+commit.repo.name+'</h4>'+message+'<p class="recent-repos-time">'+$.timeago(commit.created_at)+'</p></a>').appendTo( $commitsList );
+              // add that into the array so we know it's already been discussed
+              repos.push( commit.repo.name );
+            }
+          });
+        }
+      });
+    });
+    </script>
+
+    <!-- Script to filter by language when clicked -->
+    <script>
+
+    closeSearch = function() {
+      var isOpen = true;
+      var morphSearch = document.getElementById( 'morphsearch' );
+      var input = morphSearch.querySelector( 'input.morphsearch-input' );
+      var ctrlClose = morphSearch.querySelector( 'span.morphsearch-close' );
+      var offsets = morphsearch.getBoundingClientRect();
+      if( isOpen ) {
+        classie.remove( morphSearch, 'open' );
+
+        // trick to hide input text once the search overlay closes
+        // todo: hardcoded times, should be done after transition ends
+        if( input.value !== '' ) {
+          setTimeout(function() {
+            classie.add( morphSearch, 'hideInput' );
+            setTimeout(function() {
+              classie.remove( morphSearch, 'hideInput' );
+              input.value = '';
+            }, 300 );
+          }, 500);
+        }
+
+        input.blur();
+      }
+      isOpen = !isOpen;
+    };
+
+    $( document ).ready(function() {
+      $('.language').click(function() {
+        closeSearch();
+        var keyword = $(this).attr('keyword');
+        $('div.code').not('[keywords*="'+keyword+'"]').parent().animate({
+          width: 0,
+        }, 1000, function() {
+          // Animation complete.
+        });
+      });
+    });
+
+    $( document ).ready(function() {
+      $('.keyword').click(function() {
+        closeSearch();
+        var keyword = $(this).attr('keyword');
+        $('div.code').not('[keywords*="'+keyword+'"]').parent().animate({
+          width: 0,
+        }, 1000, function() {
+          // Animation complete.
+        });
+      });
+    });
+
+    $( document ).ready(function() {
+      $('.recent-repos').on('click', 'a.recent-repo', function() {
+        closeSearch();
+        var keyword = $(this).attr('keyword').replace("alexhagen/","");
+        $('div.code').not('[keywords*="'+keyword+'"]').parent().animate({
+          width: 0,
+        }, 1000, function() {
+          // Animation complete.
+        });
+      });
+    });
+    </script>
+
+    <!-- actually implement the strict search -->
+    <script>
+    $( document ).ready(function() {
+      $('#morphsearch form').submit(function(event){
+        event.preventDefault();
+        closeSearch();
+        var keyword = $( "input:first" ).val();
+        $('div.code').not('[keywords*="'+keyword+'"],[title*="'+keyword+'"]').parent().animate({
+          width: 0,
+        }, 1000, function() {
+          // Animation complete.
+        });
+      });
+    });
+    </script>
+
+
 
   </body>
 
