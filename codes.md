@@ -8,6 +8,7 @@ description: >
   lab or for projects I'm working on at home.  Where I can, I've made these
   open source (obviously intellectual property gets in the way of me open
   sourcing simulations and novel work for the lab).
+from_posts: false
 codes:
   - title: ah_tcp_serv
     link: ah_tcp_serv/
