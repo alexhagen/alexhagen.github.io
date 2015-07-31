@@ -72,6 +72,9 @@ MathJax.Hub.Config({
 <!-- Load the waypoints -->
 <script type="text/javascript" src="/js/waypoints.min.js"></script>
 
+<!-- Implement Fuzzy Search -->
+<script type="text/javascript" src="/assets/js/fuse.min.js"></script>
+
 
 <div id="bump">
   <body class="">
@@ -372,49 +375,49 @@ MathJax.Hub.Config({
 
         
         <div class="tile subindex">
-          <div class="tileInner code" keywords="c++,c,cpp,tcp,server,networking,communication,signal slot">
+          <div class="tileInner code" title="ah_tcp_serv" type="c++" keywords="c++,c,cpp,tcp,server,networking,communication,signal slot">
             <a href="../ah_tcp_serv/"><p data-content="ah_tcp_serv"></p></a>
           </div>
         </div>
         
         <div class="tile subindex">
-          <div class="tileInner code" keywords="python,py,finite element,fem,simulation,pde,partial differential equation">
+          <div class="tileInner code" title="ah_fem" type="python" keywords="python,py,finite element,fem,simulation,pde,partial differential equation">
             <a href="../ah_fem/"><p data-content="ah_fem"></p></a>
           </div>
         </div>
         
         <div class="tile subindex">
-          <div class="tileInner code" keywords="c++,c,cpp,tcp,client,networking,communication,signal slot">
+          <div class="tileInner code" title="ah_tcp_client" type="c++" keywords="c++,c,cpp,tcp,client,networking,communication,signal slot">
             <a href="../ah_tcp_client/"><p data-content="ah_tcp_client"></p></a>
           </div>
         </div>
         
         <div class="tile subindex">
-          <div class="tileInner code" keywords="python,python,matlab,gis,map,navigation,svg">
+          <div class="tileInner code" title="maptiler" type="python" keywords="python,python,matlab,gis,map,navigation,svg">
             <a href="../maptiler/"><p data-content="maptiler"></p></a>
           </div>
         </div>
         
         <div class="tile subindex">
-          <div class="tileInner code" keywords="c++,c,cpp,udp,client,networking,communication,signal slot">
+          <div class="tileInner code" title="ah_udp_serv" type="c++" keywords="c++,c,cpp,udp,client,networking,communication,signal slot">
             <a href="../ah_udp_serv"><p data-content="ah_udp_serv"></p></a>
           </div>
         </div>
         
         <div class="tile subindex">
-          <div class="tileInner code" keywords="c++,c,cpp,udp,client,networking,communication,signal slot">
+          <div class="tileInner code" title="ah_udp_client" type="c++" keywords="c++,c,cpp,udp,client,networking,communication,signal slot">
             <a href="../ah_udp_client/"><p data-content="ah_udp_client"></p></a>
           </div>
         </div>
         
         <div class="tile subindex">
-          <div class="tileInner code" keywords="c++,c,cpp,timing,hardware,signal,signal slot">
+          <div class="tileInner code" title="ah_timer" type="c++" keywords="c++,c,cpp,timing,hardware,signal,signal slot">
             <a href="../ah_timer/"><p data-content="ah_timer"></p></a>
           </div>
         </div>
         
         <div class="tile subindex">
-          <div class="tileInner code" keywords="matlab,matlab,point kinetics,nuclear reactor,neutronics,thermal hydraulics,conduction,finite difference method,fdm">
+          <div class="tileInner code" title="ah_pk" type="matlab" keywords="matlab,matlab,point kinetics,nuclear reactor,neutronics,thermal hydraulics,conduction,finite difference method,fdm">
             <a href="../ah_pk/"><p data-content="ah_pk"></p></a>
           </div>
         </div>
@@ -617,6 +620,22 @@ MathJax.Hub.Config({
         closeSearch();
         var keyword = $(this).attr('keyword').replace("alexhagen/","");
         $('div.code').not('[keywords*="'+keyword+'"]').parent().animate({
+          width: 0,
+        }, 1000, function() {
+          // Animation complete.
+        });
+      });
+    });
+    </script>
+
+    <!-- actually implement the strict search -->
+    <script>
+    $( document ).ready(function() {
+      $('#morphsearch form').submit(function(event){
+        event.preventDefault();
+        closeSearch();
+        var keyword = $( "input:first" ).val();
+        $('div.code').not('[keywords*="'+keyword+'"],[title*="'+keyword+'"]').parent().animate({
           width: 0,
         }, 1000, function() {
           // Animation complete.
