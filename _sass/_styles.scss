@@ -633,6 +633,8 @@ header.site-header nav {
   height:100%;
   top:0;
   left:0;
+  pointer-events:visible;
+
 }
 
 .tileInner {
@@ -643,7 +645,7 @@ header.site-header nav {
       bottom: 10px;
       padding: 10px;
       overflow: hidden;
-      background-color: $grey-medium;
+      background-color: $grey-light;
       a {
         position: absolute;
         left: 10px;
@@ -659,20 +661,18 @@ header.site-header nav {
                 text-align:center;
                 &:after {
                     content: attr(data-content);
-                    color:$white;
-                    &:hover {
-                        color:$black;
-                    }
+                    color:$blue;
                 }
         }
+        background: rgba($white,0.4);
+        @include transit(all,1s,ease-in-out);
         &:hover {
-
             p:after {
-                color: $black;
+                color: $accent;
                 opacity: 1;
                 @include transit(all,1s, ease-in-out);
             }
-            background: rgba($white,0.4);
+            background: rgba($white,0.8);
             @include transit(all,1s,ease-in-out);
         }
       }
