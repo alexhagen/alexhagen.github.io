@@ -22,14 +22,18 @@ bibs:
 <ul class="cbp_tmtimeline">
 	<li>
 		<time class="cbp_tmtime" datetime="2016-05-10"><span>2016</span><span>expected</span></time>
-		<div class="cbp_tmicon fa fa-user-md"></div>
+		<div class="cbp_tmicon fa fa-user-md fa-pulse"></div>
 		<div class="cbp_tmlabel">
 			<h2>Doctor of Philosophy</h2>
       <div class="byline">
         <span class="major">Nuclear Engineering</span>
         <span class="university">Purdue University</span>
       </div>
-			<p>Winter purslane courgette pumpkin quandong komatsuna fennel green bean cucumber watercress. Pea sprouts wattle seed rutabaga okra yarrow cress avocado grape radish bush tomato ricebean black-eyed pea maize eggplant. Cabbage lentil cucumber chickpea sorrel gram garbanzo plantain lotus root bok choy squash cress potato summer purslane salsify fennel horseradish dulse. Winter purslane garbanzo artichoke broccoli lentil corn okra silver beet celery quandong. Plantain salad beetroot bunya nuts black-eyed pea collard greens radish water spinach gourd chicory prairie turnip avocado sierra leone bologi.</p>
+			<p>Currently working on dissertation involving the use of active interrogation
+      to detect and interdict nuclear material with TMFDs as the neutron (fission)
+      detector. Pass qualification exams on general nuclear engineering,
+      detection methods, material sciences, thermal hydraulics, and reactor
+      theory (statics and dynamics of nuclear reactors).</p>
 		</div>
 	</li>
 	<li>
@@ -41,7 +45,12 @@ bibs:
         <span class="major">Nuclear Engineering</span>
         <span class="university">Purdue University</span>
       </div>
-			<p>Caulie dandelion maize lentil collard greens radish arugula sweet pepper water spinach kombu courgette lettuce. Celery coriander bitterleaf epazote radicchio shallot winter purslane collard greens spring onion squash lentil. Artichoke salad bamboo shoot black-eyed pea brussels sprout garlic kohlrabi.</p>
+			<p>Published thesis on the optimization and characterization of a
+      tensioned metastable fluid detector as passive neutron detector for
+      interdiction of special nuclear material. Also completed a cirriculum
+      with focus on thermal hydraulics in nuclear power plant systems,
+      neutronics, and material reaction to incident radiation. Took additional
+      courses on numerical methods and computational science.</p>
 		</div>
 	</li>
 	<li>
@@ -53,7 +62,10 @@ bibs:
         <span class="major">Nuclear Engineering</span>
         <span class="university">Purdue University</span>
       </div>
-			<p>Parsnip lotus root celery yarrow seakale tomato collard greens tigernut epazote ricebean melon tomatillo soybean chicory broccoli beet greens peanut salad. Lotus root burdock bell pepper chickweed shallot groundnut pea sprouts welsh onion wattle seed pea salsify turnip scallion peanut arugula bamboo shoot onion swiss chard. Avocado tomato peanut soko amaranth grape fennel chickweed mung bean soybean endive squash beet greens carrot chicory green bean. Tigernut dandelion sea lettuce garlic daikon courgette celery maize parsley komatsuna black-eyed pea bell pepper aubergine cauliflower zucchini. Quandong pea chickweed tomatillo quandong cauliflower spinach water spinach.</p>
+			<p>Completed a cirriculum focused on nuclear engineering basics,
+      nuclear power plant systems, and neutronics.  Also took courses on
+      alternative uses of nuclear engineering, engineering economics,
+      fuel cell technology, among others.</p>
 		</div>
 	</li>
 </ul>

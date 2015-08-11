@@ -94,8 +94,8 @@
   animation: fa-spin 2s infinite linear;
 }
 .fa-pulse {
-  -webkit-animation: fa-spin 1s infinite steps(8);
-  animation: fa-spin 1s infinite steps(8);
+  -webkit-animation: fa-pulse 5s infinite steps(32);
+  animation: fa-pulse 5s infinite steps(32);
 }
 @-webkit-keyframes fa-spin {
   0% {
@@ -117,6 +117,29 @@
     transform: rotate(359deg);
   }
 }
+@-webkit-keyframes fa-pulse {
+  0% {
+    opacity:1.0;
+  }
+  50% {
+    opacity:0.6;
+  }
+  100% {
+    opacity:1.0;
+  }
+}
+@keyframes fa-pulse {
+  0% {
+    opacity:1.0;
+  }
+  50% {
+    opacity:0.6;
+  }
+  100% {
+    opacity:1.0;
+  }
+}
+
 .fa-rotate-90 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
   -webkit-transform: rotate(90deg);
