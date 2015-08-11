@@ -68,7 +68,7 @@ bibs:
       <h2>Graduate Researcher</h2>
       <div class="byline">
         <span>Metstable Fluids Research Laboratory</span>
-        <span>Lafayette, IN</span>
+        <span>Purdue University</span>
       </div>
       <p>Developed methodology for validating multiphysics simulation of Acoustically Tensioned Metastable Fluid Detector system, optimized system with design of a sealing lid, and supported Centrifugally Tensioned Metastable Fluid Detector research group with design and machine drawings</p>
     </div>
@@ -164,7 +164,7 @@ bibs:
   </li>
   <li>
     <time class="cbp_tmtime" datetime="2011-08-15"><span>2010- 2012</span><span>research</span></time>
-    <div class="cbp_tmicon fa fa-cubes"></div>
+    <div class="cbp_tmicon fa fa-cog fa-spin"></div>
     <div class="cbp_tmlabel">
       <h2>Undergraduate Researcher</h2>
       <div class="byline">
@@ -184,6 +184,24 @@ bibs:
         <span>Argonne National Laboratory</span>
       </div>
         <p>Validated NEAMES project multiphysics fission reactor simulation against pre-existing neutronics codes (VARIANT, DIFF3D) and experimental data</p>
+    </div>
+  </li>
+</ul>
+
+## Industrial Positions
+{: abbr='ind-pos'}
+
+<ul class="cbp_tmtimeline">
+  <li>
+    <time class="cbp_tmtime" datetime="2010-12-23"><span>2009- 2010</span><span>design</span></time>
+    <div class="cbp_tmicon fa fa-cubes"></div>
+    <div class="cbp_tmlabel">
+      <h2>Industrial Design Assistant</h2>
+      <div class="byline">
+        <span>Steiner Enterprises</span>
+        <span>Lafayette, IN</span>
+      </div>
+      <p>Designed stuff</p>
     </div>
   </li>
 </ul>
