@@ -3,3 +3,4 @@
 
 # generated files
 _site/
+*.lyx~
