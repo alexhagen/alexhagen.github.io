@@ -313,18 +313,18 @@ header.site-header nav {
     .overlay {
         vertical-align: middle;
         min-height: 360px;
-        height: 50vh;
+        // height: 50vh;
         width: 100%;
-        max-height: 800px;
+        max-height: 600px;
         position: absolute;
         z-index: 2;
-        background: rgba(0,0,0,.95);
+        background: rgba(255,255,255,.25);
     }
     .overlay-lighter {
-        background: rgba(0,0,0,.1);
+        background: rgba(255,255,255,.55);
     }
     .overlay-darker {
-        background: rgba(0,0,0,.1);
+        background: rgba(0,0,0,.55);
     }
 
     .featured-image {
