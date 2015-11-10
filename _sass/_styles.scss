@@ -696,169 +696,86 @@ header.site-header nav {
           }
 }
 
-/* Grid Stuff */
-
-.gridWrapper {
-      overflow: hidden;
-      margin: 0px;
-      .tile:nth-child(4n+1),
-      .tile-double:nth-child(4n+1),
-      .tile-triple:nth-child(4n+1),
-      .tile-quad:nth-child(4n+1) {
-        background: repeating-linear-gradient(
-          45deg,
-          $grey-light-3,
-          $grey-light-3 10px,
-          $white 10px,
-          $white 20px
-        );
-      }
-      .tile:nth-child(4n+2),
-      .tile-double:nth-child(4n+2),
-      .tile-triple:nth-child(4n+2),
-      .tile-quad:nth-child(4n+2) {
-        background: repeating-linear-gradient(
-          0deg,
-          $grey-light-3,
-          $grey-light-3 10px,
-          $white 10px,
-          $white 20px
-        );
-      }
-      .tile:nth-child(4n+3),
-      .tile-double:nth-child(4n+3),
-      .tile-triple:nth-child(4n+3),
-      .tile-quad:nth-child(4n+3) {
-        background: repeating-linear-gradient(
-          -45deg,
-          $grey-light-3,
-          $grey-light-3 10px,
-          $white 10px,
-          $white 20px
-        );
-      }
-      .tile:nth-child(4n+4),
-      .tile-double:nth-child(4n+4),
-      .tile-triple:nth-child(4n+4),
-      .tile-quad:nth-child(4n+4) {
-        background: repeating-linear-gradient(
-          90deg,
-          $grey-light-3,
-          $grey-light-3 10px,
-          $white 10px,
-          $white 20px
-        );
-      }
-      .tile {
-        float: left;
-        position: relative;
-        width: 10%;
-        padding-bottom: 10%;
-      }
-      .tile-double {
-        float:left;
-        position:relative;
-        width:20%;
-        padding-bottom:10%;
-      }
-      .tile-triple {
-        float:left;
-        position:relative;
-        width:30%;
-        padding-bottom:10%;
-      }
-      .tile-quad {
-        float:left;
-        position:relative;
-        width:40%;
-        padding-bottom:10%;
-      }
-      .double {
-        padding-bottom:20%;
-      }
-      .triple {
-        padding-bottom:30%;
-      }
-      .quad {
-        padding-bottom:40%;
-      }
-      .feature {
-        background-position: center center;
-        background-size: 150%;
-        filter: blur(1px);
-        @include transit(all,1s, ease-in-out);
-        -webkit-filter: blur(1px);
-        @include transit(all,1s, ease-in-out);
-        position:absolute;
-        width:100%;
-        height:100%;
-        top:0;
-        left:0;
-        .img {
-          background: radial-gradient(circle, rgba(249,249,249,0.8) 0%, rgba(249,249,249,1) 100%);
-          @include transit(all,1s, ease-in-out);
-          background: -webkit-radial-gradient(circle, rgba(249,249,249,0.8) 0%, rgba(249,249,249,1) 80%);
-          @include transit(all,1s, ease-in-out);
-          opacity:1;
-          position:absolute;
-          width:100%;
-          height:100%;
-          top:0;
-          left:0;
+/* Title Page Stuff */
+.title-head {
+  height:500px;
+  width:100%;
+  margin:0px;
+  text-align: center;
+    .title-stripe {
+      display:inline-block;
+      margin-top:150px;
+      width:100%;
+      height:200px;
+      padding:0px;
+      background-color:$black;
+      .title-stripe-break{
+        padding:0px;
+        margin:0px;
+        margin-left:auto;
+        margin-right:auto;
+        width: 300px;
+        height: 200px;
+        background-color:$white;
+        .title-logo {
+          margin-left:auto;
+          margin-right:auto;
+          height:200px;
+          background: url('../../images/title_bar.svg') no-repeat center center;
         }
       }
-      .tileInner {
-            position: absolute;
-            left: 0px;
-            right: 0px;
-            top: 0px;
-            bottom: 0px;
-            padding: 10px;
-            overflow: hidden;
-            background: rgba($grey-light,0.0);
-            @include transit(all,1s,ease-in-out);
-            &:hover {
-                .feature {
-                  filter: blur(0px);
-                  @include transit(all,1s, ease-in-out);
-                  -webkit-filter: blur(0px);
-                  @include transit(all,1s, ease-in-out);
-                  .img {
-                    opacity:0.1;
-                    @include transit(all,1s, ease-in-out);
-                  }
-                }
-                a p:after {
-                    color: $accent;
-                    opacity: 1;
-                    @include transit(all,1s, ease-in-out);
-                }
-                background: rgba($grey-light,0.8);
-                @include transit(all,1s,ease-in-out);
-            }
-            a {
-              position: absolute;
-              left: 10px;
-              right: 10px;
-              top: 10px;
-              bottom: 10px;
-              padding:10px;
-              overflow:hidden;
-              p {
-                      margin-left:auto;
-                      margin-right:auto;
-                      @include ghostVerticalAlign();
-                      text-align:center;
-                      &:after {
-                          content: attr(data-content);
-                          color:$blue;
-                      }
-              }
-            }
-          }
+    }
 }
 
+/* Grid Stuff */
 
+.grid {
+  width: 1280px;
+  padding: 5px;
+  margin-left:auto;
+  margin-right:auto;
+  .cell {
+    width: 300px;
+    height: 300px;
+    margin:5px;
+    display: inline-block;
+    text-align:center;
+    background-color: $grey-light-2;
+    text-decoration:none;
+    &:hover {
+        @include transit(all, .5s, ease-in-out);
+        background-color: $grey-light-2;
+        .title {
+          @include transit(all, .5s, ease-in-out);
+          color:$accent;
+        }
+      }
+    .title {
+      text-align: center;
+      @include ghostVerticalAlign();
+      margin-left:auto;
+      margin-right:auto;
+      font-size: $fs4;
+      font-family: $sans;
+      font-weight: 700;
+      line-height: 100%;
+      text-transform: uppercase;
+      color:$black;
+    }
+  }
+  .cv {
+    background: url('../../images/cv_illustration.svg') no-repeat center center;
+  }
+  .publications {
+    background: url('../../images/publication_illustration.svg') no-repeat center center;
+  }
+  .code {
+    background: url('../../images/code_illustration.svg') no-repeat center center;
+  }
+  .simulations {
+    background: url('../../images/simulation_illustration.svg') no-repeat center center;
+  }
+}
 
 /* plot stuff */
 .featured-chart {
