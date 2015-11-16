@@ -405,6 +405,13 @@ header.site-header nav {
   padding-top:65px;
   padding-left:0px;
   padding-right:0px;
+  text-align: center;
+  .post-header {
+      width:1280px;
+      text-align:center;
+      margin-left: auto;
+      margin-right: auto;
+  }
 }
 
 .archive-wrap {
@@ -1010,6 +1017,11 @@ header.site-header hgroup a .breadcrumb {
 
 
 @media only screen and (max-width: 1281px) {
+    .full-width {
+        .post-header {
+            width: 961px;
+        }
+    }
   .grid{
     width: 961px;
     .cell{
@@ -1031,6 +1043,11 @@ header.site-header hgroup a .breadcrumb {
 }
 
 @media only screen and (max-width: 961px) {
+    .full-width {
+        .post-header {
+            width: 680px;
+        }
+    }
   .grid{
     width: 680px;
     .cell{
@@ -1063,6 +1080,11 @@ header.site-header hgroup a .breadcrumb {
 }
 
 @media only screen and (max-width: 680px) {
+    .full-width {
+        .post-header {
+            width: 480px;
+        }
+    }
   .grid{
     width: 480px;
     .cell{
