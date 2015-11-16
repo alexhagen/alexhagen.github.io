@@ -1,6 +1,17 @@
 <meta charset="utf-8">
 <title>Codes &#8211; Alex Hagen</title>
-<meta name="description" content="I write a lot of codes as support for my project, whether at the lab or for projects I'm working on at home.  Where I can, I've made these open source (obviously intellectual property gets in the way of me open sourcing simulations and novel work for the lab).
+<meta name="description" content="Throughout the years, I've ended up writing thousands of lines of code as support for classes or projects or research.  A couple years ago, I had the epiphany that if I saved all of the helper functions and reused snippets, and put in the effort to package them and document them, I would save time, and maybe others could use them.  There are a couple limitations to this plan, since I can't publish anything "novel" or "protected" (basically if Purdue thinks it owns the intellectual property, it does), but other than that, I'm trying to open source everything.  The codes fall under a couple categories:
+- Firmware helper classes:  Usually written in `c++`, these classes are
+  transparent wrappers to more complicated `c` and `c++` routines that help
+  in my mechatronics projects.
+- Python data analysis and visualization classes: To publish, you need to make
+  a lot of figures and do a lot of analysis, and I've saved the non-specific
+  ones of those to these libraries
+- Challenge/class project programs: Most classes that have a final project are
+  good ways to show off your skills, so I'll be cleaning up some of these
+  (such as finite element codes, or point kinetics) to display on this page.
+
+I'm providing all of these with no license whatsoever, so have fun coding!
 ">
 <meta name="keywords" content="">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -38,7 +49,7 @@ MathJax.Hub.Config({
 
 <meta property="og:locale" content="en_US">
 <meta property="og:title" content="Codes &#8211; Alex Hagen">
-<meta property="og:description" content="I write a lot of codes as support for my project, whether at the lab or for projects I'm working on at home.  Where I...">
+<meta property="og:description" content="Throughout the years, I've ended up writing thousands of lines of code as support for classes or projects or research...">
 <meta property="og:url" content="/codes/">
 <meta property="og:site_name" content="Alex Hagen">
 
@@ -139,13 +150,6 @@ MathJax.Hub.Config({
           
         
           
-          <a class="dummy-media-object language" keyword="matlab">
-            <img class="round" src="/assets/img/matlab.png" alt="matlab"/>
-            <h3>matlab</h3>
-          </a>
-          
-        
-          
           <a class="dummy-media-object language" keyword="python">
             <img class="round" src="/assets/img/python.png" alt="python"/>
             <h3>python</h3>
@@ -179,8 +183,8 @@ MathJax.Hub.Config({
           
         
           
-          <a class="dummy-media-object keyword" keyword="conduction">
-            <h4>conduction</h4>
+          <a class="dummy-media-object keyword" keyword="contour">
+            <h4>contour</h4>
           </a>
           
         
@@ -191,56 +195,32 @@ MathJax.Hub.Config({
           
         
           
-          <a class="dummy-media-object keyword" keyword="fdm">
-            <h4>fdm</h4>
+          <a class="dummy-media-object keyword" keyword="graphing">
+            <h4>graphing</h4>
           </a>
           
         
           
-          <a class="dummy-media-object keyword" keyword="fem">
-            <h4>fem</h4>
+          <a class="dummy-media-object keyword" keyword="integration">
+            <h4>integration</h4>
           </a>
           
         
           
-          <a class="dummy-media-object keyword" keyword="finite difference method">
-            <h4>finite difference method</h4>
+          <a class="dummy-media-object keyword" keyword="interpolation">
+            <h4>interpolation</h4>
           </a>
           
         
           
-          <a class="dummy-media-object keyword" keyword="finite element">
-            <h4>finite element</h4>
+          <a class="dummy-media-object keyword" keyword="math">
+            <h4>math</h4>
           </a>
           
         
           
-          <a class="dummy-media-object keyword" keyword="gis">
-            <h4>gis</h4>
-          </a>
-          
-        
-          
-          <a class="dummy-media-object keyword" keyword="hardware">
-            <h4>hardware</h4>
-          </a>
-          
-        
-          
-          <a class="dummy-media-object keyword" keyword="map">
-            <h4>map</h4>
-          </a>
-          
-        
-          
-          <a class="dummy-media-object keyword" keyword="matlab">
-            <h4>matlab</h4>
-          </a>
-          
-        
-          
-          <a class="dummy-media-object keyword" keyword="navigation">
-            <h4>navigation</h4>
+          <a class="dummy-media-object keyword" keyword="matplotlib">
+            <h4>matplotlib</h4>
           </a>
           
         
@@ -251,38 +231,14 @@ MathJax.Hub.Config({
           
         
           
-          <a class="dummy-media-object keyword" keyword="neutronics">
-            <h4>neutronics</h4>
+          <a class="dummy-media-object keyword" keyword="numerical methods">
+            <h4>numerical methods</h4>
           </a>
           
         
           
-          <a class="dummy-media-object keyword" keyword="nuclear reactor">
-            <h4>nuclear reactor</h4>
-          </a>
-          
-        
-          
-          <a class="dummy-media-object keyword" keyword="partial differential equation">
-            <h4>partial differential equation</h4>
-          </a>
-          
-        
-          
-          <a class="dummy-media-object keyword" keyword="pde">
-            <h4>pde</h4>
-          </a>
-          
-        
-          
-          <a class="dummy-media-object keyword" keyword="point kinetics">
-            <h4>point kinetics</h4>
-          </a>
-          
-        
-          
-          <a class="dummy-media-object keyword" keyword="py">
-            <h4>py</h4>
+          <a class="dummy-media-object keyword" keyword="plotting">
+            <h4>plotting</h4>
           </a>
           
         
@@ -299,26 +255,8 @@ MathJax.Hub.Config({
           
         
           
-          <a class="dummy-media-object keyword" keyword="signal">
-            <h4>signal</h4>
-          </a>
-          
-        
-          
           <a class="dummy-media-object keyword" keyword="signal slot">
             <h4>signal slot</h4>
-          </a>
-          
-        
-          
-          <a class="dummy-media-object keyword" keyword="simulation">
-            <h4>simulation</h4>
-          </a>
-          
-        
-          
-          <a class="dummy-media-object keyword" keyword="svg">
-            <h4>svg</h4>
           </a>
           
         
@@ -329,20 +267,8 @@ MathJax.Hub.Config({
           
         
           
-          <a class="dummy-media-object keyword" keyword="thermal hydraulics">
-            <h4>thermal hydraulics</h4>
-          </a>
-          
-        
-          
-          <a class="dummy-media-object keyword" keyword="timing">
-            <h4>timing</h4>
-          </a>
-          
-        
-          
-          <a class="dummy-media-object keyword" keyword="udp">
-            <h4>udp</h4>
+          <a class="dummy-media-object keyword" keyword="visualization">
+            <h4>visualization</h4>
           </a>
           
         
@@ -362,73 +288,50 @@ MathJax.Hub.Config({
 
 <section class="article pad-top">
 
-      <article class="wrap post">
+      <article class="full-width">
         <header class="post-header">
           <hgroup>
             <h1>Codes</h1>
-            <p class="intro">I write a lot of codes as support for my project, whether at the lab or for projects I'm working on at home.  Where I can, I've made these open source (obviously intellectual property gets in the way of me open sourcing simulations and novel work for the lab).
+            <p class="intro">Throughout the years, I've ended up writing thousands of lines of code as support for classes or projects or research.  A couple years ago, I had the epiphany that if I saved all of the helper functions and reused snippets, and put in the effort to package them and document them, I would save time, and maybe others could use them.  There are a couple limitations to this plan, since I can't publish anything "novel" or "protected" (basically if Purdue thinks it owns the intellectual property, it does), but other than that, I'm trying to open source everything.  The codes fall under a couple categories:
+- Firmware helper classes:  Usually written in `c++`, these classes are
+  transparent wrappers to more complicated `c` and `c++` routines that help
+  in my mechatronics projects.
+- Python data analysis and visualization classes: To publish, you need to make
+  a lot of figures and do a lot of analysis, and I've saved the non-specific
+  ones of those to these libraries
+- Challenge/class project programs: Most classes that have a final project are
+  good ways to show off your skills, so I'll be cleaning up some of these
+  (such as finite element codes, or point kinetics) to display on this page.
+
+I'm providing all of these with no license whatsoever, so have fun coding!
 </p>
           </hgroup>
           <!-- put the search/filter bar here -->
         </header>
 
-        <div class="gridWrapper">
-
+        <div class='grid'>
         
           
-          <div class="tile subindex">
-            <div class="tileInner code" title="ah_tcp_serv" type="c++" keywords="c++,c,cpp,tcp,server,networking,communication,signal slot">
-              <a href="../ah_tcp_serv/"><p data-content="ah_tcp_serv"></p></a>
-            </div>
-          </div>
+          <a class="cell" href="../ah_tcp_serv/" type="c++" keywords="c++,c,cpp,tcp,server,networking,communication,signal slot">
+            <div class='title'>ah_tcp_serv</div>
+          </a>
           
-          <div class="tile subindex">
-            <div class="tileInner code" title="ah_fem" type="python" keywords="python,py,finite element,fem,simulation,pde,partial differential equation">
-              <a href="../ah_fem/"><p data-content="ah_fem"></p></a>
-            </div>
-          </div>
+          <a class="cell" href="../ah_tcp_client/" type="c++" keywords="c++,c,cpp,tcp,client,networking,communication,signal slot">
+            <div class='title'>ah_tcp_client</div>
+          </a>
           
-          <div class="tile subindex">
-            <div class="tileInner code" title="ah_tcp_client" type="c++" keywords="c++,c,cpp,tcp,client,networking,communication,signal slot">
-              <a href="../ah_tcp_client/"><p data-content="ah_tcp_client"></p></a>
-            </div>
-          </div>
+          <a class="cell" href="../pym/" type="python" keywords="python,python,math,numerical methods,integration,interpolation">
+            <div class='title'>pym</div>
+          </a>
           
-          <div class="tile subindex">
-            <div class="tileInner code" title="maptiler" type="python" keywords="python,python,matlab,gis,map,navigation,svg">
-              <a href="../maptiler/"><p data-content="maptiler"></p></a>
-            </div>
-          </div>
-          
-          <div class="tile subindex">
-            <div class="tileInner code" title="ah_udp_serv" type="c++" keywords="c++,c,cpp,udp,client,networking,communication,signal slot">
-              <a href="../ah_udp_serv"><p data-content="ah_udp_serv"></p></a>
-            </div>
-          </div>
-          
-          <div class="tile subindex">
-            <div class="tileInner code" title="ah_udp_client" type="c++" keywords="c++,c,cpp,udp,client,networking,communication,signal slot">
-              <a href="../ah_udp_client/"><p data-content="ah_udp_client"></p></a>
-            </div>
-          </div>
-          
-          <div class="tile subindex">
-            <div class="tileInner code" title="ah_timer" type="c++" keywords="c++,c,cpp,timing,hardware,signal,signal slot">
-              <a href="../ah_timer/"><p data-content="ah_timer"></p></a>
-            </div>
-          </div>
-          
-          <div class="tile subindex">
-            <div class="tileInner code" title="ah_pk" type="matlab" keywords="matlab,matlab,point kinetics,nuclear reactor,neutronics,thermal hydraulics,conduction,finite difference method,fdm">
-              <a href="../ah_pk/"><p data-content="ah_pk"></p></a>
-            </div>
-          </div>
+          <a class="cell" href="../pyg/" type="python" keywords="python,python,graphing,plotting,matplotlib,visualization,contour">
+            <div class='title'>pyg</div>
+          </a>
           
         
 
         </div>
 
-      <a class="share" href="https://twitter.com/intent/tweet?text=&quot;Codes&quot;%20http://alexhagen.github.io/codes/%20via%20&#64;" data-dnt="true">Share</a>
       <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
       </article>
