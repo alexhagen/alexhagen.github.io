@@ -6,20 +6,18 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 16 Nov 2015 08:22:19 -0500</pubDate>
-    <lastBuildDate>Mon, 16 Nov 2015 08:22:19 -0500</lastBuildDate>
-    <generator>Jekyll v3.0.0</generator>
+    <pubDate>Wed, 13 Jan 2016 10:13:38 -0500</pubDate>
+    <lastBuildDate>Wed, 13 Jan 2016 10:13:38 -0500</lastBuildDate>
+    <generator>Jekyll v3.0.1</generator>
     
       <item>
         <title>Hubtools: Tools to Help with Github</title>
         <description>
 </description>
         <pubDate>Thu, 08 Jan 2015 00:00:00 -0500</pubDate>
-        <link>/code/codes/hubtools</link>
-        <guid isPermaLink="true">/code/codes/hubtools</guid>
+        <link>/codes/hubtools</link>
+        <guid isPermaLink="true">/codes/hubtools</guid>
         
-        
-        <category>code</category>
         
         <category>codes</category>
         
@@ -30,11 +28,9 @@
         <description>
 </description>
         <pubDate>Mon, 20 Oct 2014 00:00:00 -0400</pubDate>
-        <link>/code/codes/ah-value</link>
-        <guid isPermaLink="true">/code/codes/ah-value</guid>
+        <link>/codes/ah_value</link>
+        <guid isPermaLink="true">/codes/ah_value</guid>
         
-        
-        <category>code</category>
         
         <category>codes</category>
         
@@ -45,11 +41,9 @@
         <description>
 </description>
         <pubDate>Fri, 03 Oct 2014 00:00:00 -0400</pubDate>
-        <link>/code/codes/ah-tcp-serv</link>
-        <guid isPermaLink="true">/code/codes/ah-tcp-serv</guid>
+        <link>/codes/ah_tcp_serv</link>
+        <guid isPermaLink="true">/codes/ah_tcp_serv</guid>
         
-        
-        <category>code</category>
         
         <category>codes</category>
         
@@ -60,11 +54,9 @@
         <description>
 </description>
         <pubDate>Fri, 03 Oct 2014 00:00:00 -0400</pubDate>
-        <link>/code/codes/ah-tcp-client</link>
-        <guid isPermaLink="true">/code/codes/ah-tcp-client</guid>
+        <link>/codes/ah_tcp_client</link>
+        <guid isPermaLink="true">/codes/ah_tcp_client</guid>
         
-        
-        <category>code</category>
         
         <category>codes</category>
         
@@ -75,11 +67,9 @@
         <description>
 </description>
         <pubDate>Sun, 28 Sep 2014 00:00:00 -0400</pubDate>
-        <link>/code/codes/ah-timer</link>
-        <guid isPermaLink="true">/code/codes/ah-timer</guid>
+        <link>/codes/ah_timer</link>
+        <guid isPermaLink="true">/codes/ah_timer</guid>
         
-        
-        <category>code</category>
         
         <category>codes</category>
         
@@ -90,13 +80,11 @@
         <description>&lt;p&gt;My Master’s Thesis was published in August of 2014 after defending the thesis to a committee of &lt;em&gt;Purdue Nuclear Engineering&lt;/em&gt; and &lt;em&gt;Purdue Health Physics&lt;/em&gt; faculty members in May of 2014.  The thesis includes business confidential material and will not be published until 2016.  I will post the full text at that time.&lt;/p&gt;
 </description>
         <pubDate>Fri, 15 Aug 2014 08:00:00 -0400</pubDate>
-        <link>/pub/publications/multiphysics-modeling-in-optimization</link>
-        <guid isPermaLink="true">/pub/publications/multiphysics-modeling-in-optimization</guid>
+        <link>/publications/multiphysics-modeling-in-optimization</link>
+        <guid isPermaLink="true">/publications/multiphysics-modeling-in-optimization</guid>
         
         <category>authored</category>
         
-        
-        <category>pub</category>
         
         <category>publications</category>
         
@@ -107,13 +95,11 @@
         <description>&lt;p&gt;I was invited to give a talk and poster at the 22nd &lt;em&gt;International Conference on Nuclear Engineering&lt;/em&gt; (ICONE) in Prague. The poster that accompanied this talk and paper was selected as a Winner in the student competition.  I have submitted a revised version of this paper for publication in a new ASME journal, &lt;em&gt;Nuclear Engineering and Radiation Science&lt;/em&gt;.&lt;/p&gt;
 </description>
         <pubDate>Fri, 11 Jul 2014 08:00:00 -0400</pubDate>
-        <link>/pub/publications/characterization-and-optimization-of</link>
-        <guid isPermaLink="true">/pub/publications/characterization-and-optimization-of</guid>
+        <link>/publications/characterization-and-optimization-of</link>
+        <guid isPermaLink="true">/publications/characterization-and-optimization-of</guid>
         
         <category>authored</category>
         
-        
-        <category>pub</category>
         
         <category>publications</category>
         
@@ -124,13 +110,11 @@
         <description>&lt;p&gt;My colleague and I wrote this paper for the International Conference on Nuclear Engineering, winning the Student paper competition with it.  A revised copy has been submitted for review to be published in ASME’s &lt;em&gt;Nuclear Engineering and Radiation Science&lt;/em&gt; inaugural issue.&lt;/p&gt;
 </description>
         <pubDate>Fri, 11 Jul 2014 04:00:00 -0400</pubDate>
-        <link>/pub/publications/high-efficiency-gamma-beta</link>
-        <guid isPermaLink="true">/pub/publications/high-efficiency-gamma-beta</guid>
+        <link>/publications/high-efficiency-gamma-beta</link>
+        <guid isPermaLink="true">/publications/high-efficiency-gamma-beta</guid>
         
         <category>coauthor</category>
         
-        
-        <category>pub</category>
         
         <category>publications</category>
         
@@ -141,11 +125,9 @@
         <description>
 </description>
         <pubDate>Sat, 05 Apr 2014 00:00:00 -0400</pubDate>
-        <link>/code/codes/ah-pk</link>
-        <guid isPermaLink="true">/code/codes/ah-pk</guid>
+        <link>/codes/ah_pk</link>
+        <guid isPermaLink="true">/codes/ah_pk</guid>
         
-        
-        <category>code</category>
         
         <category>codes</category>
         
@@ -156,13 +138,11 @@
         <description>
 </description>
         <pubDate>Tue, 12 Nov 2013 07:00:00 -0500</pubDate>
-        <link>/pub/publications/the-mac-tmfd-novel-multi-armed</link>
-        <guid isPermaLink="true">/pub/publications/the-mac-tmfd-novel-multi-armed</guid>
+        <link>/publications/the-mac-tmfd-novel-multi-armed</link>
+        <guid isPermaLink="true">/publications/the-mac-tmfd-novel-multi-armed</guid>
         
         <category>coauthor</category>
         
-        
-        <category>pub</category>
         
         <category>publications</category>
         
