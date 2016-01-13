@@ -22,7 +22,7 @@ bibs:
 <ul class="cbp_tmtimeline">
 	<li>
 		<time class="cbp_tmtime" datetime="2016-05-10"><span>2016</span><span>expected</span></time>
-		<div class="cbp_tmicon fa fa-user-md fa-pulse"></div>
+		<div class="cbp_tmicon fa fa-user-md"></div>
 		<div class="cbp_tmlabel">
 			<h2>Doctor of Philosophy</h2>
       <div class="byline">
@@ -34,6 +34,7 @@ bibs:
       detector. Pass qualification exams on general nuclear engineering,
       detection methods, material sciences, thermal hydraulics, and reactor
       theory (statics and dynamics of nuclear reactors).</p>
+      <p class="aside">To read the papers I've published during my dissertation, go to the <a href="/papers/">publications</a> page.</p>
 		</div>
 	</li>
 	<li>
@@ -51,6 +52,7 @@ bibs:
       with focus on thermal hydraulics in nuclear power plant systems,
       neutronics, and material reaction to incident radiation. Took additional
       courses on numerical methods and computational science.</p>
+      <p class="aside">To read my thesis and other papers from my Masters' work, go to the <a href="/papers/">publications</a> page.</p>
 		</div>
 	</li>
 	<li>
@@ -213,7 +215,8 @@ bibs:
         <span>Steiner Enterprises</span>
         <span>Lafayette, IN</span>
       </div>
-      <p>Designed stuff</p>
+      <p>Served on design team including a manager, an electrical engineering, and two industrial designers (including me) to develop, prototype, and prepare educational products for production.  Took the lead on more than 10 products that were sold to various educational companies such as Vernier Education and Carolina Biological.  Helped with specification, design drawings, and tolerance analysis on more than 30 other projects.</p>
+      <p class="aside">To see some of the products I designed, go to the <a href="/design/">designs</a> page</p>
     </div>
   </li>
 </ul>

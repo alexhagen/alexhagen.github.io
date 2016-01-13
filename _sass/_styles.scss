@@ -23,6 +23,12 @@ p {
     margin-bottom: $lh;
 }
 
+.aside {
+    padding-top:1em;
+    font-size: $fs6;
+    text-align: center;
+}
+
 a, a:visited, a:active {
     color: $link;
     @include transit(all,0.25s,ease-in-out);
@@ -1783,7 +1789,7 @@ ul.cbp_tmtimeline li {
   font-weight: 700;
   line-height: 100%;
   text-transform: uppercase;
-	color: $blue;
+	color: $black;
 }
 
 
@@ -1800,7 +1806,7 @@ ul.cbp_tmtimeline li {
 }
 
 .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel {
-	background: $blue;
+	background: $black;
 }
 
 .cbp_tmtimeline > li .cbp_tmlabel h2 {
@@ -1824,7 +1830,7 @@ ul.cbp_tmtimeline li {
 }
 
 .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
-	border-right-color: $blue;
+	border-right-color: $black;
 }
 
 /* The icons */
@@ -1836,7 +1842,7 @@ ul.cbp_tmtimeline li {
 	-webkit-font-smoothing: antialiased;
 	position: absolute;
 	color: $white;
-	background: $blue;
+	background: $black;
 	border-radius: 50%;
 	box-shadow: 0 0 0 8px $grey-medium;
 	text-align: center;
