@@ -758,6 +758,7 @@ header.site-header nav {
     display: inline-block;
     text-align:center;
     background-color: $grey-light-2;
+    white-space: nowrap;
     &:hover {
         @include transit(all, .5s, ease-in-out);
         background-color: $grey-light-2;
@@ -769,14 +770,21 @@ header.site-header nav {
     .title {
       text-align: center;
       @include ghostVerticalAlign();
+      display:inline-block;
       margin-left:auto;
       margin-right:auto;
       font-size: $fs4;
       font-family: $sans;
       font-weight: 700;
-      line-height: 100%;
       text-transform: uppercase;
       color:$black;
+      .long-title {
+          display: inline-block;
+          text-align: center;
+          font-size: $fs5;
+          vertical-align: middle;
+          white-space: normal;
+      }
     }
   }
   .cv {
@@ -1095,6 +1103,8 @@ header.site-header hgroup a .breadcrumb {
     width: 480px;
     .cell{
       @include column(12,12);
+      margin-top:10px;
+      margin-bottom:10px;
     }
   }
 }

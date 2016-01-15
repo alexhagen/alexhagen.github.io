@@ -15,7 +15,6 @@ bibs:
 
 ---
 
-
 ## Education
 {: abbr='edu'}
 
@@ -48,7 +47,7 @@ bibs:
       </div>
 			<p>Published thesis on the optimization and characterization of a
       tensioned metastable fluid detector as passive neutron detector for
-      interdiction of special nuclear material. Also completed a cirriculum
+      interdiction of special nuclear material. Also completed a curriculum
       with focus on thermal hydraulics in nuclear power plant systems,
       neutronics, and material reaction to incident radiation. Took additional
       courses on numerical methods and computational science.</p>
@@ -64,7 +63,7 @@ bibs:
         <span class="major">Nuclear Engineering</span>
         <span class="university">Purdue University</span>
       </div>
-			<p>Completed a cirriculum focused on nuclear engineering basics,
+			<p>Completed a curriculum focused on nuclear engineering basics,
       nuclear power plant systems, and neutronics.  Also took courses on
       alternative uses of nuclear engineering, engineering economics,
       fuel cell technology, among others.</p>
@@ -233,14 +232,14 @@ bibs:
 - National Merit Scholar - Spring 2007
 - Chosen as Indiana Delegate to International Science and Engineering Fair - Spring 2006 and Spring 2007
 
-## Service and Extracirricular Positions
+## Service and Extracurricular Positions
 {: abbr='service'}
 
 - President of Nuclear Engineering Graduate Organization at Purdue University - Spring 2015 - Current
 - Chair of Purdue Graduate Student Government's Advancement (volunteerism) Committee - Spring 2014 - Current
 - Senator (representing Nuclear Engineering) in Purdue Graduate Student Senate - Fall 2013 - Current
 - Mentor for Jefferson High School Students for projects presented at Purdue Regional Science Fair - Fall 2012 - Current
-- Color Commentatator for high school soccer games for Walton Webcasting - Fall 2013
+- Color Commentator for high school soccer games for Walton Webcasting - Fall 2013
 - President of Purdue University Men's Club Soccer - Spring 2011 - Spring 2012
 
 ## Affiliations

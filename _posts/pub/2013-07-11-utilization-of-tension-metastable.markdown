@@ -20,7 +20,7 @@ title = {{Utilization of Tension Metastable Fluid Detectors in Health Physics}},
 year = {2013}
 }'
 citation: 'Hagen, A., Fischer, K. F., Archambault, B. C., & Taleyarkhan, R. P. (2013). Utilization of Tension Metastable Fluid Detectors in Health Physics. In Health Physics Society Poster Session. Madison, WI.'
-
+long_title: true
 ---
 
 My colleague, Kevin Fischer, and I were invited by our lab's consultants to present our technology at the Health Physics Society Conference.  This is somewhat out of field for us, and was used as a scoping mechanism to the interest in our technology in that field, with good results.

@@ -21,7 +21,7 @@ title = {{Real-Time Monitoring of Actinides in Chemical Nuclear Fuel Processing 
 year = {2013}
 }'
 citation: 'Taleyarkhan, R. P., Lapinskas, J., Archambault, B., Webster, J. A., Grimes, T. F., Hagen, A., & Fischer, K. (2013). Real-Time Monitoring of Actinides in Chemical Nuclear Fuel Processing Plants. Special Issue of Elsevier Journal of Chemical Engineering Research and Development.'
-
+long_title: true
 ---
 
 Our technology has been tagged as a great hope in the characterization of actinide streams during separation.  This invited article was written by my Principle Investigator with its key components coming from my colleague and I's work.

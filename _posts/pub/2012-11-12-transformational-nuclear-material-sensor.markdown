@@ -21,6 +21,7 @@ year = {2012}
 }'
 keywords: multiphysics,tensioned,metastable,fluid,detector,neutron,detection
 citation: 'Hagen, A., Fischer, K., Archambault, B., & Taleyarkhan, R. P. (2012). Transformational Nuclear Material Sensor System Design Optimization Using Multiphysics Simulation. In ASME International Mechanical Engineering Congress and Exposition. Houston, TX.'
+long_title: true
 
 ---
 
