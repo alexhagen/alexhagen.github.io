@@ -2,7 +2,7 @@
 layout: list
 title: Codes
 permalink: /codes/
-search: true
+search: false
 description: >
   Throughout the years, I've ended up writing thousands of lines of code as
   support for classes or projects or research.  A couple years ago, I had the

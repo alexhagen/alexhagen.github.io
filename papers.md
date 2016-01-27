@@ -2,7 +2,7 @@
 layout: list
 title: Papers
 permalink: /papers/
-search: true
+search: false
 description: >
   Part of my graduate program has been the publication of research in scholarly
   journals.  Below are a list of these articles including those that I've been

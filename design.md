@@ -2,7 +2,7 @@
 layout: list
 title: Designs
 permalink: /design/
-search: true
+search: false
 description: >
   Along with my scientific work at the lab, I also have done a lot of machine
   design, whether for experiments, or for commercial products. Below are some
