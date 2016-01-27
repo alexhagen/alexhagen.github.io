@@ -6,9 +6,34 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 21 Jan 2016 10:02:33 -0500</pubDate>
-    <lastBuildDate>Thu, 21 Jan 2016 10:02:33 -0500</lastBuildDate>
+    <pubDate>Wed, 27 Jan 2016 15:08:37 -0500</pubDate>
+    <lastBuildDate>Wed, 27 Jan 2016 15:08:37 -0500</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>Fast ADC with an Arduino Yun</title>
+        <description>&lt;h1 id=&quot;fast-adc-with-an-arduino-yun&quot;&gt;Fast ADC with an Arduino Yun&lt;/h1&gt;
+
+&lt;p&gt;Code (software and firmware) at
+&lt;a href=&quot;http://github.com/alexhagen/fast_adc_yun&quot;&gt;github:alexhagen:fast_adc_yun&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I’ve created a fast analog to digital conversion system using only an Arduino
+Yun (and an external computer to process data).  The system can sample the
+Arduino Yun’s ADC at 8-bit at greater than 30 kSps and then send those samples
+out via UDP at the same rate.  With a fast enough external computer (most modern
+computers would be), you can then catch most of those samples without error and
+plot them, or log them.&lt;/p&gt;
+
+&lt;h2 id=&quot;motivation&quot;&gt;Motivation&lt;/h2&gt;
+</description>
+        <pubDate>Tue, 26 Jan 2016 10:00:00 -0500</pubDate>
+        <link>/blog/fast_adc_with_arduino_yun</link>
+        <guid isPermaLink="true">/blog/fast_adc_with_arduino_yun</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>Hubtools: Tools to Help with Github</title>
@@ -130,21 +155,6 @@
         
         
         <category>codes</category>
-        
-      </item>
-    
-      <item>
-        <title>The MAC-TMFD: Novel multi-armed Centrifugally Tensioned Metastable Fluid Detector (Gamma-Blind) — Neutron-alpha recoil spectrometer</title>
-        <description>
-</description>
-        <pubDate>Tue, 12 Nov 2013 07:00:00 -0500</pubDate>
-        <link>/publications/the-mac-tmfd-novel-multi-armed</link>
-        <guid isPermaLink="true">/publications/the-mac-tmfd-novel-multi-armed</guid>
-        
-        <category>coauthor</category>
-        
-        
-        <category>publications</category>
         
       </item>
     

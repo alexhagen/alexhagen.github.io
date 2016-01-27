@@ -108,6 +108,8 @@ MathJax.Hub.Config({
             
                 <li><a href="/about" >About</a></li>
             
+                <li><a href="/stats" >Stats</a></li>
+            
 
           </ul>
         </nav>
@@ -116,40 +118,6 @@ MathJax.Hub.Config({
 
 <!-- MORPHSEARCH -->
 
-
-  <div id="morphsearch" class="morphsearch">
-    <form class="morphsearch-form">
-      <input class="morphsearch-input" type="search" placeholder="Search..."/>
-      <button class="morphsearch-filter"></button>
-      <button class="morphsearch-submit" type="submit"></button>
-    </form>
-    <div class="morphsearch-content">
-      <div class="dummy-column">
-        <h2>Languages</h2>
-        
-        
-        
-        
-        
-      </div>
-      <div class="dummy-column">
-        <h2>Keywords</h2>
-        
-        
-        
-        
-        
-      </div>
-      <div id="recent-repos" class="dummy-column recent-repos">
-        <h2>Recent</h2>
-        <!--<a class="dummy-media-object" href="http://tympanus.net/codrops/2014/10/07/tooltip-styles-inspiration/">
-          <img src="img/thumbs/TooltipStylesInspiration.png" alt="TooltipStylesInspiration"/>
-          <h3>Tooltip Styles Inspiration</h3>
-        </a>-->
-      </div>
-    </div><!-- /morphsearch-content -->
-<span class="morphsearch-close"></span>
-</div><!-- /morphsearch -->
 
 
 
@@ -224,177 +192,6 @@ MathJax.Hub.Config({
   <script src="/js/jquery.timeago.js"></script>
   <script src="/js/main.js"></script>
   
-  <script src="/js/classie.js"></script>
-		<script>
-			(function() {
-				var morphSearch = document.getElementById( 'morphsearch' ),
-					input = morphSearch.querySelector( 'input.morphsearch-input' ),
-					ctrlClose = morphSearch.querySelector( 'span.morphsearch-close' ),
-					isOpen = isAnimating = false,
-					// show/hide search area
-					toggleSearch = function(evt) {
-						// return if open and the input gets focused
-						if( evt.type.toLowerCase() === 'focus' && isOpen ) return false;
-
-						var offsets = morphsearch.getBoundingClientRect();
-						if( isOpen ) {
-							classie.remove( morphSearch, 'open' );
-
-							// trick to hide input text once the search overlay closes
-							// todo: hardcoded times, should be done after transition ends
-							if( input.value !== '' ) {
-								setTimeout(function() {
-									classie.add( morphSearch, 'hideInput' );
-									setTimeout(function() {
-										classie.remove( morphSearch, 'hideInput' );
-										input.value = '';
-									}, 300 );
-								}, 500);
-							}
-
-							input.blur();
-						}
-						else {
-							classie.add( morphSearch, 'open' );
-						}
-						isOpen = !isOpen;
-					};
-
-				// events
-				input.addEventListener( 'focus', toggleSearch );
-				ctrlClose.addEventListener( 'click', toggleSearch );
-				// esc key closes search overlay
-				// keyboard navigation events
-				document.addEventListener( 'keydown', function( ev ) {
-					var keyCode = ev.keyCode || ev.which;
-					if( keyCode === 27 && isOpen ) {
-						toggleSearch(ev);
-					}
-				} );
-
-			})();
-		</script>
-
-    <script>
-    $(function(){
-      var $commitsList = $('#recent-repos');
-      var keyValuePairs = window.location.href.slice(window.location.href.indexOf("?") + 1).split("&");
-      var x, params = {};
-      $.each(keyValuePairs, function(i, keyValue){
-        x = keyValue.split('=');
-        params[x[0]] = x[1];
-      });
-
-    params.owner = "alexhagen";
-
-      $.ajax( "https://api.github.com/users/" + params.owner + "/events?callback=callback", {
-        dataType: 'jsonp',
-        type: 'get',
-        data: {
-          per_page: params.limit || 20
-        },
-        success: function(response, textStatus, jqXHR) {
-          var data = response.data;
-          var repos = [];
-          $.each(data, function(i, commit){
-            if ( $.inArray(commit.repo.name,repos) < 0 ) {
-              var message = '';
-              if (commit.payload.size > 0 ) {
-                message = "<p class='recent-repos-message'>"+commit.payload.commits[0].message+"</p>";
-              }
-              $('<a class="dummy-media-object recent-repo" keyword="'+commit.repo.name+'"><h4 class="recent-repos-name">'+commit.repo.name+'</h4>'+message+'<p class="recent-repos-time">'+$.timeago(commit.created_at)+'</p></a>').appendTo( $commitsList );
-              // add that into the array so we know it's already been discussed
-              repos.push( commit.repo.name );
-            }
-          });
-        }
-      });
-    });
-    </script>
-
-    <!-- Script to filter by language when clicked -->
-    <script>
-
-    closeSearch = function() {
-      var isOpen = true;
-      var morphSearch = document.getElementById( 'morphsearch' );
-      var input = morphSearch.querySelector( 'input.morphsearch-input' );
-      var ctrlClose = morphSearch.querySelector( 'span.morphsearch-close' );
-      var offsets = morphsearch.getBoundingClientRect();
-      if( isOpen ) {
-        classie.remove( morphSearch, 'open' );
-
-        // trick to hide input text once the search overlay closes
-        // todo: hardcoded times, should be done after transition ends
-        if( input.value !== '' ) {
-          setTimeout(function() {
-            classie.add( morphSearch, 'hideInput' );
-            setTimeout(function() {
-              classie.remove( morphSearch, 'hideInput' );
-              input.value = '';
-            }, 300 );
-          }, 500);
-        }
-
-        input.blur();
-      }
-      isOpen = !isOpen;
-    };
-
-    $( document ).ready(function() {
-      $('.language').click(function() {
-        closeSearch();
-        var keyword = $(this).attr('keyword');
-        $('div.code').not('[keywords*="'+keyword+'"]').parent().animate({
-          width: 0,
-        }, 1000, function() {
-          // Animation complete.
-        });
-      });
-    });
-
-    $( document ).ready(function() {
-      $('.keyword').click(function() {
-        closeSearch();
-        var keyword = $(this).attr('keyword');
-        $('div.code').not('[keywords*="'+keyword+'"]').parent().animate({
-          width: 0,
-        }, 1000, function() {
-          // Animation complete.
-        });
-      });
-    });
-
-    $( document ).ready(function() {
-      $('.recent-repos').on('click', 'a.recent-repo', function() {
-        closeSearch();
-        var keyword = $(this).attr('keyword').replace("alexhagen/","");
-        $('div.code').not('[keywords*="'+keyword+'"]').parent().animate({
-          width: 0,
-        }, 1000, function() {
-          // Animation complete.
-        });
-      });
-    });
-    </script>
-
-    <!-- actually implement the strict search -->
-    <script>
-    $( document ).ready(function() {
-      $('#morphsearch form').submit(function(event){
-        event.preventDefault();
-        closeSearch();
-        var keyword = $( "input:first" ).val();
-        $('div.code').not('[keywords*="'+keyword+'"],[title*="'+keyword+'"]').parent().animate({
-          width: 0,
-        }, 1000, function() {
-          // Animation complete.
-        });
-      });
-    });
-    </script>
-
-
 
   </body>
 
