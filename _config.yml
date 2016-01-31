@@ -29,8 +29,8 @@ tools:
 links:
   - title: Stats
     url: /stats
-  - title: About
-    url: /about
+  - title: CV
+    url: /cv
 
 timezone:    America/New_York
 future:      true
