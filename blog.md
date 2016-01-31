@@ -1,5 +1,5 @@
 ---
-layout: list
+layout: post-index
 title: Projects
 permalink: /blog/
 search: false

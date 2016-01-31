@@ -7,10 +7,8 @@ keywords: arduino, c++, python, serial, udp, hardware, firmware, software
 long_title: true
 ---
 
-# Fast ADC with an Arduino Yun
-
 Code (software and firmware) at
-[github:alexhagen:fast_adc_yun](http://github.com/alexhagen/fast_adc_yun)
+[github.com/alexhagen/fast_adc_yun](http://github.com/alexhagen/fast_adc_yun)
 
 I've created a fast analog to digital conversion system using only an Arduino
 Yun (and an external computer to process data).  The system can sample the

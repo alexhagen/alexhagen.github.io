@@ -27,10 +27,10 @@ tools:
 # Links to include in top navigation
 # For external links add external: true
 links:
-  - title: About
-    url: /about
   - title: Stats
     url: /stats
+  - title: About
+    url: /about
 
 timezone:    America/New_York
 future:      true
