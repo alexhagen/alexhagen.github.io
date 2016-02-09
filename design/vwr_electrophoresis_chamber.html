@@ -39,7 +39,7 @@ MathJax.Hub.Config({
 
 <meta property="og:locale" content="en_US">
 <meta property="og:title" content="VWR Electrophoresis Chamber &#8211; Alex Hagen">
-<meta property="og:description" content="This content is currently under construction, please excuse anything you seebelow.                                   ...">
+<meta property="og:description" content="                This content is currently under construction, please excuse anything you seebelow.">
 <meta property="og:url" content="/design/vwr_electrophoresis_chamber">
 <meta property="og:site_name" content="Alex Hagen">
 
@@ -137,190 +137,98 @@ MathJax.Hub.Config({
   </header>
 
   <article class="post-content">
-    <p>This content is currently under construction, please excuse anything you see
-below.</p>
-
-<style>
-/* 3D scene */
-.scene {
-  overflow: hidden;
-  margin:0 auto;
-  width:100%;
-  height:100%;
-  perspective: 1000px;
-  perspective-origin: 50% 25%;
-  backface-visibility:  hidden;
-  transform-style:  preserve-3d;
+    <style>
+.product-shelf {
+    background-color:#f1f3f5;
+    float:left;
+    width:570px;
+    height:570px;
+    display:inline-block;
+    margin-left:30px;
+    margin-top:30px;
+}
+.shelf-bottom {
+    display:block;
+    position:relative;
+    top:540px;
+    left:-30px;
+    height:30px;
+    width:600px;
+    background-color:#ececec;
+    -webkit-box-shadow: inset -30px -30px 30px -5px rgba(153,153,153,1);
+    -moz-box-shadow: inset -30px -30px 30px -5px rgba(153,153,153,1);
+    box-shadow: inset -30px -30px 30px -5px rgba(153,153,153,1);
+}
+.shelf-left {
+    display:block;
+    height:30px;
+    width:30px;
+    position:relative;
+    left:-30px;
+    top:510px;
+    border-style: solid;
+    border-width: 30px 30px 0 0;
+    border-color: #f9f9f9 transparent transparent transparent;
+}
+.shelf-top {
+    display:block;
+    height:30px;
+    width:630px;
+    position:relative;
+    background-color:#f9f9f9;
+    left:-30px;
+    top:-90px;
+}
+.shelf-top-2 {
+    display:block;
+    height:30px;
+    width:570px;
+    position:relative;
+    top:-90px;
+    border-style: solid;
+    border-width: 30px 50px 0 0;
+    border-color: #f1f3f5 transparent transparent transparent;
 }
 
-.roll-camera {
-  transform-style: preserve-3d;
-}
-.roll-camera .move-camera {
-  transform-style: preserve-3d;
-  transform: translateY(0px);
-  transition: all 3s ease-in-out;
-}
-
-body.view-top-shelf .roll-camera {
-  animation: zoom-roll-top 3s ease-in-out;
-}
-body.view-top-shelf .roll-camera .move-camera {
-  transform: translateY(0px);
+.overlay-right {
+    float:right;
+    width:227px;
+    height:600px;
+    background-color:#f9f9f9;
+    display:inline-block;
+    -webkit-box-shadow: -30px 10px 30px -5px rgba(153,153,153,1);
+    -moz-box-shadow: -30px 10px 30px -5px rgba(153,153,153,1);
+    box-shadow: -30px 10px 30px -5px rgba(153,153,153,1);
 }
 
-.shelf {
-  position: absolute;
-  left:50%;
-  margin-left:-325px;
-  transform-style:  preserve-3d;
-  backface-visibility:  hidden;
-  transform: rotateY(90deg) rotateX(90deg) translateX(199px);
+.overlay-down {
+    width:827px;
+    height:300px;
+    background-color:#f9f9f9;
+    display:inline-block;
 }
-.shelf.top {
-  top: 450px;
-}
-.shelf.middle {
-  top: 650px;
-}
-.shelf.bottom {
-  top: 850px;
-}
-.shelf .face {
-  position: absolute;
-  top:0;
-  left:0;
-  background-color: #fff7eb;
-  box-shadow: inset 0 0 75px 1.5px rgba(0, 0, 0, .1);
-}
-.shelf .front {
-  width: 100px;
-  height: 700px;
-  transform-style: preserve-3d;
-  transform: translateX(35px) translateY(-350px) translateZ(10px);
-}
-.shelf .back {
-  width: 100px;
-  height: 700px;
-  transform: translateX(35px) translateY(-350px) translateZ(-10px);
-}
-.shelf .left {
-  width: 20px;
-  height: 700px;
-  background: linear-gradient(0deg, #eae3d8 0%, #fff7eb 100%);
-  transform: translateX(25px) translateY(-350px) rotateY(-90deg) translateZ(0);
-}
-.shelf .top {
-  width: 20px;
-  height: 100px;
-  transform: translateX(75px) translateY(300px) rotateX(90deg) rotateZ(90deg);
-}
-
-/* lighting */
-.shelf:before {
-  content:"";
-  display:block;
-  width: 670px;
-  height:20px;
-  box-shadow: 0 7.5px 7.5px 5px rgba(0, 0, 0, 0.5);
-  transform:  rotateX(90deg)
-              rotateY(90deg)
-              translateX(-10px)
-              translateZ(-200px)
-              skew(-45deg);
-}
-.shelf .back:before {
-  content:"";
-  position: absolute;
-  display:block;
-  width: 100%;
-  height:100%;
-  background: rgba(0, 0, 0, 0.65);
-}
-.shelf .top:before,
-.shelf .bottom:before,
-.shelf .left:before,
-.shelf .right:before {
-  content:"";
-  position: absolute;
-  display:block;
-  width: 100%;
-  height:100%;
-  background: rgba(0, 0, 0, 0.25);
-}
-
-
-/* photo cards */
-.shelf .photocard {
-  position: relative;
-  display:block;
-  width: 150px;
-  height:100px;
-  transform-style:  preserve-3d;
-  transform:        rotateX(-90deg)
-                    rotateY(270deg)
-                    translateY(-50px)
-                    translateZ(25px);
-}
-.shelf .photocard:after {
-  content:"";
-  position: absolute;
-  bottom:0px;
-  right:0;
-  display:block;
-  width: 100px;
-  height:1px;
-  box-shadow: 0 30px 30px 20px rgba(0, 0, 0, 0.5);
-  transform:  rotateX(90deg)
-              rotateZ(180deg)
-              translateX(25px)
-              translateY(-15px)
-              skew(-45deg);
-
-  /* don't apply box-shadow to FF (render bug) */
-  -moz-transform: scale(0);
-}
-.shelf .photocard:nth-child(1n) {
-  top:75px;
-}
-.shelf .photocard:nth-child(2n){
-  top:200px;
-}
-.shelf .photocard:nth-child(3n){
-  top: 325px;
-}
-.shelf .photocard img {
-  display:block;
-  width:150px;
-  height: 100px;
-  outline: 1px solid transparent; /* triggers anti-anliasing in FF */
+.overlay-top {
+    background-color:#f9f9f9;
+    width:827px;
+    height:20px;
+    display:inline-block;
+    position:relative;
+    top:-920px;
 }
 </style>
 
-<div class="scene">
-  <!-- camera -->
-  <div class="roll-camera">
-    <div class="move-camera">
-        <!-- shelf -->
-        <div class="shelf top">
-          <div class="face top"></div>
-          <div class="face front">
-
-            <a href="#" data-img-url="../photos/1.jpg" class="photocard">
-              <img src="https://raw.github.com/peterwestendorp/shelves/master/photos/1.jpg" alt="" />
-            </a>
-
-          </div>
-          <div class="face back"></div>
-          <div class="face left"></div>
-          <div class="face bottom"></div>
-        </div>
-        <!-- /shelf -->
-
-      </div>
-      <!-- /camera -->
-    </div>
+<div class="product-shelf">
+    <div class="shelf-bottom"></div>
+    <div class="shelf-left"></div>
+    <div class="shelf-top"></div>
+    <div class="shelf-top-2"></div>
 </div>
+<div class="overlay-right"></div>
+<div class="overlay-down"></div>
+<div class="overlay-top"></div>
+
+<p>This content is currently under construction, please excuse anything you see
+below.</p>
 
   </article>
 
