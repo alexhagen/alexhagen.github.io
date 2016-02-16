@@ -222,13 +222,19 @@ bibs:
 
 {% include bib.liquid bibs=page.bibs %}
 
+## Patents
+
+- Taleyarkhan, R.P., Bakken, A.C., Fischer, K.F., Hagen, A.R., Kostry, N.P. <i>Polylactic acid adhesive compositions and methods for their preparation and use</i>. WO2014078720. Published: May 22nd, 2014.
+
 ## Honors and Awards
 {: abbr='awards'}
 
+- Reviewer for American Nuclear Society Conference in College Station, TX, April 2015
 - Received most votes for Magoon Teaching Assistance Award - Fall 2014
 - Best Paper Award at International Conference on Nuclear Engineering - Summer 2014
 - Best Poster Award at International Conference on Nuclear Engineering - Summer 2014
 - Nominated for Magoon Teaching Excellence Teaching Assistant Award - Fall 2013
+- Eletrophoresis Chamber chosen as <i>Carolina Advanced Science</i> catalog cover photograph
 - National Merit Scholar - Spring 2007
 - Chosen as Indiana Delegate to International Science and Engineering Fair - Spring 2006 and Spring 2007
 
