@@ -4,6 +4,8 @@
 [submodule "_includes"]
 	path = _includes
 	url = https://github.com/alexhagen/includes.git
+	branch = master
 [submodule "_layouts"]
 	path = _layouts
 	url = https://github.com/alexhagen/layouts.git
+	branch = master
