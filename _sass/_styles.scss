@@ -759,6 +759,7 @@ header.site-header nav {
     text-align:center;
     background-color: $grey-light-2;
     white-space: nowrap;
+    cursor: pointer;
     &:hover {
         @include transit(all, .5s, ease-in-out);
         background-color: $grey-light-2;
@@ -805,6 +806,36 @@ header.site-header nav {
   .blog {
     background: url('../../images/cv_illustration.svg') no-repeat center center;
   }
+}
+
+/* sort and filter buttons */
+.sort-buttons {
+    margin-top: 1.5em;
+}
+
+.filter-buttons {
+    margin-top: $lh/3.0;
+    margin-bottom: $lh/3.0;
+}
+
+.filter-buttons, .sort-buttons {
+    button {
+        font-size: $fs6;
+        font-family: $sans;
+        font-weight: 700;
+        text-transform: uppercase;
+        background:none!important;
+        border:none;
+        padding:0!important;
+        cursor: pointer;
+        color: $link;
+        border-bottom:1px solid #444;
+        border-bottom-color: $link;
+        margin-right: 10px;
+        &:hover {
+            color: $accent;
+        }
+    }
 }
 
 /* plot stuff */
