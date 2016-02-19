@@ -123,20 +123,112 @@ MathJax.Hub.Config({
 
     <div id='bump'>
         <section class="article archive">
-          <article class="archive-wrap">
-              <ol class="post-list">
-                 <lh><h2><span class="bb">Projects</span></h2></lh>
-                  
-                  <li>
-                    <div class="deets" itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
-                        <h1><a href="/blog/fast_adc_with_arduino_yun">Fast ADC with an Arduino Yun</a></h1>
-                        <p class="date"><time datetime="" itemprop="datePublished"></time></p>
-                        <p class="">Code (software and firmware) atgithub.com/alexhagen/fast_adc_yunI’ve created a fast analog to digital conversion syst...</p>
+            <article class="archive-wrap">
+                <lh><h2><span class="bb">Projects</span></h2></lh>
+                <div id="users">
+                    <div class="sort-buttons">
+                        <button class="sort" data-sort="title">Sort by title</button>
+                        <button class="sort" data-sort="date">Sort by date</button>
                     </div>
-                  </li>
-                  
-              </ol>
-          </article>
+
+                    <div class="filter-buttons">
+                        <button id="clear-filter">clear</button>
+                        
+                        
+                        
+                        
+                        
+                            <button class="filter"> c++</button>
+                        
+                            <button class="filter"> firmware</button>
+                        
+                            <button class="filter"> hardware</button>
+                        
+                            <button class="filter"> python</button>
+                        
+                            <button class="filter"> serial</button>
+                        
+                            <button class="filter"> software</button>
+                        
+                            <button class="filter"> udp</button>
+                        
+                            <button class="filter">arduino</button>
+                        
+                            <button class="filter">c++</button>
+                        
+                    </div>
+
+
+                    <ul class="list">
+                        
+                        <li>
+                            <h3 class="title">Fast ADC with a Beaglebone Black</h3>
+                            <p class="date">2016-02-17 10:00:00 -0500</p>
+                            <p class="keywords">c++, python, serial, udp, hardware, firmware, software</p>
+                        </li>
+                        
+                        <li>
+                            <h3 class="title">Fast ADC with an Arduino Yun</h3>
+                            <p class="date">2016-01-26 10:00:00 -0500</p>
+                            <p class="keywords">arduino, c++, python, serial, udp, hardware, firmware, software</p>
+                        </li>
+                        
+                        <li>
+                            <h3 class="title">zzz</h3>
+                            <p class="date">2016-01-01 10:00:00 -0500</p>
+                            <p class="keywords">arduino, c++, python, serial, udp, hardware, firmware, software</p>
+                        </li>
+                        
+                        <li>
+                            <h3 class="title">aaa</h3>
+                            <p class="date">2015-12-31 10:00:00 -0500</p>
+                            <p class="keywords">arduino, c++, python, serial, udp, hardware, firmware, software</p>
+                        </li>
+                        
+                        <li>
+                            <h3 class="title">Jonny Stromberg</h3>
+                            <p class="date">1985</p>
+                        </li>
+                        <li>
+                            <h3 class="title">Jonas Arnklint</h3>
+                            <p class="date">1985</p>
+                        </li>
+                        <li>
+                            <h3 class="title">Martina Elm</h3>
+                            <p class="date">2016</p>
+                        </li>
+                        <li>
+                            <h3 class="title">Gustaf Lindqvist</h3>
+                            <p class="date">1983</p>
+                        </li>
+                    </ul>
+
+                    </div>
+                <script src="/assets/list.js"></script>
+                <script>
+                var options = {
+                  valueNames: [ 'title', 'date', 'keywords' ]
+                };
+
+                var userList = new List('users', options);
+
+                $('.filter').click(function() {
+                  string = $(this).text();
+                  userList.filter(function(item) {
+                    if (item.values().keywords.indexOf(string) != -1) {
+                      return true;
+                    } else {
+                      return false;
+                    }
+                  });
+                  return false;
+                });
+                $('#clear-filter').click(function() {
+                  userList.filter();
+                  return false;
+                });
+                </script>
+            </article>
         </section>
     </div>
 
