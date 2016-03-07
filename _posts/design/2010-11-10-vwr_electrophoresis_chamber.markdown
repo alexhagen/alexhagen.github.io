@@ -9,93 +9,66 @@ long_title: true
 
 ---
 <style>
-.product-shelf {
-    background-color:#f1f3f5;
-    float:left;
-    width:570px;
-    height:570px;
-    display:inline-block;
-    margin-left:30px;
-    margin-top:30px;
-}
-.shelf-bottom {
-    display:block;
-    position:relative;
-    top:540px;
-    left:-30px;
-    height:30px;
-    width:600px;
-    background-color:#ececec;
-    -webkit-box-shadow: inset -30px -30px 30px -5px rgba(153,153,153,1);
-    -moz-box-shadow: inset -30px -30px 30px -5px rgba(153,153,153,1);
-    box-shadow: inset -30px -30px 30px -5px rgba(153,153,153,1);
-}
-.shelf-left {
-    display:block;
-    height:30px;
-    width:30px;
-    position:relative;
-    left:-30px;
-    top:510px;
-    border-style: solid;
-    border-width: 30px 30px 0 0;
-    border-color: #f9f9f9 transparent transparent transparent;
-}
-.shelf-top {
-    display:block;
-    height:30px;
-    width:630px;
-    position:relative;
-    background-color:#f9f9f9;
-    left:-30px;
-    top:-90px;
-}
-.shelf-top-2 {
-    display:block;
-    height:30px;
-    width:570px;
-    position:relative;
-    top:-90px;
-    border-style: solid;
-    border-width: 30px 50px 0 0;
-    border-color: #f1f3f5 transparent transparent transparent;
+.container {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  perspective: 1000px;
 }
 
-.overlay-right {
-    float:right;
-    width:227px;
-    height:600px;
-    background-color:#f9f9f9;
-    display:inline-block;
-    -webkit-box-shadow: -30px 10px 30px -5px rgba(153,153,153,1);
-    -moz-box-shadow: -30px 10px 30px -5px rgba(153,153,153,1);
-    box-shadow: -30px 10px 30px -5px rgba(153,153,153,1);
+#box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: rotateX(-15deg) rotateY(15deg) rotateZ(2deg);
+  -webkit-transform: rotateX(-15deg)  rotateY(15deg) rotateZ(2deg);
+  -webkit-transform-style: preserve-3d;
+}
+#box div {
+  margin: 0;
+  display: block;
+  position: absolute;
+  border: none;
+  background-color: rgba(255, 100, 100, 0.8);
 }
 
-.overlay-down {
-    width:827px;
-    height:300px;
-    background-color:#f9f9f9;
-    display:inline-block;
+#box .right {
+  width: 296px;
+  height: 196px;
+  left: 0px;
 }
-.overlay-top {
-    background-color:#f9f9f9;
-    width:827px;
-    height:20px;
-    display:inline-block;
-    position:relative;
-    top:-920px;
+
+#box .bottom {
+  width: 296px;
+  height: 296px;
+  top: -50px;
 }
+#box .right  {
+  transform: rotateY(  -90deg ) translateZ( -150px );
+  transform-style: preserve-3d;
+  -webkit-transform: rotateY(  -90deg ) translateZ( -150px );
+  -webkit-transform-style: preserve-3d;
+  }
+#box .bottom {
+  transform: rotateX(-90deg ) translateZ( 100px );
+  -webkit-transform: rotateX(  -90deg ) translateZ( 100px );
+  -webkit-transform-style: preserve-3d;
+  }
 </style>
-<div class='product-shelf'>
-    <div class='shelf-bottom'></div>
-    <div class='shelf-left'></div>
-    <div class='shelf-top'></div>
-    <div class='shelf-top-2'></div>
-</div>
-<div class='overlay-right'></div>
-<div class='overlay-down'></div>
-<div class='overlay-top'></div>
+
+<div data-color="#A7A9AC" data-angle="NE" class="flat-icon"
+    style="width:5px; height:100px;"></div>
+
+
+<script src="{{ site.baseurl }}/js/jquery.flatshadow.js"></script>
+<script>
+$(".flat-icon").flatshadow({
+      		fade: true,
+      		boxShadow: "#A7A9AC"
+   	 	});
+
+</script>
 
 This content is currently under construction, please excuse anything you see
 below.

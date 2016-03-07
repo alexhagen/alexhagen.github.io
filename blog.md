@@ -1,6 +1,6 @@
 ---
-layout: post-index
-title: Projects
+layout: list
+title: Blog
 permalink: /blog/
 search: false
 description: >

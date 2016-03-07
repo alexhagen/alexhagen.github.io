@@ -13,14 +13,15 @@ description: >
   thinks it owns the intellectual property, it does), but other than that, I'm
   trying to open source everything.  The codes fall under a couple categories:
 
-  - Firmware helper classes:  Usually written in `c++`, these classes are
+
+  - **Firmware helper classes:**  Usually written in `c++`, these classes are
     transparent wrappers to more complicated `c` and `c++` routines that help
     in my mechatronics projects.
-  - Python data analysis and visualization classes: To publish, you need to make
-    a lot of figures and do a lot of analysis, and I've saved the non-specific
-    ones of those to these libraries
-  - Challenge/class project programs: Most classes that have a final project are
-    good ways to show off your skills, so I'll be cleaning up some of these
+  - **Python data analysis and visualization classes:** To publish, you need to
+    make a lot of figures and do a lot of analysis, and I've saved the
+    non-specific ones of those to these libraries
+  - **Challenge/class project programs:** Most classes that have a final project
+    are good ways to show off your skills, so I'll be cleaning up some of these
     (such as finite element codes, or point kinetics) to display on this page.
 
   I'm providing all of these with no license whatsoever, so have fun coding!
