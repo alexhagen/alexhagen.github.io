@@ -6,8 +6,8 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 19 Feb 2016 14:13:56 -0500</pubDate>
-    <lastBuildDate>Fri, 19 Feb 2016 14:13:56 -0500</lastBuildDate>
+    <pubDate>Mon, 07 Mar 2016 09:02:32 -0500</pubDate>
+    <lastBuildDate>Mon, 07 Mar 2016 09:02:32 -0500</lastBuildDate>
     <generator>Jekyll v3.0.1</generator>
     
       <item>
@@ -52,56 +52,6 @@ plot them, or log them.&lt;/p&gt;
         <pubDate>Tue, 26 Jan 2016 10:00:00 -0500</pubDate>
         <link>/blog/projects/fast_adc_with_arduino_yun</link>
         <guid isPermaLink="true">/blog/projects/fast_adc_with_arduino_yun</guid>
-        
-        
-        <category>blog</category>
-        
-        <category>projects</category>
-        
-      </item>
-    
-      <item>
-        <title>zzz</title>
-        <description>&lt;p&gt;Code (software and firmware) at
-&lt;a href=&quot;http://github.com/alexhagen/fast_adc_yun&quot;&gt;github.com/alexhagen/fast_adc_yun&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I’ve created a fast analog to digital conversion system using only an Arduino
-Yun (and an external computer to process data).  The system can sample the
-Arduino Yun’s ADC at 8-bit at greater than 30 kSps and then send those samples
-out via UDP at the same rate.  With a fast enough external computer (most modern
-computers would be), you can then catch most of those samples without error and
-plot them, or log them.&lt;/p&gt;
-
-&lt;h2 id=&quot;motivation&quot;&gt;Motivation&lt;/h2&gt;
-</description>
-        <pubDate>Fri, 01 Jan 2016 10:00:00 -0500</pubDate>
-        <link>/blog/projects/zzz</link>
-        <guid isPermaLink="true">/blog/projects/zzz</guid>
-        
-        
-        <category>blog</category>
-        
-        <category>projects</category>
-        
-      </item>
-    
-      <item>
-        <title>aaa</title>
-        <description>&lt;p&gt;Code (software and firmware) at
-&lt;a href=&quot;http://github.com/alexhagen/fast_adc_yun&quot;&gt;github.com/alexhagen/fast_adc_yun&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I’ve created a fast analog to digital conversion system using only an Arduino
-Yun (and an external computer to process data).  The system can sample the
-Arduino Yun’s ADC at 8-bit at greater than 30 kSps and then send those samples
-out via UDP at the same rate.  With a fast enough external computer (most modern
-computers would be), you can then catch most of those samples without error and
-plot them, or log them.&lt;/p&gt;
-
-&lt;h2 id=&quot;motivation&quot;&gt;Motivation&lt;/h2&gt;
-</description>
-        <pubDate>Thu, 31 Dec 2015 10:00:00 -0500</pubDate>
-        <link>/blog/projects/aaa</link>
-        <guid isPermaLink="true">/blog/projects/aaa</guid>
         
         
         <category>blog</category>
@@ -196,6 +146,38 @@ plot them, or log them.&lt;/p&gt;
         <guid isPermaLink="true">/publications/real-time-monitoring-of</guid>
         
         <category>coauthor</category>
+        
+        
+        <category>publications</category>
+        
+      </item>
+    
+      <item>
+        <title>Development of a 4 pi directional fast neutron detector using tensioned metastable fluids</title>
+        <description>
+</description>
+        <pubDate>Tue, 13 Nov 2012 07:00:00 -0500</pubDate>
+        <link>/publications/development-of-a-4pi</link>
+        <guid isPermaLink="true">/publications/development-of-a-4pi</guid>
+        
+        <category>coauthor</category>
+        
+        
+        <category>publications</category>
+        
+      </item>
+    
+      <item>
+        <title>Transformational Nuclear Material Sensor System Design Optimization Using Multiphysics Simulation</title>
+        <description>&lt;p&gt;My colleague, Kevin Fischer, and I were awarded the Nano-Micro Fellowship to present a poster on our work at the International Mechanical Engineering Congree and Exposition in Houston, Texas.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 12 Nov 2012 07:00:00 -0500</pubDate>
+        <link>/publications/transformational-nuclear-material-sensor</link>
+        <guid isPermaLink="true">/publications/transformational-nuclear-material-sensor</guid>
+        
+        <category>authored</category>
+        
+        <category>poster</category>
         
         
         <category>publications</category>
