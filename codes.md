@@ -20,21 +20,10 @@ description: >
   - **Python data analysis and visualization classes:** To publish, you need to
     make a lot of figures and do a lot of analysis, and I've saved the
     non-specific ones of those to these libraries
-  - **Challenge/class project programs:** Most classes that have a final project
-    are good ways to show off your skills, so I'll be cleaning up some of these
-    (such as finite element codes, or point kinetics) to display on this page.
 
   I'm providing all of these with no license whatsoever, so have fun coding!
 from_posts: false
 codes:
-  - title: ah_tcp_serv
-    link: ah_tcp_serv/
-    type: c++
-    keywords: c,cpp,tcp,server,networking,communication,signal slot
-  - title: ah_tcp_client
-    link: ah_tcp_client/
-    type: c++
-    keywords: c,cpp,tcp,client,networking,communication,signal slot
   - title: pym
     link: pym/
     type: python

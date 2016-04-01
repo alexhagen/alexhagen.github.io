@@ -250,6 +250,10 @@ header.site-header hgroup h1, header.site-header nav ul {
     fill: $black;
 }
 
+.light svg g path {
+    fill: $white;
+}
+
 header.site-header hgroup {
   float: left;
   padding-left: 5vw;
@@ -258,7 +262,7 @@ header.site-header hgroup {
       display: inline-block;
       font-size: 18px;
       line-height: 100%;
-      color: $black;
+      color: $white;
       letter-spacing: 2px;
       text-transform: uppercase;
       position:relative;
@@ -266,7 +270,7 @@ header.site-header hgroup {
   }
 
   a {
-      color: #fff;
+      color: $white;
       @include transit(all, .2s, ease);
 
       &:hover {
@@ -299,7 +303,7 @@ header.site-header nav {
     position: relative;
     margin-left: 20px;
     a {
-        color: white;
+        color: $white;
         @include transit(all, .2s, ease);
         &:hover {
             @include tshd(0, 0, 3px, rgba(255,255,255,.6));
@@ -338,7 +342,7 @@ header.site-header nav {
         min-height: 360px;
         // height: 50vh;
         width: 100%;
-        max-height: 600px;
+        max-height: 1000px;
         background-position: center center;
         background-size: cover;
         vertical-align: middle;
@@ -349,7 +353,7 @@ header.site-header nav {
         top: 0;
         z-index: -1;
         img {
-            max-height: 800px;
+            max-height: 1000px;
         }
     }
 
@@ -1353,11 +1357,15 @@ footer {
     color: $white;
     &:active {
       background-color: $link;
-      color: white;
+      color: $white;
     }
     &:hover {
         text-shadow: none;
     }
+  }
+
+  header.darken hgroup h1 {
+      color: $black;
   }
 
   #bump .darken nav ul {
@@ -2009,4 +2017,132 @@ ul.cbp_tmtimeline li {
 		left: auto;
 		margin: -55px 5px 0 0px;
 	}
+}
+
+.engdrawing {
+    position:absolute;
+    top:0;
+    width:100%;
+    height:800px;
+    background-color: $black;
+    .titleblock {
+        position: absolute;
+        right:0;
+        bottom:0;
+        width:40%;
+        height:150px;
+        border-color: $white;
+        border-width: thin;
+        border-style:solid;
+        .title{
+            position:absolute;
+            right:0;
+            bottom:0;
+            width:50%;
+            height:100px;
+            text-align:center;
+            @include ghostVerticalAlign();
+            border-color: $white;
+            border-width: thin;
+            border-style: solid;
+            span {
+                font-family: monospace;
+                line-height: 1%;
+                color: $white;
+                font-size: $fs5;
+                text-align: center;
+            }
+        }
+        .date {
+            position:absolute;
+            right:0;
+            bottom:100;
+            width:25%;
+            height:50px;
+            font-family: monospace;
+            color: $white;
+            font-size: $fs5;
+            text-align: center;
+            @include ghostVerticalAlign();
+            border-color: $white;
+            border-width: thin;
+            border-style: solid;
+            .datefield {
+                position:absolute;
+                left:0;
+                top:0;
+                &:before {
+                    content: "Date";
+                    font-size: $fs6;
+                    font-family: $sans;
+                    font-weight: 700;
+                    line-height: 100%;
+                    text-transform: uppercase;
+                    color: $white;
+                }
+            }
+        }
+        .author {
+            position:absolute;
+            right:25%;
+            bottom:100;
+            width:25%;
+            height:50px;
+            font-family: monospace;
+            color: $white;
+            font-size: $fs5;
+            text-align: center;
+            @include ghostVerticalAlign();
+            border-color: $white;
+            border-width: thin;
+            border-style: solid;
+            .authorfield {
+                position:absolute;
+                left:0;
+                top:0;
+                &:before {
+                    content: "Drawn By";
+                    font-size: $fs6;
+                    font-family: $sans;
+                    font-weight: 700;
+                    line-height: 100%;
+                    text-transform: uppercase;
+                    color: $white;
+                }
+            }
+        }
+    }
+    .views {
+        position:absolute;
+        bottom:15px;
+        left:15px;
+        text-align:center;
+        span {
+            font-size: $fs6;
+            font-family: $sans;
+            font-weight: 700;
+            line-height: 100%;
+            text-transform: uppercase;
+            color: $white;
+            padding-left: 15px;
+            text-align:center;
+            &:before {
+                content: ' | ';
+                padding-right:15px;
+            }
+            &:first-child:before {
+                content: '';
+            }
+        }
+    }
+    .engr-content {
+        background-color: $white;
+        position:absolute;
+        top:65px;
+        left:15px;
+        right:15px;
+        bottom:165px;
+        border-radius:15px;
+
+    }
 }
