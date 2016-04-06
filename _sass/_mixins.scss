@@ -1,6 +1,6 @@
 // Underline
 @mixin underline($width: 2px, $style: solid, $border-color: $link) {
-  border-bottom: 2px solid $border-color; 
+  border-bottom: 2px solid $border-color;
 }
 
 
@@ -20,7 +20,7 @@
 }
 
 
-// BACKGROUND GRADIENT 
+// BACKGROUND GRADIENT
 @mixin background-gradient($startColor: #3C3C3C, $endColor: #999999) {
     background-color: $startColor;
     background-image: -webkit-gradient(linear, left top, left bottom, from($startColor), to($endColor));
@@ -193,4 +193,37 @@
     vertical-align: middle;
     height: 100%; width: .1px;
   }
+}
+
+/* Bottom shadow */
+@mixin bottom_shadow() {
+    &:before {
+        z-index: -1;
+        position: absolute;
+        content: "";
+        bottom: 15px;
+        left: 10px;
+        width: 50%;
+        top: 80%;
+        max-width:300px;
+        background: #777;
+        box-shadow: 0 15px 10px #777;
+        transform: rotate(-3deg);
+    }
+    &:after {
+        z-index: -1;
+        position: absolute;
+        content: "";
+        bottom: 15px;
+        left: 10px;
+        width: 50%;
+        top: 80%;
+        max-width:300px;
+        background: #777;
+        box-shadow: 0 15px 10px #777;
+        transform: rotate(-3deg);
+        transform: rotate(3deg);
+        right: 10px;
+        left: auto;
+    }
 }

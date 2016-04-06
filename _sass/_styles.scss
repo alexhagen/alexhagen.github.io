@@ -357,6 +357,15 @@ header.site-header nav {
         }
     }
 
+    .featured-drawing {
+        min-height: 360px;
+        width: 100%;
+        max-height: 1000px;
+        position: relative;
+        top: 65px;
+        margin-bottom: 75px;
+    }
+
     .featured-chart {
         min-height: 360px;
         height: 50vh;
@@ -2020,37 +2029,54 @@ ul.cbp_tmtimeline li {
 }
 
 .engdrawing {
-    position:absolute;
-    top:0;
-    width:100%;
-    height:800px;
-    background-color: $black;
+    position:relative;
+    top: 0px;
+    width:1200px;
+    height:600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $grey-light-2;
+    @include bottom_shadow();
     .titleblock {
         position: absolute;
-        right:0;
-        bottom:0;
+        right:25px;
+        bottom:25px;
         width:40%;
         height:150px;
-        border-color: $white;
-        border-width: thin;
-        border-style:solid;
         .title{
             position:absolute;
             right:0;
             bottom:0;
-            width:50%;
+            width:100%;
             height:100px;
             text-align:center;
             @include ghostVerticalAlign();
-            border-color: $white;
-            border-width: thin;
-            border-style: solid;
+            border-left-color: $black;
+            border-left-width: thin;
+            border-left-style: solid;
+            border-top-color: $black;
+            border-top-width: thin;
+            border-top-style: solid;
             span {
-                font-family: monospace;
+                font-family: $monospace;
                 line-height: 1%;
-                color: $white;
+                color: $black;
                 font-size: $fs5;
                 text-align: center;
+            }
+            .titlefield {
+                position:absolute;
+                left:0;
+                top:0;
+                &:before {
+                    content: "Description";
+                    font-size: $fs6;
+                    font-family: $sans;
+                    font-weight: 700;
+                    line-height: 100%;
+                    text-transform: uppercase;
+                    color: $black;
+                }
             }
         }
         .date {
@@ -2059,14 +2085,17 @@ ul.cbp_tmtimeline li {
             bottom:100;
             width:25%;
             height:50px;
-            font-family: monospace;
-            color: $white;
-            font-size: $fs5;
+            font-family: $monospace;
+            color: $black;
+            font-size: $fs6;
             text-align: center;
             @include ghostVerticalAlign();
-            border-color: $white;
-            border-width: thin;
-            border-style: solid;
+            border-left-color: $black;
+            border-left-width: thin;
+            border-left-style: solid;
+            border-top-color: $black;
+            border-top-width: thin;
+            border-top-style: solid;
             .datefield {
                 position:absolute;
                 left:0;
@@ -2078,7 +2107,7 @@ ul.cbp_tmtimeline li {
                     font-weight: 700;
                     line-height: 100%;
                     text-transform: uppercase;
-                    color: $white;
+                    color: $black;
                 }
             }
         }
@@ -2088,14 +2117,17 @@ ul.cbp_tmtimeline li {
             bottom:100;
             width:25%;
             height:50px;
-            font-family: monospace;
-            color: $white;
-            font-size: $fs5;
+            font-family: $monospace;
+            color: $black;
+            font-size: $fs6;
             text-align: center;
             @include ghostVerticalAlign();
-            border-color: $white;
-            border-width: thin;
-            border-style: solid;
+            border-left-color: $black;
+            border-left-width: thin;
+            border-left-style: solid;
+            border-top-color: $black;
+            border-top-width: thin;
+            border-top-style: solid;
             .authorfield {
                 position:absolute;
                 left:0;
@@ -2107,15 +2139,15 @@ ul.cbp_tmtimeline li {
                     font-weight: 700;
                     line-height: 100%;
                     text-transform: uppercase;
-                    color: $white;
+                    color: $black;
                 }
             }
         }
     }
     .views {
         position:absolute;
-        bottom:15px;
-        left:15px;
+        bottom:40px;
+        left:40px;
         text-align:center;
         span {
             font-size: $fs6;
@@ -2123,7 +2155,7 @@ ul.cbp_tmtimeline li {
             font-weight: 700;
             line-height: 100%;
             text-transform: uppercase;
-            color: $white;
+            color: $black;
             padding-left: 15px;
             text-align:center;
             &:before {
@@ -2135,14 +2167,182 @@ ul.cbp_tmtimeline li {
             }
         }
     }
-    .engr-content {
-        background-color: $white;
+    .engrborder {
         position:absolute;
-        top:65px;
-        left:15px;
-        right:15px;
-        bottom:165px;
-        border-radius:15px;
-
     }
+    .a {
+        top: 0%;
+    }
+    .b {
+        top: 10%;
+    }
+    .c {
+        top: 20%;
+    }
+    .d {
+        top: 30%;
+    }
+    .e {
+        top: 40%;
+    }
+    .f {
+        top: 50%;
+    }
+    .g {
+        top: 60%;
+    }
+    .h {
+        top: 70%;
+    }
+    .i {
+        top: 80%;
+    }
+    .j {
+        top: 90%;
+    }
+    .one {
+        left: 0%;
+    }
+    .two {
+        left: 10%;
+    }
+    .three {
+        left: 20%;
+    }
+    .four {
+        left: 30%;
+    }
+    .five {
+        left: 40%;
+    }
+    .six {
+        left: 50%;
+    }
+    .seven {
+        left: 60%;
+    }
+    .eight {
+        left: 70%;
+    }
+    .nine {
+        left: 80%;
+    }
+    .ten {
+        left: 90%;
+    }
+    .left {
+        left:0%;
+        width: 25px;
+        height: 10%;
+        @include ghostVerticalAlign();
+        text-align:center;
+        font-size: $fs7;
+        font-family: $sans;
+        font-weight: 700;
+        line-height: 100%;
+        text-transform: uppercase;
+        color: $black;
+        border-left-color: $black;
+        border-left-style: solid;
+        border-left-width: thin;
+        border-bottom-color: $black;
+        border-bottom-style: solid;
+        border-bottom-width: thin;
+    }
+    .right {
+        right: 0%;
+        width: 25px;
+        height: 10%;
+        @include ghostVerticalAlign();
+        text-align:center;
+        font-size: $fs7;
+        font-family: $sans;
+        font-weight: 700;
+        line-height: 100%;
+        text-transform: uppercase;
+        color: $black;
+        border-right-color: $black;
+        border-right-style: solid;
+        border-right-width: thin;
+        border-bottom-color: $black;
+        border-bottom-style: solid;
+        border-bottom-width: thin;
+    }
+    .top {
+        top: 0%;
+        width: 10%;
+        height: 25px;
+        @include ghostVerticalAlign();
+        text-align:center;
+        font-size: $fs7;
+        font-family: $sans;
+        font-weight: 700;
+        line-height: 100%;
+        text-transform: uppercase;
+        color: $black;
+        border-top-color: $black;
+        border-top-style: solid;
+        border-top-width: thin;
+        border-right-color: $black;
+        border-right-style: solid;
+        border-right-width: thin;
+    }
+    .bottom {
+        bottom: 0%;
+        width: 10%;
+        height: 25px;
+        @include ghostVerticalAlign();
+        text-align:center;
+        font-size: $fs7;
+        font-family: $sans;
+        font-weight: 700;
+        line-height: 100%;
+        text-transform: uppercase;
+        color: $black;
+        border-bottom-color: $black;
+        border-bottom-style: solid;
+        border-bottom-width: thin;
+        border-right-color: $black;
+        border-right-style: solid;
+        border-right-width: thin;
+    }
+    .engrcontent {
+        position:absolute;
+        top:25px;
+        left:25px;
+        right:25px;
+        bottom:25px;
+        border-color: $black;
+        border-style: solid;
+        border-width: thin;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+	.engdrawing {
+		width: 960px;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	.engdrawing {
+		width: 800px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.engdrawing {
+		width: 640px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.engdrawing {
+		width: 480px;
+	}
+}
+@media screen and (max-width: 480px) {
+	.engdrawing {
+		width: 320px;
+	}
 }
