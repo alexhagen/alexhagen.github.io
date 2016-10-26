@@ -774,6 +774,10 @@ header.site-header nav {
     background-color: $grey-light-2;
     white-space: nowrap;
     cursor: pointer;
+    &:last-of-type {
+      margin-bottom: 100px;
+    }
+    &.tooltip { @include tooltip(ne, $blue); }
     .cell-bg-image{
         position:relative;
         top: -300px;
@@ -791,6 +795,10 @@ header.site-header nav {
     &:hover {
         @include transit(all, .5s, ease-in-out);
         background-color: $grey-light-2;
+        .tooltip {
+            visibility: visible;
+            @include animation(slide-up .3s);
+        }
         .title {
           @include transit(all, .5s, ease-in-out);
           color:$accent;
@@ -822,6 +830,17 @@ header.site-header nav {
     .date, .keywords {
         display: none;
     }
+  }
+  .tooltip {
+      left: 50%;
+      bottom: 100%; // on top
+      margin-left: -6em; // center the tooltip
+      padding: .5em .75em;
+      box-shadow: 0 .05em .15em rgba($black, .1);
+      @include tooltip($black, 1em, .5em);
+      width: 12em;
+      white-space:normal;
+      color: $white;
   }
   .cv {
     background: url('../../images/cv_illustration.svg') no-repeat center center;
