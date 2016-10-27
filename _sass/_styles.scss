@@ -797,7 +797,7 @@ header.site-header nav {
         background-color: $grey-light-2;
         .tooltip {
             visibility: visible;
-            @include animation(slide-up .3s);
+            @include animation(slide-up 1.5s);
         }
         .title {
           @include transit(all, .5s, ease-in-out);

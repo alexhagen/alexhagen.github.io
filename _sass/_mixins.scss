@@ -289,7 +289,13 @@
 @include keyframes(slide-up) {
     0% {
         opacity: 0;
+    }
+    80% {
+        opacity: 0;
         @include transform(translateY(1em));
+    }
+    90% {
+      opacity: 0.5;
     }
     100% {
         opacity: 1;
