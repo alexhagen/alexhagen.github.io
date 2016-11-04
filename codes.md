@@ -24,10 +24,6 @@ description: >
   I'm providing all of these with no license whatsoever, so have fun coding!
 from_posts: false
 codes:
-  - title: ah_tcp_serv
-    link: ah_tcp_serv/
-    type: c++
-    keywords: c++,tcp,networking,packet,protocol,object-oriented,object,signal
   - title: pym
     link: pym/
     type: python
