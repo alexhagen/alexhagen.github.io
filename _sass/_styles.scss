@@ -262,7 +262,7 @@ header.site-header hgroup {
       display: inline-block;
       font-size: 18px;
       line-height: 100%;
-      color: $white;
+      color: $black;
       letter-spacing: 2px;
       text-transform: uppercase;
       position:relative;
@@ -270,7 +270,7 @@ header.site-header hgroup {
   }
 
   a {
-      color: $white;
+      color: $black;
       @include transit(all, .2s, ease);
 
       &:hover {
