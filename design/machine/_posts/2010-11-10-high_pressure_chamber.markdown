@@ -15,4 +15,4 @@ to actually do mechanical calculations while designing a part.
 
 ## Details
 
-We used regular aluminum.
+We used regular aluminum to make the body.
