@@ -14,3 +14,5 @@ to actually do mechanical calculations while designing a part.
 ## Motivation
 
 ## Details
+
+We used regular aluminum.
