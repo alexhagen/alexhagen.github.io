@@ -4,7 +4,7 @@ title:  "High Pressure Chamber"
 author: A. Hagen
 date:   2011-11-10 15:00:00
 keywords: pressure, pressure vessel, aluminum, machined, industrial, solidworks
-long_title: false
+long_title: true
 ---
 
 Though aesthetically nothing to write home about, the high pressure chamber I
