@@ -1,3 +1,0 @@
-[submodule "ah_tcp_serv"]
-	path = ah_tcp_serv
-	url = https://github.com/alexhagen/ah_tcp_serv.git
