@@ -34,6 +34,6 @@ codes:
     keywords: python,graphing,plotting,matplotlib,visualization,contour
   - title: cppm
     link: cppm/
-    type: c++
+    type: cpp
     keywords: c++,object-oriented,object
 ---
