@@ -160,6 +160,7 @@ MathJax.Hub.Config({
                     <button class="filter">tensioned</button>
                 
             </div>
+            
             <ul class='list grid'>
             
               
@@ -168,6 +169,7 @@ MathJax.Hub.Config({
                     <div class='title'><div class='long-title'>Multiphysics Modeling in Optimization of Acoustically Tensioned Metastable Fluid Neutron Detectors</div></div>
                     <div class='date'>2014-08-15 08:00:00 -0400</div>
                     <div class='keywords'></div>
+                    <div class='type'></div>
                     
                 </a>
               </li>
@@ -177,6 +179,7 @@ MathJax.Hub.Config({
                     <div class='title'><div class='long-title'>Characterization and Optimization of a Tensioned Metastable Fluid Nuclear Particle Sensor Using Laser Based Profilimetry</div></div>
                     <div class='date'>2014-07-11 08:00:00 -0400</div>
                     <div class='keywords'></div>
+                    <div class='type'></div>
                     
                 </a>
               </li>
@@ -186,6 +189,7 @@ MathJax.Hub.Config({
                     <div class='title'><div class='long-title'>High Efficiency Gamma-Beta Blind Alpha Spectrometry for Nuclear Energy Applications</div></div>
                     <div class='date'>2014-07-11 04:00:00 -0400</div>
                     <div class='keywords'></div>
+                    <div class='type'></div>
                     
                 </a>
               </li>
@@ -195,6 +199,7 @@ MathJax.Hub.Config({
                     <div class='title'><div class='long-title'>The MAC-TMFD: Novel multi-armed Centrifugally Tensioned Metastable Fluid Detector (Gamma-Blind) — Neutron-alpha recoil spectrometer</div></div>
                     <div class='date'>2013-11-12 07:00:00 -0500</div>
                     <div class='keywords'></div>
+                    <div class='type'></div>
                     
                 </a>
               </li>
@@ -204,6 +209,7 @@ MathJax.Hub.Config({
                     <div class='title'><div class='long-title'>Utilization of Tension Metastable Fluid Detectors in Health Physics</div></div>
                     <div class='date'>2013-07-11 08:00:00 -0400</div>
                     <div class='keywords'></div>
+                    <div class='type'></div>
                     
                 </a>
               </li>
@@ -213,6 +219,7 @@ MathJax.Hub.Config({
                     <div class='title'><div class='long-title'>Real-Time Monitoring of Actinides in Chemical Nuclear Fuel Processing Plants</div></div>
                     <div class='date'>2013-03-15 08:00:00 -0400</div>
                     <div class='keywords'></div>
+                    <div class='type'></div>
                     
                 </a>
               </li>
@@ -222,6 +229,7 @@ MathJax.Hub.Config({
                     <div class='title'><div class='long-title'>Development of a 4 pi directional fast neutron detector using tensioned metastable fluids</div></div>
                     <div class='date'>2012-11-13 07:00:00 -0500</div>
                     <div class='keywords'></div>
+                    <div class='type'></div>
                     
                 </a>
               </li>
@@ -231,6 +239,7 @@ MathJax.Hub.Config({
                     <div class='title'><div class='long-title'>Transformational Nuclear Material Sensor System Design Optimization Using Multiphysics Simulation</div></div>
                     <div class='date'>2012-11-12 07:00:00 -0500</div>
                     <div class='keywords'>multiphysics,tensioned,metastable,fluid,detector,neutron,detection</div>
+                    <div class='type'></div>
                     
                 </a>
               </li>
@@ -242,7 +251,7 @@ MathJax.Hub.Config({
         <script src="/assets/list.js"></script>
         <script>
         var options = {
-          valueNames: [ 'title', 'long-title', 'date', 'keywords' ]
+          valueNames: [ 'title', 'long-title', 'date', 'keywords', 'type' ]
         };
 
         var userList = new List('users', options);
@@ -258,7 +267,22 @@ MathJax.Hub.Config({
           });
           return false;
         });
+        $('.filter-type').click(function() {
+          string = $(this).text();
+          userList.filter(function(item) {
+            if (item.values().type.indexOf(string) != -1) {
+              return true;
+            } else {
+              return false;
+            }
+          });
+          return false;
+        });
         $('#clear-filter').click(function() {
+          userList.filter();
+          return false;
+        });
+        $('#clear-filter-type').click(function() {
           userList.filter();
           return false;
         });

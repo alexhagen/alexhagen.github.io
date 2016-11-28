@@ -1,8 +1,7 @@
-
-
 <meta charset="utf-8">
 <title>Scholarship &#8211; Alex Hagen</title>
-<meta name="description" content="">
+<meta name="description" content="Along with my scientific work at the lab, I also have done a lot of machine design, whether for experiments, or for commercial products. Below are some of the non-novel designs I've created.
+">
 <meta name="keywords" content="">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
@@ -39,7 +38,7 @@ MathJax.Hub.Config({
 
 <meta property="og:locale" content="en_US">
 <meta property="og:title" content="Scholarship &#8211; Alex Hagen">
-<meta property="og:description" content="This section is currently under construction.">
+<meta property="og:description" content="Along with my scientific work at the lab, I also have done a lot of machine design, whether for experiments, or for c...">
 <meta property="og:url" content="/scholarship/">
 <meta property="og:site_name" content="Alex Hagen">
 
@@ -124,22 +123,121 @@ MathJax.Hub.Config({
 
 <section class="article pad-top">
 
-
-
-      <article class="wrap post">
+      <article class="full-width">
         <header class="post-header">
           <hgroup>
             <h1>Scholarship</h1>
-            <p class="intro"></p>
-
+            <p class="intro"><p>Along with my scientific work at the lab, I also have done a lot of machine design, whether for experiments, or for commercial products. Below are some of the non-novel designs I’ve created.</p>
+</p>
           </hgroup>
+          <!-- put the search/filter bar here -->
         </header>
+        <div id='users'>
+            <div class="sort-buttons">
+                <button class="sort" data-sort="title">Sort by title</button>
+                <button class="sort" data-sort="date">Sort by date</button>
+            </div>
 
-        <p>This section is currently under construction.</p>
+            <div class="filter-buttons">
+                <button id="clear-filter">clear</button>
+                
+                
+                
+                
+                
+                    <button class="filter">contour</button>
+                
+                    <button class="filter">graphing</button>
+                
+                    <button class="filter">integration</button>
+                
+                    <button class="filter">interpolation</button>
+                
+                    <button class="filter">math</button>
+                
+                    <button class="filter">matplotlib</button>
+                
+                    <button class="filter">numerical methods</button>
+                
+                    <button class="filter">plotting</button>
+                
+                    <button class="filter">python</button>
+                
+                    <button class="filter">visualization</button>
+                
+            </div>
+            
+                <div class="filter-buttons">
+                  <button id="clear-filter-type">clear</button>
+                  
+                  
+                  
+                  
+                  
+                      <button class="filter-type">teaching</button>
+                  
+                </div>
+            
+            <ul class='list grid'>
+            
+              
+              <a class="cell" href="../qe/" type="teaching" keywords="teaching,python,math,numerical methods,integration,interpolation">
+                <div class='title'><div class='long-title'>Purdue Nuclear Engineering Qualification Exams</div></div>
+                <div class='type'>teaching</div>
+                <div class='date'></div>
+                <div class='keywords'>python,math,numerical methods,integration,interpolation</div>
+              </a>
+              
+              <a class="cell" href="../nego_latex/" type="teaching" keywords="teaching,python,graphing,plotting,matplotlib,visualization,contour">
+                <div class='title'><div class='long-title'>LaTeX Tutorial Course</div></div>
+                <div class='type'>teaching</div>
+                <div class='date'></div>
+                <div class='keywords'>python,graphing,plotting,matplotlib,visualization,contour</div>
+              </a>
+              
+            
 
+            </ul>
+        </div>
+        <script src="/assets/list.js"></script>
+        <script>
+        var options = {
+          valueNames: [ 'title', 'long-title', 'date', 'keywords', 'type' ]
+        };
 
-      <a class="share" href="https://twitter.com/intent/tweet?text=&quot;Scholarship&quot;%20http://alexhagen.github.io/scholarship/%20via%20&#64;" data-dnt="true">Share</a>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        var userList = new List('users', options);
+
+        $('.filter').click(function() {
+          string = $(this).text();
+          userList.filter(function(item) {
+            if (item.values().keywords.indexOf(string) != -1) {
+              return true;
+            } else {
+              return false;
+            }
+          });
+          return false;
+        });
+        $('.filter-type').click(function() {
+          string = $(this).text();
+          userList.filter(function(item) {
+            if (item.values().type.indexOf(string) != -1) {
+              return true;
+            } else {
+              return false;
+            }
+          });
+          return false;
+        });
+        $('#clear-filter').click(function() {
+          userList.filter();
+          return false;
+        });
+        $('#clear-filter-type').click(function() {
+          userList.filter();
+          return false;
+        });
+        </script>
 
       </article>
     </section>
