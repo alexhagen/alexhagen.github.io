@@ -134,29 +134,37 @@ MathJax.Hub.Config({
         </header>
         <div id='users'>
             <div class="sort-buttons">
+              <input type="checkbox" id="filter-sort-toggle" />
+              <label class="button-container" for="filter-sort-toggle">
+                <span class="button-container-label">Sort:</span>
                 <button class="sort" data-sort="title">Sort by title</button>
                 <button class="sort" data-sort="date">Sort by date</button>
+              </label>
             </div>
 
             <div class="filter-buttons">
-                <button id="clear-filter">clear</button>
-                
-                
-                
-                
-                
-                    <button class="filter"> aluminum</button>
-                
-                    <button class="filter"> industrial</button>
-                
-                    <button class="filter"> machined</button>
-                
-                    <button class="filter"> pressure vessel</button>
-                
-                    <button class="filter"> solidworks</button>
-                
-                    <button class="filter">pressure</button>
-                
+              <input type="checkbox" id="filter-tags-toggle" />
+              <label class="button-container" for="filter-tags-toggle">
+                <span class="button-container-label">Tags:</span>
+                  <button id="clear-filter" class='filter'>clear</button>
+                  
+                  
+                  
+                  
+                  
+                      <button class="filter"> aluminum</button>
+                  
+                      <button class="filter"> industrial</button>
+                  
+                      <button class="filter"> machined</button>
+                  
+                      <button class="filter"> pressure vessel</button>
+                  
+                      <button class="filter"> solidworks</button>
+                  
+                      <button class="filter">pressure</button>
+                  
+              </label>
             </div>
             
             <ul class='list grid'>
@@ -186,6 +194,7 @@ MathJax.Hub.Config({
 
         $('.filter').click(function() {
           string = $(this).text();
+          $(this).toggleClass("activefilter");
           userList.filter(function(item) {
             if (item.values().keywords.indexOf(string) != -1) {
               return true;
@@ -197,6 +206,7 @@ MathJax.Hub.Config({
         });
         $('.filter-type').click(function() {
           string = $(this).text();
+          $(this).toggleClass("activetypefilter");
           userList.filter(function(item) {
             if (item.values().type.indexOf(string) != -1) {
               return true;
@@ -208,10 +218,12 @@ MathJax.Hub.Config({
         });
         $('#clear-filter').click(function() {
           userList.filter();
+          $(".activefilter").toggleClass("activefilter");
           return false;
         });
         $('#clear-filter-type').click(function() {
           userList.filter();
+          $(".activetypefilter").toggleClass("activetypefilter");
           return false;
         });
         </script>

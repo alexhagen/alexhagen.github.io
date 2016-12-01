@@ -154,70 +154,82 @@ non-specific ones of those to these libraries</li>
         </header>
         <div id='users'>
             <div class="sort-buttons">
+              <input type="checkbox" id="filter-sort-toggle" />
+              <label class="button-container" for="filter-sort-toggle">
+                <span class="button-container-label">Sort:</span>
                 <button class="sort" data-sort="title">Sort by title</button>
                 <button class="sort" data-sort="date">Sort by date</button>
+              </label>
             </div>
 
             <div class="filter-buttons">
-                <button id="clear-filter">clear</button>
-                
-                
-                
-                
-                
-                    <button class="filter"> contour</button>
-                
-                    <button class="filter"> graphing</button>
-                
-                    <button class="filter"> integration</button>
-                
-                    <button class="filter"> interpolation</button>
-                
-                    <button class="filter"> math</button>
-                
-                    <button class="filter"> matplotlib</button>
-                
-                    <button class="filter"> neutron</button>
-                
-                    <button class="filter"> nuclear</button>
-                
-                    <button class="filter"> nuclear transport</button>
-                
-                    <button class="filter"> numerical methods</button>
-                
-                    <button class="filter"> object</button>
-                
-                    <button class="filter"> object-oriented</button>
-                
-                    <button class="filter"> photon</button>
-                
-                    <button class="filter"> plotting</button>
-                
-                    <button class="filter"> visualization</button>
-                
-                    <button class="filter">c++</button>
-                
-                    <button class="filter">mcnp</button>
-                
-                    <button class="filter">n particle transport</button>
-                
-                    <button class="filter">python</button>
-                
+              <input type="checkbox" id="filter-tags-toggle" />
+              <label class="button-container" for="filter-tags-toggle">
+                <span class="button-container-label">Tags:</span>
+                  <button id="clear-filter" class='filter'>clear</button>
+                  
+                  
+                  
+                  
+                  
+                      <button class="filter"> contour</button>
+                  
+                      <button class="filter"> graphing</button>
+                  
+                      <button class="filter"> integration</button>
+                  
+                      <button class="filter"> interpolation</button>
+                  
+                      <button class="filter"> math</button>
+                  
+                      <button class="filter"> matplotlib</button>
+                  
+                      <button class="filter"> neutron</button>
+                  
+                      <button class="filter"> nuclear</button>
+                  
+                      <button class="filter"> nuclear transport</button>
+                  
+                      <button class="filter"> numerical methods</button>
+                  
+                      <button class="filter"> object</button>
+                  
+                      <button class="filter"> object-oriented</button>
+                  
+                      <button class="filter"> photon</button>
+                  
+                      <button class="filter"> plotting</button>
+                  
+                      <button class="filter"> visualization</button>
+                  
+                      <button class="filter">c++</button>
+                  
+                      <button class="filter">mcnp</button>
+                  
+                      <button class="filter">n particle transport</button>
+                  
+                      <button class="filter">python</button>
+                  
+              </label>
             </div>
             
                 <div class="filter-type-buttons">
-                  <button id="clear-filter-type">clear</button>
+                  <input type="checkbox" id="filter-button-toggle" />
+                  <label class="button-container" for="filter-button-toggle">
+                    <span class="button-container-label">Type:</span>
+                    <button id="clear-filter-type" class='filter-type'>clear</button>
                   
                   
                   
                   
                   
-                      <button class="filter-type">cpp</button>
+                    <button class="filter-type">cpp</button>
                   
-                      <button class="filter-type">nuclear particle</button>
+                    <button class="filter-type">nuclear particle</button>
                   
-                      <button class="filter-type">python</button>
+                    <button class="filter-type">python</button>
                   
+                  </label>
                 </div>
             
             <ul class='list grid'>
@@ -265,6 +277,7 @@ non-specific ones of those to these libraries</li>
 
         $('.filter').click(function() {
           string = $(this).text();
+          $(this).toggleClass("activefilter");
           userList.filter(function(item) {
             if (item.values().keywords.indexOf(string) != -1) {
               return true;
@@ -276,6 +289,7 @@ non-specific ones of those to these libraries</li>
         });
         $('.filter-type').click(function() {
           string = $(this).text();
+          $(this).toggleClass("activetypefilter");
           userList.filter(function(item) {
             if (item.values().type.indexOf(string) != -1) {
               return true;
@@ -287,10 +301,12 @@ non-specific ones of those to these libraries</li>
         });
         $('#clear-filter').click(function() {
           userList.filter();
+          $(".activefilter").toggleClass("activefilter");
           return false;
         });
         $('#clear-filter-type').click(function() {
           userList.filter();
+          $(".activetypefilter").toggleClass("activetypefilter");
           return false;
         });
         </script>
