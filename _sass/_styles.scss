@@ -875,22 +875,53 @@ header.site-header nav {
     margin-bottom: $lh/3.0;
 }
 
-.filter-buttons::before {
-  content: "Tags";
-  visibility: visible;
-  padding-right: 10px;
+#filter-button-toggle {
+  display:none;
 }
 
-.sort-buttons::before {
-  content: "Sort";
-  visibility: visible;
-  padding-right: 10px;
+#filter-tags-toggle {
+  display:none;
 }
 
-.filter-type-buttons::before {
-  content: "Type";
-  visibility: visible;
-  padding-right: 10px;
+#filter-sort-toggle {
+  display:none;
+}
+
+.button-container-label {
+  font-size: $fs6;
+  font-family: $sans;
+  font-weight: 700;
+  text-transform: uppercase;
+  background:none!important;
+  padding-right:10px;
+}
+
+#filter-button-toggle:checked + label > button {
+      max-width:1920px;
+      max-height:100px;
+      border-bottom:1px solid #444;
+      border-bottom-color: $link;
+      margin-right: 10px;
+}
+
+#filter-tags-toggle:checked + label > button {
+    max-width:1920px;
+    max-height:100px;
+    border-bottom:1px solid #444;
+    border-bottom-color: $link;
+    margin-right: 10px;
+}
+
+#filter-sort-toggle:checked + label > button {
+    max-width:1920px;
+    max-height:100px;
+    border-bottom:1px solid #444;
+    border-bottom-color: $link;
+    margin-right: 10px;
+}
+
+.activefilter, .activetypefilter {
+  color: $accent!important;
 }
 
 .filter-buttons, .sort-buttons, .filter-type-buttons{
@@ -899,16 +930,7 @@ header.site-header nav {
   font-weight: 700;
   text-transform: uppercase;
   background:none!important;
-  &:hover{
-    & button {
-      max-width:1920px;
-      max-height:100px;
-      border-bottom:1px solid #444;
-      border-bottom-color: $link;
-      margin-right: 10px;
-    }
-  }
-    button {
+    .filter-type, .sort, .filter {
         @include transit(all, .9s, ease-in-out);
         max-width:0px;
         max-height:0px;
@@ -924,11 +946,9 @@ header.site-header nav {
         padding:0!important;
         cursor: pointer;
         color: $link;
-        &:hover {
-            color: $accent;
-        }
     }
 }
+
 
 /* plot stuff */
 .featured-chart {
