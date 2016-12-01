@@ -27,13 +27,18 @@ codes:
   - title: pym
     link: pym/
     type: python
-    keywords: python,math,numerical methods,integration,interpolation
+    keywords: python, math, numerical methods, integration, interpolation
   - title: pyg
     link: pyg/
     type: python
-    keywords: python,graphing,plotting,matplotlib,visualization,contour
+    keywords: python, graphing, plotting, matplotlib, visualization, contour
   - title: cppm
     link: cppm/
     type: cpp
-    keywords: c++,object-oriented,object
+    keywords: c++, object-oriented, object
+  - title: MCNP Companion
+    link: mcnp_companion/
+    type: nuclear particle
+    long_title: true
+    keywords: python,mcnp,n particle transport, nuclear transport, nuclear, neutron, photon
 ---

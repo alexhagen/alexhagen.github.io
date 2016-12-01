@@ -875,8 +875,46 @@ header.site-header nav {
     margin-bottom: $lh/3.0;
 }
 
-.filter-buttons, .sort-buttons {
+.filter-buttons::before {
+  content: "Tags";
+  visibility: visible;
+  padding-right: 10px;
+}
+
+.sort-buttons::before {
+  content: "Sort";
+  visibility: visible;
+  padding-right: 10px;
+}
+
+.filter-type-buttons::before {
+  content: "Type";
+  visibility: visible;
+  padding-right: 10px;
+}
+
+.filter-buttons, .sort-buttons, .filter-type-buttons{
+  font-size: $fs6;
+  font-family: $sans;
+  font-weight: 700;
+  text-transform: uppercase;
+  background:none!important;
+  &:hover{
+    & button {
+      max-width:1920px;
+      max-height:100px;
+      border-bottom:1px solid #444;
+      border-bottom-color: $link;
+      margin-right: 10px;
+    }
+  }
     button {
+        @include transit(all, .9s, ease-in-out);
+        max-width:0px;
+        max-height:0px;
+        margin:0px;
+        padding:0px;
+        overflow:hidden;
         font-size: $fs6;
         font-family: $sans;
         font-weight: 700;
@@ -886,9 +924,6 @@ header.site-header nav {
         padding:0!important;
         cursor: pointer;
         color: $link;
-        border-bottom:1px solid #444;
-        border-bottom-color: $link;
-        margin-right: 10px;
         &:hover {
             color: $accent;
         }
