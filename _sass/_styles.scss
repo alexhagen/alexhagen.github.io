@@ -768,6 +768,7 @@ header.site-header nav {
     margin:5px;
     margin-top:10px;
     margin-bottom:10px;
+    padding:5px;
     position:relative;
     display: inline-block;
     text-align:center;
@@ -829,6 +830,19 @@ header.site-header nav {
     }
     .date, .keywords, .type {
         display: none;
+    }
+    &.divider {
+      background: linear-gradient(to right bottom, $grey-light-2 50%, $grey-light 50%);
+      &:last-of-type {
+        margin-bottom: 10px;
+      }
+      .title { color: $black; }
+      &:hover {
+          .tooltip {
+              visibility: visible;
+              @include animation(slide-up 1.5s);
+          }
+        }
     }
   }
   .tooltip {

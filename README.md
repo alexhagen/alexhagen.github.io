@@ -3,7 +3,7 @@
 ## To Do:
 
 - [ ] TODO: Write article about getting award at IEEE Sensors
-- [ ] TODO: Transparent favicon
+- [x] TODO: Transparent favicon
 - [ ] TODO: Simulations block gets cut off
 - [x] TODO: Split off personal blog
 - [ ] TODO: Rename technical blog
