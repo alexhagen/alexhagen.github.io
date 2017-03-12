@@ -40,9 +40,11 @@ a:hover {
 }
 
 em {
-    padding: 1px 2px;
-    border-radius: 2px;
-    background: #ffe8c0;
+    font-style: italic;
+    color: grey;
+    //padding: 1px 2px;
+    //border-radius: 2px;
+    //background: #ffe8c0;
 }
 
 strong {
@@ -55,9 +57,11 @@ small {
 
 .hilite {
     display: inline-block;
-    padding: 0 0.3em;
+    //padding: 0 0.3em;
+    font-style: italic;
+    font-color: $grey-dark;
     @include br(4px);
-    background: $hilite;
+    // background: $hilite;
 }
 
 blockquote, blockquote p {
