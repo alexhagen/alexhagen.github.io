@@ -76,7 +76,7 @@ and the literature shows similar, or worse results.  In all, this is an
 interesting and useful way to interrogate cargo for special nuclear materials.
 
 <figure>
-    <img src="{{ site.baseurl }}/assets/img/dd_fission_ratios.png" />
+    <img class="onecol" src="{{ site.baseurl }}/assets/img/dd_fission_ratios.png" />
     <figcaption>
       Efficiency of fission and interrogating neutrons in a CTMFD
     </figcaption>

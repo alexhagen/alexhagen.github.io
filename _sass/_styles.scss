@@ -63,8 +63,9 @@ small {
 blockquote, blockquote p {
     font-style: italic;
     line-height: 1.3em;
+    font-size: $fs4;
+    color: $blue;
     text-align: center;
-    color: lighten($black, .2);
     margin-bottom: $lh;
 }
 
@@ -557,6 +558,7 @@ header.site-header nav {
 
         img {
             margin-bottom: $lh/2;
+
         }
 
         figcaption {
@@ -575,6 +577,10 @@ header.site-header nav {
         display: block;
         margin: $lh auto;
         @include br(4px);
+    }
+
+    img.onecol{
+      width:50%;
     }
 
     ul {
@@ -1296,7 +1302,8 @@ h1 {
 }
 
 blockquote, blockquote p {
-    font-size: $fs3;
+    font-size: $fs4;
+    color: $blue;
 }
 
 }
