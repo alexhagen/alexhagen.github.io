@@ -1,7 +1,8 @@
+
+
 <meta charset="utf-8">
-<title>Blog &#8211; Alex Hagen</title>
-<meta name="description" content="Even with all of the different categories provided, there are some stray projects and thoughts that I'd like to have publicly available, so I'll keep those here.
-">
+<title>IEEE Sensors 2016 First Place Demo Award &#8211; Alex Hagen</title>
+<meta name="description" content="">
 <meta name="keywords" content="">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
@@ -37,9 +38,9 @@ MathJax.Hub.Config({
 </script>
 
 <meta property="og:locale" content="en_US">
-<meta property="og:title" content="Blog &#8211; Alex Hagen">
-<meta property="og:description" content="Even with all of the different categories provided, there are some stray projects and thoughts that I'd like to have ...">
-<meta property="og:url" content="/blog/">
+<meta property="og:title" content="IEEE Sensors 2016 First Place Demo Award &#8211; Alex Hagen">
+<meta property="og:description" content="In early November, we received the 1st Place Demo award from the IEEE Sensorsconference, which we had presented at ju...">
+<meta property="og:url" content="/blog/work/ieee_sensors_2016_demo_award">
 <meta property="og:site_name" content="Alex Hagen">
 
 <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico?v=2" />
@@ -123,131 +124,50 @@ MathJax.Hub.Config({
 
 <section class="article pad-top">
 
-      <article class="full-width">
+
+
+
+      <article class="wrap post">
         <header class="post-header">
           <hgroup>
-            <h1>Blog</h1>
-            <p class="intro"><p>Even with all of the different categories provided, there are some stray projects and thoughts that I’d like to have publicly available, so I’ll keep those here.</p>
-</p>
+            <h1 id=ieee-sensors-2016-first-place-demo-award abbr=>IEEE Sensors 2016 First Place Demo Award</h1>
+            <p class="date">Nov 21, 2016</p>
+            <p class="intro"></p>
           </hgroup>
-          <!-- put the search/filter bar here -->
         </header>
 
+        <p>In early November, we received the 1st Place Demo award from the IEEE Sensors
+conference, which we had presented at just several weeks before.  It’s great to
+get recognition, and my contribution to this award was sizeable.  I had
+designed and prototyped the DC powered CTMFD unit that we took down to the
+conference, and wrote the Android App used to control it.</p>
 
-        <div id='users'>
-            <div class="sort-buttons">
-              <input type="checkbox" id="filter-sort-toggle" />
-              <label class="button-container" for="filter-sort-toggle">
-                <span class="button-container-label">Sort:</span>
-                <button class="sort" data-sort="title">Sort by title</button>
-                <button class="sort" data-sort="date">Sort by date</button>
-              </label>
-            </div>
+<figure>
+    <img src="/assets/img/ieee_sensors_2016_demo_award.png" />
+    <figcaption>
+      Announcement of our award on the IEEE Sensors website
+    </figcaption>
+</figure>
 
-            <div class="filter-buttons">
-              <input type="checkbox" id="filter-tags-toggle" />
-              <label class="button-container" for="filter-tags-toggle">
-                <span class="button-container-label">Tags:</span>
-                  <button id="clear-filter" class='filter'>clear</button>
-                  
-                  
-                  
-                  
-                  
-                      <button class="filter"> IEEE Sensors</button>
-                  
-                      <button class="filter"> american nuclear society</button>
-                  
-                      <button class="filter"> award</button>
-                  
-                      <button class="filter"> awards</button>
-                  
-                      <button class="filter"> demo</button>
-                  
-                      <button class="filter"> metastable fluids</button>
-                  
-                      <button class="filter">ANS</button>
-                  
-                      <button class="filter">IEEE</button>
-                  
-              </label>
-            </div>
-            
+<p>Obviously, we are proud of the recognition, and usually I like to write up what
+we actually presented on.  However, at this conference, the conference
+generated a video primer of our demonstration, and I’ve embedded that below.  I
+think it shows more fluently what we like to show than simply writing it up.</p>
+
+<h2 id="femto--to-macro--scale-interdisciplinary-sensing-with-tensioned-metastable-fluid-detectors">Femto- to Macro- Scale Interdisciplinary Sensing with Tensioned Metastable Fluid Detectors</h2>
+
+<p><strong>Rusi Taleyarkhan, Ph.D., Alex Hagen, Brian Archambault, Ph.D., and Anthony Sansone</strong></p>
+
+<figure>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/NH-nLp48PKc" frameborder="0" allowfullscreen=""></iframe>
+    <figcaption>
+      Generated video of TMFD demos for general sensing
+    </figcaption>
+</figure>
 
 
-
-            <ul class='list grid'>
-              
-
-            
-              
-              <li class="cell">
-                  <a href="../blog/work/ans_2016_ymg_award" type="" keywords=",ANS, american nuclear society, metastable fluids, award, awards">
-                    <div class='title'><div class='long-title'>ANS Winter Meeting 2016 Awards</div></div>
-                    <div class='date'>2017-01-04 10:00:00 -0500</div>
-                    <div class='keywords'>ANS, american nuclear society, metastable fluids, award, awards</div>
-                    <div class='type'></div>
-                    
-                </a>
-              </li>
-              
-              <li class="cell">
-                  <a href="../blog/work/ieee_sensors_2016_demo_award" type="" keywords=",IEEE, IEEE Sensors, demo, metastable fluids, award, awards">
-                    <div class='title'><div class='long-title'>IEEE Sensors 2016 First Place Demo Award</div></div>
-                    <div class='date'>2016-11-21 10:00:00 -0500</div>
-                    <div class='keywords'>IEEE, IEEE Sensors, demo, metastable fluids, award, awards</div>
-                    <div class='type'></div>
-                    
-                </a>
-              </li>
-              
-            
-
-            </ul>
-        </div>
-        <script src="/assets/list.js"></script>
-        <script>
-        var options = {
-          valueNames: [ 'title', 'long-title', 'date', 'keywords', 'type' ]
-        };
-
-        var userList = new List('users', options);
-
-        $('.filter').click(function() {
-          string = $(this).text();
-          $(this).toggleClass("activefilter");
-          userList.filter(function(item) {
-            if (item.values().keywords.indexOf(string) != -1) {
-              return true;
-            } else {
-              return false;
-            }
-          });
-          return false;
-        });
-        $('.filter-type').click(function() {
-          string = $(this).text();
-          $(this).toggleClass("activetypefilter");
-          userList.filter(function(item) {
-            if (item.values().type.indexOf(string) != -1) {
-              return true;
-            } else {
-              return false;
-            }
-          });
-          return false;
-        });
-        $('#clear-filter').click(function() {
-          userList.filter();
-          $(".activefilter").toggleClass("activefilter");
-          return false;
-        });
-        $('#clear-filter-type').click(function() {
-          userList.filter();
-          $(".activetypefilter").toggleClass("activetypefilter");
-          return false;
-        });
-        </script>
+      <a class="share" href="https://twitter.com/intent/tweet?text=&quot;IEEE Sensors 2016 First Place Demo Award&quot;%20http://alexhagen.github.io/blog/work/ieee_sensors_2016_demo_award%20via%20&#64;" data-dnt="true">Share</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
       </article>
     </section>
