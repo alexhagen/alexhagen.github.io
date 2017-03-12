@@ -1,7 +1,7 @@
 
 
 <meta charset="utf-8">
-<title>Fast ADC with a Beaglebone Black &#8211; Alex Hagen</title>
+<title>ANS Winter Meeting 2016 Awards &#8211; Alex Hagen</title>
 <meta name="description" content="">
 <meta name="keywords" content="">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -38,9 +38,9 @@ MathJax.Hub.Config({
 </script>
 
 <meta property="og:locale" content="en_US">
-<meta property="og:title" content="Fast ADC with a Beaglebone Black &#8211; Alex Hagen">
-<meta property="og:description" content="Code (software and firmware) atgithub.com/alexhagen/fast_adc_yunI’ve created a fast analog to digital conversion syst...">
-<meta property="og:url" content="/blog/projects/fast_adc_with_bbb">
+<meta property="og:title" content="ANS Winter Meeting 2016 Awards &#8211; Alex Hagen">
+<meta property="og:description" content="In late December, I received in the mail the American Nuclear Society’s YoungMembers’ Group Best Paper award for my p...">
+<meta property="og:url" content="/blog/projects/ans_2016_ymg_award">
 <meta property="og:site_name" content="Alex Hagen">
 
 <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico?v=2" />
@@ -124,28 +124,99 @@ MathJax.Hub.Config({
 
 <section class="article pad-top">
 
-    
-      <div class="overlay"></div>
-      <div class="featured-image" style="background-image: url(/images/typewriter.jpg)"></div>
-    
-
 
 
 
       <article class="wrap post">
+        <header class="post-header">
+          <hgroup>
+            <h1 id=ans-winter-meeting-2016-awards abbr=>ANS Winter Meeting 2016 Awards</h1>
+            <p class="date">Jan 04, 2017</p>
+            <p class="intro"></p>
+          </hgroup>
+        </header>
 
-        <p>Code (software and firmware) at
-<a href="http://github.com/alexhagen/fast_adc_yun">github.com/alexhagen/fast_adc_yun</a></p>
+        <p>In late December, I received in the mail the American Nuclear Society’s Young
+Members’ Group Best Paper award for my presentation and accompanying paper at
+the 2016 ANS Winter Conference.  Professor Taleyarkhan, the corresponding
+author, also received word that the paper had won the overall conference’s Best
+Paper Award.</p>
 
-<p>I’ve created a fast analog to digital conversion system using only an Arduino
-Yun (and an external computer to process data).  The system can sample the
-Arduino Yun’s ADC at 8-bit at greater than 30 kSps and then send those samples
-out via UDP at the same rate.  With a fast enough external computer (most modern
-computers would be), you can then catch most of those samples without error and
-plot them, or log them.</p>
+<figure>
+    <img src="/assets/img/ne_news_screencap_ans_winter_2016.png" />
+    <figcaption>
+      Recognition of our award from Purdue's School of Nuclear Engineering
+    </figcaption>
+</figure>
 
-<h2 id="motivation">Motivation</h2>
+<p>It was an honor to receive, and it’s garnered some attention from Purdue’s
+School of Engineering.  It’s always nice to get that kind of recognition.
+Because I can’t publish the paper or the presentation here (for copyright and
+intellectual property reasons), I’ve written a quick summary of the paper and
+included some of the most salient figures below.</p>
 
+<h2 id="threshold-energy-based-active-special-nuclear-material-interrogation">Threshold Energy Based Active Special Nuclear Material Interrogation</h2>
+
+<p><strong>Alex Hagen, Brian Archambault, Ph.D., and Rusi Taleyarkhan, Ph.D.</strong></p>
+
+<p>Counter terrorism is an important and ever-present concern of our times.  CBRN
+defense is a common acronym to describe the wide ranging terrorism concerns,
+standing for Chemical, Biological, Radiological, and Nuclear.  Particularly, we
+are concerned with Nuclear defense - the ability to detect and interdict those
+materials that can create nuclear weapons if they are being smuggled.  These
+materials (weapons grade plutonium and highly enriched uranium) are called
+Special Nuclear Materials - or SNM.  If you’re interested in a more in depth
+description of this motivation, I’ll put up a post soon.</p>
+
+<p>Currently, we know that there is a weakness in our detection of SNM.  The
+Congress of the United States’ Budget Office sums it up this way:</p>
+
+<blockquote>
+  <p>The passive radiation detectors outside shipping containers can usually
+detect emissions from materials for radiological weapons but are less effective
+at detecting emissions from nuclear weapons and the fissile materials used to
+make them.</p>
+</blockquote>
+
+<p>We presented a way to remedy this.  Our detectors, Metastable Fluid Detectors,
+are more efficient than other neutron detectors, and have higher signal to
+noise ratios than conventional neutron detectors because they are inherently
+blind to $\gamma$ particles.  I’ll post a more in depth description of our
+detectors soon.</p>
+
+<p>The efficiency of our detector makes it easily detect smuggled WGP.  However,
+highly enriched uranium is much “quieter”, it emits less neutrons from
+spontaneous fission.  To remedy this, we propose a method using <strong>active
+interrogation</strong>.  We direct a $2.45 MeV$ beam of neutrons onto the cargo, and
+the fissile material (the HEU) will generate neutrons from induced fission.
+Then, setting a lower level discriminator, we can detect only those fission
+neutrons with energies above $2.45 MeV$, thereby not detecting any of the
+interrogating neutrons.</p>
+
+<figure>
+    <img src="/assets/img/fission_spectrum.png" />
+    <figcaption>
+      Ratio of fission spectrum above the interrogation spectrum.
+    </figcaption>
+</figure>
+
+<p>With this methodology, which we call <strong>Threshold Energy Neutron Analysis</strong>, we
+were able to get ratios between the fission neutrons and interrogation neutrons
+of over $1000 \times$.  This is much much larger than that achievable with
+conventional neutron detectors, which we tested to ratios of only $12 \times$,
+and the literature shows similar, or worse results.  In all, this is an
+interesting and useful way to interrogate cargo for special nuclear materials.</p>
+
+<figure>
+    <img src="/assets/img/dd_fission_ratios.png" />
+    <figcaption>
+      Efficiency of fission and interrogating neutrons in a CTMFD
+    </figcaption>
+</figure>
+
+
+      <a class="share" href="https://twitter.com/intent/tweet?text=&quot;ANS Winter Meeting 2016 Awards&quot;%20http://alexhagen.github.io/blog/projects/ans_2016_ymg_award%20via%20&#64;" data-dnt="true">Share</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
       </article>
     </section>

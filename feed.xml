@@ -2,56 +2,97 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Alex Hagen</title>
-    <description>Welcome to my portfolio. I am currently a Ph.D. seeking student at Purdue University in Nuclear Engineering.  This portfolio shows some designs, publications, and open source codes that I&#39;ve created. Feel free to email me if you have any ideas, questions, or requests.
+    <description>Welcome to my portfolio. I am currently a Ph.D. seeking student at Purdue University in Nuclear Engineering.  This portfolio shows some designs, publications, and open source codes that I've created. Feel free to email me if you have any ideas, questions, or requests.
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 20 Feb 2017 09:02:13 -0500</pubDate>
-    <lastBuildDate>Mon, 20 Feb 2017 09:02:13 -0500</lastBuildDate>
-    <generator>Jekyll v3.0.1</generator>
+    <pubDate>Sun, 12 Mar 2017 12:22:49 -0400</pubDate>
+    <lastBuildDate>Sun, 12 Mar 2017 12:22:49 -0400</lastBuildDate>
+    <generator>Jekyll v3.4.0</generator>
     
       <item>
-        <title>Fast ADC with a Beaglebone Black</title>
-        <description>&lt;p&gt;Code (software and firmware) at
-&lt;a href=&quot;http://github.com/alexhagen/fast_adc_yun&quot;&gt;github.com/alexhagen/fast_adc_yun&lt;/a&gt;&lt;/p&gt;
+        <title>ANS Winter Meeting 2016 Awards</title>
+        <description>&lt;p&gt;In late December, I received in the mail the American Nuclear Society’s Young
+Members’ Group Best Paper award for my presentation and accompanying paper at
+the 2016 ANS Winter Conference.  Professor Taleyarkhan, the corresponding
+author, also received word that the paper had won the overall conference’s Best
+Paper Award.&lt;/p&gt;
 
-&lt;p&gt;I’ve created a fast analog to digital conversion system using only an Arduino
-Yun (and an external computer to process data).  The system can sample the
-Arduino Yun’s ADC at 8-bit at greater than 30 kSps and then send those samples
-out via UDP at the same rate.  With a fast enough external computer (most modern
-computers would be), you can then catch most of those samples without error and
-plot them, or log them.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;img src=&quot;/assets/img/ne_news_screencap_ans_winter_2016.png&quot; /&gt;
+    &lt;figcaption&gt;
+      Recognition of our award from Purdue's School of Nuclear Engineering
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
 
-&lt;h2 id=&quot;motivation&quot;&gt;Motivation&lt;/h2&gt;
+&lt;p&gt;It was an honor to receive, and it’s garnered some attention from Purdue’s
+School of Engineering.  It’s always nice to get that kind of recognition.
+Because I can’t publish the paper or the presentation here (for copyright and
+intellectual property reasons), I’ve written a quick summary of the paper and
+included some of the most salient figures below.&lt;/p&gt;
+
+&lt;h2 id=&quot;threshold-energy-based-active-special-nuclear-material-interrogation&quot;&gt;Threshold Energy Based Active Special Nuclear Material Interrogation&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Alex Hagen, Brian Archambault, Ph.D., and Rusi Taleyarkhan, Ph.D.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Counter terrorism is an important and ever-present concern of our times.  CBRN
+defense is a common acronym to describe the wide ranging terrorism concerns,
+standing for Chemical, Biological, Radiological, and Nuclear.  Particularly, we
+are concerned with Nuclear defense - the ability to detect and interdict those
+materials that can create nuclear weapons if they are being smuggled.  These
+materials (weapons grade plutonium and highly enriched uranium) are called
+Special Nuclear Materials - or SNM.  If you’re interested in a more in depth
+description of this motivation, I’ll put up a post soon.&lt;/p&gt;
+
+&lt;p&gt;Currently, we know that there is a weakness in our detection of SNM.  The
+Congress of the United States’ Budget Office sums it up this way:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The passive radiation detectors outside shipping containers can usually
+detect emissions from materials for radiological weapons but are less effective
+at detecting emissions from nuclear weapons and the fissile materials used to
+make them.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;We presented a way to remedy this.  Our detectors, Metastable Fluid Detectors,
+are more efficient than other neutron detectors, and have higher signal to
+noise ratios than conventional neutron detectors because they are inherently
+blind to $\gamma$ particles.  I’ll post a more in depth description of our
+detectors soon.&lt;/p&gt;
+
+&lt;p&gt;The efficiency of our detector makes it easily detect smuggled WGP.  However,
+highly enriched uranium is much “quieter”, it emits less neutrons from
+spontaneous fission.  To remedy this, we propose a method using &lt;strong&gt;active
+interrogation&lt;/strong&gt;.  We direct a $2.45 MeV$ beam of neutrons onto the cargo, and
+the fissile material (the HEU) will generate neutrons from induced fission.
+Then, setting a lower level discriminator, we can detect only those fission
+neutrons with energies above $2.45 MeV$, thereby not detecting any of the
+interrogating neutrons.&lt;/p&gt;
+
+&lt;figure&gt;
+    &lt;img src=&quot;/assets/img/fission_spectrum.png&quot; /&gt;
+    &lt;figcaption&gt;
+      Ratio of fission spectrum above the interrogation spectrum.
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;With this methodology, which we call &lt;strong&gt;Threshold Energy Neutron Analysis&lt;/strong&gt;, we
+were able to get ratios between the fission neutrons and interrogation neutrons
+of over $1000 \times$.  This is much much larger than that achievable with
+conventional neutron detectors, which we tested to ratios of only $12 \times$,
+and the literature shows similar, or worse results.  In all, this is an
+interesting and useful way to interrogate cargo for special nuclear materials.&lt;/p&gt;
+
+&lt;figure&gt;
+    &lt;img src=&quot;/assets/img/dd_fission_ratios.png&quot; /&gt;
+    &lt;figcaption&gt;
+      Efficiency of fission and interrogating neutrons in a CTMFD
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
 </description>
-        <pubDate>Wed, 17 Feb 2016 10:00:00 -0500</pubDate>
-        <link>/blog/projects/fast_adc_with_bbb</link>
-        <guid isPermaLink="true">/blog/projects/fast_adc_with_bbb</guid>
-        
-        
-        <category>blog</category>
-        
-        <category>projects</category>
-        
-      </item>
-    
-      <item>
-        <title>Fast ADC with an Arduino Yun</title>
-        <description>&lt;p&gt;Code (software and firmware) at
-&lt;a href=&quot;http://github.com/alexhagen/fast_adc_yun&quot;&gt;github.com/alexhagen/fast_adc_yun&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I’ve created a fast analog to digital conversion system using only an Arduino
-Yun (and an external computer to process data).  The system can sample the
-Arduino Yun’s ADC at 8-bit at greater than 30 kSps and then send those samples
-out via UDP at the same rate.  With a fast enough external computer (most modern
-computers would be), you can then catch most of those samples without error and
-plot them, or log them.&lt;/p&gt;
-
-&lt;h2 id=&quot;motivation&quot;&gt;Motivation&lt;/h2&gt;
-</description>
-        <pubDate>Tue, 26 Jan 2016 10:00:00 -0500</pubDate>
-        <link>/blog/projects/fast_adc_with_arduino_yun</link>
-        <guid isPermaLink="true">/blog/projects/fast_adc_with_arduino_yun</guid>
+        <pubDate>Wed, 04 Jan 2017 10:00:00 -0500</pubDate>
+        <link>/blog/projects/ans_2016_ymg_award</link>
+        <guid isPermaLink="true">/blog/projects/ans_2016_ymg_award</guid>
         
         
         <category>blog</category>
@@ -181,6 +222,19 @@ plot them, or log them.&lt;/p&gt;
         
         
         <category>publications</category>
+        
+      </item>
+    
+      <item>
+        <title>Hubtools: Tools to Help with Github</title>
+        <description>
+</description>
+        <pubDate>Mon, 12 Nov 2012 07:00:00 -0500</pubDate>
+        <link>/codes/hubtools</link>
+        <guid isPermaLink="true">/codes/hubtools</guid>
+        
+        
+        <category>codes</category>
         
       </item>
     
