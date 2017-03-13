@@ -40,9 +40,11 @@ a:hover {
 }
 
 em {
-    padding: 1px 2px;
-    border-radius: 2px;
-    background: #ffe8c0;
+    font-style: italic;
+    color: grey;
+    //padding: 1px 2px;
+    //border-radius: 2px;
+    //background: #ffe8c0;
 }
 
 strong {
@@ -55,16 +57,19 @@ small {
 
 .hilite {
     display: inline-block;
-    padding: 0 0.3em;
+    //padding: 0 0.3em;
+    font-style: italic;
+    font-color: $grey-dark;
     @include br(4px);
-    background: $hilite;
+    // background: $hilite;
 }
 
 blockquote, blockquote p {
     font-style: italic;
     line-height: 1.3em;
+    font-size: $fs4;
+    color: $blue;
     text-align: center;
-    color: lighten($black, .2);
     margin-bottom: $lh;
 }
 
@@ -557,6 +562,7 @@ header.site-header nav {
 
         img {
             margin-bottom: $lh/2;
+
         }
 
         figcaption {
@@ -575,6 +581,16 @@ header.site-header nav {
         display: block;
         margin: $lh auto;
         @include br(4px);
+    }
+
+    iframe {
+      display: block;
+      margin: $lh auto;
+      @include br(4px);
+    }
+
+    img.onecol{
+      width:50%;
     }
 
     ul {
@@ -1296,7 +1312,8 @@ h1 {
 }
 
 blockquote, blockquote p {
-    font-size: $fs3;
+    font-size: $fs4;
+    color: $blue;
 }
 
 }

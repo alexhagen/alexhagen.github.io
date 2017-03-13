@@ -1,0 +1,83 @@
+---
+title: "ANS Winter Meeting 2016 Awards"
+layout: post-no-feature
+date:   2017-01-04 15:00:00
+keywords: ANS, american nuclear society, metastable fluids, award, awards
+long_title: true
+---
+
+In late December, I received in the mail the American Nuclear Society's Young
+Members' Group Best Paper award for my presentation and accompanying paper at
+the 2016 ANS Winter Conference.  Professor Taleyarkhan, the corresponding
+author, also received word that the paper had won the overall conference's Best
+Paper Award.
+
+<figure>
+    <img src="{{ site.baseurl }}/assets/img/ne_news_screencap_ans_winter_2016.png" />
+    <figcaption>
+      Recognition of our award from Purdue's School of Nuclear Engineering
+    </figcaption>
+</figure>
+
+It was an honor to receive, and it's garnered some attention from Purdue's
+School of Engineering.  It's always nice to get that kind of recognition.
+Because I can't publish the paper or the presentation here (for copyright and
+intellectual property reasons), I've written a quick summary of the paper and
+included some of the most salient figures below.
+
+## Threshold Energy Based Active Special Nuclear Material Interrogation
+
+**Alex Hagen, Brian Archambault, Ph.D., and Rusi Taleyarkhan, Ph.D.**
+
+Counter terrorism is an important and ever-present concern of our times.  CBRN
+defense is a common acronym to describe the wide ranging terrorism concerns,
+standing for Chemical, Biological, Radiological, and Nuclear.  Particularly, we
+are concerned with Nuclear defense - the ability to detect and interdict those
+materials that can create nuclear weapons if they are being smuggled.  These
+materials (weapons grade plutonium and highly enriched uranium) are called
+Special Nuclear Materials - or SNM.  If you're interested in a more in depth
+description of this motivation, I'll put up a post soon.
+
+Currently, we know that there is a weakness in our detection of SNM.  The
+Congress of the United States' Budget Office sums it up this way:
+
+> The passive radiation detectors outside shipping containers can usually
+detect emissions from materials for radiological weapons but are less effective
+at detecting emissions from nuclear weapons and the fissile materials used to
+make them.
+
+We presented a way to remedy this.  Our detectors, Metastable Fluid Detectors,
+are more efficient than other neutron detectors, and have higher signal to
+noise ratios than conventional neutron detectors because they are inherently
+blind to $\gamma$ particles.  I'll post a more in depth description of our
+detectors soon.
+
+The efficiency of our detector makes it easily detect smuggled WGP.  However,
+highly enriched uranium is much "quieter", it emits less neutrons from
+spontaneous fission.  To remedy this, we propose a method using **active
+interrogation**.  We direct a $2.45 MeV$ beam of neutrons onto the cargo, and
+the fissile material (the HEU) will generate neutrons from induced fission.
+Then, setting a lower level discriminator, we can detect only those fission
+neutrons with energies above $2.45 MeV$, thereby not detecting any of the
+interrogating neutrons.
+
+<figure>
+    <img src="{{ site.baseurl }}/assets/img/fission_spectrum.png" />
+    <figcaption>
+      Ratio of fission spectrum above the interrogation spectrum.
+    </figcaption>
+</figure>
+
+With this methodology, which we call **Threshold Energy Neutron Analysis**, we
+were able to get ratios between the fission neutrons and interrogation neutrons
+of over $1000 \times$.  This is much much larger than that achievable with
+conventional neutron detectors, which we tested to ratios of only $12 \times$,
+and the literature shows similar, or worse results.  In all, this is an
+interesting and useful way to interrogate cargo for special nuclear materials.
+
+<figure>
+    <img class="onecol" src="{{ site.baseurl }}/assets/img/dd_fission_ratios.png" />
+    <figcaption>
+      Efficiency of fission and interrogating neutrons in a CTMFD
+    </figcaption>
+</figure>
