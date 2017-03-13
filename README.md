@@ -4,9 +4,9 @@
 
 - [ ] TODO: Write article about getting award at IEEE Sensors
 - [x] TODO: Transparent favicon
-- [ ] TODO: Simulations block gets cut off
+- [x] TODO: Simulations block gets cut off
 - [x] TODO: Split off personal blog
-- [ ] TODO: Rename technical blog
+- [x] TODO: Rename technical blog
 - [ ] TODO: Publication audit
 - [ ] TODO: CV creation system
 - [ ] TODO: Put up codes

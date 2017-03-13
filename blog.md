@@ -1,6 +1,6 @@
 ---
 layout: list
-title: Blog
+title: Discussions
 permalink: /blog/
 search: false
 description: >
