@@ -897,7 +897,8 @@ header.site-header nav {
 
 /* sort and filter buttons */
 .sort-buttons {
-    margin-top: 1.5em;
+    margin-top: $lh/3.0;
+    margin-bottom: $lh/3.0;
 }
 
 .filter-buttons {
@@ -960,20 +961,28 @@ header.site-header nav {
   font-weight: 700;
   text-transform: uppercase;
   background:none!important;
+  max-width: 960px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
     .filter-type, .sort, .filter {
         @include transit(all, .9s, ease-in-out);
         max-width:0px;
         max-height:0px;
         margin:0px;
         padding:0px;
-        overflow:hidden;
+        overflow: hidden;
+        display: inline-block;
         font-size: $fs6;
         font-family: $sans;
         font-weight: 700;
         text-transform: uppercase;
         background:none!important;
         border:none;
-        padding:0!important;
+        padding-left:0px;
+        padding-right:0px;
+        margin-left:0px;
+        margin-right:-2.5px;
         cursor: pointer;
         color: $link;
     }
