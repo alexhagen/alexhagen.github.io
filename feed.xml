@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Alex Hagen</title>
-    <description>Welcome to my portfolio. I am currently a Ph.D. seeking student at Purdue University in Nuclear Engineering.  This portfolio shows some designs, publications, and open source codes that I've created. Feel free to email me if you have any ideas, questions, or requests.
+    <description>Welcome to my portfolio. I am currently a Ph.D. seeking student at Purdue University in Nuclear Engineering.  This portfolio shows some designs, publications, and open source codes that I&#39;ve created. Feel free to email me if you have any ideas, questions, or requests.
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 13 Mar 2017 20:30:03 -0400</pubDate>
-    <lastBuildDate>Mon, 13 Mar 2017 20:30:03 -0400</lastBuildDate>
-    <generator>Jekyll v3.4.0</generator>
+    <pubDate>Wed, 15 Mar 2017 09:01:33 -0400</pubDate>
+    <lastBuildDate>Wed, 15 Mar 2017 09:01:33 -0400</lastBuildDate>
+    <generator>Jekyll v3.0.1</generator>
     
       <item>
         <title>ANS Winter Meeting 2016 Awards</title>
@@ -21,7 +21,7 @@ Paper Award.&lt;/p&gt;
 &lt;figure&gt;
     &lt;img src=&quot;/assets/img/ne_news_screencap_ans_winter_2016.png&quot; /&gt;
     &lt;figcaption&gt;
-      Recognition of our award from Purdue's School of Nuclear Engineering
+      Recognition of our award from Purdue&#39;s School of Nuclear Engineering
     &lt;/figcaption&gt;
 &lt;/figure&gt;
 
