@@ -128,9 +128,9 @@ blockquote {
 pre,
 code {
     font-size: 15px;
-    border: 1px solid $grey-color-light;
+    border: 1px solid $grey-medium;
     border-radius: 3px;
-    background-color: #eef;
+    background-color: $grey-light;
 }
 
 code {
@@ -207,7 +207,7 @@ pre {
     padding: 0px;
     margin: 0px;
     background-color: black;
-    
+
     > svg {
         display: inline;
         width: 20px;

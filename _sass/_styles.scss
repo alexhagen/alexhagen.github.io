@@ -78,9 +78,10 @@ blockquote, blockquote p {
 
 code {
     color: $grey-dark;
-    font-family: "Monaco", "Courier New", "Courier";
-    font-size: .75em;
-    font-weight: bold;
+    background: $grey-light-2;
+    font-family: $monospace;
+    font-size: 1em;
+    padding: 5px;
     .c {
       color: #2EAFA4;
     }
@@ -91,6 +92,21 @@ code {
       color: #B63F97;
     }
 }
+
+pre {
+  display: inline-block;
+  width:100%;
+  background: $grey-light-2;
+  padding-left: 2em;
+  margin-bottom: 2em;
+  code {
+    padding: 0px;
+    margin: 0px;
+    background: none;
+  }
+}
+
+
 
 .highlight {
     background: $grey-light;
