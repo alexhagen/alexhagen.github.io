@@ -4,9 +4,11 @@ title: Scholarship
 permalink: /scholarship/
 search: false
 description: >
-  Along with my scientific work at the lab, I also have done a lot of machine
-  design, whether for experiments, or for commercial products. Below are some
-  of the non-novel designs I've created.
+  I guess one thing about a Ph.D., is that, by the end of it, you better be good
+  at classes.  Whether that means good at taking classes, good at avoiding
+  classes, or good at teaching classes.  I haven't gotten much time to teach
+  during my Ph.D., but it's always something I enjoy.  I'm publishing those
+  things that might be useful as far as teaching goes.
 from_posts: false
 codes:
   - title: Purdue Nuclear Engineering Qualification Exams
