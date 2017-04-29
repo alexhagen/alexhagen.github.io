@@ -2,11 +2,15 @@
 
 ## To Do:
 
-- [ ] TODO: Write article about getting award at IEEE Sensors
-- [x] TODO: Transparent favicon
-- [x] TODO: Simulations block gets cut off
-- [x] TODO: Split off personal blog
-- [x] TODO: Rename technical blog
+- [ ] TODO: Blog post on incremental class creation
+- [ ] TODO: Blog post on LaTeX publications in ipynb
+- [ ] TODO: Blog post on nukes blowing up the world
+- [ ] TODO: Blog post on makefiles
+- [ ] TODO: Blog post on multiexport ipynb
+- [ ] TODO: Blog post on word export ipynb
+- [ ] TODO: Blog post on nuclear policy
+- [ ] TODO: Blog post on award for Connor
+- [ ] TODO: Blog post on nuclear terrorism
 - [ ] TODO: Publication audit
 - [ ] TODO: CV creation system
 - [ ] TODO: Put up codes
@@ -15,8 +19,8 @@
 	- [ ] TODO: cppm
 	- [ ] TODO: mcnp_companion
 - [ ] TODO: Put up teaching material (rename)
-	- [ ] TODO: nego LaTeX
-	- [ ] TODO: nego Quals
+	- [ ] TODO: nego LaTeX - Convert to ipynbs
+	- [ ] TODO: nego Quals - Convert to ipynbs
 - [ ] TODO: Put up Designs
 	- [ ] TODO: pressure chamber
 		- [ ] Buy firring strips
@@ -30,4 +34,6 @@
 	- [ ] TODO: linkedin
 	- [ ] TODO: grabcad
 - [ ] TODO: Add 3d plugin for Designs
+  - [ ] Blend4Web?
+	- [ ] Take renders at different views and make a spinner?
 - [ ] TODO: CSS stylesheet using GR LaTeX Class
