@@ -28,11 +28,13 @@
 		- [ ] Buy led lightstrips
 		- [ ] Construct a lightbox
 	- [ ] TODO: Handheld CTMFD
-- [ ] TODO: add accounts buttons to top right
-	- [ ] TODO: github
-	- [ ] TODO: researchgate
-	- [ ] TODO: linkedin
-	- [ ] TODO: grabcad
+- [x] TODO: add accounts buttons to top right
+	- [x] TODO: github
+	- [x] TODO: researchgate
+	- [x] TODO: linkedin
+	- [x] TODO: grabcad
+- [ ] TODO: Shift portfolio to portfolio page
+- [ ] TODO: Update Grabcad profile
 - [ ] TODO: Add 3d plugin for Designs
   - [ ] Blend4Web?
 	- [ ] Take renders at different views and make a spinner?

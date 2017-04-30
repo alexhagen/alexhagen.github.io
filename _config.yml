@@ -27,10 +27,42 @@ tools:
 # Links to include in top navigation
 # For external links add external: true
 links:
+  - title: Portfolio
+    short_title: work
+    url: /portfolio
+    important: true
   - title: Personal
+    short_title: blog
     url: /personal
+    important: false
   - title: CV
+    short_title: CV
     url: /cv
+    important: true
+  - title: Github
+    short_title: GH
+    icon: github_icon.svg
+    url: https://github.com/alexhagen
+    external: true
+    important: true
+  - title: Research Gate
+    short_title: RG
+    icon: researchgate_icon.svg
+    url: https://www.researchgate.net/profile/Alexander_Hagen2
+    external: true
+    important: true
+  - title: LinkedIn
+    short_title: LI
+    icon: linkedin_icon.svg
+    url: https://www.linkedin.com/in/alexander-hagen-61593423/
+    external: true
+    important: false
+  - title: GrabCad
+    short_title: GC
+    icon: grabcad_icon.svg
+    url: https://grabcad.com/alex.hagen-1
+    external: true
+    important: false
 
 timezone:    America/New_York
 future:      true
