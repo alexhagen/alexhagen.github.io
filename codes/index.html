@@ -51,8 +51,8 @@ MathJax.Hub.Config({
 <meta property="og:url" content="/codes/">
 <meta property="og:site_name" content="Alex Hagen">
 
-<link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico?v=2" />
-<link rel="icon" type="image/png" href="/assets/img/favicon.ico?v=2" />
+<link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
+<link rel="icon" type="image/png" href="/assets/img/favicon.ico" />
 
 <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Alex Hagen Feed">
 
@@ -65,7 +65,6 @@ MathJax.Hub.Config({
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Crimson+Text:400,400italic,700,700italic" rel='stylesheet' type='text/css' />
 <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="/assets/css/entypo.css" media="all">
-<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300" rel="stylesheet">
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="/assets/css/i.css">
@@ -86,6 +85,9 @@ MathJax.Hub.Config({
 <!-- Implement Fuzzy Search -->
 <script type="text/javascript" src="/assets/js/fuse.min.js"></script>
 
+<!-- Implement Expound -->
+<script src="https://gitcdn.xyz/repo/skorokithakis/expounder/master/expounder.js"></script>
+<link rel="stylesheet" href="https://gitcdn.xyz/repo/skorokithakis/expounder/master/expounder.css" />
 
 <div id="bump">
   <body class="">
@@ -122,13 +124,13 @@ MathJax.Hub.Config({
             
                 <li><a href="/cv" >CV</a></li>
             
-                <li><a href="https://github.com/alexhagen" target="_blank"><img src="/images/github_icon.svg" style="height: 12px;"/></a></li>
+                <li><a href="https://github.com/alexhagen" target="_blank">Github</a></li>
             
-                <li><a href="https://www.researchgate.net/profile/Alexander_Hagen2" target="_blank"><img src="/images/researchgate_icon.svg" style="height: 12px;"/></a></li>
+                <li><a href="https://www.researchgate.net/profile/Alexander_Hagen2" target="_blank">Research Gate</a></li>
             
-                <li><a href="https://www.linkedin.com/in/alexander-hagen-61593423/" target="_blank"><img src="/images/linkedin_icon.svg" style="height: 12px;"/></a></li>
+                <li><a href="https://www.linkedin.com/in/alexander-hagen-61593423/" target="_blank">LinkedIn</a></li>
             
-                <li><a href="https://grabcad.com/alex.hagen-1" target="_blank"><img src="/images/grabcad_icon.svg" style="height: 12px;"/></a></li>
+                <li><a href="https://grabcad.com/alex.hagen-1" target="_blank">GrabCad</a></li>
             
 
           </ul>
@@ -163,125 +165,38 @@ non-specific ones of those to these libraries</li>
           </hgroup>
           <!-- put the search/filter bar here -->
         </header>
-
-
         <div id='users'>
             <div class="sort-buttons">
-              <input type="checkbox" id="filter-sort-toggle" />
-              <label class="button-container" for="filter-sort-toggle">
-                <span class="button-container-label">Sort</span>
                 <button class="sort" data-sort="title">Sort by title</button>
                 <button class="sort" data-sort="date">Sort by date</button>
-              </label>
             </div>
 
             <div class="filter-buttons">
-              <input type="checkbox" id="filter-tags-toggle" />
-              <label class="button-container" for="filter-tags-toggle">
-                <span class="button-container-label">Tags</span>
-                  <button id="clear-filter" class='filter'>clear</button>
-                  
-                  
-                  
-                  
-                  
-                      <button class="filter"> contour</button>
-                  
-                      <button class="filter"> graphing</button>
-                  
-                      <button class="filter"> integration</button>
-                  
-                      <button class="filter"> interpolation</button>
-                  
-                      <button class="filter"> math</button>
-                  
-                      <button class="filter"> matplotlib</button>
-                  
-                      <button class="filter"> mcnp</button>
-                  
-                      <button class="filter"> n particle transport</button>
-                  
-                      <button class="filter"> neutron</button>
-                  
-                      <button class="filter"> nuclear</button>
-                  
-                      <button class="filter"> nuclear transport</button>
-                  
-                      <button class="filter"> numerical methods</button>
-                  
-                      <button class="filter"> object</button>
-                  
-                      <button class="filter"> object-oriented</button>
-                  
-                      <button class="filter"> photon
-</button>
-                  
-                      <button class="filter"> plotting</button>
-                  
-                      <button class="filter"> visualization</button>
-                  
-                      <button class="filter">c++</button>
-                  
-                      <button class="filter">python</button>
-                  
-              </label>
+                <button id="clear-filter">clear</button>
+                
+                
+                
+                
+                
             </div>
-            
-                <div class="filter-type-buttons">
-                  <input type="checkbox" id="filter-button-toggle" />
-                  <label class="button-container" for="filter-button-toggle">
-                    <span class="button-container-label">Type</span>
-                    <button id="clear-filter-type" class='filter-type'>clear</button>
-                  
-                  
-                  
-                  
-                  
-                    <button class="filter-type">cpp</button>
-                  
-                    <button class="filter-type">nuclear particle</button>
-                  
-                    <button class="filter-type">python</button>
-                  
-                  </label>
-                </div>
-            
-
-
-
             <ul class='list grid'>
-              
-
             
               
               <a class="cell" href="../pym/" type="python" keywords="python,python, math, numerical methods, integration, interpolation">
                 <div class='title'>pym</div>
-                <div class='type'>python</div>
-                <div class='date'></div>
-                <div class='keywords'>python, math, numerical methods, integration, interpolation</div>
               </a>
               
               <a class="cell" href="../pyg/" type="python" keywords="python,python, graphing, plotting, matplotlib, visualization, contour">
                 <div class='title'>pyg</div>
-                <div class='type'>python</div>
-                <div class='date'></div>
-                <div class='keywords'>python, graphing, plotting, matplotlib, visualization, contour</div>
               </a>
               
               <a class="cell" href="../cppm/" type="cpp" keywords="cpp,c++, object-oriented, object">
                 <div class='title'>cppm</div>
-                <div class='type'>cpp</div>
-                <div class='date'></div>
-                <div class='keywords'>c++, object-oriented, object</div>
               </a>
               
               <a class="cell" href="../wig/" type="nuclear particle" keywords="nuclear particle,python, mcnp, n particle transport, nuclear transport, nuclear, neutron, photon
 ">
                 <div class='title'>wig</div>
-                <div class='type'>nuclear particle</div>
-                <div class='date'></div>
-                <div class='keywords'>python, mcnp, n particle transport, nuclear transport, nuclear, neutron, photon
-</div>
               </a>
               
             
@@ -291,14 +206,13 @@ non-specific ones of those to these libraries</li>
         <script src="/assets/list.js"></script>
         <script>
         var options = {
-          valueNames: [ 'title', 'long-title', 'date', 'keywords', 'type' ]
+          valueNames: [ 'title', 'long-title', 'date', 'keywords' ]
         };
 
         var userList = new List('users', options);
 
         $('.filter').click(function() {
           string = $(this).text();
-          $(this).toggleClass("activefilter");
           userList.filter(function(item) {
             if (item.values().keywords.indexOf(string) != -1) {
               return true;
@@ -308,26 +222,8 @@ non-specific ones of those to these libraries</li>
           });
           return false;
         });
-        $('.filter-type').click(function() {
-          string = $(this).text();
-          $(this).toggleClass("activetypefilter");
-          userList.filter(function(item) {
-            if (item.values().type.indexOf(string) != -1) {
-              return true;
-            } else {
-              return false;
-            }
-          });
-          return false;
-        });
         $('#clear-filter').click(function() {
           userList.filter();
-          $(".activefilter").toggleClass("activefilter");
-          return false;
-        });
-        $('#clear-filter-type').click(function() {
-          userList.filter();
-          $(".activetypefilter").toggleClass("activetypefilter");
           return false;
         });
         </script>
