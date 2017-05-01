@@ -14,10 +14,10 @@
 - [ ] TODO: Publication audit
 - [ ] TODO: CV creation system
 - [ ] TODO: Put up codes
-	- [ ] TODO: pym
-	- [ ] TODO: pyg
+	- [x] TODO: pym
+	- [x] TODO: pyg
 	- [ ] TODO: cppm
-	- [ ] TODO: mcnp_companion
+	- [ ] TODO: wig
 - [ ] TODO: Put up teaching material (rename)
 	- [ ] TODO: nego LaTeX - Convert to ipynbs
 	- [ ] TODO: nego Quals - Convert to ipynbs
@@ -33,7 +33,7 @@
 	- [x] TODO: researchgate
 	- [x] TODO: linkedin
 	- [x] TODO: grabcad
-- [ ] TODO: Shift portfolio to portfolio page
+- [x] TODO: Shift portfolio to portfolio page
 - [ ] TODO: Update Grabcad profile
 - [ ] TODO: Add 3d plugin for Designs
   - [ ] Blend4Web?
