@@ -5,7 +5,7 @@
 - [ ] TODO: Blog post on incremental class creation
 - [ ] TODO: Blog post on LaTeX publications in ipynb
 - [ ] TODO: Blog post on nukes blowing up the world
-- [ ] TODO: Blog post on makefiles
+- [x] TODO: Blog post on makefiles
 - [ ] TODO: Blog post on multiexport ipynb
 - [ ] TODO: Blog post on word export ipynb
 - [ ] TODO: Blog post on nuclear policy
@@ -39,3 +39,4 @@
   - [ ] Blend4Web?
 	- [ ] Take renders at different views and make a spinner?
 - [ ] TODO: CSS stylesheet using GR LaTeX Class
+- [ ] TODO: Add disqus to everything
