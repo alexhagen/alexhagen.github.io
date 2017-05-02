@@ -4,6 +4,7 @@ layout: post-light-feature
 date:   2012-06-01 15:00:00
 keywords: czech republic, travel, hiking
 long_title: true
+comments: true
 image:
     feature: "assets/img/divici/divici_komon.jpg"
 ---

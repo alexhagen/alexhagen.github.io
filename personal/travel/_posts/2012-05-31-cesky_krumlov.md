@@ -4,6 +4,7 @@ layout: post-light-feature
 date:   2012-05-31 15:00:00
 keywords: czech republic, travel
 long_title: false
+comments: true
 image:
     feature: "assets/img/cesky/cesky_banner.jpg"
 ---
@@ -12,7 +13,7 @@ Despite still not having our bags, we’ve soldiered on to a small town in the
 Czech countryside.  Apparently this town is both a huge tourist destination,
 and haunted.  The hostel room we’re staying in has several ghost stories
 attached to it.  Besides the hostel, the town has a castle, several
-beautiful churches, and a river (that we’re rafting through tomorrow).  
+beautiful churches, and a river (that we’re rafting through tomorrow).
 Below are some pictures from Andrew’s iPhone:
 
 <figure>

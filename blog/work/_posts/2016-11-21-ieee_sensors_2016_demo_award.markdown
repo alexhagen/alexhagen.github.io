@@ -4,6 +4,7 @@ layout: post-no-feature
 date:   2016-11-21 15:00:00
 keywords: IEEE, IEEE Sensors, demo, metastable fluids, award, awards
 long_title: true
+comments: true
 ---
 
 In early November, we received the 1st Place Demo award from the IEEE Sensors
