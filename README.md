@@ -39,4 +39,4 @@
   - [ ] Blend4Web?
 	- [ ] Take renders at different views and make a spinner?
 - [ ] TODO: CSS stylesheet using GR LaTeX Class
-- [ ] TODO: Add disqus to everything.
+- [ ] TODO: Add disqus to everything
