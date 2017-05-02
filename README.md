@@ -3,6 +3,7 @@
 ## To Do:
 
 - [ ] TODO: Blog post on incremental class creation
+- [ ] TODO: Blog post on wig
 - [ ] TODO: Blog post on LaTeX publications in ipynb
 - [ ] TODO: Blog post on nukes blowing up the world
 - [x] TODO: Blog post on makefiles
