@@ -6,4 +6,4 @@ _site/
 *.lyx~
 .sass-cache/
 
-*/.ipynb_checkpoints/
+.ipynb_checkpoints/
