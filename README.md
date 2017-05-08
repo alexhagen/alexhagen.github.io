@@ -21,7 +21,11 @@
 	- [ ] TODO: wig
 - [ ] TODO: Put up teaching material (rename)
 	- [ ] TODO: nego LaTeX - Convert to ipynbs
+		- [ ] TODO: python class for mwes
+		- [ ] TODO: python class for slides
+		- [ ] TODO: write presentation as ipynb
 	- [ ] TODO: nego Quals - Convert to ipynbs
+		- [ ] TODO: write
 - [ ] TODO: Put up Designs
 	- [ ] TODO: pressure chamber
 		- [ ] Buy firring strips
