@@ -25,7 +25,14 @@
 		- [ ] TODO: python class for slides
 		- [ ] TODO: write presentation as ipynb
 	- [ ] TODO: nego Quals - Convert to ipynbs
-		- [ ] TODO: write
+		- [ ] TODO: make it responsive
+		- [ ] TODO: change fonts and color scheme
+		- [ ] TODO: add breadcrumbs
+		- [ ] TODO: convert to list groups
+		- [ ] TODO: All TH
+		- [ ] TODO: All Neu
+		- [ ] TODO: All Int
+		- [ ] TODO: All Mat
 - [ ] TODO: Put up Designs
 	- [ ] TODO: pressure chamber
 		- [ ] Buy firring strips
