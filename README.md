@@ -22,6 +22,9 @@
 - [ ] TODO: Put up teaching material (rename)
 	- [ ] TODO: nego LaTeX - Convert to ipynbs
 	- [ ] TODO: nego Quals - Convert to ipynbs
+	- [ ] TODO: add responsive
+	- [ ] TODO: add breadcrumbs
+	- [ ] TODO: make pub script
 - [ ] TODO: Put up Designs
 	- [ ] TODO: pressure chamber
 		- [ ] Buy firring strips
