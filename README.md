@@ -3,6 +3,7 @@
 ## To Do:
 
 - [ ] TODO: Blog post on incremental class creation
+- [ ] TODO: Blog post on wig
 - [ ] TODO: Blog post on LaTeX publications in ipynb
 - [ ] TODO: Blog post on nukes blowing up the world
 - [x] TODO: Blog post on makefiles
@@ -39,4 +40,4 @@
   - [ ] Blend4Web?
 	- [ ] Take renders at different views and make a spinner?
 - [ ] TODO: CSS stylesheet using GR LaTeX Class
-- [ ] TODO: Add disqus to everything
+- [x] TODO: Add disqus to everything

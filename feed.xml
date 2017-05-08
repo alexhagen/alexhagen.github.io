@@ -6,8 +6,8 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 02 May 2017 08:19:07 -0400</pubDate>
-    <lastBuildDate>Tue, 02 May 2017 08:19:07 -0400</lastBuildDate>
+    <pubDate>Mon, 08 May 2017 14:41:01 -0400</pubDate>
+    <lastBuildDate>Mon, 08 May 2017 14:41:01 -0400</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
@@ -418,6 +418,36 @@ state of the art.&lt;/p&gt;
       </item>
     
       <item>
+        <title>Material for Purdue's PhDNE Qualification Exams</title>
+        <description>&lt;p&gt;&lt;em&gt;To be honest, I’m severly backdating this (I’m writing this in 2017), but I
+ think it’s okay because all the material was made in 2012-2014 and I’m just
+ documenting it at this point.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;One of the big steps towards my doctorate was passing qualification exams.  In
+so doing, I generated a lot of material reviewing and extending on my graduate
+classes.  I also had some disagreements with the way the faculty members here at
+Purdue had treated the qualification exams, both for their ambiguity and
+grading.  The faculty were kind and respectful enough to work towards changing
+their policies, which is a great sign.&lt;/p&gt;
+
+&lt;p&gt;Anyways, I feel that I became a much better engineer for the process I had for
+passing qualification exams, and I wanted to share the materials I had created
+to help other future students be more directed in their studying.  So, without
+too much more commentary, I’ve posted all the materials
+&lt;a href=&quot;https://alexhagen.github.io/qe/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 15 Mar 2014 11:00:00 -0400</pubDate>
+        <link>/blog/work/purdue_phdne_qualification_exam_materials</link>
+        <guid isPermaLink="true">/blog/work/purdue_phdne_qualification_exam_materials</guid>
+        
+        
+        <category>blog</category>
+        
+        <category>work</category>
+        
+      </item>
+    
+      <item>
         <title>The MAC-TMFD: Novel multi-armed Centrifugally Tensioned Metastable Fluid Detector (Gamma-Blind) — Neutron-alpha recoil spectrometer</title>
         <description>
 </description>
@@ -443,21 +473,6 @@ state of the art.&lt;/p&gt;
         <category>authored</category>
         
         <category>poster</category>
-        
-        
-        <category>publications</category>
-        
-      </item>
-    
-      <item>
-        <title>Real-Time Monitoring of Actinides in Chemical Nuclear Fuel Processing Plants</title>
-        <description>&lt;p&gt;Our technology has been tagged as a great hope in the characterization of actinide streams during separation.  This invited article was written by my Principle Investigator with its key components coming from my colleague and I’s work.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 15 Mar 2013 08:00:00 -0400</pubDate>
-        <link>/publications/real-time-monitoring-of</link>
-        <guid isPermaLink="true">/publications/real-time-monitoring-of</guid>
-        
-        <category>coauthor</category>
         
         
         <category>publications</category>
