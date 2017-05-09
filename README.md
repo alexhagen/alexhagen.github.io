@@ -25,8 +25,8 @@
 		- [ ] TODO: python class for slides
 		- [ ] TODO: write presentation as ipynb
 	- [ ] TODO: nego Quals - Convert to ipynbs
-		- [ ] TODO: make it responsive
-		- [ ] TODO: change fonts and color scheme
+		- [x] TODO: make it responsive
+		- [x] TODO: change fonts and color scheme
 		- [ ] TODO: add breadcrumbs
 		- [ ] TODO: convert to list groups
 		- [ ] TODO: All TH
