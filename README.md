@@ -5,6 +5,7 @@
 - [ ] TODO: Blog post on incremental class creation
 - [ ] TODO: Blog post on wig
 - [ ] TODO: Blog post on LaTeX publications in ipynb
+- [ ] TODO: Blog post on MWEs
 - [ ] TODO: Blog post on nukes blowing up the world
 - [x] TODO: Blog post on makefiles
 - [ ] TODO: Blog post on multiexport ipynb
@@ -21,13 +22,14 @@
 	- [ ] TODO: wig
 - [ ] TODO: Put up teaching material (rename)
 	- [ ] TODO: nego LaTeX - Convert to ipynbs
-		- [ ] TODO: python class for mwes
+		- [x] TODO: python class for mwes
 		- [ ] TODO: python class for slides
 		- [ ] TODO: write presentation as ipynb
 	- [ ] TODO: nego Quals - Convert to ipynbs
 		- [x] TODO: make it responsive
 		- [x] TODO: change fonts and color scheme
 		- [ ] TODO: add breadcrumbs
+		- [ ] TODO: lighten the svg
 		- [ ] TODO: convert to list groups
 		- [ ] TODO: All TH
 		- [ ] TODO: All Neu
