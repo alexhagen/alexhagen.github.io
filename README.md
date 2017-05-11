@@ -5,6 +5,7 @@
 - [ ] TODO: Blog post on incremental class creation
 - [ ] TODO: Blog post on wig
 - [ ] TODO: Blog post on LaTeX publications in ipynb
+- [x] TODO: Code post on MWEs
 - [ ] TODO: Blog post on nukes blowing up the world
 - [x] TODO: Blog post on makefiles
 - [ ] TODO: Blog post on multiexport ipynb
@@ -21,10 +22,19 @@
 	- [ ] TODO: wig
 - [ ] TODO: Put up teaching material (rename)
 	- [ ] TODO: nego LaTeX - Convert to ipynbs
+		- [x] TODO: python class for mwes
+		- [ ] TODO: python class for slides
+		- [ ] TODO: write presentation as ipynb
 	- [ ] TODO: nego Quals - Convert to ipynbs
-	- [ ] TODO: add responsive
-	- [ ] TODO: add breadcrumbs
-	- [ ] TODO: make pub script
+		- [x] TODO: make it responsive
+		- [x] TODO: change fonts and color scheme
+		- [ ] TODO: add breadcrumbs
+		- [ ] TODO: lighten the svg
+		- [ ] TODO: convert to list groups
+		- [ ] TODO: All TH
+		- [ ] TODO: All Neu
+		- [ ] TODO: All Int
+		- [ ] TODO: All Mat
 - [ ] TODO: Put up Designs
 	- [ ] TODO: pressure chamber
 		- [ ] Buy firring strips
@@ -41,6 +51,7 @@
 - [ ] TODO: Update Grabcad profile
 - [ ] TODO: Add 3d plugin for Designs
   - [ ] Blend4Web?
+	- [ ] Three.js
 	- [ ] Take renders at different views and make a spinner?
 - [ ] TODO: CSS stylesheet using GR LaTeX Class
 - [x] TODO: Add disqus to everything
