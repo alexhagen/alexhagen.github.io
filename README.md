@@ -5,7 +5,7 @@
 - [ ] TODO: Blog post on incremental class creation
 - [ ] TODO: Blog post on wig
 - [ ] TODO: Blog post on LaTeX publications in ipynb
-- [ ] TODO: Blog post on MWEs
+- [x] TODO: Code post on MWEs
 - [ ] TODO: Blog post on nukes blowing up the world
 - [x] TODO: Blog post on makefiles
 - [ ] TODO: Blog post on multiexport ipynb
@@ -51,6 +51,7 @@
 - [ ] TODO: Update Grabcad profile
 - [ ] TODO: Add 3d plugin for Designs
   - [ ] Blend4Web?
+	- [ ] Three.js
 	- [ ] Take renders at different views and make a spinner?
 - [ ] TODO: CSS stylesheet using GR LaTeX Class
 - [x] TODO: Add disqus to everything

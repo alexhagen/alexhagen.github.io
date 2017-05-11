@@ -42,4 +42,10 @@ codes:
     keywords: >
       python, mcnp, n particle transport, nuclear transport, nuclear, neutron,
       photon
+  - title: mwe
+    link: mwe/
+    type: LaTeX
+    keywords: >
+      python, LaTeX, Jupyter, notebook, ipython, IPython,
+      minimum working example, mwe, publishing, prototyping
 ---
