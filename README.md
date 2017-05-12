@@ -28,7 +28,7 @@
 	- [ ] TODO: nego Quals - Convert to ipynbs
 		- [x] TODO: make it responsive
 		- [x] TODO: change fonts and color scheme
-		- [ ] TODO: add breadcrumbs
+		- [x] TODO: add breadcrumbs
 		- [ ] TODO: lighten the svg
 		- [ ] TODO: convert to list groups
 		- [ ] TODO: All TH
