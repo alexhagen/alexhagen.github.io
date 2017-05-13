@@ -422,7 +422,11 @@ header.site-header nav {
 
         .intro {
             text-align: left;
-            font-size: $fs5;
+            padding-top: 1rem;
+            p {
+              font-size: $fs55;
+              line-height: $lh5;
+            }
         }
     }
 }
@@ -868,14 +872,13 @@ header.site-header nav {
       color: $grey-medium;
       width: 100%;
       position: absolute;
-      bottom: 0px;
+      bottom: 20%;
       left: 0px;
       right: 0px;
       word-wrap: break-word;
       white-space: normal;
       padding-left:10px;
       padding-right: 10px;
-      padding-bottom: 10px;
     }
     .date, .keywords, .type {
         display: none;
@@ -1332,6 +1335,11 @@ header.site-header hgroup a .breadcrumb {
 }
 
 @media only screen and (max-width: 481px) {
+  .full-width {
+    .post-header {
+      width: 320px;
+    }
+  }
   .grid{
     width: 320px;
     .cell{
@@ -2495,4 +2503,13 @@ ul.cbp_tmtimeline li {
 	.engdrawing {
 		width: 320px;
 	}
+}
+
+@media screen and (max-width: 480px) {
+  .intro {
+    width: 100%;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
