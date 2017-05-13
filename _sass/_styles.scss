@@ -428,6 +428,16 @@ header.site-header nav {
               line-height: $lh5;
             }
         }
+        .subtitle {
+          text-align: center;
+          padding-top: 1rem;
+          font-size: $fs4;
+          font-family: $serif;
+          font-weight: lighter;
+          font-style: italic;
+          text-transform: lowercase;
+          color: $grey-medium;
+        }
     }
 }
 
