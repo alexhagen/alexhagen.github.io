@@ -15,7 +15,7 @@
 - [ ] TODO: Publication audit
 - [ ] TODO: CV creation system
 - [ ] TODO: Put up codes
-  - [ ] TODO: add descriptions to blocks
+  - [x] TODO: add descriptions to blocks
 	- [x] TODO: pym
 	- [x] TODO: pyg
 	- [ ] TODO: cppm
