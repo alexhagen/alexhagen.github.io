@@ -5,7 +5,6 @@
 - [ ] TODO: Blog post on incremental class creation
 - [ ] TODO: Blog post on wig
 - [ ] TODO: Blog post on LaTeX publications in ipynb
-- [x] TODO: Code post on MWEs
 - [ ] TODO: Blog post on nukes blowing up the world
 - [x] TODO: Blog post on makefiles
 - [ ] TODO: Blog post on multiexport ipynb
@@ -16,10 +15,13 @@
 - [ ] TODO: Publication audit
 - [ ] TODO: CV creation system
 - [ ] TODO: Put up codes
+  - [ ] TODO: add descriptions to blocks
 	- [x] TODO: pym
 	- [x] TODO: pyg
 	- [ ] TODO: cppm
 	- [ ] TODO: wig
+	- [x] TODO: MWE
+	- [ ] TODO: Lyxithea
 - [ ] TODO: Put up teaching material (rename)
 	- [ ] TODO: nego LaTeX - Convert to ipynbs
 		- [x] TODO: python class for mwes
