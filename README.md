@@ -14,12 +14,12 @@
 - [ ] TODO: Publication audit
 - [ ] TODO: Git repo audit
   - [ ] TODO: ANS 2016 to /data repo
-  - [ ] TODO: aae550 to /data repo
-  - [ ] TODO: fourier_analysis to some local storage
+  - [x] TODO: aae550 to /data repo
+  - [x] TODO: fourier_analysis to some local storage
   - [ ] TODO: ieee_sensors_2016 to /data repo
   - [ ] TODO: aa2015 to /data repo
   - [ ] TODO: ah_paper into lyxithea
-  - [ ] TODO: combine all schoolwork into one repo
+  - [x] TODO: combine all schoolwork into one repo
   - [ ] TODO: unknown nuclear opponent into blog post
 - [ ] TODO: CV creation system
 - [ ] TODO: Put up codes
