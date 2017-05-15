@@ -61,4 +61,13 @@ codes:
     keywords: >
       python, LaTeX, Jupyter, notebook, ipython, IPython,
       minimum working example, mwe, publishing, prototyping
+  - title: jdc
+    link: jdc/
+    type: Jupyter
+    description: >
+      convenience class for dynamic python classes in Jupyter notebooks,
+      implemented in a Jupyter magic API
+    keywords: >
+      python, Jupyter, notebook, ipython, IPython, dynamic classing,
+      metaprogramming, functional programming, programming
 ---

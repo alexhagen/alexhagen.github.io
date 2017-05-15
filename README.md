@@ -12,18 +12,10 @@
 - [ ] TODO: Blog post on award for Connor
 - [ ] TODO: Blog post on nuclear terrorism
 - [ ] TODO: Publication audit
-- [x] TODO: Git repo audit
-  - [x] TODO: ANS 2016 to /data repo
-  - [x] TODO: aae550 to /data repo
-  - [x] TODO: fourier_analysis to some local storage
-  - [x] TODO: ieee_sensors_2016 to /data repo
-  - [x] TODO: aa2015 to /data repo
-  - [x] TODO: ah_paper into lyxithea
-  - [x] TODO: combine all schoolwork into one repo
-  - [x] TODO: unknown nuclear opponent into blog post
 - [ ] TODO: CV creation system
 - [ ] TODO: Put up codes
 	- [ ] TODO: cppm
+	- [ ] TODO: jdc
 	- [ ] TODO: wig
 	- [ ] TODO: Lyxithea
   - [ ] TODO: pyf
@@ -51,4 +43,3 @@
 	- [ ] Three.js
 	- [ ] Take renders at different views and make a spinner?
 - [ ] TODO: CSS stylesheet using GR LaTeX Class
-- [x] TODO: Add disqus to everything
