@@ -15,9 +15,9 @@
 - [ ] TODO: CV creation system
 - [ ] TODO: Put up codes
 	- [ ] TODO: cppm
-	- [ ] TODO: jdc
+	- [x] TODO: jdc
 	- [ ] TODO: wig
-	- [ ] TODO: Lyxithea
+	- [ ] TODO: lyxithea
   - [ ] TODO: pyf
   - [ ] TODO: pynk
 - [ ] TODO: Put up teaching material (rename)
