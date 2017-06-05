@@ -72,7 +72,7 @@ MathJax.Hub.Config({
 <script src="/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
 
 <!-- Load the waypoints -->
-<script type="text/javascript" src="/js/waypoints.min.js"></script>
+<!-- <script type="text/javascript" src="/js/waypoints.min.js"></script> -->
 
 <!-- Implement Fuzzy Search -->
 <script type="text/javascript" src="/assets/js/fuse.min.js"></script>
@@ -138,15 +138,16 @@ MathJax.Hub.Config({
         <header class="post-header">
           <hgroup>
             <h1>Scholarship</h1>
-            <p class="intro"><p>I guess one thing about a Ph.D., is that, by the end of it, you better be good at classes.  Whether that means good at taking classes, good at avoiding classes, or good at teaching classes.  I haven’t gotten much time to teach during my Ph.D., but it’s always something I enjoy.  I’m publishing those things that might be useful as far as teaching goes.</p>
-</p>
+            
+            <div class="intro"><p>I guess one thing about a Ph.D., is that, by the end of it, you better be good at classes.  Whether that means good at taking classes, good at avoiding classes, or good at teaching classes.  I haven’t gotten much time to teach during my Ph.D., but it’s always something I enjoy.  I’m publishing those things that might be useful as far as teaching goes.</p>
+</div>
           </hgroup>
           <!-- put the search/filter bar here -->
         </header>
 
 
-        <div id='users'>
-            <div class="sort-buttons">
+        <div style='width:100%;' id='users'>
+            <div style='max-width:33%; display: inline-block;' class="sort-buttons">
               <input type="checkbox" id="filter-sort-toggle" />
               <label class="button-container" for="filter-sort-toggle">
                 <span class="button-container-label">Sort</span>
@@ -155,7 +156,7 @@ MathJax.Hub.Config({
               </label>
             </div>
 
-            <div class="filter-buttons">
+            <div style='max-width:33%; display: inline-block;' class="filter-buttons">
               <input type="checkbox" id="filter-tags-toggle" />
               <label class="button-container" for="filter-tags-toggle">
                 <span class="button-container-label">Tags</span>
@@ -188,7 +189,7 @@ MathJax.Hub.Config({
               </label>
             </div>
             
-                <div class="filter-type-buttons">
+                <div style='max-width:33%; display: inline-block;' class="filter-type-buttons">
                   <input type="checkbox" id="filter-button-toggle" />
                   <label class="button-container" for="filter-button-toggle">
                     <span class="button-container-label">Type</span>
@@ -216,6 +217,7 @@ MathJax.Hub.Config({
                 <div class='type'>teaching</div>
                 <div class='date'></div>
                 <div class='keywords'>python,math,numerical methods,integration,interpolation</div>
+                
               </a>
               
               <a class="cell" href="../nego_latex/" type="teaching" keywords="teaching,python,graphing,plotting,matplotlib,visualization,contour">
@@ -223,6 +225,7 @@ MathJax.Hub.Config({
                 <div class='type'>teaching</div>
                 <div class='date'></div>
                 <div class='keywords'>python,graphing,plotting,matplotlib,visualization,contour</div>
+                
               </a>
               
             

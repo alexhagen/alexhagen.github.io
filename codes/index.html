@@ -72,7 +72,7 @@ MathJax.Hub.Config({
 <script src="/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
 
 <!-- Load the waypoints -->
-<script type="text/javascript" src="/js/waypoints.min.js"></script>
+<!-- <script type="text/javascript" src="/js/waypoints.min.js"></script> -->
 
 <!-- Implement Fuzzy Search -->
 <script type="text/javascript" src="/assets/js/fuse.min.js"></script>
@@ -138,15 +138,16 @@ MathJax.Hub.Config({
         <header class="post-header">
           <hgroup>
             <h1>Codes</h1>
-            <p class="intro"><p>Throughout the years, I’ve ended up writing thousands of lines of code as support for classes or projects or research.  A couple years ago, I had the epiphany that if I saved all of the helper functions and reused snippets, and put in the effort to package them and document them, I would save time, and maybe others could use them.  There are a couple limitations to this plan, since I can’t publish anything “novel” or “protected” (basically if Purdue thinks it owns the intellectual property, it does), but other than that, I’m trying to open source everything.  The codes fall under a couple categories. <em>Firmware helper classes</em>, for the detectors I’ve built. Usually written in <code>c++</code>, these classes are transparent wrappers to more complicated <code>c</code> and <code>c++</code> routines that help in my mechatronics projects. The other type are <em>Python data analysis and visualization classes</em>, because to publish, you need to “analyze data well and make the prettiest pictures”, as my mentor at Argonne used to tell me. I’ve saved anything not protected by Purdue to libraries. I’m providing all of these with no license whatsoever, so have fun coding!</p>
-</p>
+            
+            <div class="intro"><p>Throughout the years, I’ve ended up writing thousands of lines of code as support for classes or projects or research.  A couple years ago, I had the epiphany that if I saved all of the helper functions and reused snippets, and put in the effort to package them and document them, I would save time, and maybe others could use them.  There are a couple limitations to this plan, since I can’t publish anything “novel” or “protected” (basically if Purdue thinks it owns the intellectual property, it does), but other than that, I’m trying to open source everything.  The codes fall under a couple categories. <em>Firmware helper classes</em>, for the detectors I’ve built. Usually written in <code>c++</code>, these classes are transparent wrappers to more complicated <code>c</code> and <code>c++</code> routines that help in my mechatronics projects. The other type are <em>Python data analysis and visualization classes</em>, because to publish, you need to “analyze data well and make the prettiest pictures”, as my mentor at Argonne used to tell me. I’ve saved anything not protected by Purdue to libraries. I’m providing all of these with no license whatsoever, so have fun coding!</p>
+</div>
           </hgroup>
           <!-- put the search/filter bar here -->
         </header>
 
 
-        <div id='users'>
-            <div class="sort-buttons">
+        <div style='width:100%;' id='users'>
+            <div style='max-width:33%; display: inline-block;' class="sort-buttons">
               <input type="checkbox" id="filter-sort-toggle" />
               <label class="button-container" for="filter-sort-toggle">
                 <span class="button-container-label">Sort</span>
@@ -155,7 +156,7 @@ MathJax.Hub.Config({
               </label>
             </div>
 
-            <div class="filter-buttons">
+            <div style='max-width:33%; display: inline-block;' class="filter-buttons">
               <input type="checkbox" id="filter-tags-toggle" />
               <label class="button-container" for="filter-tags-toggle">
                 <span class="button-container-label">Tags</span>
@@ -235,7 +236,7 @@ MathJax.Hub.Config({
               </label>
             </div>
             
-                <div class="filter-type-buttons">
+                <div style='max-width:33%; display: inline-block;' class="filter-type-buttons">
                   <input type="checkbox" id="filter-button-toggle" />
                   <label class="button-container" for="filter-button-toggle">
                     <span class="button-container-label">Type</span>
@@ -271,6 +272,7 @@ MathJax.Hub.Config({
                 <div class='type'>python</div>
                 <div class='date'></div>
                 <div class='keywords'>python, math, numerical methods, integration, interpolation</div>
+                <div class='description'>two dimensional data object with interpolation, integration, and other data analysis capabilities</div>
               </a>
               
               <a class="cell" href="../pyg/" type="python" keywords="python,python, graphing, plotting, matplotlib, visualization, contour">
@@ -278,6 +280,7 @@ MathJax.Hub.Config({
                 <div class='type'>python</div>
                 <div class='date'></div>
                 <div class='keywords'>python, graphing, plotting, matplotlib, visualization, contour</div>
+                <div class='description'>graphing library for 2-d, 3-d, 2-d annotations on 3-d visualizations, maps, tikz flowcharts, and file system maps</div>
               </a>
               
               <a class="cell" href="../cppm/" type="cpp" keywords="cpp,c++, object-oriented, object">
@@ -285,6 +288,7 @@ MathJax.Hub.Config({
                 <div class='type'>cpp</div>
                 <div class='date'></div>
                 <div class='keywords'>c++, object-oriented, object</div>
+                <div class='description'>convenience classes in C++ for use in hardware, so you can use the best C classes in an object-oriented manner</div>
               </a>
               
               <a class="cell" href="../wig/" type="nuclear particle" keywords="nuclear particle,python, mcnp, n particle transport, nuclear transport, nuclear, neutron, photon
@@ -294,6 +298,7 @@ MathJax.Hub.Config({
                 <div class='date'></div>
                 <div class='keywords'>python, mcnp, n particle transport, nuclear transport, nuclear, neutron, photon
 </div>
+                <div class='description'>input deck generator, setup visualizer, output analyzer, and all-around mvp code for working with MCNP simulation</div>
               </a>
               
               <a class="cell" href="../mwe/" type="LaTeX" keywords="LaTeX,python, LaTeX, Jupyter, notebook, ipython, IPython, minimum working example, mwe, publishing, prototyping
@@ -303,6 +308,7 @@ MathJax.Hub.Config({
                 <div class='date'></div>
                 <div class='keywords'>python, LaTeX, Jupyter, notebook, ipython, IPython, minimum working example, mwe, publishing, prototyping
 </div>
+                <div class='description'>convenience class for putting LaTeX in your Jupyter notebooks, especially for minimum working examples</div>
               </a>
               
               <a class="cell" href="../jdc/" type="Jupyter" keywords="Jupyter,python, Jupyter, notebook, ipython, IPython, dynamic classing, metaprogramming, functional programming, programming
@@ -312,6 +318,7 @@ MathJax.Hub.Config({
                 <div class='date'></div>
                 <div class='keywords'>python, Jupyter, notebook, ipython, IPython, dynamic classing, metaprogramming, functional programming, programming
 </div>
+                <div class='description'>convenience class for dynamic python classes in Jupyter notebooks, implemented in a Jupyter magic API</div>
               </a>
               
             
