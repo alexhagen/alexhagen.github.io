@@ -829,8 +829,10 @@ header.site-header nav {
         position:relative;
         top: -300px;
         left: 0px;
-        width:100%;
-        height:100%;
+        width: calc(100% + 10px);
+        height: calc(100% + 10px);
+        margin-top: 5px;
+        margin-left: -5px;
         background-position: center;
         -webkit-filter: saturate(50%) brightness(150%) opacity(35%);
         -moz-filter: saturate(50%) brightness(150%) opacity(35%);
