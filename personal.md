@@ -1,10 +1,9 @@
 ---
 layout: list
-title: Personal
-permalink: /personal/
+title: The Chronicle
+permalink: /chronicle/
 search: false
-description: >
-  My personal blog.
+subtitle: Reviews and discussions on a myriad of topics
 from_posts: true
 category: personal
 ---
