@@ -31,9 +31,9 @@ links:
     short_title: work
     url: /portfolio
     important: true
-  - title: Personal
+  - title: Chronicle
     short_title: blog
-    url: /personal
+    url: /chronicle
     important: false
   - title: CV
     short_title: CV
