@@ -6,9 +6,9 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 12 Jun 2017 08:43:45 -0400</pubDate>
-    <lastBuildDate>Mon, 12 Jun 2017 08:43:45 -0400</lastBuildDate>
-    <generator>Jekyll v3.4.3</generator>
+    <pubDate>Mon, 26 Jun 2017 06:42:17 -0400</pubDate>
+    <lastBuildDate>Mon, 26 Jun 2017 06:42:17 -0400</lastBuildDate>
+    <generator>Jekyll v3.4.0</generator>
     
       <item>
         <title>Researcher's Tip: Use Makefiles</title>
