@@ -626,10 +626,28 @@ header.site-header nav {
     ul {
         display: block;
         margin-bottom: $lh;
-        list-style: disc;
-        list-style-type: disc;
         lh h1, lh h2, lh h3, lh h4, lh h5 {
             @include underline(2px, solid, $grey-light);
+        }
+        .box,
+        .box_done,
+        .task-list-item {
+            list-style-type: none;
+            list-style: none;
+        }
+
+        .task-list-item {
+          list-style: none;
+          list-style-type: none;
+        }
+
+        .task-list-item input {
+          margin: -0.75em 0.25em 0.25em -1.6em;
+          vertical-align: middle;
+        }
+
+        .task-list-item+.task-list-item {
+          margin-top: 3px;
         }
         li {
             list-style: disc;
@@ -1413,6 +1431,26 @@ h1,h2,h3,h4,h5,h6 {
         list-style-type: none;
         lh h1, lh h2, lh h3, lh h4, lh h5 {
             @include underline(2px, solid, $grey-light);
+        }
+        .box,
+        .box_done,
+        .task-list-item {
+            list-style-type: none;
+            list-style: none;
+        }
+
+        .task-list-item {
+          list-style: none;
+          list-style-type: none;
+        }
+
+        .task-list-item input {
+          margin: 0 0.2em 0.25em -1.6em;
+          vertical-align: middle;
+        }
+
+        .task-list-item+.task-list-item {
+          margin-top: 3px;
         }
         li {
             list-style: none;
