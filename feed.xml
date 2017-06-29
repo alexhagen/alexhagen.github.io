@@ -6,9 +6,44 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 26 Jun 2017 08:26:08 -0400</pubDate>
-    <lastBuildDate>Mon, 26 Jun 2017 08:26:08 -0400</lastBuildDate>
+    <pubDate>Thu, 29 Jun 2017 09:33:36 -0400</pubDate>
+    <lastBuildDate>Thu, 29 Jun 2017 09:33:36 -0400</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>Life List</title>
+        <description>&lt;p&gt;&lt;em&gt;I intend this to be a living document for my own accountability and benefit.&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[ ] Travel to Iceland&lt;/li&gt;
+  &lt;li&gt;[ ] Climb a volcano&lt;/li&gt;
+  &lt;li&gt;[ ] Travel to the Porcupine Mountains&lt;/li&gt;
+  &lt;li&gt;[ ] See Thor’s Peak&lt;/li&gt;
+  &lt;li&gt;[ ] Run a
+    &lt;ul&gt;
+      &lt;li&gt;[x] Minimarathon&lt;/li&gt;
+      &lt;li&gt;[ ] Marathon&lt;/li&gt;
+      &lt;li&gt;[ ] 50k&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[ ] Build a majority of our furniture&lt;/li&gt;
+  &lt;li&gt;[ ] Play soccer until I’m 38&lt;/li&gt;
+  &lt;li&gt;[ ] Climb a 14er&lt;/li&gt;
+  &lt;li&gt;[ ] See the Northern Lights&lt;/li&gt;
+  &lt;li&gt;[ ] Live somewhere out of the states&lt;/li&gt;
+  &lt;li&gt;[ ] Make a tube amp&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 06 Jun 2017 11:00:00 -0400</pubDate>
+        <link>/personal/misc/life_list</link>
+        <guid isPermaLink="true">/personal/misc/life_list</guid>
+        
+        
+        <category>personal</category>
+        
+        <category>misc</category>
+        
+      </item>
     
       <item>
         <title>Researcher's Tip: Use Makefiles</title>
@@ -456,23 +491,6 @@ too much more commentary, I’ve posted all the materials
         <guid isPermaLink="true">/publications/the-mac-tmfd-novel-multi-armed</guid>
         
         <category>coauthor</category>
-        
-        
-        <category>publications</category>
-        
-      </item>
-    
-      <item>
-        <title>Utilization of Tension Metastable Fluid Detectors in Health Physics</title>
-        <description>&lt;p&gt;My colleague, Kevin Fischer, and I were invited by our lab’s consultants to present our technology at the Health Physics Society Conference.  This is somewhat out of field for us, and was used as a scoping mechanism to the interest in our technology in that field, with good results.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 11 Jul 2013 08:00:00 -0400</pubDate>
-        <link>/publications/utilization-of-tension-metastable</link>
-        <guid isPermaLink="true">/publications/utilization-of-tension-metastable</guid>
-        
-        <category>authored</category>
-        
-        <category>poster</category>
         
         
         <category>publications</category>

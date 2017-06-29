@@ -1,0 +1,3425 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass puslides
+\begin_preamble
+\usepackage{pgf}
+\usepackage{xcolor}
+\usepackage{color}
+\usepackage{xparse}
+\usepackage{soul}
+\definecolor{green}{HTML}{5C8727}
+\definecolor{yellow}{HTML}{E3AE24}
+\makeatletter
+\NewDocumentCommand{\sotwo}{O{red}O{black}+m}
+    {%
+        \begingroup
+        \setulcolor{#1}%
+        \setul{-.6ex}{2pt}%
+        \def\SOUL@uleverysyllable{%
+            \rlap{%
+                \color{#2}\the\SOUL@syllable
+                \SOUL@setkern\SOUL@charkern}%
+            \SOUL@ulunderline{%
+                \phantom{\the\SOUL@syllable}}%
+        }%
+        \ul{#3}%
+        \endgroup
+    }
+\makeatother
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows,calc,positioning}
+\vfuzz = 500pt
+
+\usepackage{pdfpages}
+\definecolor{grey20}{RGB}{209,211,212}
+\definecolor{grey40}{RGB}{167,169,172}
+\definecolor{grey60}{RGB}{116,108,102}
+\definecolor{oldgold}{RGB}{163,121,44}
+\definecolor{newgold}{RGB}{227,174,36}
+\definecolor{652C}{RGB}{114,153,198}
+\definecolor{1675C}{RGB}{185,89,21}
+\definecolor{puteal}{RGB}{46,175,164}
+
+\usepackage{float}
+\floatname{algorithm}{Source Code}
+\newcommand{\algorithmname}{Source Code}
+\date{November 8th, 2016}
+\end_preamble
+\options 20pt
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle false
+\papersize custom
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation landscape
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 7in
+\paperheight 9in
+\leftmargin 0cm
+\topmargin 0cm
+\rightmargin 0cm
+\bottommargin 0cm
+\headheight 0cm
+\headsep 0cm
+\footskip 0cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\bullet 0 0 34 -1
+\bullet 1 0 30 -1
+\bullet 2 0 30 -1
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Nano to Macroscale Applications of Nuclear Technology: The Unknown Nuclear
+ Opponent
+\end_layout
+
+\begin_layout Author
+Alex Hagen
+\end_layout
+
+\begin_layout Subtitle
+Combatting Nuclear Terrorism
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Flex Pu Cite
+status open
+
+\begin_layout Plain Layout
+Discussion of motivation and work performed for Department of Homeland Security
+ and External Contractors
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Venue
+NUCL 106 - GRIS 133
+\end_layout
+
+\begin_layout City
+West Lafayette, IN
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+def
+\backslash
+theauthorsforbottom{A.
+ Hagen, R.
+ P.
+ Taleyarkhan}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Motivation
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+def
+\backslash
+nameofchapter{"Macroscopic" Nuclear Challenges}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout One Column
+Global Concerns
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Content
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Shade Quote
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+huge 
+\end_layout
+
+\end_inset
+
+Climate change is to the 21st century as total war [and] nuclear weapons
+ were to the 20th, I mean, that's the test you've got to pass.
+ ...
+ That was the twentieth century's task: get through what was inevitably
+ going to come if you go into a technological civilization, which is the
+ ability to blow yourself away - directly, with weapons.
+ 
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Gwynne Dyer - Hardcore History: 
+\begin_inset Quotes eld
+\end_inset
+
+The Dyer Outlook
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Two Column Shift Right
+Nuclear Opponents
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Content
+status open
+
+\begin_layout Plain Layout
+Matthew Bunn of Harvard's Belfer Center on nuclear policy states that our
+ nuclear challenges are (Bunn, 2016):
+\end_layout
+
+\begin_layout Enumerate
+North Korea
+\end_layout
+
+\begin_layout Enumerate
+Iran
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Flex Brand Primary
+status open
+
+\begin_layout Plain Layout
+The 
+\begin_inset Quotes eld
+\end_inset
+
+unknown
+\begin_inset Quotes erd
+\end_inset
+
+ nuclear Opponent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+China
+\end_layout
+
+\begin_layout Enumerate
+Russia
+\end_layout
+
+\begin_layout Enumerate
+Modernizing our own weapons
+\end_layout
+
+\begin_layout Enumerate
+South Asia
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Content
+status open
+
+\begin_layout Itemize
+Terrorist groups that are attempting or have attempted nuclear terrorism:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+al Qaeda
+\end_layout
+
+\begin_layout Itemize
+Aum Shinrikyo
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Flex Brand Info
+status open
+
+\begin_layout Plain Layout
+ISIS (unsubstantiated)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Over 20 cases of seizure for stolen weapons grade material
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout One Column
+What do they need?
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Content
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Brand Primary
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fontsize{3.5cm}{3.75cm}
+\backslash
+selectfont 
+\backslash
+centering 
+\end_layout
+
+\end_inset
+
+Fissile Material
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Two Column Shift Left
+Review of Fission
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Content
+status open
+
+\begin_layout Itemize
+Fission is the 
+\begin_inset Quotes eld
+\end_inset
+
+energetic
+\begin_inset Quotes erd
+\end_inset
+
+ breakup of an excited nucleus
+\end_layout
+
+\begin_layout Itemize
+Fissionable material may fission if it is hit by a neutron 
+\begin_inset Flex Brand Info
+status open
+
+\begin_layout Plain Layout
+with sufficient energy
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Fissile material may fission if it is hit by a neutron 
+\begin_inset Flex Brand Info
+status open
+
+\begin_layout Plain Layout
+of any energy
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Special nuclear material includes 
+\begin_inset Flex Brand Primary
+status open
+
+\begin_layout Plain Layout
+Weapons Grade Plutonium
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset Flex Brand Primary
+status open
+
+\begin_layout Plain Layout
+Highly Enriched Uranium
+\end_layout
+
+\end_inset
+
+, and Thorium
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename img/fission.svg
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Overview of fission and its products
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout One Column
+Geography of Highly Enriched Uranium
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /home/ahagen/teaching/unknown-nuclear-opponent/maps/heu.svg
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Current stockpiles of highly (
+\begin_inset Formula $>20\%$
+\end_inset
+
+) enriched uranium and locations of civilian enrichment plants
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout One Column
+Geography of Weapons Grade Plutonium
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /home/ahagen/teaching/unknown-nuclear-opponent/maps/wgp.svg
+	width 95col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Current stockpiles of weapons grade plutonium and locations of reprocessing
+ plants
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Two Row Push Down
+What do we need?
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Content
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Shade Quote
+status open
+
+\begin_layout Plain Layout
+'[I'm asking] whether two or three men couldn't smuggle units of an [atomic]
+ bomb into New York and blow up the whole city.'
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+'Of course it could be done, and people could destory New York.' - 
+\noun on
+J.
+ Robert Oppenheimer
+\noun default
+
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+'What instrument would you use to detect an atomic bomb hidden somewhere
+ in a city?'
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+'A screwdriver [to open each and every crate or suitcase].' - 
+\noun on
+J.
+ Robert Oppenheimer
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Content
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Flex Brand Primary
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+fontsize{2.0cm}{2.25cm}
+\backslash
+selectfont 
+\backslash
+centering 
+\end_layout
+
+\end_inset
+
+We need detectors
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Two Row Two Column
+Conventional Detectors
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Content
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Geiger and Other Photon Detectors
+\end_layout
+
+\begin_layout Itemize
+Currently implemented for 
+\begin_inset Formula $>90\%$
+\end_inset
+
+ of ports
+\end_layout
+
+\begin_layout Itemize
+Succeptible to 
+\begin_inset Quotes eld
+\end_inset
+
+source
+\begin_inset Quotes erd
+\end_inset
+
+ substitution
+\end_layout
+
+\begin_layout Itemize
+Easily shieldable
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Content
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+X-Ray Systems
+\end_layout
+
+\begin_layout Itemize
+Currently implemented for ports, airports, etc.
+\end_layout
+
+\begin_layout Itemize
+Only tells the 
+\begin_inset Formula $Z\cdot\rho$
+\end_inset
+
+ of a material
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 3
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Content
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Thermal Neutron Detectors
+\end_layout
+
+\begin_layout Itemize
+Used in some border monitors
+\end_layout
+
+\begin_layout Itemize
+Based on 
+\begin_inset Formula $\left(n,\alpha\right)$
+\end_inset
+
+ reactions in 
+\begin_inset Formula $\ce{Li}$
+\end_inset
+
+ or 
+\begin_inset Formula $\ce{B}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Require large amounts of shielding to detect neutrons
+\end_layout
+
+\begin_layout Itemize
+Also detect 
+\begin_inset Formula $\gamma$
+\end_inset
+
+s
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Content
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Actively Interrogated Neutron Systems
+\end_layout
+
+\begin_layout Itemize
+Mostly in R&D stage
+\end_layout
+
+\begin_layout Itemize
+Backend detectors are as above
+\end_layout
+
+\begin_layout Itemize
+More problems with 
+\begin_inset Quotes eld
+\end_inset
+
+saturation
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+interrogation particles
+\end_layout
+
+\begin_layout Itemize
+unintended interrogation particles
+\end_layout
+
+\begin_layout Itemize
+false positives
+\end_layout
+
+\end_deeper
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+def
+\backslash
+nameofchapter{National Security}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout One Column
+Container Interrogation for Special Nuclear Material
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Content
+status open
+
+\begin_layout Itemize
+Mandate for 
+\begin_inset Formula $100\%$
+\end_inset
+
+ container scanning by 2012 has not been met 
+\begin_inset Flex Pu Cite
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand citet
+key "Vicinanzo2015"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Most containers are scanned for 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ radiation
+\end_layout
+
+\begin_layout Itemize
+Few are scanned for neutron radiation
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Flex Shade Quote
+status open
+
+\begin_layout Plain Layout
+The passive radiation detectors outside shipping containers can usually
+ detect emissions from materials for radiological weapons but are less effective
+ at detecting emissions from nuclear weapons and the fissile materials used
+ to make them
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Pu Cite
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand citet
+key "CongressionalBudgetOfficesNationalSecurityDivision2016"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Two Row Top Two Column
+Need for Active Interrogation for Container Scanning
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Content
+status open
+
+\begin_layout Itemize
+Passive detection can only detect one of the two special nuclear materials
+ (
+\begin_inset Formula $\ce{Pu}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\ce{^{235}U}$
+\end_inset
+
+ is too 
+\begin_inset Quotes eld
+\end_inset
+
+quiet
+\begin_inset Quotes erd
+\end_inset
+
+ for passive scanning (
+\begin_inset Formula $\bar{\alpha}_{sf}=2.843\times10^{-16}\unit{\nicefrac{Ci}{g}}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+Must actively interrogate to force detection of induced fission neutrons
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Content
+status open
+
+\begin_layout Itemize
+The proposed system uses Threshold Energy Neutron Analysis (TENA)
+\end_layout
+
+\begin_layout Itemize
+Continuous Beam of 
+\begin_inset Formula $2.45\unit{MeV}$
+\end_inset
+
+ neutrons from 
+\begin_inset Formula $d+d$
+\end_inset
+
+ fusion interaction
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $27\unit{\%}$
+\end_inset
+
+ of fission neutrons above 
+\begin_inset Formula $2.8\unit{MeV}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 3
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset CommandInset include
+LatexCommand input
+filename "img/p_discrim.pgf"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Comparison of spectra between fission and 
+\begin_inset Formula $d+d$
+\end_inset
+
+ neutron interaction
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Background
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+def
+\backslash
+nameofchapter{Detection System}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Two Column Shift Left
+Centrifugally Tensioned Metastable Fluid Detectors (CTMFD)
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Content
+status open
+
+\begin_layout Itemize
+Based on metastability in fluids
+\end_layout
+
+\begin_layout Itemize
+Highly efficient 
+\begin_inset Flex Brand Primary
+status open
+
+\begin_layout Plain Layout
+(intrinsic efficiency can reach 
+\begin_inset Formula $36\unit{\%}$
+\end_inset
+
+ to 
+\begin_inset Formula $60\unit{\%}$
+\end_inset
+
+ for 
+\begin_inset Formula $16\unit{cm^{3}}$
+\end_inset
+
+ to 
+\begin_inset Formula $40\unit{cm^{3}}$
+\end_inset
+
+ setups)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Low construction cost
+\end_layout
+
+\begin_layout Itemize
+Simple to operate
+\end_layout
+
+\begin_layout Itemize
+Exhibit total blindness to 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ radiation
+\end_layout
+
+\begin_layout Itemize
+Detect fast neutrons without moderation
+\end_layout
+
+\begin_layout Itemize
+Have variable neutron energy sensitivity (
+\begin_inset Formula $E_{th}\propto\frac{1}{\text{level of metastability}}$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /home/ahagen/papers/ans_2016/img/lw_rev_3_render_soft_tent.png
+	lyxscale 25
+	height 4in
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Rendering of CTMFD System
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Two Row Push Up
+CTMFD Detection Mechanism
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Content
+status open
+
+\begin_layout Itemize
+Negative pressure induced in bulb stores energy
+\end_layout
+
+\begin_layout Itemize
+Discrete neutron interactions can deposit enough energy to open a critical
+ bubble, which opens to macroscopic sizes
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering 
+\backslash
+import{img/}{mfd_cartoon.pdf_tex}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+CTMFD Detection Mechanism Schematic
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Two Column Shift Right
+Induction of Negative Pressure with Centrifugal Force
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering 
+\backslash
+import{img/}{ctmfd_setup.pdf_tex}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+CTMFD Negative Pressure Induction
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Flex Content
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+p_{neg}=2\pi^{2}\rho f^{2}\left(r-r_{m}\right)^{2}-p_{amb}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Content
+status open
+
+\begin_layout Itemize
+Careful selection of radius and fluid (Decafluoropentane - 
+\begin_inset Formula $\ce{C_{5}H_{2}F_{10}}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+Variation of 
+\begin_inset Formula $p_{neg}$
+\end_inset
+
+ by changing rotational frequency 
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $p_{neg}$
+\end_inset
+
+ equation is nonlinearly dependent on temperature
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Two Row Left Sidebar
+Inherent 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ and 
+\begin_inset Formula $\beta$
+\end_inset
+
+ Blindness
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Linear energy transfer from different identity ions
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="0pt">
+<row interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Ion
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\nicefrac{dE}{dx}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row interlinespace="default">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1\unit{MeV}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\textrm{\nicefrac{MeV}{cm}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row interlinespace="default">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\ce{e^{-}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1.58$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row interlinespace="default">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\ce{H}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $312$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row interlinespace="default">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\ce{C}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $6337$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row interlinespace="default">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\ce{F}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $6509$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Content
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+\frac{dE}{dx}=\frac{4\pi z^{2}e^{4}}{m_{e}v^{2}}nZ\left[\frac{\ln\left(2\right)m_{e}v^{2}}{I}-\ln\left(1-\beta^{2}\right)-\beta^{2}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 3
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Content
+status open
+
+\begin_layout Itemize
+Caviation depends on overcoming the energy barrier
+\end_layout
+
+\begin_layout Itemize
+Critical bubble diameter is on the order of 
+\begin_inset Formula $100\unit{nm}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Critical quantity is Linear Energy Transfer (LET) which is described by
+ 
+\begin_inset Formula $\frac{dE}{dx}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Two Row Right Sidebar
+CTMFD Efficiency and Sizing
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset CommandInset include
+LatexCommand input
+filename "img/ctmfd_eff.pgf"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Intrinsic efficiency vs.
+ negative pressure for a 
+\begin_inset Formula $40\unit{cm^{3}}$
+\end_inset
+
+ CTMFD system
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset CommandInset include
+LatexCommand input
+filename "img/eff_vs_bulb_size.pgf"
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Add the figures here!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Interaction efficiency vs.
+ sensitive volume size for various CTMFD sizes
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 3
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Content
+status open
+
+\begin_layout Itemize
+High intrinsic efficiencies 
+\begin_inset Flex Brand Primary
+status open
+
+\begin_layout Plain Layout
+(approaching 
+\begin_inset Formula $100\unit{\%}$
+\end_inset
+
+ of interaction efficiency)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Sizing increases the sensitive volume - increases the interaction efficiency
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Methods
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+def
+\backslash
+nameofchapter{TENA}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Two Row Bottom Two Column
+Experimental Methods
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+import{img/}{dd_setup.pdf_tex}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+TENA experimental setup
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tikzstyle{process} = [rectangle, minimum height=1cm, text centered, draw=grey60,
+ text width=0.9in, rounded corners=0.25cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tikzstyle{finish} = [rectangle, text centered, draw=newgold, text width=3.0in]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tikzstyle{arrow} = [thick,draw=grey40,->,>=stealth]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[node distance=0.5cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+node (dd) [process] {$d+d$ interrogation};
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+node (dd_wt) [process, right=of dd] {find $t_{w}
+\backslash
+left(p_{neg}
+\backslash
+right)$};
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+node (dd_th) [process, right=of dd_wt] {identify threshold};
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+node (cf) [process, below=of dd] {add $
+\backslash
+ce{Cf}$ fission source};
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+node (cf_wt) [process, right=of cf] {find $t_{w}
+\backslash
+left(p_{neg}
+\backslash
+right)$};
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+node (cf_th) [process, right=of cf_wt] {calculate efficiency};
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+node (ratio) [finish, below=1.0cm of cf_wt] {
+\backslash
+punewgold{calculate ratio of efficiencies}};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [arrow] (dd) -- (dd_wt);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [arrow] (dd_wt) -- (dd_th);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [arrow] (dd_th) -- ($(dd_th.east)+(0.1cm,0.0cm)$)%
+\end_layout
+
+\begin_layout Plain Layout
+
+	|- ($(dd.south)+(0.0cm, -0.25cm)$) %
+\end_layout
+
+\begin_layout Plain Layout
+
+	-| ($(cf.west)+(-0.2cm, 0.0cm)$) -- (cf.west);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [arrow] (cf) -- (cf_wt);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [arrow] (cf_wt) -- (cf_th);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+draw [arrow] (cf_th) -- ($(cf_th.east)+(0.1cm,0.0cm)$)%
+\end_layout
+
+\begin_layout Plain Layout
+
+	|- ($(cf.south)+(0.0cm, -0.25cm)$) %
+\end_layout
+
+\begin_layout Plain Layout
+
+	-| ($(ratio.west)+(-0.2cm, 0.0cm)$) -- (ratio.west);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+TENA experimental procedure
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 3
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Content
+status open
+
+\begin_layout Itemize
+Varying 
+\begin_inset Formula $p_{neg}$
+\end_inset
+
+ determines the onset and mean event detection time interval (
+\begin_inset Formula $t_{w}$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+As 
+\begin_inset Formula $p_{neg}$
+\end_inset
+
+ decreases, 
+\begin_inset Formula $t_{w}$
+\end_inset
+
+ should approach 
+\begin_inset Formula $\infty$
+\end_inset
+
+ at the 
+\begin_inset Quotes eld
+\end_inset
+
+threshold
+\begin_inset Quotes erd
+\end_inset
+
+ (effectively a lower level discriminator)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout One Column
+Considerations for Application of TENA
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Content
+status open
+
+\begin_layout Itemize
+TENA depends on sharp resolution between 
+\begin_inset Formula $p_{neg}$
+\end_inset
+
+ states
+\end_layout
+
+\begin_layout Itemize
+Temperature effects on fluid properties propagate to both 
+\begin_inset Formula $p_{neg}$
+\end_inset
+
+ induction and cavitation formation properties
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Density (
+\begin_inset Formula $\rho$
+\end_inset
+
+) and meniscus (
+\begin_inset Formula $r_{m}$
+\end_inset
+
+) must be corrected because of volumetric expansion
+\end_layout
+
+\begin_layout Itemize
+We apply a density and meniscus correction based on first principles
+\end_layout
+
+\begin_layout Itemize
+Sensitivity threshold must be corrected because of changing of cavitation
+ formation properties
+\end_layout
+
+\begin_layout Itemize
+We apply an experimentally determined sensitity correction for temperature
+\end_layout
+
+\end_deeper
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Results
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+def
+\backslash
+nameofchapter{Results}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Two Row Two Column
+CTMFD Efficiencies for Interrogation and Fission Sources
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset CommandInset include
+LatexCommand input
+filename "img/sorma_m16_analysis.pgf"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Efficiency for 
+\begin_inset Formula $16\unit{cm^{3}}$
+\end_inset
+
+ CTMFD for interrogation 
+\begin_inset Formula $d+d$
+\end_inset
+
+ beam and 
+\begin_inset Formula $\ce{Cf}$
+\end_inset
+
+ isotope source
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset CommandInset include
+LatexCommand input
+filename "img/sorma_ratio_m16_analysis.pgf"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Efficiency ratio between 
+\begin_inset Formula $\ce{Cf}$
+\end_inset
+
+ isotope source and 
+\begin_inset Formula $d+d$
+\end_inset
+
+ beam for 
+\begin_inset Formula $16\unit{cm^{3}}$
+\end_inset
+
+ CTMFD
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 3
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset CommandInset include
+LatexCommand input
+filename "img/sorma_r5_analysis.pgf"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Efficiency for 
+\begin_inset Formula $40\unit{cm^{3}}$
+\end_inset
+
+ CTMFD for interrogation 
+\begin_inset Formula $d+d$
+\end_inset
+
+ beam and 
+\begin_inset Formula $\ce{Cf}$
+\end_inset
+
+ isotope source
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset CommandInset include
+LatexCommand input
+filename "img/sorma_ratio_r5_analysis.pgf"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Efficiency ratio between 
+\begin_inset Formula $\ce{Cf}$
+\end_inset
+
+ isotope source and 
+\begin_inset Formula $d+d$
+\end_inset
+
+ beam for 
+\begin_inset Formula $40\unit{cm^{3}}$
+\end_inset
+
+ CTMFD
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Two Row Push Up
+Figure of Merit
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Content
+status open
+
+\begin_layout Itemize
+The ratio between detection effiencies for fission and the interrogating
+ neutrons describes how well we can reject interrogation pulse events
+\begin_inset Formula 
+\[
+FOM=\frac{\eta_{Cf}}{\eta_{dd}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset CommandInset include
+LatexCommand input
+filename "img/sv_vs_r.pgf"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Figure of merit increase with sizing
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Discussion
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+def
+\backslash
+nameofchapter{Comparison}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Two Row Right Sidebar
+CTMFD vs.
+ State-of-the-art
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Content
+status open
+
+\begin_layout Itemize
+Testing done using different PSDs and TENA on a NE-213 liquid scintillation
+ (LS) system
+\end_layout
+
+\begin_layout Itemize
+Exhibits much 
+\begin_inset Flex Brand Primary
+status open
+
+\begin_layout Plain Layout
+lower 
+\begin_inset Formula $FOM$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Exhibits much 
+\begin_inset Flex Brand Primary
+status open
+
+\begin_layout Plain Layout
+lower efficiency
+\end_layout
+
+\end_inset
+
+ for 
+\begin_inset Formula $\ce{Cf}$
+\end_inset
+
+ fission neutron spectrum
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Figure of merit and detection efficiencies for NE-213 LS detector in TENA
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="0pt">
+<row interlinespace="default">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PSD
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\eta_{Cf}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\eta_{dd}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $FOM$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row interlinespace="default">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+–
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $3.94\unit{\%}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.319\unit{\%}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\sim12$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row interlinespace="default">
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $99\unit{\%}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.987\unit{\%}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.184\unit{\%}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\sim5$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row interlinespace="default">
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $99.9\unit{\%}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.193\unit{\%}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.143\unit{\%}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\sim1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 3
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Content
+status open
+
+\begin_layout Itemize
+\begin_inset Formula $\ce{^{4}He}$
+\end_inset
+
+ result shows 
+\begin_inset Formula $0.0048\unit{\%}$
+\end_inset
+
+ efficiency for those neutrons discriminatable from the interrogation pulse
+ 
+\begin_inset Flex Pu Cite
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Lewis2014"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+State of the art sensor shortcomings
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Flex Brand Primary
+status open
+
+\begin_layout Plain Layout
+Photon leakage
+\end_layout
+
+\end_inset
+
+ through PSD into neutron window
+\end_layout
+
+\begin_layout Itemize
+Pulse pileup 
+\begin_inset Flex Pu Cite
+status open
+
+\begin_layout Plain Layout
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Danagoulian2010"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Flex Brand Primary
+status open
+
+\begin_layout Plain Layout
+Large amounts of moderation
+\end_layout
+
+\end_inset
+
+ needed for thermal neutron detection systems (
+\begin_inset Formula $\ce{^{3}He}$
+\end_inset
+
+, 
+\begin_inset Formula $\ce{BF_{3}}$
+\end_inset
+
+)
+\end_layout
+
+\end_deeper
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Two Column
+Final Results and Discussion
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Content
+status open
+
+\begin_layout Itemize
+TENA is an active interrogation technique using 
+\begin_inset Formula $2.45\unit{MeV}$
+\end_inset
+
+ continuous neutron interrogation
+\end_layout
+
+\begin_layout Itemize
+CTMFDs have high efficiency and adjustable sensitivity without detecting
+ any 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ radiation
+\end_layout
+
+\begin_layout Itemize
+Scaling of CTMFDs can provide higher efficiency and rejection ratios
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Content
+status open
+
+\begin_layout Itemize
+CTMFD TENA using temperature correction shows
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Flex Brand Primary
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $4\unit{\%}$
+\end_inset
+
+ efficient 
+\end_layout
+
+\end_inset
+
+to fission neutrons above 
+\begin_inset Formula $2.45\unit{MeV}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Flex Brand Primary
+status open
+
+\begin_layout Plain Layout
+Rejection ratio (
+\begin_inset Formula $FOM$
+\end_inset
+
+) of over 
+\begin_inset Formula $10^{4}\times$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+NE-213 TENA using PSD shows
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Flex Brand Primary
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $0.8\unit{\%}$
+\end_inset
+
+ efficient
+\end_layout
+
+\end_inset
+
+ to fission neutrons above 
+\begin_inset Formula $2.45\unit{MeV}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Flex Brand Primary
+status open
+
+\begin_layout Plain Layout
+Rejection ratio of less than 
+\begin_inset Formula $5\times$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Note
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+def
+\backslash
+nameofchapter{Note}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout One Column
+USA-Japan TENA Collaboration
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Content
+status open
+
+\begin_layout Itemize
+Purdue University and Sagamore Adams Laboratories, LLC are collaborating
+ with Pony Industries and Kyoto University of Japan to develop the world's
+ first portable, lightweight TENA system
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+IEC (
+\begin_inset Formula $d+d$
+\end_inset
+
+) 
+\begin_inset Formula $2.45\unit{MeV}$
+\end_inset
+
+ neutron source (
+\begin_inset Formula $30\unit{kg}$
+\end_inset
+
+ from Kyoto University)
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $45$
+\end_inset
+
+ CTMFD 
+\begin_inset Formula $3$
+\end_inset
+
+-panel array (
+\begin_inset Formula $2.3\unit{kg}$
+\end_inset
+
+ each from Sagamore Adams Laboratories)
+\end_layout
+
+\begin_layout Itemize
+Goal: 
+\begin_inset Flex Brand Info
+status open
+
+\begin_layout Plain Layout
+Interrogate 
+\begin_inset Formula $1\unit{kg}$
+\end_inset
+
+ 
+\begin_inset Formula $\ce{HEU}$
+\end_inset
+
+ in 
+\begin_inset Formula $1\unit{m^{3}}$
+\end_inset
+
+ container in less than 
+\begin_inset Formula $2\unit{min}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Errata
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+def
+\backslash
+nameofchapter{Errata}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout One Column
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex Content
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\size giant
+Questions
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "dissertation"
+options "plain"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
