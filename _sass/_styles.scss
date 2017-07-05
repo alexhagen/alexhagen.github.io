@@ -237,7 +237,7 @@ header.site-header {
           color: $black;
       }
 
-      nav ul li a {
+      div.nav ul li a {
             color: $black;
             &:active {
               color: $link;
@@ -255,7 +255,7 @@ header.site-header a.menu {
   display: none;
 }
 
-header.site-header hgroup h1, header.site-header nav ul {
+header.site-header hgroup h1, header.site-header div.nav ul {
   font-family: $sans;
 }
 
@@ -309,7 +309,7 @@ header.site-header hgroup {
   }
 }
 
-header.site-header nav {
+header.site-header div.nav {
   float: right;
   display: block;
   padding-right: 5vw;
@@ -1538,32 +1538,32 @@ footer {
     height: auto;
   }
 
-  header.site-header nav {
+  header.site-header div.nav {
     display: none;
     float: none;
     width: 100%;
     padding-right: 0;
   }
 
-  header.site-header nav:before {
+  header.site-header div.nav:before {
     display: table;
     clear: both;
     content: '';
   }
 
-  header.site-header nav ul {
+  header.site-header div.nav ul {
     padding: 20px 0 10px 0;
     margin-top: 15px;
   }
 
-  header.site-header nav ul li {
+  header.site-header div.nav ul li {
     display: block;
     margin-left: 0;
     top: 0px;
     font-size: $fs5;
   }
 
-  header.site-header nav ul li a {
+  header.site-header div.nav ul li a {
     display: block;
     text-align: right;
     font-weight: bold;
@@ -1585,13 +1585,13 @@ footer {
       color: $black;
   }
 
-  #bump .darken nav ul {
+  #bump .darken div.nav ul {
           padding: 0;
           margin-top: 40px;
           background: $black;
       }
 
-   #bump .darken nav ul li a {
+   #bump .darken div.nav ul li a {
         color: $white;
         &:active {
           background-color: $link;
