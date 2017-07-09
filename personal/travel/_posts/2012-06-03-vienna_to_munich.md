@@ -9,7 +9,13 @@ image:
 ---
 # Vienna to Munich
 
-Today we got on the coach to go from Vienna to Munich.  This included a stop in Gruneau and Salzburg, and not much noteworthy happened.  In Gruneau we were fed an incredible meal of lasagne, and were able to drink out of a stream that was so clear it was incredible.  Upon arrival to Munich, even a jog through the old town square, and a visit to a beer garden couldn’t stop us both from commenting on how dystopian the city feels.  Hopefully tomorrow will perk up (although the forecast of 100% rain certainly doesn’t help).
+Today we got on the coach to go from Vienna to Munich.  This included a stop in
+Gruneau and Salzburg, and not much noteworthy happened.  In Gruneau we were fed
+an incredible meal of lasagne, and were able to drink out of a stream that was
+so clear it was incredible.  Upon arrival to Munich, even a jog through the old
+town square, and a visit to a beer garden couldn’t stop us both from commenting
+on how dystopian the city feels.  Hopefully tomorrow will perk up (although the
+forecast of 100% rain certainly doesn’t help).
 
 <figure>
     <img src="http://i.imgur.com/I2uhwOv.jpg">
