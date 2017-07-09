@@ -6,9 +6,105 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 29 Jun 2017 09:33:36 -0400</pubDate>
-    <lastBuildDate>Thu, 29 Jun 2017 09:33:36 -0400</lastBuildDate>
-    <generator>Jekyll v3.4.3</generator>
+    <pubDate>Sun, 09 Jul 2017 10:13:09 -0400</pubDate>
+    <lastBuildDate>Sun, 09 Jul 2017 10:13:09 -0400</lastBuildDate>
+    <generator>Jekyll v3.4.0</generator>
+    
+      <item>
+        <title>A Plan for Making Projects</title>
+        <description>&lt;p&gt;One thing I’ve noticed about myself is that I feel better when I &lt;em&gt;make&lt;/em&gt; things.
+Whether it’s building something small at home, designing and having something
+at work fabricated, or even if it’s organizing and creating the branding for a
+team I play on, or a group I’m involved with, I like the process of design and
+creation.  In that vein, I’ve been passively interested in woodworking for
+quite a while - in the watch-a-million-videos-on-youtube kind of way.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, woodworking requires a lot of equipment to do correctly. And
+doing it incorrectly seems like you just end up making a lot of garbage.  So,
+to be budget friendly, I’ve decided on a long term scheme for how to develop a
+fully featured shop.  This may all be moot, though, because my move in a couple
+months may have me move to somewhere that has fully featured makerspaces that I
+can just get a monthly subscription to.&lt;/p&gt;
+
+&lt;p&gt;My plan basically revolves around carefully planning projects, and then
+purchasing the equipment required for each project, in order of least to most
+equipment.  Then, to replicate each project multiple times, and sell it on
+Etsy.  I plan to sell as many on Etsy as is needed to pay for the equipment
+that I bought for the project.  Hopefully they sell!&lt;/p&gt;
+
+&lt;p&gt;Right now I have a couple projects that I want to do:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A console/mount station for all-of-the-electronics including enough power to charge everything and a usb-to-wifi hub, even if I have to write the drivers myself.
+    &lt;ul&gt;
+      &lt;li&gt;Tools required: I think just a plunge router.  Maybe a belt sander.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;A step stool for our kitchen.
+    &lt;ul&gt;
+      &lt;li&gt;Tools required: I think a table saw.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;A dining room table for our kitchen.
+    &lt;ul&gt;
+      &lt;li&gt;Tools required: Jointer, Planer, maybe a biscuit joiner.  And definitely a belt sander if I don’t have one from before.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;A bed.
+    &lt;ul&gt;
+      &lt;li&gt;I think I’ll have everything from before.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;A mounted projector box for our patio.
+    &lt;ul&gt;
+      &lt;li&gt;I think I’ll have everything from before.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So my current &lt;em&gt;modus operandi&lt;/em&gt; is to design everything in CAD before I make
+these.  I usually use Solidworks, but I think for the whole legal aspect (and
+the use-on-something-other-than-windows aspect) I should learn Fusion-360 for
+my first project and use it from there.  I’ll update as I go along!&lt;/p&gt;
+</description>
+        <pubDate>Sat, 08 Jul 2017 18:34:00 -0400</pubDate>
+        <link>/personal/misc/woodworking</link>
+        <guid isPermaLink="true">/personal/misc/woodworking</guid>
+        
+        
+        <category>personal</category>
+        
+        <category>misc</category>
+        
+      </item>
+    
+      <item>
+        <title>Quick Script: Wordpress to Markdown</title>
+        <description>&lt;p&gt;Recently I had the occasion to convert a bunch of wordpress posts over to a
+Jekyll blog, including a bunch of pictures that I sent out for third party
+hosting.  I wrote a quick/simple script and I’m embedding it via
+&lt;code&gt;github-gists&lt;/code&gt; below.  It downloads a page via http, then splits it into the
+&lt;code&gt;content&lt;/code&gt; and then an array of pictures.  Note that you’d have to change this
+if you had pictures interspersed throughout your post, instead of all at the
+end.  I don’t intend this to be a catch-all or anything, but hopefully it’s
+useful to someone. Requires &lt;code&gt;BeautifulSoup&lt;/code&gt; be installed and
+&lt;code&gt;imgur-uploader&lt;/code&gt; be installed and working on the path.  It only
+converts/posts once per hour to avoid &lt;code&gt;imgur&lt;/code&gt;’s upload limits.  I hope this
+helps someone!&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/alexhagen/2ca6dcddfa7c3858ec78829b21770194.js&quot;&gt;&lt;/script&gt;
+
+</description>
+        <pubDate>Sat, 01 Jul 2017 08:05:00 -0400</pubDate>
+        <link>/blog/projects/wordpress-to-markdown</link>
+        <guid isPermaLink="true">/blog/projects/wordpress-to-markdown</guid>
+        
+        
+        <category>blog</category>
+        
+        <category>projects</category>
+        
+      </item>
     
       <item>
         <title>Life List</title>
@@ -444,51 +540,6 @@ state of the art.&lt;/p&gt;
         <pubDate>Fri, 11 Jul 2014 04:00:00 -0400</pubDate>
         <link>/publications/high-efficiency-gamma-beta</link>
         <guid isPermaLink="true">/publications/high-efficiency-gamma-beta</guid>
-        
-        <category>coauthor</category>
-        
-        
-        <category>publications</category>
-        
-      </item>
-    
-      <item>
-        <title>Material for Purdue's PhDNE Qualification Exams</title>
-        <description>&lt;p&gt;&lt;em&gt;To be honest, I’m severly backdating this (I’m writing this in 2017), but I
- think it’s okay because all the material was made in 2012-2014 and I’m just
- documenting it at this point.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;One of the big steps towards my doctorate was passing qualification exams.  In
-so doing, I generated a lot of material reviewing and extending on my graduate
-classes.  I also had some disagreements with the way the faculty members here at
-Purdue had treated the qualification exams, both for their ambiguity and
-grading.  The faculty were kind and respectful enough to work towards changing
-their policies, which is a great sign.&lt;/p&gt;
-
-&lt;p&gt;Anyways, I feel that I became a much better engineer for the process I had for
-passing qualification exams, and I wanted to share the materials I had created
-to help other future students be more directed in their studying.  So, without
-too much more commentary, I’ve posted all the materials
-&lt;a href=&quot;https://alexhagen.github.io/qe/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Sat, 15 Mar 2014 11:00:00 -0400</pubDate>
-        <link>/blog/work/purdue_phdne_qualification_exam_materials</link>
-        <guid isPermaLink="true">/blog/work/purdue_phdne_qualification_exam_materials</guid>
-        
-        
-        <category>blog</category>
-        
-        <category>work</category>
-        
-      </item>
-    
-      <item>
-        <title>The MAC-TMFD: Novel multi-armed Centrifugally Tensioned Metastable Fluid Detector (Gamma-Blind) — Neutron-alpha recoil spectrometer</title>
-        <description>
-</description>
-        <pubDate>Tue, 12 Nov 2013 07:00:00 -0500</pubDate>
-        <link>/publications/the-mac-tmfd-novel-multi-armed</link>
-        <guid isPermaLink="true">/publications/the-mac-tmfd-novel-multi-armed</guid>
         
         <category>coauthor</category>
         

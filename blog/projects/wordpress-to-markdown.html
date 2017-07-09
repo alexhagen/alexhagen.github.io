@@ -1,7 +1,7 @@
 
 
 <meta charset="utf-8">
-<title>Divci Komon and Cesky Krumlov, Day 2 &#8211; Alex Hagen</title>
+<title>Quick Script: Wordpress to Markdown &#8211; Alex Hagen</title>
 <meta name="description" content="">
 <meta name="keywords" content="">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -38,9 +38,9 @@ MathJax.Hub.Config({
 </script>
 
 <meta property="og:locale" content="en_US">
-<meta property="og:title" content="Divci Komon and Cesky Krumlov, Day 2 &#8211; Alex Hagen">
-<meta property="og:description" content="Divci Komon and Cesky Krumlov, Day 2To end the night after getting to Cesky Krumlov last night, we decided to walkthe...">
-<meta property="og:url" content="/personal/travel/divci_komon_and_cesky_krumlov,_day_2">
+<meta property="og:title" content="Quick Script: Wordpress to Markdown &#8211; Alex Hagen">
+<meta property="og:description" content="Recently I had the occasion to convert a bunch of wordpress posts over to aJekyll blog, including a bunch of pictures...">
+<meta property="og:url" content="/blog/projects/wordpress-to-markdown">
 <meta property="og:site_name" content="Alex Hagen">
 
 <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico?v=2" />
@@ -135,67 +135,32 @@ MathJax.Hub.Config({
 
 <section class="article pad-top">
 
-    
-      <div class="overlay"></div>
-      
-      <div class="featured-image" style="background-image: url(http://i.imgur.com/3iqGF9R.jpg)"></div>
-      
-    
-
 
 
 
       <article class="wrap post">
+        <header class="post-header">
+          <hgroup>
+            <h1 id=quick-script:-wordpress-to-markdown abbr=>Quick Script: Wordpress to Markdown</h1>
+            <p class="date">Jul 01, 2017</p>
+            <p class="intro"></p>
+          </hgroup>
+        </header>
 
-        <h1 id="divci-komon-and-cesky-krumlov-day2">Divci Komon and Cesky Krumlov, Day 2</h1>
+        <p>Recently I had the occasion to convert a bunch of wordpress posts over to a
+Jekyll blog, including a bunch of pictures that I sent out for third party
+hosting.  I wrote a quick/simple script and I’m embedding it via
+<code>github-gists</code> below.  It downloads a page via http, then splits it into the
+<code>content</code> and then an array of pictures.  Note that you’d have to change this
+if you had pictures interspersed throughout your post, instead of all at the
+end.  I don’t intend this to be a catch-all or anything, but hopefully it’s
+useful to someone. Requires <code>BeautifulSoup</code> be installed and
+<code>imgur-uploader</code> be installed and working on the path.  It only
+converts/posts once per hour to avoid <code>imgur</code>’s upload limits.  I hope this
+helps someone!</p>
 
-<p>To end the night after getting to Cesky Krumlov last night, we decided to walk
-the city’s castle and walk through town (which included grabbing some food in a
-retaurant in the city’s catacombs).  Then, after another day of not getting our
-luggage (but supposedly its being delivered to our hostel as we speak), we
-decided to go with a newly made friend to a small castle (Divci Komon) about
-half an hour north of Cesky Krumlov.  Apparently nobody has heard of this
-castle, as we were the only people there.  In fact, after taking the train
-north, we had to hike for several kilometers through the Czech wilderness to
-find the ruins of this castle.  Pictures of this are below.  We’re going to a
-gypsy music bar tonight to listen to some authentic gypsy music!</p>
+<script src="https://gist.github.com/alexhagen/2ca6dcddfa7c3858ec78829b21770194.js"></script>
 
-<figure>
-    <img src="http://i.imgur.com/iY6ZcJo.jpg" />
-    <figcaption>The view from beside our hostel.</figcaption>
-</figure>
-<figure>
-    <img src="http://i.imgur.com/QjOo1r9.jpg" />
-    <figcaption>Another view of Cesky Krumlov</figcaption>
-</figure>
-<figure>
-    <img src="http://i.imgur.com/0TzuY3R.jpg" />
-    <figcaption>A sundial on the side of Cesky’s Castle</figcaption>
-</figure>
-<figure>
-    <img src="http://i.imgur.com/GC0LAWV.jpg" />
-    <figcaption>The view of Cesky from the castle</figcaption>
-</figure>
-<figure>
-    <img src="http://i.imgur.com/82rb9xi.jpg" />
-    <figcaption>The catacombs restaurant and our new friend</figcaption>
-</figure>
-<figure>
-    <img src="http://i.imgur.com/7XAJIUk.jpg" />
-    <figcaption>The hike to Divci Komon</figcaption>
-</figure>
-<figure>
-    <img src="http://i.imgur.com/zFhTe5y.jpg" />
-    <figcaption>Inside Divci Komon</figcaption>
-</figure>
-<figure>
-    <img src="http://i.imgur.com/bGp3KMQ.jpg" />
-    <figcaption>Another View of Divci Komon</figcaption>
-</figure>
-<figure>
-    <img src="http://i.imgur.com/WTvl7iW.jpg" />
-    <figcaption>The hike back from Divci Komon</figcaption>
-</figure>
 
 
         
@@ -221,6 +186,9 @@ s.setAttribute('data-timestamp', +new Date());
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
         
+
+      <a class="share" href="https://twitter.com/intent/tweet?text=&quot;Quick Script: Wordpress to Markdown&quot;%20http://alexhagen.github.io/blog/projects/wordpress-to-markdown%20via%20&#64;" data-dnt="true">Share</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
       </article>
     </section>
