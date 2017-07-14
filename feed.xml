@@ -6,8 +6,8 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 09 Jul 2017 10:13:09 -0400</pubDate>
-    <lastBuildDate>Sun, 09 Jul 2017 10:13:09 -0400</lastBuildDate>
+    <pubDate>Thu, 13 Jul 2017 22:23:27 -0400</pubDate>
+    <lastBuildDate>Thu, 13 Jul 2017 22:23:27 -0400</lastBuildDate>
     <generator>Jekyll v3.4.0</generator>
     
       <item>
@@ -110,25 +110,58 @@ helps someone!&lt;/p&gt;
         <title>Life List</title>
         <description>&lt;p&gt;&lt;em&gt;I intend this to be a living document for my own accountability and benefit.&lt;/em&gt;&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;[ ] Travel to Iceland&lt;/li&gt;
-  &lt;li&gt;[ ] Climb a volcano&lt;/li&gt;
-  &lt;li&gt;[ ] Travel to the Porcupine Mountains&lt;/li&gt;
-  &lt;li&gt;[ ] See Thor’s Peak&lt;/li&gt;
-  &lt;li&gt;[ ] Run a
-    &lt;ul&gt;
-      &lt;li&gt;[x] Minimarathon&lt;/li&gt;
-      &lt;li&gt;[ ] Marathon&lt;/li&gt;
-      &lt;li&gt;[ ] 50k&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;[ ] Build a majority of our furniture&lt;/li&gt;
-  &lt;li&gt;[ ] Play soccer until I’m 38&lt;/li&gt;
-  &lt;li&gt;[ ] Climb a 14er&lt;/li&gt;
-  &lt;li&gt;[ ] See the Northern Lights&lt;/li&gt;
-  &lt;li&gt;[ ] Live somewhere out of the states&lt;/li&gt;
-  &lt;li&gt;[ ] Make a tube amp&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;
+  &lt;input type=&quot;checkbox&quot; id=&quot;iceland&quot; /&gt;
+  &lt;label for=&quot;iceland&quot;&gt;Travel to Iceland&lt;/label&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;input type=&quot;checkbox&quot; id=&quot;volcano&quot; /&gt;
+  &lt;label for=&quot;volcano&quot;&gt;Climb a volcano&lt;/label&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;input type=&quot;checkbox&quot; id=&quot;porcupine&quot; /&gt;
+  &lt;label for=&quot;porcupine&quot;&gt;Travel to the Porcupine Mountains&lt;/label&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;input type=&quot;checkbox&quot; id=&quot;thor&quot; /&gt;
+  &lt;label for=&quot;thor&quot;&gt;See Thor's Peak&lt;/label&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;input type=&quot;checkbox&quot; id=&quot;mini&quot; checked=&quot;&quot; /&gt;
+  &lt;label for=&quot;mini&quot;&gt;Run a mini-marathon&lt;/label&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;input type=&quot;checkbox&quot; id=&quot;marathon&quot; /&gt;
+  &lt;label for=&quot;marathon&quot;&gt;Run a marathon&lt;/label&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;input type=&quot;checkbox&quot; id=&quot;fiftyk&quot; /&gt;
+  &lt;label for=&quot;fiftyk&quot;&gt;Run a 50k&lt;/label&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;input type=&quot;checkbox&quot; id=&quot;furniture&quot; /&gt;
+  &lt;label for=&quot;furniture&quot;&gt;Build a majority of our furniture&lt;/label&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;input type=&quot;checkbox&quot; id=&quot;soccer&quot; /&gt;
+  &lt;label for=&quot;soccer&quot;&gt;Play soccer until I'm 38&lt;/label&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;input type=&quot;checkbox&quot; id=&quot;fourteener&quot; /&gt;
+  &lt;label for=&quot;fourteener&quot;&gt;Climb a 14er&lt;/label&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;input type=&quot;checkbox&quot; id=&quot;northernlights&quot; /&gt;
+  &lt;label for=&quot;northernlights&quot;&gt;See the Northern Lights&lt;/label&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;input type=&quot;checkbox&quot; id=&quot;states&quot; /&gt;
+  &lt;label for=&quot;states&quot;&gt;Live somewhere outside of the United States&lt;/label&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;input type=&quot;checkbox&quot; id=&quot;tubeamp&quot; /&gt;
+  &lt;label for=&quot;tubeamp&quot;&gt;Build a tube amplifier&lt;/label&gt;
+&lt;/p&gt;
 </description>
         <pubDate>Tue, 06 Jun 2017 11:00:00 -0400</pubDate>
         <link>/personal/misc/life_list</link>
