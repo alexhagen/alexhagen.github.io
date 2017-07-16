@@ -862,6 +862,13 @@ header.site-header nav {
         filter: saturate(50%) brightness(150%) opacity(35%);
         z-index: 1;
     }
+    .bg-screen {
+      -webkit-filter: opacity(30%);
+      -moz-filter: opacity(30%);
+      -o-filter: opacity(30%);
+      -ms-filter: opacity(30%);
+      filter: opacity(30%);
+    }
     &:hover {
         @include transit(all, .5s, ease-in-out);
         background-color: $grey-light-2;
@@ -912,6 +919,7 @@ header.site-header nav {
       white-space: normal;
       padding-left:10px;
       padding-right: 10px;
+      z-index: 2;
     }
     .date, .keywords, .type {
         display: none;
