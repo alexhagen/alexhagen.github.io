@@ -1,0 +1,12 @@
+---
+title: "PyG"
+layout: external
+date:   2014-11-09 15:00:00
+repo_title: pyg
+long_title: false
+type: python
+description: >
+  graphing library for 2-d, 3-d, 2-d annotations on 3-d visualizations,
+  maps, tikz flowcharts, and file system maps
+keywords: python, graphing, plotting, matplotlib, visualization, contour
+---
