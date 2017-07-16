@@ -6,8 +6,8 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 13 Jul 2017 22:23:27 -0400</pubDate>
-    <lastBuildDate>Thu, 13 Jul 2017 22:23:27 -0400</lastBuildDate>
+    <pubDate>Sun, 16 Jul 2017 17:38:19 -0400</pubDate>
+    <lastBuildDate>Sun, 16 Jul 2017 17:38:19 -0400</lastBuildDate>
     <generator>Jekyll v3.4.0</generator>
     
       <item>
@@ -537,6 +537,19 @@ state of the art.&lt;/p&gt;
       </item>
     
       <item>
+        <title>PyG</title>
+        <description>
+</description>
+        <pubDate>Sun, 09 Nov 2014 10:00:00 -0500</pubDate>
+        <link>/code/pyg</link>
+        <guid isPermaLink="true">/code/pyg</guid>
+        
+        
+        <category>code</category>
+        
+      </item>
+    
+      <item>
         <title>Multiphysics Modeling in Optimization of Acoustically Tensioned Metastable Fluid Neutron Detectors</title>
         <description>&lt;p&gt;My Master’s Thesis was published in August of 2014 after defending the thesis to a committee of &lt;em&gt;Purdue Nuclear Engineering&lt;/em&gt; and &lt;em&gt;Purdue Health Physics&lt;/em&gt; faculty members in May of 2014.  The thesis includes business confidential material and will not be published until 2016.  I will post the full text at that time.&lt;/p&gt;
 </description>
@@ -560,21 +573,6 @@ state of the art.&lt;/p&gt;
         <guid isPermaLink="true">/publications/characterization-and-optimization-of</guid>
         
         <category>authored</category>
-        
-        
-        <category>publications</category>
-        
-      </item>
-    
-      <item>
-        <title>High Efficiency Gamma-Beta Blind Alpha Spectrometry for Nuclear Energy Applications</title>
-        <description>&lt;p&gt;My colleague and I wrote this paper for the International Conference on Nuclear Engineering, winning the Student paper competition with it.  A revised copy has been submitted for review to be published in ASME’s &lt;em&gt;Nuclear Engineering and Radiation Science&lt;/em&gt; inaugural issue.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 11 Jul 2014 04:00:00 -0400</pubDate>
-        <link>/publications/high-efficiency-gamma-beta</link>
-        <guid isPermaLink="true">/publications/high-efficiency-gamma-beta</guid>
-        
-        <category>coauthor</category>
         
         
         <category>publications</category>
