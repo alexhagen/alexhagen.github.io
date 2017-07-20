@@ -6,9 +6,9 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 16 Jul 2017 17:38:19 -0400</pubDate>
-    <lastBuildDate>Sun, 16 Jul 2017 17:38:19 -0400</lastBuildDate>
-    <generator>Jekyll v3.4.0</generator>
+    <pubDate>Thu, 20 Jul 2017 09:31:58 -0400</pubDate>
+    <lastBuildDate>Thu, 20 Jul 2017 09:31:58 -0400</lastBuildDate>
+    <generator>Jekyll v3.4.3</generator>
     
       <item>
         <title>A Plan for Making Projects</title>
@@ -171,6 +171,32 @@ helps someone!&lt;/p&gt;
         <category>personal</category>
         
         <category>misc</category>
+        
+      </item>
+    
+      <item>
+        <title>MWE</title>
+        <description>
+</description>
+        <pubDate>Sun, 07 May 2017 11:00:00 -0400</pubDate>
+        <link>/code/mwe</link>
+        <guid isPermaLink="true">/code/mwe</guid>
+        
+        
+        <category>code</category>
+        
+      </item>
+    
+      <item>
+        <title>JDC</title>
+        <description>
+</description>
+        <pubDate>Sun, 02 Apr 2017 11:00:00 -0400</pubDate>
+        <link>/code/jdc</link>
+        <guid isPermaLink="true">/code/jdc</guid>
+        
+        
+        <category>code</category>
         
       </item>
     
@@ -537,45 +563,15 @@ state of the art.&lt;/p&gt;
       </item>
     
       <item>
-        <title>PyG</title>
+        <title>Finite Element Simulation of First Wall Heating</title>
         <description>
 </description>
-        <pubDate>Sun, 09 Nov 2014 10:00:00 -0500</pubDate>
-        <link>/code/pyg</link>
-        <guid isPermaLink="true">/code/pyg</guid>
+        <pubDate>Sun, 16 Oct 2016 11:00:00 -0400</pubDate>
+        <link>/simulations/first-wall-simulation</link>
+        <guid isPermaLink="true">/simulations/first-wall-simulation</guid>
         
         
-        <category>code</category>
-        
-      </item>
-    
-      <item>
-        <title>Multiphysics Modeling in Optimization of Acoustically Tensioned Metastable Fluid Neutron Detectors</title>
-        <description>&lt;p&gt;My Master’s Thesis was published in August of 2014 after defending the thesis to a committee of &lt;em&gt;Purdue Nuclear Engineering&lt;/em&gt; and &lt;em&gt;Purdue Health Physics&lt;/em&gt; faculty members in May of 2014.  The thesis includes business confidential material and will not be published until 2016.  I will post the full text at that time.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 15 Aug 2014 08:00:00 -0400</pubDate>
-        <link>/publications/multiphysics-modeling-in-optimization</link>
-        <guid isPermaLink="true">/publications/multiphysics-modeling-in-optimization</guid>
-        
-        <category>authored</category>
-        
-        
-        <category>publications</category>
-        
-      </item>
-    
-      <item>
-        <title>Characterization and Optimization of a Tensioned Metastable Fluid Nuclear Particle Sensor Using Laser Based Profilimetry</title>
-        <description>&lt;p&gt;I was invited to give a talk and poster at the 22nd &lt;em&gt;International Conference on Nuclear Engineering&lt;/em&gt; (ICONE) in Prague. The poster that accompanied this talk and paper was selected as a Winner in the student competition.  I have submitted a revised version of this paper for publication in a new ASME journal, &lt;em&gt;Nuclear Engineering and Radiation Science&lt;/em&gt;.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 11 Jul 2014 08:00:00 -0400</pubDate>
-        <link>/publications/characterization-and-optimization-of</link>
-        <guid isPermaLink="true">/publications/characterization-and-optimization-of</guid>
-        
-        <category>authored</category>
-        
-        
-        <category>publications</category>
+        <category>simulations</category>
         
       </item>
     
