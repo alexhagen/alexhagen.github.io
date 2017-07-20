@@ -1,5 +1,6 @@
 ---
 title: "PyG"
+link: pyg/
 layout: external
 date:   2014-11-09 15:00:00
 repo_title: pyg

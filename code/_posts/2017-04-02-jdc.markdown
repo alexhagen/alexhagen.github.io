@@ -1,0 +1,15 @@
+---
+title: "JDC"
+layout: external
+date:   2017-04-02 15:00:00
+repo_title: jdc
+long_title: false
+link: jdc/
+type: Jupyter
+description: >
+  convenience class for dynamic python classes in Jupyter notebooks,
+  implemented in a Jupyter magic API
+keywords: >
+  python, Jupyter, notebook, ipython, IPython, dynamic classing,
+  metaprogramming, functional programming, programming
+---

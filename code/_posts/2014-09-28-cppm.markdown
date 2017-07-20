@@ -1,0 +1,13 @@
+---
+title: "Cppm"
+layout: external
+date:   2014-09-28 15:00:00
+repo_title: cppm
+long_title: false
+link: cppm/
+type: cpp
+description: >
+  convenience classes in C++ for use in hardware, so you can use the best
+  C classes in an object-oriented manner
+keywords: c++, object-oriented, object
+---

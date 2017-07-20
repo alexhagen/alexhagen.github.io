@@ -1,0 +1,15 @@
+---
+title: "MWE"
+layout: external
+date:   2017-05-07 15:00:00
+repo_title: mwe
+long_title: false
+link: mwe/
+type: LaTeX
+description: >
+  convenience class for putting LaTeX in your Jupyter notebooks, especially
+  for minimum working examples
+keywords: >
+  python, LaTeX, Jupyter, notebook, ipython, IPython,
+  minimum working example, mwe, publishing, prototyping
+---

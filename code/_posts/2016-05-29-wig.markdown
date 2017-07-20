@@ -1,0 +1,15 @@
+---
+title: "Wig"
+layout: external
+date:   2016-05-29 15:00:00
+repo_title: wig
+long_title: false
+link: wig/
+type: nuclear particle
+description: >
+  input deck generator, setup visualizer, output analyzer, and all-around
+  mvp code for working with MCNP simulation
+keywords: >
+  python, mcnp, n particle transport, nuclear transport, nuclear, neutron,
+  photon
+---

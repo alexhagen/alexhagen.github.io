@@ -1,0 +1,13 @@
+---
+title: "Purdue Nuclear Engineering PhD Qualifying Exams"
+layout: external
+date:   2014-01-05 15:00:00
+repo_title: qe
+long_title: true
+link: qe/
+type: teaching
+description: >
+  tutorials in various topics of nuclear engineering to help Purdue PhD
+  seekings students pass their qualifying exams
+keywords: python,math,numerical methods,integration,interpolation
+---
