@@ -6,8 +6,8 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 20 Jul 2017 09:31:58 -0400</pubDate>
-    <lastBuildDate>Thu, 20 Jul 2017 09:31:58 -0400</lastBuildDate>
+    <pubDate>Mon, 07 Aug 2017 08:28:11 -0400</pubDate>
+    <lastBuildDate>Mon, 07 Aug 2017 08:28:11 -0400</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
@@ -564,7 +564,53 @@ state of the art.&lt;/p&gt;
     
       <item>
         <title>Finite Element Simulation of First Wall Heating</title>
-        <description>
+        <description>&lt;h1 id=&quot;finite-element-simulation-of-first-wall-heating-and-ion-recombination&quot;&gt;Finite Element Simulation of First Wall Heating and Ion Recombination&lt;/h1&gt;
+
+&lt;p&gt;A one-dimensional finite element simulation was created to calculate the heating
+of the first wall in a tokomak.&lt;/p&gt;
+
+&lt;h2 id=&quot;motivation&quot;&gt;Motivation&lt;/h2&gt;
+
+&lt;p&gt;Fusion power is touted as the future of all energy generation, and in theory,
+it’s a beautiful and elegant concept.  However, when reality is concerned, it
+becomes one of the most difficult engineering problems yet faced. Particularly
+vexing is the “first wall problem” - or the decision of wall materials and
+operating parameters that will allow for the plasma facing components (PFCs) in
+a fusion reactor to perform well and with a long life.&lt;/p&gt;
+
+&lt;p&gt;The problem comes directly from the physics of fusion.  The types of fuels
+desired for fusion are usually deuterium-deuterium (“dd”), dueterium-tritium
+(“dt”), or sometimes deuterium-helium (“dHe3”).  The
+reactions themselves are: $\newcommand{\ce}[1]{\mathrm{#1}}$&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;% &lt;![CDATA[
+d+d\rightarrow\begin{cases}
+\underbrace{t}_{1.01\;\mathrm{MeV}}+\underbrace{p}_{3.02\;\mathrm{MeV}} &amp; 50\;\mathrm{\%}\\
+\underbrace{\ce{^{4}He}}_{0.82\;\mathrm{MeV}}+\underbrace{n}_{2.45\;\mathrm{MeV}} &amp; 50\;\mathrm{\%}
+\end{cases} %]]&gt;&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;d+t\rightarrow\underbrace{\ce{^{4}He}}_{3.5\;\mathrm{MeV}}+\underbrace{n}_{14.1\;\mathrm{MeV}}&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;d+\ce{^{3}He}\rightarrow\underbrace{\ce{^{4}He}}_{3.6\;\mathrm{MeV}}+\underbrace{p}_{14.7\;\mathrm{MeV}}&lt;/script&gt;
+
+&lt;p&gt;It is noticeable that of the four product sets possible, &lt;em&gt;ions constitute a large
+amount of the total energy&lt;/em&gt;.  This is an important component of fuel, as ion
+energy is much easier to reclaim than neutron energy.  However, ion energy is so
+easy to reclaim that it will cause large amounts of heating in the walls of the
+fusion reactor.&lt;/p&gt;
+
+&lt;p&gt;In fact, there is even another ion heating aspect to fusion, and that is that
+&lt;em&gt;plasma is inherently lossy&lt;/em&gt;.  In the high temperature plasmas required to induce
+nuclear fusion, the deuterium (or other) ions that are used as reactants are so
+fast that they can escape the plasma confinement and deposit energy into the
+wall.  This can cause material damage and heating on a large scale.&lt;/p&gt;
+
+&lt;p&gt;This is the situation that was considered in the following simulation: to model
+the effect of temperature on deuterium recycling.  In otherwords, we look at
+diffusion of implanted deuterium ions from a plasma source on first wall
+components. We then model the recombination of those ions, and heating within
+the wall to determine how many of those ions escape, and are “recylced” back
+into the plasma.&lt;/p&gt;
 </description>
         <pubDate>Sun, 16 Oct 2016 11:00:00 -0400</pubDate>
         <link>/simulations/first-wall-simulation</link>
