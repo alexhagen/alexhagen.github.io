@@ -1,9 +1,8 @@
 ---
 title: "Finite Element Simulation of First Wall Heating"
 layout: post-light-feature
-date:   2016-10-16 15:00:00
+date:   2016-05-03 15:00:00
 long_title: true
-link: nucl_697/
 description: >
   coming soon!
 type: finite element
