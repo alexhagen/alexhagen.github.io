@@ -5,9 +5,19 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 <script type="text/x-mathjax-config">
+MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+  MathJax.Hub.Insert(MathJax.InputJax.TeX.Definitions.macros,{
+    cancel: ["Extension","cancel"],
+    bcancel: ["Extension","cancel"],
+    xcancel: ["Extension","cancel"],
+    cancelto: ["Extension","cancel"]
+  });
+});
 MathJax.Hub.Config({
   tex2jax: {
+    displayMath: [ ['$$', '$$'], ['\\[', '\\]'] ],
     inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+    processEscapes: true,
   },
   "HTML-CSS": {
     scale: 200,
@@ -551,7 +561,7 @@ MathJax.Hub.Config({
       <div class='keywords'>fortran, finite element, thermal, heating, fusion
 </div>
       <div class='type'>finite element</div>
-      <div class='description'>coming soon!</div>
+      <div class='description'>A finite element model of first wall heating in fusion tokomak reactors created as a capstone for a course</div>
       <div class="cell-bg-image bg-screen"  style="background-image: url(images/simulation_illustration.svg)"></div>
       
   </a>

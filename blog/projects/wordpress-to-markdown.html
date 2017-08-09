@@ -7,9 +7,19 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 <script type="text/x-mathjax-config">
+MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+  MathJax.Hub.Insert(MathJax.InputJax.TeX.Definitions.macros,{
+    cancel: ["Extension","cancel"],
+    bcancel: ["Extension","cancel"],
+    xcancel: ["Extension","cancel"],
+    cancelto: ["Extension","cancel"]
+  });
+});
 MathJax.Hub.Config({
   tex2jax: {
+    displayMath: [ ['$$', '$$'], ['\\[', '\\]'] ],
     inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+    processEscapes: true,
   },
   "HTML-CSS": {
     scale: 200,
