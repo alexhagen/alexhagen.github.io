@@ -61,9 +61,13 @@ into the plasma.
 ## Introduction and Mathematical Development
 
 We are attempting to solve the diffusion equation, which - with constant
-diffusion coefficient - can be written as $$\frac{\partial
+diffusion coefficient - can be written as
+
+$$\frac{\partial
 C\left(\vec{r},\,t\right)}{\partial
-t}=D\nabla^{2}C\left(\vec{r},\,t\right)+S\left(\vec{r},\,t\right)$$ with
+t}=D\nabla^{2}C\left(\vec{r},\,t\right)+S\left(\vec{r},\,t\right)$$
+
+with
 $C\left(\vec{r},\,t\right)$ the concentration as a function of space
 ($\vec{r}$) and time ($t$), $D$ the diffusion coefficient, and
 $S\left(\vec{r},\,t\right)$ the source term as a function of space and time.  We
@@ -76,6 +80,7 @@ surface and that the surface can be approximated as infinite compared to the
 range of diffusion, we can consider the problem to be one dimensional (in
 depth). We then define our space ($\vec{r}$) as simply the depth variable ($x$).
 Then, the diffusion equation can be written as
+
 $$\frac{\partial C\left(x,\,t\right)}{\partial t}=D\frac{\partial^{2}C\left(x,\,t\right)}{\partial x^{2}}+S\left(x,\,t\right)$$
 
 We then can define our boundary and initial conditions needed to solve this.
@@ -97,31 +102,45 @@ We then can define our boundary and initial conditions needed to solve this.
 
 ## Finite Element Imposition and Solution
 
-So, we want to solve the equation $$\begin{aligned} \frac{\partial C}{\partial
+So, we want to solve the equation
+
+$$\begin{aligned} \frac{\partial C}{\partial
 t}=D\frac{\partial^{2}C}{\partial x^{2}}+S\left(x\right) & \quad\text{on
 }\Omega\\ C=0 & \quad\text{on }\Gamma_{right}\\ \frac{\partial
 C\left(t\right)}{\partial x}=-kC^{2} & \quad\text{on }\Gamma_{left}\\ C=S &
-\quad\text{on }\Omega\text{ at time }t_{i}=0\end{aligned}$$ Since our source is
+\quad\text{on }\Omega\text{ at time }t_{i}=0\end{aligned}$$
+
+Since our source is
 constant, we can simply add the source term to the concentration at every step.
 The residual corresponding to this equation is
+
 $$R\left(\tilde{C},x\right)\equiv-\frac{\partial\tilde{C}}{\partial
-t}+D\frac{\partial^{2}\tilde{C}}{\partial x^{2}}$$ and thus the weighted
-residual is
+t}+D\frac{\partial^{2}\tilde{C}}{\partial x^{2}}$$
+
+and thus the weighted residual is
+
 $$\int_{0}^{x_{r}}wR\left(\tilde{C},x\right)dx=\int_{0}^{x_{r}}w\left[-\frac{\partial\tilde{C}}{\partial
-t}+D\frac{\partial^{2}\tilde{C}}{\partial x^{2}}\right]dx$$ which, when expanded
-by integration by parts is
+t}+D\frac{\partial^{2}\tilde{C}}{\partial x^{2}}\right]dx$$
+
+which, when expanded by integration by parts is
+
 $$-\underbrace{\int_{0}^{x_{r}}w\frac{\partial\tilde{C}}{\partial
 t}dx}_{\text{dissipation
 term}}+\underbrace{\left[wD\frac{\partial\tilde{C}}{\partial
 x}\right]_{0}^{x_{r}}}_{\text{boundary
 terms}}-\underbrace{\int_{0}^{x_{r}}\frac{\partial w}{\partial
-x}D\frac{\partial\tilde{C}}{\partial x}dx}_{\text{domain term}}$$ with linear
-shape functions and at node $j$, the residual becomes
+x}D\frac{\partial\tilde{C}}{\partial x}dx}_{\text{domain term}}$$
+
+with linear shape functions and at node $j$, the residual becomes
+
 $$R_{j}\left(\tilde{C}\right)\equiv-\int_{0}^{x_{r}}w_{j}\frac{\partial\tilde{C}}{\partial
 t}+\left[w_{j}D\frac{\partial\tilde{C}}{\partial
 x}\right]_{0}^{x_{r}}-\int_{0}^{x_{r}}\frac{\partial w_{j}}{\partial
-x}D\frac{\partial\tilde{C}}{\partial x}dx$$ and, because we’re using lagrange,
-$w_{j}$ is only non-zero over two elements that include $j$, i.e.
+x}D\frac{\partial\tilde{C}}{\partial x}dx$$
+
+and, because we’re using lagrange, $w_{j}$ is only non-zero over two elements
+that include $j$, i.e.
+
 $$w_{j}=\begin{cases} 0, & \text{for }x<x_{j-1}\\
 \frac{x-x_{j-1}}{x_{j}-x_{j-1}}, & \text{for }x_{j-1}\leq x\leq x_{j}\\
 \frac{x_{j+1}-x}{x_{j+1}-x_{j}} & \text{for }x_{j}<x\leq x_{j+1}\\ 0, &
@@ -134,24 +153,38 @@ x}D\frac{\partial\tilde{C}}{\partial x}dx=\int_{x_{j-1}}^{x_{j+1}}\frac{\partial
 w_{j}}{\partial x}D\frac{\partial\tilde{C}}{\partial
 x}dx=\frac{1}{x_{j}-x_{j-1}}\int_{x_{j-1}}^{x_{j}}D\frac{\partial\tilde{C}}{\partial
 x}dx-\frac{1}{x_{j+1}-x_{j}}\int_{x_{j}}^{x_{j+1}}D\frac{\partial\tilde{C}}{\partial
-x}dx$$ Now, using the lagrange approximation to the real solution $C$ and taking
-the derivative, we get $$\frac{\partial\tilde{C}}{\partial
-x}=\sum_{i=1}^{N+1}C_{i}\frac{\partial w_{i}}{\partial x}$$ and again noting
-that the only contributions for lagrange elements come for the nodes including
-$j$, we can reduce this sum to two terms: $$\frac{\partial\tilde{C}}{\partial
+x}dx$$
+
+Now, using the lagrange approximation to the real solution $C$ and taking
+the derivative, we get
+
+$$\frac{\partial\tilde{C}}{\partial
+x}=\sum_{i=1}^{N+1}C_{i}\frac{\partial w_{i}}{\partial x}$$
+
+and again noting that the only contributions for lagrange elements come for the
+nodes including $j$, we can reduce this sum to two terms:
+
+$$\frac{\partial\tilde{C}}{\partial
 x}=\begin{cases} C_{j-1}\frac{\partial w_{j-1}}{\partial x}+C_{j}\frac{\partial
 w_{j}}{\partial x}=\frac{C_{j}-C_{j-1}}{x_{j}-x_{j-1}}, & \text{for }i=j-1\\
 C_{j}\frac{\partial w_{j}}{\partial x}+C_{j+1}\frac{\partial w_{j+1}}{\partial
-x}=\frac{C_{j+1}-C_{j}}{x_{j+1}-x_{j}}, & \text{for }i=j \end{cases}$$ so the
-integral becomes $$\int_{0}^{x_{r}}\frac{\partial w_{j}}{\partial
+x}=\frac{C_{j+1}-C_{j}}{x_{j+1}-x_{j}}, & \text{for }i=j \end{cases}$$
+
+so the integral becomes
+
+$$\int_{0}^{x_{r}}\frac{\partial w_{j}}{\partial
 x}D\frac{\partial\tilde{C}}{\partial
 x}dx=\frac{C_{j}-C_{j-1}}{\left(x_{j}-x_{j-1}\right)^{2}}\int_{x_{j-1}}^{x_{j}}Ddx-\frac{C_{j+1}-C_{j}}{\left(x_{j+1}-x_{j}\right)^{2}}\int_{x_{j}}^{x_{j+1}}Ddx$$
-and with constant $D$ $$\int_{0}^{x_{r}}\frac{\partial w_{j}}{\partial
+
+and with constant $D$
+
+$$\int_{0}^{x_{r}}\frac{\partial w_{j}}{\partial
 x}D\frac{\partial\tilde{C}}{\partial
 x}dx=D\frac{C_{j}-C_{j-1}}{\left(x_{j}-x_{j-1}\right)^{2}}-D\frac{C_{j+1}-C_{j}}{\left(x_{j+1}-x_{j}\right)^{2}}$$
 
 We can expand that equation into a matrix by adding matrices for each
 node $j$. A quick example shows the pattern, for 5 nodes $j$
+
 $$I_{\substack{\text{stiffness}\\
 \text{terms}
 }
@@ -161,7 +194,10 @@ D\frac{C_{2}-C_{1}}{\Delta x_{1}^{2}}-D\frac{C_{3}-C_{2}}{\Delta x_{2}^{2}} & \t
 D\frac{C_{3}-C_{2}}{\Delta x_{2}^{2}}-D\frac{C_{4}-C_{3}}{\Delta x_{3}^{2}} & \text{for node }3\\
 D\frac{C_{4}-C_{3}}{\Delta x_{3}^{2}}-D\frac{C_{5}-C_{4}}{\Delta x_{4}^{2}} & \text{for node }4\\
 D\frac{C_{5}-C_{4}}{\Delta x_{4}^{2}}-D\frac{C_{6}-C_{5}}{\Delta x_{5}^{2}} & \text{for node }5
-\end{cases}$$ You can then place this in matrix form
+\end{cases}$$
+
+You can then place this in matrix form
+
 $$I_{\substack{\text{stiffness}\\
 \text{terms}
 }
@@ -177,18 +213,27 @@ C_{2}\\
 C_{3}\\
 C_{4}\\
 C_{5}
-\end{array}\right]$$ So, checking in on our overall equation, we have
+\end{array}\right]$$
+
+So, checking in on our overall equation, we have
 
 $$R_{j}\left(\tilde{C}\right)\equiv-\int_{0}^{x_{r}}w_{j}\frac{\partial\tilde{C}}{\partial t}+\left[w_{j}D\frac{\partial\tilde{C}}{\partial x}\right]_{0}^{x_{r}}-\cancelto{I_{\substack{\text{stiffness}\\
 \text{terms}
 }
 }}{\int_{0}^{x_{r}}\frac{\partial w_{j}}{\partial x}D\frac{\partial\tilde{C}}{\partial x}dx}$$
+
 Which means we have to determine the boundary and the time derivative,
 still. The time derivative can be written at each node as
+
 $$\int_{0}^{x_{r}}w_{j}\frac{\partial\tilde{C}}{\partial t}dx=\int_{x_{j-1}}^{x_{j}}\frac{x-x_{j-1}}{\Delta x_{j-1}}\frac{\partial\tilde{C}}{\partial t}dx-\int_{x_{j}}^{x_{j+1}}\frac{x_{j+1}-x}{\Delta x_{j}}\frac{\partial\tilde{C}}{\partial t}dx$$
+
 And, using only an euler step for the time step, we have
+
 $$\frac{\partial\tilde{C}}{\partial t}=\frac{\tilde{C}_{k}-\tilde{C}_{k-1}}{\Delta t}$$
-where $k$ is the time step. Therefore, we have $$\begin{aligned}
+
+where $k$ is the time step. Therefore, we have
+
+$$\begin{aligned}
 \int_{0}^{x_{r}}w_{j}\frac{\partial\tilde{C}}{\partial t}dx & =\int_{x_{j-1}}^{x_{j}}\frac{x-x_{j-1}}{\Delta x_{j-1}}\frac{\tilde{C}_{k}-\tilde{C}_{k-1}}{\Delta t}dx-\int_{x_{j}}^{x_{j+1}}\frac{x_{j+1}-x}{\Delta x_{j}}\frac{\tilde{C}_{k}-\tilde{C}_{k-1}}{\Delta t}dx\\
  & =\frac{1}{\Delta t}\left(\int_{x_{j-1}}^{x_{j}}\frac{x-x_{j-1}}{\Delta x_{j-1}}\tilde{C}_{k}dx-\int_{x_{j-1}}^{x_{j}}\frac{x-x_{j-1}}{\Delta x_{j-1}}\tilde{C}_{k-1}dx-\int_{x_{j}}^{x_{j+1}}\frac{x_{j+1}-x}{\Delta x_{j}}\tilde{C}_{k}dx+\int_{x_{j}}^{x_{j+1}}\frac{x_{j+1}-x}{\Delta x_{j}}\tilde{C}_{k-1}dx\right)\\
  & =\frac{1}{\Delta t}\left[\left(\Delta x_{j-1}\right)\left(\frac{\cancelto{1}{\frac{x_{j}-x_{j-1}}{\Delta x_{j-1}}}\tilde{C}_{k,j}+\cancelto{0}{\frac{x_{j-1}-x_{j-1}}{\Delta x_{j-1}}}\tilde{C}_{k,j-1}}{2}\right)-\left(\Delta x_{j-1}\right)\left(\frac{\cancelto{1}{\frac{x_{j}-x_{j-1}}{\Delta x_{j-1}}}\tilde{C}_{k-1,j}+\cancelto{0}{\frac{x_{j-1}-x_{j-1}}{\Delta x_{j-1}}}\tilde{C}_{k-1,j-1}}{2}\right)\right.\\
@@ -205,6 +250,7 @@ $$\begin{aligned}
  & =\end{aligned}$$
 
 and using the five element example, we have
+
 $$I_{\substack{\text{dissipation}\\
 \text{terms}
 }
@@ -214,7 +260,10 @@ $$I_{\substack{\text{dissipation}\\
 2\frac{C_{k,3}-C_{k-1,3}}{\Delta t} & \text{for node }3\\
 2\frac{C_{k,4}-C_{k-1,4}}{\Delta t} & \text{for node }4\\
 2\frac{C_{k,5}-C_{k-1,5}}{\Delta t} & \text{for node }5
-\end{cases}$$ which can be written as a matrix such as
+\end{cases}$$
+
+which can be written as a matrix such as
+
 $$\mathbb{M}=\left[\begin{array}{ccccc}
 \frac{4\Delta x}{6D\Delta t} & \frac{\Delta x}{6D\Delta t}\\
 \frac{\Delta x}{6D\Delta t} & \frac{4\Delta x}{6D\Delta t} & \frac{\Delta x}{6D\Delta t}\\
@@ -253,15 +302,20 @@ $$R_{j}\left(\tilde{C}\right)\equiv-\cancelto{I_{\substack{\text{dissipation}\\
 }}{\int_{0}^{x_{r}}\frac{\partial w_{j}}{\partial x}D\frac{\partial\tilde{C}}{\partial x}dx}$$
 
 So, finally, our boundary terms can be defined by
+
 $$I_{\substack{\text{boundary}\\
 \text{terms}
 }
 }=\left[w_{j}D\frac{\partial\tilde{C}}{\partial x}\right]_{0}^{x_{r}}=\begin{cases}
 D\left(-k\tilde{C}_{1}^{2}\right) & \text{for node }1\\
 D\frac{\cancelto{0}{\tilde{C}_{J+1}}-\tilde{C}_{J}}{\Delta x_{J}} & \text{for node }J
-\end{cases}$$ which can be written in a vector quite simply. So now
+\end{cases}$$
+
+which can be written in a vector quite simply. So now
 we’ve finished all terms in our equation, and we can write the residual
-as $$R_{j}\left(\tilde{C}\right)=-I_{\substack{\text{dissipation}\\
+as
+
+$$R_{j}\left(\tilde{C}\right)=-I_{\substack{\text{dissipation}\\
 \text{terms}
 }
 }+I_{\substack{\text{boundary}\\
@@ -270,7 +324,11 @@ as $$R_{j}\left(\tilde{C}\right)=-I_{\substack{\text{dissipation}\\
 }-I_{\substack{\text{stiffness}\\
 \text{terms}
 }
-}$$ which can be written as a matrix as $$\begin{gathered}
+}$$
+
+which can be written as a matrix as
+
+$$\begin{gathered}
 R\left(\vec{C}\right)=\underbrace{\left[\begin{array}{ccccc}
 \frac{4\Delta x}{6D\Delta t} & \frac{\Delta x}{6D\Delta t}\\
 \frac{\Delta x}{6D\Delta t} & \frac{4\Delta x}{6D\Delta t} & \frac{\Delta x}{6D\Delta t}\\
@@ -316,9 +374,20 @@ C_{4}\\
 C_{5}
 \end{array}\right]\end{gathered}$$
 
-So we have the matrix equation $$\begin{aligned}
+So we have the matrix equation
+
+$$\begin{aligned}
 0 & =-\mathbb{M}\vec{C}+\mathbb{M}_{k-1}\vec{C}_{k-1}+\vec{l}-\mathbb{K}\vec{C}+\vec{S}\\
  & =-\underbrace{\left(\mathbb{M}+\mathbb{K}\right)}_{\mathbb{A}}\underbrace{\vec{C}}_{\vec{x}}+\underbrace{\left(\mathbb{M}_{k-1}\vec{C}_{k-1}+\vec{l}+\vec{S}\right)}_{\vec{b}}\end{aligned}$$
-so we can simplify this to $$\mathbb{A}\vec{x}=\vec{b}$$ which can be
-solved with $$\vec{x}=\mathbb{A}^{-1}\vec{b}$$ at each time step. Then,
-our approximated concentration is $$\vec{C}=\vec{x}+\Delta t\,\vec{S}$$
+
+so we can simplify this to
+
+$$\mathbb{A}\vec{x}=\vec{b}$$
+
+which can be solved with
+
+$$\vec{x}=\mathbb{A}^{-1}\vec{b}$$
+
+at each time step. Then, our approximated concentration is
+
+$$\vec{C}=\vec{x}+\Delta t\,\vec{S}$$
