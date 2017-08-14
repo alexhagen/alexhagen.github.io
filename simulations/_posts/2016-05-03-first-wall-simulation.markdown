@@ -102,6 +102,9 @@ We then can define our boundary and initial conditions needed to solve this.
 
 ## Finite Element Imposition and Solution
 
+The next two sections are technical, so if you're not interested in the math or
+code, [skip to the results](#results).
+
 So, we want to solve the equation
 
 $$\begin{aligned} \frac{\partial C}{\partial
@@ -391,3 +394,13 @@ $$\vec{x}=\mathbb{A}^{-1}\vec{b}$$
 at each time step. Then, our approximated concentration is
 
 $$\vec{C}=\vec{x}+\Delta t\,\vec{S}$$
+
+## Finite Element Code
+
+It is difficult to describe the code without looking at it or the documentation,
+so I've put up a ``FORD`` generated repository for this code at
+[``drfem``](http://alexhagen.github.io/drfem).
+
+## Results <a name="results"></a>
+
+## Conclusions
