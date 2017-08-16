@@ -1,6 +1,6 @@
 ---
 title: "Finite Element Simulation of First Wall Heating"
-layout: post-light-feature
+layout: post-no-feature
 date:   2016-05-03 15:00:00
 long_title: true
 description: >

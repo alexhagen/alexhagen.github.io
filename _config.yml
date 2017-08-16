@@ -27,17 +27,9 @@ tools:
 # Links to include in top navigation
 # For external links add external: true
 links:
-  - title: Portfolio
-    short_title: work
-    url: /portfolio
-    important: true
-  - title: Chronicle
-    short_title: blog
-    url: /chronicle
-    important: false
-  - title: CV
-    short_title: CV
-    url: /cv
+  - title: resume
+    short_title: resume
+    url: https://alexhagen.github.io/cv/resume.pdf
     important: true
   - title: Github
     short_title: GH
