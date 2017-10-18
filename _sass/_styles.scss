@@ -922,7 +922,23 @@ header.site-header nav {
       padding-right: 10px;
       z-index: 2;
     }
-    .date, .keywords, .type {
+    .date {
+      display:block;
+      font-size: $fs6;
+      font-family: $sans;
+      color: $grey-medium;
+      width: 100%;
+      position: absolute;
+      top: 20%;
+      left: 0px;
+      right: 0px;
+      word-wrap: break-word;
+      white-space: normal;
+      padding-left:10px;
+      padding-right: 10px;
+      z-index: 2;
+    }
+    .keywords, .type {
         display: none;
     }
     &.divider {
