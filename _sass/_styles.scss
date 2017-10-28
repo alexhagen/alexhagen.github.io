@@ -844,7 +844,7 @@ header.site-header nav {
     display: inline-block;
     text-align:center;
     background-color: $white;
-    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 4px 6px 8px -5px rgba(0, 0, 0, 0.2), 6px 9px 10px -5px rgba(0, 0, 0, 0.19);
     white-space: nowrap;
     cursor: pointer;
     &.tooltip { @include tooltip(ne, $blue); }
@@ -1500,11 +1500,26 @@ h1,h2,h3,h4,h5,h6 {
 header.site-header {
     position:fixed;
     background-color:$white;
+
+    .logo svg {
+        display: inline-block;
+        height: 50px;
+        vertical-align: middle;
+        position:relative;
+        top:-13px;
+    }
+
+    .logo svg g path {
+        fill: $black;
+    }
+
 }
 
 #bump {
     margin-bottom:-$footerHeight;
 }
+
+
 
 footer {
     background: $grey-light;
@@ -1556,7 +1571,7 @@ footer {
     float: right;
     width: 16px;
     height: 16px;
-    color: white;
+    color: $white;
     .icons {
         font-size: 32px;
     }
@@ -1614,21 +1629,31 @@ footer {
       color: $black;
   }
 
+  #bump .darken nav {
+
+  }
   #bump .darken nav ul {
           padding: 0;
           margin-top: 40px;
-          background: $black;
+          background: $white;
+          border-bottom-width: 10px;
+          border-bottom-color: $grey-dark;
+          border-bottom-style: solid;
       }
 
    #bump .darken nav ul li a {
-        color: $white;
+        color: $black;
+        text-align: center;
+        border-bottom-width: 1px;
+        border-bottom-color: $grey-light-3;
+        border-bottom-style: solid;
         &:active {
-          background-color: $link;
+          background-color: $grey-light-2;
         }
         &:hover {
             text-shadow: none;
-            color: $white;
-            background-color: $link;
+            color: $grey-medium;
+            background-color: $grey-light-2;
         }
     }
 
