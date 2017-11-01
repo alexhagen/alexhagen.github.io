@@ -3,6 +3,7 @@ layout: publication
 title:  "Characterization and Optimization of a Tensioned Metastable Fluid Nuclear Particle Sensor Using Laser Based Profilimetry"
 date:   2014-07-11 12:00:00
 categories: publications
+journal: Proceedings of the International Conference on Nuclear Engineering
 tags:
   - authored
 authors:

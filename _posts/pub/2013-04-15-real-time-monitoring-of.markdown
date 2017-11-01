@@ -3,6 +3,7 @@ layout: publication
 title:  "Real-Time Monitoring of Actinides in Chemical Nuclear Fuel Processing Plants"
 date:   2013-03-15 12:00:00
 categories: publications
+journal: Elsevier Journal of Chemical Engineering Research and Development
 tags:
   - coauthor
 authors:

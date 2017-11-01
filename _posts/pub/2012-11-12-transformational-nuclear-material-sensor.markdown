@@ -3,6 +3,7 @@ layout: publication
 title:  "Transformational Nuclear Material Sensor System Design Optimization Using Multiphysics Simulation"
 date:   2012-11-12 12:00:00
 categories: publications
+journal: ASME International Mechanical Engineering Congress and Exposition
 tags:
   - authored
   - poster

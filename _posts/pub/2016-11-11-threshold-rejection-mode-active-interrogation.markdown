@@ -3,6 +3,7 @@ layout: publication
 title:  "Threshold Rejection Mode Active Interrogation of SNMs Using Continuous Beam DD Neutrons with Centrifugal and Acoustic Tensioned Metastable Fluid Detectors"
 date:   2016-11-11 12:00:00
 categories: publications
+journal: "Transactions of Nuclear Science"
 tags:
   - authored
 authors:

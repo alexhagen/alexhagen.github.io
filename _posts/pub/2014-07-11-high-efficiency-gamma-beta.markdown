@@ -3,6 +3,7 @@ layout: publication
 title:  "High Efficiency Gamma-Beta Blind Alpha Spectrometry for Nuclear Energy Applications"
 date:   2014-07-11 08:00:00
 categories: publications
+journal: Proceedings of the International Conference on Nuclear Engineering
 tags:
   - coauthor
 authors:

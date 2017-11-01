@@ -923,6 +923,38 @@ header.site-header nav {
       padding-right: 10px;
       z-index: 2;
     }
+    .citation {
+      display:block;
+      font-size: $fs6;
+      font-family: $sans;
+      color: $grey-medium;
+      width: 100%;
+      position: absolute;
+      bottom: 10%;
+      left: 0px;
+      right: 0px;
+      word-wrap: break-word;
+      white-space: normal;
+      padding-left:10px;
+      padding-right: 10px;
+      z-index: 2;
+    }
+    .journal {
+      display:block;
+      font-size: $fs6;
+      font-family: $sans;
+      color: $grey-dark;
+      width: 100%;
+      position: absolute;
+      top: 30%;
+      left: 0px;
+      right: 0px;
+      word-wrap: break-word;
+      white-space: normal;
+      padding-left:10px;
+      padding-right: 10px;
+      z-index: 2;
+    }
     .date {
       display:block;
       font-size: $fs6;
