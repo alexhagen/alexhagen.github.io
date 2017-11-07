@@ -1,0 +1,12 @@
+---
+title: "KiDB"
+layout: external
+date:   2017-10-31 15:00:00
+repo_title: kidb
+long_title: false
+link: kidb/
+type: python
+description: >
+  a repository for hosting and sharing circuits designed in KiCAD
+keywords: kicad, circuit, eda, python, hardware
+---
