@@ -6,9 +6,22 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 07 Nov 2017 11:40:18 -0500</pubDate>
-    <lastBuildDate>Tue, 07 Nov 2017 11:40:18 -0500</lastBuildDate>
+    <pubDate>Tue, 07 Nov 2017 14:54:44 -0500</pubDate>
+    <lastBuildDate>Tue, 07 Nov 2017 14:54:44 -0500</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>KiDB</title>
+        <description>
+</description>
+        <pubDate>Tue, 31 Oct 2017 11:00:00 -0400</pubDate>
+        <link>/code/kidb</link>
+        <guid isPermaLink="true">/code/kidb</guid>
+        
+        
+        <category>code</category>
+        
+      </item>
     
       <item>
         <title>Innovations in Nuclear Technology R&amp;D Award</title>
@@ -540,48 +553,6 @@ interesting and useful way to interrogate cargo for special nuclear materials.&l
         <pubDate>Wed, 04 Jan 2017 10:00:00 -0500</pubDate>
         <link>/blog/work/ans_2016_ymg_award</link>
         <guid isPermaLink="true">/blog/work/ans_2016_ymg_award</guid>
-        
-        
-        <category>blog</category>
-        
-        <category>work</category>
-        
-      </item>
-    
-      <item>
-        <title>IEEE Sensors 2016 First Place Demo Award</title>
-        <description>&lt;p&gt;In early November, we received the 1st Place Demo award from the IEEE Sensors
-conference, which we had presented at just several weeks before.  It’s great to
-get recognition, and my contribution to this award was sizeable.  I had
-designed and prototyped the DC powered CTMFD unit that we took down to the
-conference, and wrote the Android App used to control it.&lt;/p&gt;
-
-&lt;figure&gt;
-    &lt;img src=&quot;/assets/img/ieee_sensors_2016_demo_award.png&quot; /&gt;
-    &lt;figcaption&gt;
-      Announcement of our award on the IEEE Sensors website
-    &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Obviously, we are proud of the recognition, and usually I like to write up what
-we actually presented on.  However, at this conference, the conference
-generated a video primer of our demonstration, and I’ve embedded that below.  I
-think it shows more fluently what we like to show than simply writing it up.&lt;/p&gt;
-
-&lt;h2 id=&quot;femto--to-macro--scale-interdisciplinary-sensing-with-tensioned-metastable-fluid-detectors&quot;&gt;Femto- to Macro- Scale Interdisciplinary Sensing with Tensioned Metastable Fluid Detectors&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Rusi Taleyarkhan, Ph.D., Alex Hagen, Brian Archambault, Ph.D., and Anthony Sansone&lt;/strong&gt;&lt;/p&gt;
-
-&lt;figure&gt;
-    &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/NH-nLp48PKc&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-    &lt;figcaption&gt;
-      Generated video of TMFD demos for general sensing
-    &lt;/figcaption&gt;
-&lt;/figure&gt;
-</description>
-        <pubDate>Mon, 21 Nov 2016 10:00:00 -0500</pubDate>
-        <link>/blog/work/ieee_sensors_2016_demo_award</link>
-        <guid isPermaLink="true">/blog/work/ieee_sensors_2016_demo_award</guid>
         
         
         <category>blog</category>
