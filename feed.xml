@@ -6,8 +6,8 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 01 Nov 2017 09:41:43 -0400</pubDate>
-    <lastBuildDate>Wed, 01 Nov 2017 09:41:43 -0400</lastBuildDate>
+    <pubDate>Tue, 07 Nov 2017 11:40:18 -0500</pubDate>
+    <lastBuildDate>Tue, 07 Nov 2017 11:40:18 -0500</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
@@ -24,6 +24,32 @@
         <pubDate>Wed, 18 Oct 2017 05:00:00 -0400</pubDate>
         <link>/blog/work/innovations_in_nuclear_technology_rd_award</link>
         <guid isPermaLink="true">/blog/work/innovations_in_nuclear_technology_rd_award</guid>
+        
+        
+        <category>blog</category>
+        
+        <category>work</category>
+        
+      </item>
+    
+      <item>
+        <title>ICONE 2017 Best Paper Award</title>
+        <description>&lt;p&gt;In July, one of my coworkers and coauthors received an award from the ASME’s
+International Conference on Nuclear Engineering for our work on detection of
+Radon using our Tensioned Metastable Fluid Detectors.  The recognition is great
+for us, and the application is also very exciting.  Below is a screencapture of
+recognition from our College of Engineering.&lt;/p&gt;
+
+&lt;figure&gt;
+    &lt;img src=&quot;/assets/img/coe_news_screencap_icone_2017.png&quot; /&gt;
+    &lt;figcaption&gt;
+      Recognition of our award from Purdue's College of Engineering
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+</description>
+        <pubDate>Mon, 31 Jul 2017 11:00:00 -0400</pubDate>
+        <link>/blog/work/ICONE_2017_best_paper_award</link>
+        <guid isPermaLink="true">/blog/work/ICONE_2017_best_paper_award</guid>
         
         
         <category>blog</category>
@@ -561,26 +587,6 @@ think it shows more fluently what we like to show than simply writing it up.&lt;
         <category>blog</category>
         
         <category>work</category>
-        
-      </item>
-    
-      <item>
-        <title>Threshold Rejection Mode Active Interrogation of SNMs Using Continuous Beam DD Neutrons with Centrifugal and Acoustic Tensioned Metastable Fluid Detectors</title>
-        <description>&lt;p&gt;Brian, Professor Taleyarkhan, and I - in collaboration with our colleagues from
-Kyoto and Pony Industries - show the proof of concept for &lt;strong&gt;Threshold Energy
-Neutron Analysis&lt;/strong&gt; using our tensioned mestable fluid detectors.  We also
-discuss our minimum detectable quantity of special nuclear material with this
-methodology, and the number is significantly smaller (better) than the current
-state of the art.&lt;/p&gt;
-</description>
-        <pubDate>Fri, 11 Nov 2016 07:00:00 -0500</pubDate>
-        <link>/publications/threshold-rejection-mode-active-interrogation</link>
-        <guid isPermaLink="true">/publications/threshold-rejection-mode-active-interrogation</guid>
-        
-        <category>authored</category>
-        
-        
-        <category>publications</category>
         
       </item>
     
