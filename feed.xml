@@ -6,9 +6,34 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 14 Nov 2017 20:33:11 -0500</pubDate>
-    <lastBuildDate>Tue, 14 Nov 2017 20:33:11 -0500</lastBuildDate>
-    <generator>Jekyll v3.4.0</generator>
+    <pubDate>Wed, 15 Nov 2017 10:52:24 -0500</pubDate>
+    <lastBuildDate>Wed, 15 Nov 2017 10:52:24 -0500</lastBuildDate>
+    <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>Quick Script: Rename Files with and Without Git</title>
+        <description>&lt;p&gt;Renaming files is pretty simple, usually.  He’s a quick little script for
+renaming files with &lt;code&gt;git&lt;/code&gt; awareness.  Simply put in the wildcard you need in
+line &lt;em&gt;1&lt;/em&gt;, and replace the strings you need replaced in lines &lt;em&gt;6&lt;/em&gt; and &lt;em&gt;9&lt;/em&gt;. Note
+that this will not print out the error message checking from &lt;code&gt;git&lt;/code&gt;, because
+that would always show errors when non-git tracked files are present.  Also,
+don’t run this with &lt;code&gt;sh&lt;/code&gt; (i.e., don’t put &lt;code&gt;#!/bin/sh&lt;/code&gt; anywhere near this
+script). The easiest way to run it is to just &lt;code&gt;chmod&lt;/code&gt; it to executable, and
+run it with &lt;code&gt;./move.bash&lt;/code&gt;.  I hope it helps!&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/alexhagen/6417284f5fff86e04eed49623e7747ab.js&quot;&gt;&lt;/script&gt;
+
+</description>
+        <pubDate>Wed, 15 Nov 2017 04:54:00 -0500</pubDate>
+        <link>/blog/projects/rename-with-and-without-git</link>
+        <guid isPermaLink="true">/blog/projects/rename-with-and-without-git</guid>
+        
+        
+        <category>blog</category>
+        
+        <category>projects</category>
+        
+      </item>
     
       <item>
         <title>KiDB</title>
@@ -467,97 +492,6 @@ tools for research.&lt;/p&gt;
         <category>blog</category>
         
         <category>projects</category>
-        
-      </item>
-    
-      <item>
-        <title>ANS Winter Meeting 2016 Awards</title>
-        <description>&lt;p&gt;In late December, I received in the mail the American Nuclear Society’s Young
-Members’ Group Best Paper award for my presentation and accompanying paper at
-the 2016 ANS Winter Conference.  Professor Taleyarkhan, the corresponding
-author, also received word that the paper had won the overall conference’s Best
-Paper Award.&lt;/p&gt;
-
-&lt;figure&gt;
-    &lt;img src=&quot;/assets/img/ne_news_screencap_ans_winter_2016.png&quot; /&gt;
-    &lt;figcaption&gt;
-      Recognition of our award from Purdue's School of Nuclear Engineering
-    &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;It was an honor to receive, and it’s garnered some attention from Purdue’s
-School of Engineering.  It’s always nice to get that kind of recognition.
-Because I can’t publish the paper or the presentation here (for copyright and
-intellectual property reasons), I’ve written a quick summary of the paper and
-included some of the most salient figures below.&lt;/p&gt;
-
-&lt;h2 id=&quot;threshold-energy-based-active-special-nuclear-material-interrogation&quot;&gt;Threshold Energy Based Active Special Nuclear Material Interrogation&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Alex Hagen, Brian Archambault, Ph.D., and Rusi Taleyarkhan, Ph.D.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Counter terrorism is an important and ever-present concern of our times.  CBRN
-defense is a common acronym to describe the wide ranging terrorism concerns,
-standing for Chemical, Biological, Radiological, and Nuclear.  Particularly, we
-are concerned with Nuclear defense - the ability to detect and interdict those
-materials that can create nuclear weapons if they are being smuggled.  These
-materials (weapons grade plutonium and highly enriched uranium) are called
-Special Nuclear Materials - or SNM.  If you’re interested in a more in depth
-description of this motivation, I’ll put up a post soon.&lt;/p&gt;
-
-&lt;p&gt;Currently, we know that there is a weakness in our detection of SNM.  The
-Congress of the United States’ Budget Office sums it up this way:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;The passive radiation detectors outside shipping containers can usually
-detect emissions from materials for radiological weapons but are less effective
-at detecting emissions from nuclear weapons and the fissile materials used to
-make them.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;We presented a way to remedy this.  Our detectors, Metastable Fluid Detectors,
-are more efficient than other neutron detectors, and have higher signal to
-noise ratios than conventional neutron detectors because they are inherently
-blind to $\gamma$ particles.  I’ll post a more in depth description of our
-detectors soon.&lt;/p&gt;
-
-&lt;p&gt;The efficiency of our detector makes it easily detect smuggled WGP.  However,
-highly enriched uranium is much “quieter”, it emits less neutrons from
-spontaneous fission.  To remedy this, we propose a method using &lt;strong&gt;active
-interrogation&lt;/strong&gt;.  We direct a $2.45 MeV$ beam of neutrons onto the cargo, and
-the fissile material (the HEU) will generate neutrons from induced fission.
-Then, setting a lower level discriminator, we can detect only those fission
-neutrons with energies above $2.45 MeV$, thereby not detecting any of the
-interrogating neutrons.&lt;/p&gt;
-
-&lt;figure&gt;
-    &lt;img src=&quot;/assets/img/fission_spectrum.png&quot; /&gt;
-    &lt;figcaption&gt;
-      Ratio of fission spectrum above the interrogation spectrum.
-    &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;With this methodology, which we call &lt;strong&gt;Threshold Energy Neutron Analysis&lt;/strong&gt;, we
-were able to get ratios between the fission neutrons and interrogation neutrons
-of over $1000 \times$.  This is much much larger than that achievable with
-conventional neutron detectors, which we tested to ratios of only $12 \times$,
-and the literature shows similar, or worse results.  In all, this is an
-interesting and useful way to interrogate cargo for special nuclear materials.&lt;/p&gt;
-
-&lt;figure&gt;
-    &lt;img class=&quot;onecol&quot; src=&quot;/assets/img/dd_fission_ratios.png&quot; /&gt;
-    &lt;figcaption&gt;
-      Efficiency of fission and interrogating neutrons in a CTMFD
-    &lt;/figcaption&gt;
-&lt;/figure&gt;
-</description>
-        <pubDate>Wed, 04 Jan 2017 10:00:00 -0500</pubDate>
-        <link>/blog/work/ans_2016_ymg_award</link>
-        <guid isPermaLink="true">/blog/work/ans_2016_ymg_award</guid>
-        
-        
-        <category>blog</category>
-        
-        <category>work</category>
         
       </item>
     
